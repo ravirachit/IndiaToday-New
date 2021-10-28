@@ -1,0 +1,161 @@
+/*sass media query varibale */
+:root {
+  --fontfamily:"Rubik";
+  --bckfont: helvatica,Arial,sans-serif;
+  --bodybg:#f7f9fa;
+  --navbg:#eff3f6;
+  --whitebg:#fff;
+  --theme2bg:#1D2936;
+  --theme2primarytextcolor:#fff;
+  --theme2secondarytextcolor:#FFD23F;
+  --theme2textcolor:#666666;
+  --adbodybg:#eaeaea;
+  --bordercolor:#d5d5d5;
+  --widgetbordercolor:#e2e2e2;
+  --primarytextcolor:#000;
+  --secondarytextcolor:#333;
+  --brandtextcolor:#CC0000;
+  --maxcontinerwidth:100%;
+  --widgetgap:20px;
+}
+
+.navigation {
+  background-color: var(--navbg);
+  padding-right: 15px;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100%;
+  box-shadow: inset -22px -22px 22px -22px #00000029;
+}
+.navigation::before {
+  position: absolute;
+  left: 0;
+  width: calc((100vw - var(--maxcontinerwidth)) / 2);
+  height: 100%;
+  content: "";
+  background-color: var(--navbg);
+  top: 0;
+  z-index: -1;
+}
+.navigation .nav__container .ssologin {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--bordercolor);
+}
+.navigation .nav__container .ssologin a {
+  text-decoration: none;
+  display: flex;
+}
+.navigation .nav__container .ssologin a .user__icon {
+  width: 30px;
+  height: 30px;
+  background-color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.navigation .nav__container .ssologin a .sign__btn {
+  color: var(--brandtextcolor);
+  border: 1px solid var(--brandtextcolor);
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 27px;
+  background-color: #fff;
+  padding: 0 20px;
+}
+.navigation .nav__container .darkmode {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--bordercolor);
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper span {
+  font-size: 16px;
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper .theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 40px;
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper .theme-switch input {
+  display: none;
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper .slider {
+  background-color: #999;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper .slider:before {
+  background-color: var(--whitebg);
+  bottom: 1px;
+  content: "";
+  height: 22px;
+  left: 1px;
+  position: absolute;
+  transition: 0.4s;
+  width: 22px;
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper input:checked + .slider {
+  background-color: var(--brandtextcolor);
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper input:checked + .slider:before {
+  transform: translateX(16px);
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper .slider.round {
+  border-radius: 40px;
+}
+.navigation .nav__container .darkmode .theme-switch-wrapper .slider.round:before {
+  border-radius: 50%;
+}
+.navigation .nav__container .main__nav ul {
+  list-style: none;
+}
+.navigation .nav__container .main__nav ul li {
+  padding-top: 10px;
+}
+.navigation .nav__container .main__nav ul li a {
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--primarytextcolor);
+  display: flex;
+  align-items: center;
+}
+.navigation .nav__container .main__nav ul li a .nav__iocn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: var(--whitebg);
+  border: 1px solid var(--bordercolor);
+  margin-right: 10px;
+}
+.navigation .nav__container .main__nav ul li.active a {
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .navigation {
+    padding-right: 20px;
+    position: static;
+    left: 0;
+    width: auto;
+    border-right: 2px solid var(--whitebg);
+  }
+}
+
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,47 @@
+/*sass media query varibale */
+:root {
+  --fontfamily:"Rubik";
+  --bckfont: helvatica,Arial,sans-serif;
+  --bodybg:#f7f9fa;
+  --navbg:#eff3f6;
+  --whitebg:#fff;
+  --adbodybg:#eaeaea;
+  --bordercolor:#d5d5d5;
+  --primarytextcolor:#000;
+  --secondarytextcolor:#666;
+  --brandtextcolor:#cb0f22;
+  --maxcontinerwidth:100%;
+}
+
+.brk_trand .tranding__capsule {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-right: -10px;
+}
+.brk_trand .tranding__capsule a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--primarytextcolor);
+  padding: 8px 20px;
+  border: 1px solid var(--bordercolor);
+  background-color: var(--whitebg);
+  border-radius: 30px;
+  margin-right: 15px;
+  white-space: nowrap;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.brk_trand .tranding__capsule::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .brk_trand .tranding__capsule {
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
