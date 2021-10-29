@@ -1,0 +1,79 @@
+.carousel916__widget{
+    .heading__nav{
+        .tab_wrap{
+            display: flex;
+			gap: 10px;
+			margin-bottom: 15px;
+            .active{
+                background-color: var(--brandbgcolor);
+            }
+            .tab{
+                text-transform: uppercase;
+                border: 1px solid var(--widgetbordercolor);
+                border-radius: 30px;
+                padding: 7px 50px 6px 50px;
+                background: #F2FAFC;
+                color: #666666;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 18px;      
+            }
+            .tab:first-child{
+                background-color: var(--brandbgcolor);
+                color: #ffffff;
+                border: none;
+            }
+        }
+    }
+    .carousel__container{
+        .anchor_carousel__card{
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            flex: 0 0 142px;
+            margin-right: 25px;
+            border-radius: 5px;
+            .card__desc{
+                margin-top: 10px;
+                text-align: center;
+                h4{
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #000000;
+            }
+            }
+            .anchor_card__figure{
+                position: relative;
+                a img{
+                    border-radius: 50%;
+                }
+            }
+        }
+        .shows_carousel__card{
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            margin-right: 15px;
+            width: 240px;
+            flex: 0 0 240px;
+            .card__desc{
+                margin-top: 2px;
+                text-align: center;
+                h4{
+                    font-size: 16px;
+                    font-weight: normal;
+                    background-color: #E3031B;
+                    border-radius: 5px;
+                    padding: 5.19px;
+                    a{
+                        color: #ffffff;
+                    }
+                }
+            }
+            .shows_card__figure{
+                position: relative;
+                a img{
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
