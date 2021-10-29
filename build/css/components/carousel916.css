@@ -9,17 +9,20 @@
   --theme2primarytextcolor:#fff;
   --theme2secondarytextcolor:#FFD23F;
   --theme2textcolor:#666666;
+  --theme2bordercolor:#666666;
   --adbodybg:#eaeaea;
   --bordercolor:#d5d5d5;
   --widgetbordercolor:#e2e2e2;
   --primarytextcolor:#000;
   --secondarytextcolor:#333;
+  --whitetextcolor:#fff;
   --brandtextcolor:#CC0000;
+  --brandbgcolor:#CC0000;
   --maxcontinerwidth:100%;
   --widgetgap:20px;
 }
 
-.carousel__widget {
+.carousel916__widget {
   background-color: var(--whitebg);
   box-shadow: 1px 1px 3px #00000026;
   border: 1px solid var(--widgetbordercolor);
@@ -27,10 +30,10 @@
   padding: 15px 0px 15px 20px;
   overflow: hidden;
 }
-.carousel__widget .heading__nav {
+.carousel916__widget .heading__nav {
   margin-bottom: 12px;
 }
-.carousel__widget .heading__nav h2 {
+.carousel916__widget .heading__nav h2 {
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
@@ -42,29 +45,33 @@
   background-repeat: no-repeat;
   background-position: 0 center;
 }
-.carousel__widget .carousel__container {
+.carousel916__widget .carousel__container {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.carousel__widget .carousel__container .carousel__card {
+.carousel916__widget .carousel__container .carousel__card {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  width: 260px;
-  flex: 0 0 260px;
+  width: 200px;
+  flex: 0 0 200px;
   margin-right: 15px;
-}
-.carousel__widget .carousel__container .carousel__card .card__figure {
-  margin-bottom: 15px;
-  position: relative;
-}
-.carousel__widget .carousel__container .carousel__card .card__figure img {
   border: 1px solid var(--widgetbordercolor);
   border-radius: 5px;
 }
-.carousel__widget .carousel__container .carousel__card .card__desc .card__slug {
+.carousel916__widget .carousel__container .carousel__card .card__figure {
+  position: relative;
+}
+.carousel916__widget .carousel__container .carousel__card .card__figure img {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid var(--widgetbordercolor);
+}
+.carousel916__widget .carousel__container .carousel__card .card__desc {
+  padding: 16px 10px 20px;
+}
+.carousel916__widget .carousel__container .carousel__card .card__desc .card__slug {
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
@@ -73,35 +80,35 @@
   margin-bottom: 4px;
   display: block;
 }
-.carousel__widget .carousel__container .carousel__card .card__desc h3 {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
+.carousel916__widget .carousel__container .carousel__card .card__desc h3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
 }
-.carousel__widget .carousel__container .carousel__card .card__desc h3 a {
+.carousel916__widget .carousel__container .carousel__card .card__desc h3 a {
   text-decoration: none;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.carousel__widget .carousel__container .carousel__card:nth-last-child(1) {
+.carousel916__widget .carousel__container .carousel__card:nth-last-child(1) {
   margin-right: 0px;
 }
-.carousel__widget .carousel__container::-webkit-scrollbar {
+.carousel916__widget .carousel__container::-webkit-scrollbar {
   display: none;
 }
-.carousel__widget.carouseltheme2 {
+.carousel916__widget.carouseltheme2 {
   background-color: var(--theme2bg);
 }
-.carousel__widget.carouseltheme2 h2 {
+.carousel916__widget.carouseltheme2 h2 {
   color: var(--theme2primarytextcolor);
 }
-.carousel__widget.carouseltheme2 .carousel__container .carousel__card .card__desc .card__slug {
+.carousel916__widget.carouseltheme2 .carousel__container .carousel__card .card__desc .card__slug {
   color: var(--theme2secondarytextcolor);
 }
-.carousel__widget.carouseltheme2 .carousel__container .carousel__card .card__desc h3 a {
+.carousel916__widget.carouseltheme2 .carousel__container .carousel__card .card__desc h3 a {
   color: var(--theme2primarytextcolor);
 }
 
-/*# sourceMappingURL=carousel.css.map */
+/*# sourceMappingURL=carousel916.css.map */

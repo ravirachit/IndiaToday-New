@@ -38,12 +38,15 @@
 	    margin-left: 15px;
 	    position: relative;
 	    margin-bottom: var(--widgetgap);
+		a{ position: relative;
+		   display: flex;
 	     img{
 	     width:100%;
 	     height:auto;
 	     border-radius:5px;
 	     border:1px solid var(--widgetbordercolor);
 	     }
+		}
 	   }
 
 	  }

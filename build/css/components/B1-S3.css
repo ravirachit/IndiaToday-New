@@ -70,7 +70,11 @@
   position: relative;
   margin-bottom: var(--widgetgap);
 }
-.B1__s3__widget .story-card .content-thumbnail-wrap .story-thumbnail img {
+.B1__s3__widget .story-card .content-thumbnail-wrap .story-thumbnail a {
+  position: relative;
+  display: flex;
+}
+.B1__s3__widget .story-card .content-thumbnail-wrap .story-thumbnail a img {
   width: 100%;
   height: auto;
   border-radius: 5px;
