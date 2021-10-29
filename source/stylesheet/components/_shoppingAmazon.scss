@@ -1,0 +1,88 @@
+@import '../abstracts/mixins';
+.shopping-widget{
+    @include blockwidgetstyle;
+	padding:15px 15px 15px 20px;
+    .heading__nav{
+        .shoppingtitle{
+       font-size:16px;
+       line-height:24px;
+       display: flex;
+       align-items: center;
+       padding-bottom: 3px;
+       border-bottom: 1px solid #EFF1F1;
+       margin:0;
+        svg{
+            position: relative;
+            top: 4px;
+            margin-right: 5px
+         }
+        }
+    }
+    .product-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .products-items{
+            flex-basis:calc(50% - 15px);
+            max-width:calc(50% - 15px);
+            padding:15px 0;
+            border-bottom:1px solid #EFF1F1;
+            a{
+                display: flex;
+                .product-img{
+                    flex: 0 0 65px;
+                    max-width:65px;
+                    height: 65px;
+                    display: flex;
+                    justify-content:space-evenly;
+                    align-items: center;
+                    border:1px solid #EFF1F1;
+                    margin-right:10px;
+                    img{
+                        height: -webkit-fill-available;
+                    }
+                }
+                .product-details{
+                    .product-title{
+                        font-size:14px;
+                        line-height:20px;
+                        @include lineblock2;
+                        margin-bottom: 5px;
+                    }
+                    .product-price{
+                        font-size:16px;
+                        line-height:22px;
+                        font-weight:600;
+                    }
+                }
+            }
+            &:nth-last-child(1){
+                border-bottom:0;
+                padding-bottom:0;
+            }
+            &:nth-last-child(2){
+                border-bottom:0;
+                padding-bottom:0;
+            }
+        }
+    }
+}
+
+.rhs-section{
+     .shopping-widget{
+        .product-list{
+            .products-items{
+                flex-basis:100%;
+                max-width: 100%;
+
+                &:nth-last-child(2){
+                    border-bottom:1px solid #EFF1F1;
+                    padding-bottom:15px;
+                }
+            }
+            
+            
+        }
+
+    }
+}
