@@ -1,0 +1,101 @@
+.carouselcirularimg__widget {
+  background-color: var(--whitebg);
+  box-shadow: 1px 1px 3px #00000026;
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+  padding: 15px 0px 20px 20px;
+  overflow: hidden;
+}
+.carouselcirularimg__widget .heading__nav {
+  margin-bottom: 12px;
+}
+.carouselcirularimg__widget .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+  padding-left: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23e3001b' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.carouselcirularimg__widget .carousel__container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 250px;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  flex: 0 0 250px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1A1D24;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer {
+  padding: 0 10px;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .reporter_img {
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .reporter_img img {
+  border: 5px solid var(--bordercolor);
+  border-radius: 100%;
+  width: 90px;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .content_title {
+  min-height: 86px;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .content_title a {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  color: var(--whitetextcolor);
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .byline_designation {
+  border-top: 1px solid #676666;
+  padding: 10px 0 10px;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .byline_designation .content_byline_title {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--whitetextcolor);
+  font-style: italic;
+  text-align: center;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .byline_designation .content_byline_designation {
+  font-size: 12px;
+  line-height: 1;
+  color: #A5A5A5;
+  text-align: center;
+}
+.carouselcirularimg__widget .carousel__container .carousel__card:nth-last-child(1) {
+  margin-right: 0px;
+}
+.carouselcirularimg__widget .carousel__container::-webkit-scrollbar {
+  display: none;
+}
+
+/*# sourceMappingURL=carouselCircularimgByline.css.map */

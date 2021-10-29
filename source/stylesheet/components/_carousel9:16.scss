@@ -1,7 +1,7 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 
-.carousel__widget{
+.carousel916__widget{
 	@include blockwidgetstyle;
 	padding:15px 0px 15px 20px;
 	overflow: hidden;
@@ -22,26 +22,29 @@
 		.carousel__card{
 			scroll-snap-align: start;
     		scroll-snap-stop: always;
-    		width: 260px;
-    		flex: 0 0 260px;
+    		width: 200px;
+    		flex: 0 0 200px;
     		margin-right:15px;
+			border: 1px solid var(--widgetbordercolor);
+		 	border-radius: 5px;
 			.card__figure{
-				margin-bottom:15px;
 				position: relative;
 				img{
-					border: 1px solid var(--widgetbordercolor);
-		 			border-radius: 5px;}
+					border-radius: 5px 5px 0 0;
+					border-bottom: 1px solid var(--widgetbordercolor);
+					}
 			}
 			.card__desc{
+				padding:16px 10px 20px;
 				.card__slug{
 					@include titlewidgetRed;
 					margin-bottom:4px;
 					display: block;
 				}
 				h3{
-					font-size: 16px;
-					line-height: 24px;
-					font-weight:500;
+					font-size: 14px;
+					line-height: 20px;
+					font-weight:400;
 					a{
 						text-decoration: none;
 						@include lineblock3;
@@ -76,26 +79,11 @@
 								}
 							}
 						}
-					.card__figure{
-						 img{
-							border: 1px solid var(--theme2bordercolor);
-						 }
-					}
+
 				}
 			}
+
+			
+
 	}
-}
-
-
-/* if carousel in RHS */
-.rhs-section{
-	.carousel__widget {
-		.carousel__container{
-			.carousel__card{
-				width: 200px;
-				flex: 0 0 200px;
-			}
-
-		}
-	} 
 }
