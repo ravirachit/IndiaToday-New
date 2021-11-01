@@ -1,0 +1,55 @@
+.carousel916__widget{
+    form.subscribe_newsletter input[type=text]{
+        padding: 15px;
+        font-size: 15px;
+        border: 1px solid #B9B9B9;
+        float: left;
+        width: 87%;
+        background: #FFFFFF;
+        height: 40px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .subscribe_newsletter{
+        input::placeholder {
+            color: #666666;
+            font-weight: normal;
+            }
+            button {
+                float: left;
+                background: #CC0000;
+                color: white;
+                font-size: 16px;
+                border: 1px solid #B9B9B9;
+                border-left: none;
+                cursor: pointer;
+                width: 72px;
+                height: 40px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                }
+                ::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                    }        
+    }
+    .checkbox{
+        display: flex;
+        padding-top: 11px;
+        width: 100%;
+        }
+        .checkbox p{
+        font-size: 12px;
+        line-height: 17px;
+        color: #666666;
+        margin-left: 10px;
+        }
+}
+
+// Mobile View
+@media only screen and (max-width: 767px) {
+    .carousel916__widget form.subscribe_newsletter input[type=text] {
+        width: calc(75% - 10px);
+    }
+  }
