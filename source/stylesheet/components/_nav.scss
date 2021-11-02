@@ -1,4 +1,5 @@
-@import '../abstracts/variables';
+
+@import '../abstracts/functions';
 
 .navigation{
 	background-color:var(--navbg);
@@ -6,9 +7,10 @@
 	position:fixed;
  	top:0;
  	left: -100%;
- 	width:100vw;
+ 	width:80vw;
  	height:100%;
-	box-shadow: inset -22px -22px 22px -22px #00000029;
+	z-index:2;
+
 	&::before{
 		position: absolute;
 	    left: 0;
@@ -138,5 +140,6 @@
 	left:0;
 	width: auto;
 	border-right:2px solid var(--whitebg);
+	box-shadow: inset -22px -22px 22px -22px #00000029;
 	}
 }
