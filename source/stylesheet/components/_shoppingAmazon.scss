@@ -1,7 +1,10 @@
+@import '../abstracts/functions';
 @import '../abstracts/mixins';
 .shopping-widget{
-    @include blockwidgetstyle;
-	padding:15px 15px 15px 20px;
+    @include desktopblockwidgetstyle;
+	padding:15px 10px 15px 10px;
+    margin:0 15px;
+    background-color:#fff;
     .heading__nav{
         .shoppingtitle{
        font-size:16px;
@@ -23,8 +26,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .products-items{
-            flex-basis:calc(50% - 15px);
-            max-width:calc(50% - 15px);
+            flex-basis:100%;
+            max-width: 100%;
             padding:15px 0;
             border-bottom:1px solid #EFF1F1;
             a{
@@ -57,12 +60,8 @@
                 }
             }
             &:nth-last-child(1){
-                border-bottom:0;
-                padding-bottom:0;
-            }
-            &:nth-last-child(2){
-                border-bottom:0;
-                padding-bottom:0;
+                border-bottom:0px;
+                padding-bottom:0px;
             }
         }
     }
@@ -86,3 +85,30 @@
 
     }
 }
+
+
+@media (min-width:$desktopver){
+    .shopping-widget{
+        @include desktopblockwidgetstyle;
+        margin:0 0;
+        padding:15px 20px;
+        .product-list{
+            .products-items{
+                flex-basis:calc(50% - 15px);
+                max-width:calc(50% - 15px);
+                &:nth-last-child(1){
+                    border-bottom:0;
+                    padding-bottom:0;
+                }
+                &:nth-last-child(2){
+                    border-bottom:0;
+                    padding-bottom:0;
+                }
+            }
+            
+            
+        }
+
+    }
+}
+

@@ -1,0 +1,126 @@
+/*sass media query varibale */
+.magazine__sub__widget {
+  background-color: var(--whitebg);
+  box-shadow: 1px 1px 3px #00000026;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  border-radius: 0px;
+  padding: 15px 10px 20px 10px;
+}
+.magazine__sub__widget .heading__nav {
+  margin-bottom: 12px;
+}
+.magazine__sub__widget .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+  padding-left: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23e3001b' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.magazine__sub__widget .widget-body {
+  display: flex;
+  justify-content: space-between;
+}
+.magazine__sub__widget .widget-body .magazine-cover {
+  flex-basis: 115px;
+  max-width: 115px;
+  flex-shrink: 0;
+}
+.magazine__sub__widget .widget-body .magazine-cover img {
+  height: auto;
+}
+.magazine__sub__widget .widget-body .magazine-cover .issue-mdate {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content {
+  flex: 1 0 0;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .content-details {
+  text-align: center;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--primarytextcolor);
+  margin-bottom: 10px;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 br {
+  display: none;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 span {
+  color: var(--brandtextcolor);
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .content-details .subtext {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  margin-bottom: var(--widgetgap);
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .content-details .fullbg-button a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  background-color: var(--brandbgcolor);
+  color: var(--whitetextcolor);
+  padding: 6px 30px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo {
+  font-size: 13px;
+  line-height: 20px;
+  color: #666;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo a {
+  color: var(--brandtextcolor);
+}
+
+@media (min-width: 1024px) {
+  .magazine__sub__widget {
+    box-shadow: 1px 1px 3px #00000026;
+    border-left: 1px solid var(--widgetbordercolor);
+    border-right: 1px solid var(--widgetbordercolor);
+    border-radius: 5px;
+    padding: 15px 20px 20px 20px;
+  }
+  .magazine__sub__widget .widget-body .magazine-cover {
+    flex-basis: 145px;
+    max-width: 145px;
+  }
+  .magazine__sub__widget .widget-body .magazine-cover .magazine-coverimg .issue-mdate {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .magazine__sub__widget .widget-body .magazine-sub-content {
+    margin-left: 45px;
+  }
+  .magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 br {
+    display: block;
+  }
+  .magazine__sub__widget .widget-body .magazine-sub-content .content-details .subtext {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/*# sourceMappingURL=magazineSub.css.map */
