@@ -1,9 +1,12 @@
+/*sass media query varibale */
 .shopping-widget {
-  background-color: var(--whitebg);
   box-shadow: 1px 1px 3px #00000026;
-  border: 1px solid var(--widgetbordercolor);
+  border-left: 1px solid var(--widgetbordercolor);
+  border-right: 1px solid var(--widgetbordercolor);
   border-radius: 5px;
-  padding: 15px 15px 15px 20px;
+  padding: 15px 10px 15px 10px;
+  margin: 0 15px;
+  background-color: #fff;
 }
 .shopping-widget .heading__nav .shoppingtitle {
   font-size: 16px;
@@ -25,8 +28,8 @@
   justify-content: space-between;
 }
 .shopping-widget .product-list .products-items {
-  flex-basis: calc(50% - 15px);
-  max-width: calc(50% - 15px);
+  flex-basis: 100%;
+  max-width: 100%;
   padding: 15px 0;
   border-bottom: 1px solid #EFF1F1;
 }
@@ -61,12 +64,8 @@
   font-weight: 600;
 }
 .shopping-widget .product-list .products-items:nth-last-child(1) {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-.shopping-widget .product-list .products-items:nth-last-child(2) {
-  border-bottom: 0;
-  padding-bottom: 0;
+  border-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .rhs-section .shopping-widget .product-list .products-items {
@@ -78,4 +77,27 @@
   padding-bottom: 15px;
 }
 
-/*# sourceMappingURL=shoppingamazon.css.map */
+@media (min-width: 1024px) {
+  .shopping-widget {
+    box-shadow: 1px 1px 3px #00000026;
+    border-left: 1px solid var(--widgetbordercolor);
+    border-right: 1px solid var(--widgetbordercolor);
+    border-radius: 5px;
+    margin: 0 0;
+    padding: 15px 20px;
+  }
+  .shopping-widget .product-list .products-items {
+    flex-basis: calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+  .shopping-widget .product-list .products-items:nth-last-child(1) {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .shopping-widget .product-list .products-items:nth-last-child(2) {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=shoppingAmazon.css.map */

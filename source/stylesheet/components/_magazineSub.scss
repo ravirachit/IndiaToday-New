@@ -1,6 +1,9 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+
 .magazine__sub__widget{
     @include blockwidgetstyle;
-	padding:15px 20px 20px 20px;
+	padding:15px 10px 20px 10px;
     .heading__nav{
 		margin-bottom:12px;
 		h2{
@@ -13,11 +16,14 @@
         display: flex;
         justify-content: space-between;
         .magazine-cover{
-            flex-basis: 145px;
-            max-width: 145px;
+            flex-basis: 115px;
+            max-width: 115px;
             flex-shrink: 0;
+            img{
+                height:auto;
+              }
             .issue-mdate{
-                font-style:16px;
+                font-size:14px;
                 line-height:18px;
                 font-weight:500;
                 padding-top:10px;
@@ -25,24 +31,27 @@
         }
         .magazine-sub-content{
             flex: 1 0 0;
-            margin-left: 45px;
+            margin-left: 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             .content-details{
                 text-align: center;
                 h4{
-                    font-size:32px;
-                    line-height: 38px;
+                    font-size:18px;
+                    line-height: 24px;
                     color:var(--primarytextcolor);
                     margin-bottom:10px;
+                    br{
+                        display: none;
+                    }
                     span{
                       color:var(--brandtextcolor);
                     }
                 }
                 .subtext{
-                    font-size:20px;
-                    line-height:26px;
+                    font-size:14px;
+                    line-height:20px;
                     color:#666;
                     margin-bottom: var(--widgetgap);
                 }
@@ -60,8 +69,8 @@
                 }
             }
             .smtextinfo{
-                font-size:16px;
-                line-height: 24px;
+                font-size:13px;
+                line-height: 20px;
                 color:#666;
                 a{
                     color:var(--brandtextcolor);
@@ -70,4 +79,48 @@
         }
         
     }
+}
+
+@media (min-width:$desktopver){
+    .magazine__sub__widget{
+        @include desktopblockwidgetstyle;
+        padding:15px 20px 20px 20px;
+        .widget-body{
+            .magazine-cover{
+                flex-basis: 145px;
+                max-width: 145px;
+                .magazine-coverimg{
+                 .issue-mdate{
+                     font-size:16px;
+                     line-height:18px;
+                 }
+                  }
+            }
+            .magazine-sub-content{
+                margin-left: 45px;
+                .content-details{
+                    h4{
+                        font-size:32px;
+                        line-height: 38px;
+                        br{
+                            display: block;
+                        }
+
+                    }
+                    .subtext{
+                        font-size:20px;
+                        line-height:26px;
+                    }
+
+
+                }
+                .smtextinfo{
+                    font-size:16px;
+                    line-height: 24px;
+                    
+                }
+            }
+
+    }
+ }
 }

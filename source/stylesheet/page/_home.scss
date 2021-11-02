@@ -1,3 +1,4 @@
+@import '../abstracts/functions';
 @import '../abstracts/variables';
 
 .ad-betweenwidget{position: relative; background-color:#EAEAEA; padding:18px 0;margin-top:-18px;}
@@ -9,7 +10,7 @@
     			scroll-snap-type: x mandatory;
     			-ms-overflow-style: none;
     			scrollbar-width: none;
-    			margin-right: -10px;
+				margin:0 0 0 10px;
  				a{
  					text-decoration: none;
  					font-size:16px;
@@ -33,7 +34,8 @@
 
 @media (min-width:$desktopver){
 	.brk_trand{
- 		.tranding__capsule{ margin-right:0; 
+ 		.tranding__capsule{
+			margin: 0; 
  		}
  	}
  	    

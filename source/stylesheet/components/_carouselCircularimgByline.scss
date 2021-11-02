@@ -1,7 +1,9 @@
 @import '../abstracts/mixins';
+@import '../abstracts/functions';
+
 .carouselcirularimg__widget{
 	@include blockwidgetstyle;
-	padding:15px 0px 20px 20px;
+	padding:15px 0px 20px 10px;
 	overflow: hidden;
 	.heading__nav{
 		margin-bottom:12px;
@@ -90,4 +92,11 @@
 	}
 
 	
+}
+
+@media (min-width:$desktopver){
+	.carouselcirularimg__widget{
+		@include desktopblockwidgetstyle;
+		padding:15px 0px 15px 20px;
+	}
 }

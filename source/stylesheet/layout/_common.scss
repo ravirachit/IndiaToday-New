@@ -1,7 +1,7 @@
 body{font-family:var(--fontfamily), var(--bckfont); font-size:100%; line-height:1; color:var(--primarytextcolor); background-color:var(--bodybg);text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased; min-height:100vh;}
 a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
-.temp__container{max-width:var(--maxcontinerwidth); margin:0 auto; padding:0 10px;}
+.temp__container{max-width:var(--maxcontinerwidth); margin:0 auto; padding:0 0;}
 .mrgB20{margin-bottom: 15px;}
 .mhide{ display: none;}
 .widgetgap{margin-bottom:var(--widgetgap)}
