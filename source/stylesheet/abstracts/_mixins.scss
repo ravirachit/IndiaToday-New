@@ -36,9 +36,17 @@
     overflow: hidden;
 }
 
+@mixin desktopblockwidgetstyle{
+	box-shadow: 1px 1px 3px #00000026;
+	border-left: 1px solid var(--widgetbordercolor);
+	border-right: 1px solid var(--widgetbordercolor);
+	border-radius:5px;
+}
+
 @mixin blockwidgetstyle{
 	background-color:var(--whitebg);
 	box-shadow: 1px 1px 3px #00000026;
-	border: 1px solid var(--widgetbordercolor);
-	border-radius:5px;
+	border-top: 1px solid var(--widgetbordercolor);
+	border-bottom: 1px solid var(--widgetbordercolor);
+	border-radius:0px;
 }

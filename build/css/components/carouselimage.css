@@ -1,9 +1,11 @@
+/*sass media query varibale */
 .carouselimg__widget {
   background-color: var(--whitebg);
   box-shadow: 1px 1px 3px #00000026;
-  border: 1px solid var(--widgetbordercolor);
-  border-radius: 5px;
-  padding: 15px 0px 15px 20px;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  border-radius: 0px;
+  padding: 15px 0px 15px 10px;
   overflow: hidden;
 }
 .carouselimg__widget .heading__nav {
@@ -53,6 +55,16 @@
 }
 .carouselimg__widget.carouseltheme2 h2 {
   color: var(--theme2primarytextcolor);
+}
+
+@media (min-width: 1024px) {
+  .carouselimg__widget {
+    box-shadow: 1px 1px 3px #00000026;
+    border-left: 1px solid var(--widgetbordercolor);
+    border-right: 1px solid var(--widgetbordercolor);
+    border-radius: 5px;
+    padding: 15px 0px 15px 20px;
+  }
 }
 
 /*# sourceMappingURL=carouselimage.css.map */

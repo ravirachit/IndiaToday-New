@@ -1,9 +1,9 @@
-@import '../abstracts/variables';
+@import '../abstracts/functions';
 @import '../abstracts/mixins';
 
 .carousel916__widget{
 	@include blockwidgetstyle;
-	padding:15px 0px 15px 20px;
+	padding:15px 0px 15px 10px;
 	overflow: hidden;
 	.heading__nav{
 		margin-bottom:12px;
@@ -85,5 +85,12 @@
 
 			
 
+	}
+}
+
+@media (min-width:$desktopver){
+	.carousel916__widget{
+		@include desktopblockwidgetstyle;
+		padding:15px 0px 15px 20px;
 	}
 }

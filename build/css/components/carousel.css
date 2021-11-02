@@ -1,33 +1,11 @@
 /*sass media query varibale */
-:root {
-  --fontfamily:"Rubik";
-  --bckfont: helvatica,Arial,sans-serif;
-  --bodybg:#f7f9fa;
-  --navbg:#eff3f6;
-  --whitebg:#fff;
-  --theme2bg:#1D2936;
-  --theme2primarytextcolor:#fff;
-  --theme2secondarytextcolor:#FFD23F;
-  --theme2textcolor:#666666;
-  --theme2bordercolor:#666666;
-  --adbodybg:#eaeaea;
-  --bordercolor:#d5d5d5;
-  --widgetbordercolor:#e2e2e2;
-  --primarytextcolor:#000;
-  --secondarytextcolor:#333;
-  --whitetextcolor:#fff;
-  --brandtextcolor:#CC0000;
-  --brandbgcolor:#CC0000;
-  --maxcontinerwidth:100%;
-  --widgetgap:20px;
-}
-
 .carousel__widget {
   background-color: var(--whitebg);
   box-shadow: 1px 1px 3px #00000026;
-  border: 1px solid var(--widgetbordercolor);
-  border-radius: 5px;
-  padding: 15px 0px 15px 20px;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  border-radius: 0px;
+  padding: 15px 0px 15px 10px;
   overflow: hidden;
 }
 .carousel__widget .heading__nav {
@@ -114,6 +92,16 @@
 .rhs-section .carousel__widget .carousel__container .carousel__card {
   width: 200px;
   flex: 0 0 200px;
+}
+
+@media (min-width: 1024px) {
+  .carousel__widget {
+    box-shadow: 1px 1px 3px #00000026;
+    border-left: 1px solid var(--widgetbordercolor);
+    border-right: 1px solid var(--widgetbordercolor);
+    border-radius: 5px;
+    padding: 15px 0px 15px 20px;
+  }
 }
 
 /*# sourceMappingURL=carousel.css.map */
