@@ -1,0 +1,129 @@
+/*sass media query varibale */
+.topmenu {
+  padding: 2px 0 2px 10px;
+  background-color: var(--whitebg);
+}
+.topmenu ul {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.topmenu ul li {
+  list-style: none;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  margin-right: 20px;
+}
+.topmenu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--secondarytextcolor);
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+.topmenu ul li.active a {
+  font-weight: 700;
+  color: var(--primarytextcolor);
+}
+.topmenu ul::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  border-top: 1px solid var(--bordercolor);
+  border-bottom: 1px solid var(--bordercolor);
+  background-color: var(--whitebg);
+}
+header .temp__container {
+  padding: 0 10px;
+}
+header .temp__container .nav__section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+header .temp__container .nav__section > div {
+  padding: 15px 0;
+}
+header .temp__container .nav__section .it__logo {
+  font-size: 0px;
+  display: flex;
+  align-items: center;
+  flex: 1 0 0;
+}
+header .temp__container .nav__section .it__logo svg {
+  height: 20px;
+  width: auto;
+}
+header .temp__container .nav__section .rhs__menu {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-left: 1px solid var(--bordercolor);
+}
+header .temp__container .nav__section .rhs__menu > div {
+  border-right: 1px solid var(--bordercolor);
+  padding: 10px;
+  font-size: 0px;
+  min-width: 43px;
+}
+header .temp__container .nav__section .rhs__menu div:nth-last-child(1) {
+  border-right: 0px;
+}
+header .temp__container .nav__section .m__hambuger {
+  width: 48px;
+  height: 50px;
+}
+header .temp__container .nav__section .m__hambuger .hambuger__icon {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .temp__container .nav__section .m__hambuger .hambuger__icon span {
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  body {
+    --maxcontinerwidth:1255px;
+  }
+
+  .topmenu {
+    padding: 2px 0;
+  }
+  .topmenu ul li {
+    margin-right: 40px;
+  }
+
+  header .temp__container {
+    padding: 0 0;
+  }
+  header .temp__container .nav__section {
+    margin: 0;
+  }
+  header .temp__container .nav__section > div {
+    padding: 15px 0;
+  }
+  header .temp__container .nav__section .it__logo svg {
+    height: 30px;
+  }
+  header .temp__container .nav__section .rhs__menu {
+    border-right: 1px solid var(--bordercolor);
+  }
+  header .temp__container .nav__section .rhs__menu > div {
+    padding: 15px;
+  }
+  header .temp__container .nav__section .m__hambuger {
+    height: 60px;
+  }
+}
+
+/*# sourceMappingURL=head.css.map */
