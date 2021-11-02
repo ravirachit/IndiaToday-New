@@ -108,3 +108,14 @@
     }
 }
 }
+
+// Mobile View
+@media only screen and (max-width: 767px) {
+    .Tab__4items .content-wrap .inner_wrap .video_card{
+        width: 100%;
+    }
+    .Tab__4items .content-wrap .tab_wrap {
+        display: block;
+        line-height: 40px;
+    }
+  }

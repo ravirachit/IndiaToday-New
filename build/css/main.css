@@ -1625,6 +1625,16 @@ a, a:active, a:visited {
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 767px) {
+  .Tab__4items .content-wrap .inner_wrap .video_card {
+    width: 100%;
+  }
+
+  .Tab__4items .content-wrap .tab_wrap {
+    display: block;
+    line-height: 40px;
+  }
+}
 .carousel916__widget .heading__nav .tab_wrap {
   display: flex;
   gap: 10px;
@@ -1699,6 +1709,56 @@ a, a:active, a:visited {
   border-radius: 5px;
 }
 
+.carousel916__widget form.subscribe_newsletter input[type=text] {
+  padding: 15px;
+  font-size: 15px;
+  border: 1px solid #B9B9B9;
+  float: left;
+  width: 87%;
+  background: #FFFFFF;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.carousel916__widget .subscribe_newsletter input::placeholder {
+  color: #666666;
+  font-weight: normal;
+}
+.carousel916__widget .subscribe_newsletter button {
+  float: left;
+  background: #CC0000;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #B9B9B9;
+  border-left: none;
+  cursor: pointer;
+  width: 72px;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.carousel916__widget .subscribe_newsletter ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.carousel916__widget .checkbox {
+  display: flex;
+  padding-top: 11px;
+  width: 100%;
+}
+.carousel916__widget .checkbox p {
+  font-size: 12px;
+  line-height: 17px;
+  color: #666666;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel916__widget form.subscribe_newsletter input[type=text] {
+    width: calc(75% - 10px);
+  }
+}
 /*sass media query varibale */
 :root {
   --fontfamily:"Rubik";
