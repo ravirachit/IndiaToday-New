@@ -125,9 +125,11 @@
 				flex-wrap: wrap;
 
 				li{
-					padding-top: 10px;
+					padding-top: 15px;
 					padding-right: 10px;
 					flex-basis: 50%;
+					align-items: center;
+                    display: flex;
 					a{
 						font-size:16px;
 						line-height:1.4;
@@ -200,6 +202,7 @@
 				li{
                   flex-basis:100%;
 				  padding-right: 0;
+				  padding-top:10px;
 				  a{ line-height:1
 				}
 				}

@@ -132,9 +132,11 @@
   flex-wrap: wrap;
 }
 .navigation .nav__container .main__nav ul li {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-right: 10px;
   flex-basis: 50%;
+  align-items: center;
+  display: flex;
 }
 .navigation .nav__container .main__nav ul li a {
   font-size: 16px;
@@ -204,6 +206,7 @@
   .navigation .nav__container .main__nav ul li {
     flex-basis: 100%;
     padding-right: 0;
+    padding-top: 10px;
   }
   .navigation .nav__container .main__nav ul li a {
     line-height: 1;
