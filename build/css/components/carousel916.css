@@ -23,6 +23,9 @@
   background-repeat: no-repeat;
   background-position: 0 center;
 }
+.carousel916__widget .heading__nav .carousel__nav {
+  display: none;
+}
 .carousel916__widget .carousel__container {
   display: flex;
   overflow-x: auto;
@@ -82,6 +85,15 @@
 .carousel916__widget.carouseltheme2 h2 {
   color: var(--theme2primarytextcolor);
 }
+.carousel916__widget.carouseltheme2 .carousel__nav .navbutn {
+  background-color: #fff;
+}
+.carousel916__widget.carouseltheme2 .carousel__nav .navbutn:after {
+  border-color: #000;
+}
+.carousel916__widget.carouseltheme2 .carousel__nav .navbutn.is-disabled {
+  background-color: #9d9d9d;
+}
 .carousel916__widget.carouseltheme2 .carousel__container .carousel__card .card__desc .card__slug {
   color: var(--theme2secondarytextcolor);
 }
@@ -96,6 +108,51 @@
     border-right: 1px solid var(--widgetbordercolor);
     border-radius: 5px;
     padding: 15px 0px 15px 20px;
+  }
+  .carousel916__widget .heading__nav {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .carousel916__widget .heading__nav .carousel__nav {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .carousel916__widget .heading__nav .carousel__nav .navbutn {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #000;
+    position: relative;
+    cursor: pointer;
+  }
+  .carousel916__widget .heading__nav .carousel__nav .navbutn.carousel_prev:after {
+    transform: rotate(-45deg);
+    left: 10px;
+  }
+  .carousel916__widget .heading__nav .carousel__nav .navbutn.carousel_next:after {
+    transform: rotate(135deg);
+  }
+  .carousel916__widget .heading__nav .carousel__nav .navbutn.is-disabled {
+    background-color: #d5d5d5;
+  }
+  .carousel916__widget .heading__nav .carousel__nav .navbutn.is-disabled:after {
+    border-color: #000;
+  }
+  .carousel916__widget .heading__nav .carousel__nav .navbutn:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    top: 9px;
+    left: 8px;
   }
 }
 
