@@ -20,6 +20,21 @@
         position: sticky;
 		top:0;
 		z-index:-1;
+		.navmobile_container{
+			display: flex;
+            justify-content: space-between;
+			.closehambuger{
+				width: 40px;
+                text-align: center;
+                margin-right: -10px;
+                margin-top: -10px;
+                margin-bottom: -10px;
+                height: 37px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+			}
+		}
 	}
 
 	.nav__container{
@@ -103,7 +118,7 @@
 	}
 		.main__nav{
 			background-color: var(--navbg);
-			padding:0 20px;
+			padding:0 20px 20px;
 			ul{
 				list-style: none;
 				display: flex;

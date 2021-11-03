@@ -19,6 +19,21 @@
   top: 0;
   z-index: -1;
 }
+.navigation .navmobile-header .navmobile_container {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation .navmobile-header .navmobile_container .closehambuger {
+  width: 40px;
+  text-align: center;
+  margin-right: -10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navigation .nav__container {
   background-color: var(--brandbgcolor);
 }
@@ -109,7 +124,7 @@
 }
 .navigation .nav__container .main__nav {
   background-color: var(--navbg);
-  padding: 0 20px;
+  padding: 0 20px 20px;
 }
 .navigation .nav__container .main__nav ul {
   list-style: none;
