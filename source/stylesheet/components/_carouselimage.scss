@@ -6,60 +6,15 @@
 	padding:15px 0px 15px 10px;
 	overflow: hidden;
 	.heading__nav{
-		margin-bottom:10px;
-		display: flex;
-        justify-content: space-between;
-        align-items: center;
+		margin-bottom:12px;
 		h2{
 			@include titlewidgetBlack;
 			color:var(--primarytextcolor);
 			@include titleicon;
 		}
-		.carousel__nav{
-			width:65px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-right:20px;
-		   .navbutn{
-			   width:25px;
-			   height:25px;
-			   border-radius:100%;
-			   background-color:#000;
-			   position: relative;
-			   cursor: pointer;
-			   &.carousel_prev{
-				   &:after{
-					  transform: rotate(-45deg);
-					  left:10px;
-				   }
-			   }
-			   &.carousel_next{
-				   &:after{
-				   transform: rotate(135deg);
-				   }
-			   }
-			   &.is-disabled{
-				   background-color:#d5d5d5;
-				   &:after{
-					   border-color:#000;
-				   }
-			   }
-			   &:after{
-			   content: "";
-			   position: absolute;
-			   display:block;
-			   width:7px;
-			   height:7px;
-			   border-top: 2px solid #fff;
-			   border-left: 2px solid #fff;
-			   top:9px;
-			   left:8px;
-
-			   }
-		   }
-	   }
+		.carousel__nav{ display: none;}
 	}
+	
 	.carousel__container{
 		display: flex;
     	overflow-x: auto;
@@ -111,5 +66,55 @@
 	.carouselimg__widget{
 		@include desktopblockwidgetstyle;
 		padding:15px 0px 15px 20px;
+		.heading__nav{
+			margin-bottom:10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.carousel__nav{
+				width:65px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-right:20px;
+			   .navbutn{
+				   width:25px;
+				   height:25px;
+				   border-radius:100%;
+				   background-color:#000;
+				   position: relative;
+				   cursor: pointer;
+				   &.carousel_prev{
+					   &:after{
+						  transform: rotate(-45deg);
+						  left:10px;
+					   }
+				   }
+				   &.carousel_next{
+					   &:after{
+					   transform: rotate(135deg);
+					   }
+				   }
+				   &.is-disabled{
+					   background-color:#d5d5d5;
+					   &:after{
+						   border-color:#000;
+					   }
+				   }
+				   &:after{
+				   content: "";
+				   position: absolute;
+				   display:block;
+				   width:7px;
+				   height:7px;
+				   border-top: 2px solid #fff;
+				   border-left: 2px solid #fff;
+				   top:9px;
+				   left:8px;
+	
+				   }
+			   }
+		   }
+		}
 	}
 }
