@@ -1765,6 +1765,8 @@ a, a:active, a:visited {
 }
 .Tab__4items .content-wrap .tab_wrap {
   display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   gap: 10px;
   margin-bottom: 15px;
 }
@@ -1777,6 +1779,9 @@ a, a:active, a:visited {
   color: #666666;
   font-size: 12px;
   font-weight: 500;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  flex: 0 0 82px;
 }
 .Tab__4items .content-wrap .tab_wrap .tab:first-child {
   background-color: var(--brandbgcolor);
@@ -1860,14 +1865,25 @@ a, a:active, a:visited {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .Tab__4items .content-wrap .inner_wrap .video_card {
     width: 100%;
   }
 
-  .Tab__4items .content-wrap .tab_wrap {
-    display: block;
-    line-height: 40px;
+  .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (orientation: landscape) {
+  .Tab__4items .content-wrap .inner_wrap .video_card {
+    width: 48.3%;
+  }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+    height: auto;
+    width: 100%;
   }
 }
 .carousel916__widget .heading__nav .tab_wrap {
@@ -1981,6 +1997,50 @@ a, a:active, a:visited {
   display: flex;
   padding-top: 11px;
   width: 100%;
+}
+.carousel916__widget .checkbox .checkbox_container {
+  position: relative;
+  margin-right: 15px;
+}
+.carousel916__widget .checkbox .checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.carousel916__widget .checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #B9B9B9;
+}
+.carousel916__widget .checkbox .checkbox_container:hover input ~ .checkmark {
+  border: 1px solid #B9B9B9;
+}
+.carousel916__widget .checkbox .checkbox_container input:checked ~ .checkmark {
+  background-color: #069146;
+}
+.carousel916__widget .checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.carousel916__widget .checkbox .checkbox_container input:checked ~ .checkmark:after {
+  display: block;
+}
+.carousel916__widget .checkbox .checkbox_container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 }
 .carousel916__widget .checkbox p {
   font-size: 12px;

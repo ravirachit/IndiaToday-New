@@ -38,6 +38,51 @@
         display: flex;
         padding-top: 11px;
         width: 100%;
+        .checkbox_container {
+            position: relative;
+            margin-right: 15px;
+            input{
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+          }
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 16px;
+            width: 16px;
+            border: 1px solid #B9B9B9;
+          }
+          .checkbox_container:hover input ~ .checkmark {
+            border: 1px solid #B9B9B9;
+          }
+          .checkbox_container input:checked ~ .checkmark {
+            background-color: #069146;
+          }
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          .checkbox_container input:checked ~ .checkmark:after {
+            display: block;
+          }
+          .checkbox_container .checkmark:after {
+              left: 5px;
+              top: 1px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 1px 1px 0;
+              -webkit-transform: rotate(
+          45deg);
+              -ms-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+          }
         }
         .checkbox p{
         font-size: 12px;

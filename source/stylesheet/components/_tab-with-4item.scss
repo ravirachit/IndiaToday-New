@@ -8,7 +8,9 @@
         border: 1px solid var(--widgetbordercolor);
         border-radius: 5px;
         .tab_wrap{
-			display: flex;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
 			gap: 10px;
 			margin-bottom: 15px;
             .tab{
@@ -20,6 +22,9 @@
                 color: #666666;
                 font-size: 12px;
                 font-weight: 500;
+                scroll-snap-align: start;
+                scroll-snap-stop: always;
+                flex: 0 0 82px;
             }
             .tab:first-child{
                 background-color: var(--brandbgcolor);
@@ -109,12 +114,26 @@
 }
 
 // Mobile View
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .Tab__4items .content-wrap .inner_wrap .video_card{
         width: 100%;
     }
-    .Tab__4items .content-wrap .tab_wrap {
-        display: block;
-        line-height: 40px;
+    .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+        height: auto;
+        width: 100%;
     }
   }
+
+  @media screen and (orientation:landscape) {
+    .Tab__4items .content-wrap .inner_wrap .video_card {
+        width: 48.3%;
+    }
+}
+
+// iPad View
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+        height: auto;
+        width: 100%;
+    }
+}
