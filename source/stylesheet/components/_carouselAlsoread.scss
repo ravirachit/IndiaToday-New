@@ -1,10 +1,11 @@
 @import '../abstracts/functions';
 @import '../abstracts/mixins';
 
-.carousel__widget{
-	@include blockwidgetstyle;
+.carouselalsoread__widget{
+	@include desktopblockwidgetstyle;
 	padding:15px 0px 15px 10px;
 	overflow: hidden;
+	margin-bottom:var(--storyparagap);
 	.heading__nav{
 		margin-bottom:12px;
 		h2{
@@ -15,7 +16,7 @@
 		.carousel__nav{ display: none;}
 	}
 	
-	.carousel__container{
+	.carouselread__container{
 		display: flex;
     	-ms-overflow-style: none;
     	scrollbar-width: none;
@@ -29,16 +30,23 @@
 		.carousel__card{
 			scroll-snap-align: start;
     		scroll-snap-stop: always;
-    		width: 260px;
-    		flex: 0 0 260px;
+    		width: 225px;
+    		flex: 0 0 225px;
     		margin-right:15px;
+			display: flex;
 			.card__figure{
-				margin-bottom:15px;
 				position: relative;
+				flex-basis:90px;
+				flex-shrink:0;
+				margin-right:var(--magrin15);
+				 a{
+					display: flex;
+					position: relative;
 				img{
 					border: 1px solid var(--widgetbordercolor);
 		 			border-radius: 5px;}
-			}
+			       }
+				}
 			.card__desc{
 				.card__slug{
 					@include titlewidgetRed;
@@ -46,12 +54,16 @@
 					display: block;
 				}
 				h3{
-					font-size: 16px;
-					line-height: 24px;
-					font-weight:500;
+					font-size: 14px;
+					line-height: 20px;
+					font-weight:400;
+					margin-bottom: 0;
 					a{
 						text-decoration: none;
-						@include lineblock3;
+						display: -webkit-box;
+                        -webkit-line-clamp:5;
+                        -webkit-box-orient: vertical;
+                         overflow: hidden;
 					}
 				}
 			}
@@ -81,7 +93,7 @@
 					}
 				}
 			}
-			.carousel__container{
+			.carouselread__container{
 				.carousel__card {
 					.card__desc{
 							.card__slug{
@@ -107,8 +119,8 @@
 
 /* if carousel in RHS */
 .rhs-section{
-	.carousel__widget {
-		.carousel__container{
+	.carouselalsoread__widget {
+		.carouselread__container{
 			.carousel__card{
 				width: 200px;
 				flex: 0 0 200px;
@@ -120,8 +132,7 @@
 
 
 @media (min-width:$desktopver){
-	.carousel__widget{
-		@include desktopblockwidgetstyle;
+	.carouselalsoread__widget{
 		padding:15px 0px 15px 20px;
 		.heading__nav{
 			margin-bottom:10px;
