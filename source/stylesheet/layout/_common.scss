@@ -166,7 +166,14 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 
 .itemcenter{text-align: center;}
 
-
+.scrollfix::before,
+.scrollfix::after {
+  content: '';
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 1px;
+  margin-left: -1px;
+}
 
 
 
