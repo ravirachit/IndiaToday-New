@@ -9,10 +9,12 @@
         border-radius: 5px;
         .tab_wrap{
             display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
 			gap: 10px;
 			margin-bottom: 15px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -ms-overflow-style: none;
+             scrollbar-width: none;
             .tab{
                 text-transform: uppercase;
                 border: 1px solid var(--widgetbordercolor);
@@ -30,6 +32,9 @@
                 background-color: var(--brandbgcolor);
                 color: var(--whitetextcolor);
                 border: none;
+            }
+            &::-webkit-scrollbar{
+                display: none;
             }
 		}
 		

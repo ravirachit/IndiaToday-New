@@ -1959,10 +1959,12 @@ a, a:active, a:visited {
 }
 .Tab__4items .content-wrap .tab_wrap {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   gap: 10px;
   margin-bottom: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .Tab__4items .content-wrap .tab_wrap .tab {
   text-transform: uppercase;
@@ -1981,6 +1983,9 @@ a, a:active, a:visited {
   background-color: var(--brandbgcolor);
   color: var(--whitetextcolor);
   border: none;
+}
+.Tab__4items .content-wrap .tab_wrap::-webkit-scrollbar {
+  display: none;
 }
 .Tab__4items .content-wrap h2 {
   font-size: 15px;
@@ -2361,6 +2366,11 @@ a, a:active, a:visited {
 .section-secondary-nav .nav-container .secondary-navigation ul {
   list-style: none;
   display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-bottom: 10px;
 }
 .section-secondary-nav .nav-container .secondary-navigation ul li a {
   color: var(--whitetextcolor);
@@ -2391,6 +2401,9 @@ a, a:active, a:visited {
 .section-secondary-nav .nav-container .secondary-navigation ul li:hover a:before {
   visibility: visible;
   transform: scaleX(1);
+}
+.section-secondary-nav .nav-container .secondary-navigation ul::-webkit-scrollbar {
+  display: none;
 }
 
 /*sass media query varibale */
@@ -3152,5 +3165,3 @@ a, a:active, a:visited {
 
   /******* Photo Details page Template END ************/
 }
-
-/*# sourceMappingURL=main.css.map */
