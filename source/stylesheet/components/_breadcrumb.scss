@@ -1,0 +1,60 @@
+@import '../abstracts/functions';
+
+/****** breadcrumb section css START ******/
+.breadcrumb{
+	margin-bottom:var(--widgetgap);
+	display: flex;
+	align-items: center;
+	padding:0 10px;
+	.secion-name{
+		font-size:12px;
+		line-height:14px;
+		color:var(--textcolor666);
+		white-space:nowrap;
+		overflow:hidden;
+	}
+	a{
+		.secion-name{
+			color:var(--brandtextcolor);
+            &:before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+                background-color:var(--brandtextcolor);
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: all 0.3s ease-in-out;
+            }
+		}
+		&:hover{
+			text-decoration:none;
+			.secion-name{
+				text-decoration:none;
+                position: relative;
+                &:before{
+                    visibility: visible;
+                    transform: scaleX(1);
+                }
+                
+			}
+		}
+		&:after{
+			content: '/';
+            padding: 0 5px;
+            text-decoration: none;
+			font-size:12px;
+			line-height:14px;
+			color:var(--textcolor666);
+		}
+	}
+}
+/****** // breadcrumb section css END // ******/
+
+@media (min-width:$desktopver){
+	.breadcrumb{
+		padding: 0;
+	}
+}
