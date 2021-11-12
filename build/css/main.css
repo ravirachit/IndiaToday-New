@@ -1245,27 +1245,27 @@ a, a:active, a:visited {
 .Emojis:hover .Emoji:nth-of-type(1) {
   transition-duration: 0.2s;
   transition-delay: 0s;
-  transition-timing-function: cubic-bezier(0.6, 0.6, 0.5, 1);
+  transition-timing-function: cubic-bezier(0, 0.6, 0.5, 1);
 }
 .Emojis:hover .Emoji:nth-of-type(2) {
   transition-duration: 0.3s;
   transition-delay: 0.02s;
-  transition-timing-function: cubic-bezier(0.6, 0.6, 0.5, 1.2);
+  transition-timing-function: cubic-bezier(0, 0.6, 0.5, 1.2);
 }
 .Emojis:hover .Emoji:nth-of-type(3) {
   transition-duration: 0.4s;
   transition-delay: 0.04s;
-  transition-timing-function: cubic-bezier(0.6, 0.6, 0.5, 1.4);
+  transition-timing-function: cubic-bezier(0, 0.6, 0.5, 1.4);
 }
 .Emojis:hover .Emoji:nth-of-type(4) {
   transition-duration: 0.5s;
   transition-delay: 0.06s;
-  transition-timing-function: cubic-bezier(0.6, 0.6, 0.5, 1.6);
+  transition-timing-function: cubic-bezier(0, 0.6, 0.5, 1.6);
 }
 .Emojis:hover .Emoji:nth-of-type(5) {
   transition-duration: 0.6s;
   transition-delay: 0.08s;
-  transition-timing-function: cubic-bezier(0.6, 0.6, 0.5, 1.8);
+  transition-timing-function: cubic-bezier(0, 0.6, 0.5, 1.8);
 }
 
 .check_emoji.js-hover ~ .Emojis {
@@ -2073,6 +2073,11 @@ a, a:active, a:visited {
     width: 100%;
   }
 }
+.carousel916__widget .anchor_pannel {
+  scroll-behavior: smooth;
+  animation-duration: 0.4s;
+  animation-name: slidein;
+}
 .carousel916__widget .heading__nav .tab_wrap {
   display: flex;
   gap: 10px;
@@ -2092,7 +2097,7 @@ a, a:active, a:visited {
   font-weight: 500;
   line-height: 18px;
 }
-.carousel916__widget .heading__nav .tab_wrap .tab:first-child {
+.carousel916__widget .heading__nav .tab_wrap .active {
   background-color: var(--brandbgcolor);
   color: #ffffff;
   border: none;
@@ -2147,6 +2152,15 @@ a, a:active, a:visited {
   border-radius: 5px;
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 20%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .carousel916__widget form.subscribe_newsletter input[type=text] {
   padding: 15px;
   font-size: 15px;
