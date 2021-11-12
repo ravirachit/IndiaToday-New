@@ -1,42 +1,6 @@
 @import '../abstracts/functions';
 @import '../abstracts/mixins';
 
-/****** breadcrumb section css START ******/
-.breadcrumb{
-	margin-bottom:var(--widgetgap);
-	display: flex;
-	align-items: center;
-	padding:0 10px;
-	.secion-name{
-		font-size:12px;
-		line-height:14px;
-		color:var(--textcolor666);
-		white-space:nowrap;
-		overflow:hidden;
-	}
-	a{
-		.secion-name{
-			color:var(--brandtextcolor);
-		}
-		&:hover{
-			text-decoration:none;
-			.secion-name{
-				text-decoration:underline;
-			}
-		}
-		&:after{
-			content: '/';
-            padding: 0 5px;
-            text-decoration: none;
-			font-size:12px;
-			line-height:14px;
-			color:var(--textcolor666);
-		}
-	}
-}
-
-/****** // breadcrumb section css END // ******/
-
 .story-content-body{
 	@include blockwidgetstyle;
 	padding:15px 10px 10px;
@@ -352,9 +316,6 @@
 }
 
 @media (min-width:$desktopver){
-	.breadcrumb{
-		padding: 0;
-	}
 	.story-content-body{
 		@include desktopblockwidgetstyle;
 		padding:15px 20px 20px;
