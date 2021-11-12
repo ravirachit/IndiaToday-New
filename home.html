@@ -38,7 +38,7 @@
 			</div>
 			<div class="rhs__menu">
 				<div class="livetv__icon" aria-hidden="true">
-					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="31" viewBox="0 0 27.346 31.347"><defs><style>.a{fill:none;stroke:#666;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5px;}.b{fill:#cb0f22;font-size:7px;font-weight:900;}</style></defs><g transform="translate(0.75 1.059)"><path class="a" d="M670.6,809.442l-7.7,6.994-4.932-4.923m.269,24.284-.26,2.036a1,1,0,0,0,.967,1.148h7.913a1,1,0,0,0,.967-1.148l-.258-2.036m8.259-.87a.884.884,0,0,1-.864.9h-24.12a.883.883,0,0,1-.862-.9v-16.41a.882.882,0,0,1,.862-.9h24.12a.883.883,0,0,1,.864.9Z" transform="translate(-649.973 -809.442)"/><text class="b" transform="translate(3.982 20.265)"><tspan x="0" y="0">LIVE</tspan></text></g></svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="31" viewBox="0 0 27.346 31.347"><defs><style>.a{fill:none;stroke:#666;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5px;}.b{fill:#cb0f22;font-size:8px;font-weight:500;}</style></defs><g transform="translate(0.75 1.059)"><path class="a" d="M670.6,809.442l-7.7,6.994-4.932-4.923m.269,24.284-.26,2.036a1,1,0,0,0,.967,1.148h7.913a1,1,0,0,0,.967-1.148l-.258-2.036m8.259-.87a.884.884,0,0,1-.864.9h-24.12a.883.883,0,0,1-.862-.9v-16.41a.882.882,0,0,1,.862-.9h24.12a.883.883,0,0,1,.864.9Z" transform="translate(-649.973 -809.442)"/><text class="b" transform="translate(3.982 20.265)"><tspan x="0" y="0">LIVE</tspan></text></g></svg>
 				</div>
 				<div class="search__icon" aria-hidden="true">
 						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="31" viewBox="0 0 25.719 26.811"><defs><style>.a{fill:none;stroke:#666;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5px;}</style></defs><g transform="translate(0.75 0.75)"><path class="a" d="M759.136,834.442l-8.314-8.314m-6.328,1.845a9.266,9.266,0,1,0-9.266-9.265A9.265,9.265,0,0,0,744.494,827.973Z" transform="translate(-735.228 -809.442)"/></g></svg>	
@@ -795,7 +795,10 @@
 		<button type="submit">GO</button>
 	  </form>
 	<div class="checkbox">
-		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><defs><style>.a{fill:#069146;stroke:#b9b9b9;}.b{fill:#fff;}.c{stroke:none;}.d{fill:none;}</style></defs><g transform="translate(-138 -1760)"><g class="a" transform="translate(138 1760)"><rect class="c" width="16" height="16" rx="2"/><rect class="d" x="0.5" y="0.5" width="15" height="15" rx="1.5"/></g><path class="b" d="M42.728,38.5l-4.753,5.042-2.222-2.04a.4.4,0,1,0-.548.6l2.516,2.311a.4.4,0,0,0,.569-.021l5.027-5.334a.4.4,0,1,0-.589-.555Z" transform="translate(106.926 1727.233)"/></g></svg>
+		<label class="checkbox_container">
+			<input type="checkbox" checked="checked">
+			<span class="checkmark"></span>
+		  </label>
 		<p>I agree to receive newsletters via email*</p>
 	</div>
 </div>
@@ -1312,6 +1315,34 @@
   	</div>
   </div>
 </div>
+<!-- Footer Nav Mobile Only START -->
+<div class="footernav">
+	<div class="footernav-container">
+		<div class="navitem">
+			<i class="it-bgicon homeicon"></i>
+			<div class="linkname">Home</div>
+		</div>
+		<div class="navitem">
+			<i class="it-bgicon livetvicon"></i>
+			<div class="linkname">Live TV</div>
+		</div>
+		<div class="navitem">
+			<i class="it-bgicon feedicon"></i>
+			<div class="linkname">My Feed</div>
+		</div>
+		<div class="navitem">
+			<i class="it-bgicon magazineicon"></i>
+			<div class="linkname">Magazine</div>
+		</div>
+		<div class="navitem">
+			<i class="it-bgicon menuicon"></i>
+			<div class="linkname">Menu</div>
+		</div>		
+	</div>
+</div>
+<!-- // Footer Nav Mobile Only END // -->
+
+
 <script src="build/js/carousel.lite.min.js"></script>
 <script>
 	document.getElementById("shows").style.display = "none";

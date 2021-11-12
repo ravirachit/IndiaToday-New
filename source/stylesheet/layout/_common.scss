@@ -164,6 +164,9 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 
 .shareicon:hover{background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMi41IiBoZWlnaHQ9IjE5IiB2aWV3Qm94PSIwIDAgMjIuNSAxOSI+PHBhdGggZmlsbD0iI2ZmYjEwMCIgc3Ryb2tlPSIjZmZiMTAwIiBkPSJNMTYuMTM5LDkuOFY1TDI0LjUsMTMuNGwtOC4zNjEsOC40VjE2Ljg4QzEwLjE2NywxNi44OCw1Ljk4NiwxOC44LDMsMjMsNC4xOTQsMTcsNy43NzgsMTEsMTYuMTM5LDkuOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjUgLTQuNSkiLz48L3N2Zz4=)}
 
+
+
+
 .itemcenter{text-align: center;}
 
 .scrollfix::before,
@@ -174,10 +177,6 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
   width: 1px;
   margin-left: -1px;
 }
-
-
-
-
 
 
 @media (min-width:$desktopver){
