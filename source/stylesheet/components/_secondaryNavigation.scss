@@ -19,6 +19,11 @@
             ul{
                 list-style:none;
                 display: flex;
+                overflow-x: auto;
+               scroll-snap-type: x mandatory;
+               -ms-overflow-style: none;
+               scrollbar-width: none;
+               padding-bottom:10px;
 
                 li{
                     a{
@@ -62,7 +67,12 @@
                       }
 
                 }
+
+                &::-webkit-scrollbar{
+                    display: none;
+                }
             }
         }
     }
 }
+
