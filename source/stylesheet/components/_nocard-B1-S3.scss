@@ -133,6 +133,15 @@
 			font-size:16px;
 			line-height:22px;
 			font-weight:500;
+			cursor: pointer;
+			background: linear-gradient(to right, #cc0000 50%, white 50%);
+			background-size: 200% 100%;
+			background-position: right bottom;
+			transition: all .275s ease-out;
+			&:hover{
+				background-position: left bottom;
+                color: #fff;
+			}
 		}
 	}
   }

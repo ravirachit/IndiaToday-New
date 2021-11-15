@@ -2,7 +2,7 @@
 .Tab__4items{
     margin-bottom: var(--widgetgap);
     .content-wrap{
-        background-color:var(--vidtheme);
+        background-color:var(--theme2bg);
         padding: 20px;
         box-shadow: 1px 1px 3px #00000026;
         border: 1px solid var(--widgetbordercolor);
@@ -111,8 +111,18 @@
             border: 1px solid #E2E2E2;
             color: var(--whitetextcolor);
             font-size: 16px;
+            line-height: 22px;
             font-weight: 500;
             border-radius: 5px;
+            background: linear-gradient(to right, #fff 50%, transparent 50%);
+			background-size: 200% 100%;
+			background-position: right bottom;
+			transition: all .275s ease-out;
+            cursor: pointer;
+            &:hover{
+				background-position: left bottom;
+                color: #000;
+			}
         }
     }
 }

@@ -1430,7 +1430,7 @@
 			<i class="it-bgicon magazineicon"></i>
 			<div class="linkname">Magazine</div>
 		</div>
-		<div class="navitem">
+		<div class="navitem m__hambuger">
 			<i class="it-bgicon menuicon"></i>
 			<div class="linkname">Menu</div>
 		</div>		
@@ -1440,6 +1440,25 @@
 
 
 <script src="build/js/carousel.lite.min.js"></script>
+<!-- Humbergur Navigation Start-->
+<script>
+const hamburger= document.querySelectorAll(".m__hambuger");
+const closeIcon= document.querySelector(".closehambuger");
+
+function toggleMenu() {
+  if (document.body.classList.contains("nav-isopen")) {
+    document.body.classList.remove("nav-isopen");
+  } else {
+    document.body.classList.add("nav-isopen");
+  }
+}
+hamburger.forEach(function(otherlink) {
+	otherlink.addEventListener("click", toggleMenu);
+});
+closeIcon.addEventListener("click", toggleMenu);
+
+</script>
+<!-- // Humbergur Navigation END // -->
 <script>
 	document.getElementById("shows").style.display = "none";
 	function onTabChange(evt,tabName) {

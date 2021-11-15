@@ -7,7 +7,7 @@
 
 @mixin titlewidgetBlack{
 	font-size:15px;
-	font-weight:700;
+	font-weight:600;
 	line-height:1;
 	color:var(--primarytextcolor);
 	text-transform: uppercase;
@@ -15,9 +15,9 @@
 
 @mixin titlewidgetRed{
 	font-size:14px;
-	font-weight:700;
+	font-weight:600;
 	line-height:1;
-	color:var(--brandtextcolor);
+	color:var(--catbrandcolor, #CC0000);
 	text-transform: uppercase;
 }
 
