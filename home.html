@@ -1014,8 +1014,8 @@
 <div class="carousel916__widget widgetgap">
 	<div class="heading__nav">
 		<div class="tab_wrap">
-			<a class="tab" onclick="onTabChange('anchors')">ANCHORS</a>
-			<a class="tab" onclick="onTabChange('shows')">SHOWS</a>
+			<a class="tab active" onclick="onTabChange(event, 'anchors')">ANCHORS</a>
+			<a class="tab" onclick="onTabChange(event, 'shows')">SHOWS</a>
 		</div>
 		<div class="carousel__nav" data-snap-slider-nav=""></div>
 	</div>
@@ -1442,13 +1442,18 @@
 <script src="build/js/carousel.lite.min.js"></script>
 <script>
 	document.getElementById("shows").style.display = "none";
-	function onTabChange(tabName) {
+	function onTabChange(evt,tabName) {
 	  var i;
 	  var x = document.getElementsByClassName("anchor_pannel");
 	  for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";  
+		x[i].style.display = "none";
 	  }
-	  document.getElementById(tabName).style.display = "block"; 
+	  document.getElementById(tabName).style.display = "block";
+	  var elems = document.querySelectorAll(".active");
+		[].forEach.call(elems, function(el) {
+			el.classList.remove("active");
+		});
+		evt.target.classList.add("active");
 	}
 	</script>
 </body>

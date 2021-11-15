@@ -1,4 +1,9 @@
 .carousel916__widget{
+    .anchor_pannel{
+        scroll-behavior: smooth;
+        animation-duration: .4s;
+        animation-name: slidein;
+    }
     .heading__nav{
         .tab_wrap{
             display: flex;
@@ -18,7 +23,7 @@
                 font-weight: 500;
                 line-height: 18px;      
             }
-            .tab:first-child{
+            .active{
                 background-color: var(--brandbgcolor);
                 color: #ffffff;
                 border: none;
@@ -77,3 +82,13 @@
         }
     }
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 20%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
