@@ -1232,14 +1232,15 @@ a, a:active, a:visited {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 1px 1px 3px #00000026;
   border: 1px solid #E2E2E2;
+  border-left: none;
   border-radius: 0px 13px 13px 0px;
   opacity: 0;
   width: 249px;
   height: 42px;
-  margin-left: -21px;
 }
 .Emojis:hover {
   transition-delay: 0s;
+  margin-left: -20px;
   opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
