@@ -1820,6 +1820,12 @@ a, a:active, a:visited {
   padding: 6px 30px;
   border-radius: 5px;
   display: inline-block;
+  border: 1px solid var(--brandbgcolor);
+  transition: all 0.275s linear;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .content-details .fullbg-button a:hover {
+  background-color: transparent;
+  color: var(--brandtextcolor);
 }
 .magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo {
   font-size: 13px;
@@ -1828,6 +1834,23 @@ a, a:active, a:visited {
 }
 .magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo a {
   color: var(--brandtextcolor);
+  position: relative;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--brandtextcolor);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 @media (min-width: 1024px) {
@@ -1997,11 +2020,20 @@ a, a:active, a:visited {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   flex: 0 0 82px;
+  transition: all 0.275s linear;
 }
-.Tab__4items .content-wrap .tab_wrap .tab:first-child {
+.Tab__4items .content-wrap .tab_wrap .tab.active {
   background-color: var(--brandbgcolor);
   color: var(--whitetextcolor);
-  border: none;
+  border-color: var(--brandbgcolor);
+}
+.Tab__4items .content-wrap .tab_wrap .tab.active:hover {
+  box-shadow: 0;
+  border-color: transparent;
+}
+.Tab__4items .content-wrap .tab_wrap .tab:hover {
+  box-shadow: inset 0px 0px 4px #56818d;
+  border-color: #006a87;
 }
 .Tab__4items .content-wrap .tab_wrap::-webkit-scrollbar {
   display: none;
@@ -2138,6 +2170,11 @@ a, a:active, a:visited {
   font-weight: 500;
   line-height: 18px;
   cursor: pointer;
+  transition: all 0.275s linear;
+}
+.carousel916__widget .heading__nav .tab_wrap .tab:hover {
+  box-shadow: inset 0px 0px 4px #b5b5b5;
+  border-color: #cdcdcd;
 }
 .carousel916__widget .heading__nav .tab_wrap .active {
   background-color: var(--brandbgcolor);
@@ -2165,6 +2202,13 @@ a, a:active, a:visited {
 }
 .carousel916__widget .carousel__container .anchor_carousel__card .anchor_card__figure a img {
   border-radius: 50%;
+  border: 1px solid #e2e2e2;
+  transition: all 0.275s linear;
+  transform: scale(0.97);
+}
+.carousel916__widget .carousel__container .anchor_carousel__card .anchor_card__figure a:hover img {
+  transform: scale(1);
+  border-color: var(--brandbgcolor);
 }
 .carousel916__widget .carousel__container .shows_carousel__card {
   scroll-snap-align: start;
@@ -2203,22 +2247,46 @@ a, a:active, a:visited {
     width: 100%;
   }
 }
-.carousel916__widget form.subscribe_newsletter input[type=text] {
+.subsnewsletter__widget {
+  background-color: var(--whitebg);
+  box-shadow: 1px 1px 3px #00000026;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  border-radius: 0px;
+  padding: 15px 10px 15px 10px;
+}
+.subsnewsletter__widget .heading__nav {
+  margin-bottom: 12px;
+}
+.subsnewsletter__widget .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+}
+.subsnewsletter__widget form.subscribe_newsletter input[type=text] {
   padding: 15px;
   font-size: 15px;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #e2e2e2;
   float: left;
-  width: 87%;
+  width: calc(100% - 74px);
   background: #FFFFFF;
   height: 40px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  outline: none;
 }
-.carousel916__widget .subscribe_newsletter input::placeholder {
+.subsnewsletter__widget form.subscribe_newsletter input[type=text]:focus {
+  box-shadow: 0 0 3px #d1d1d1;
+  border: 1px solid #d1d1d1;
+}
+.subsnewsletter__widget .subscribe_newsletter input::placeholder {
   color: #666666;
   font-weight: normal;
 }
-.carousel916__widget .subscribe_newsletter button {
+.subsnewsletter__widget .subscribe_newsletter button {
   float: left;
   background: #CC0000;
   color: white;
@@ -2231,28 +2299,28 @@ a, a:active, a:visited {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.carousel916__widget .subscribe_newsletter ::after {
+.subsnewsletter__widget .subscribe_newsletter ::after {
   content: "";
   clear: both;
   display: table;
 }
-.carousel916__widget .checkbox {
+.subsnewsletter__widget .checkbox {
   display: flex;
   padding-top: 11px;
   width: 100%;
 }
-.carousel916__widget .checkbox .checkbox_container {
+.subsnewsletter__widget .checkbox .checkbox_container {
   position: relative;
   margin-right: 15px;
 }
-.carousel916__widget .checkbox .checkbox_container input {
+.subsnewsletter__widget .checkbox .checkbox_container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.carousel916__widget .checkbox .checkmark {
+.subsnewsletter__widget .checkbox .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -2260,21 +2328,21 @@ a, a:active, a:visited {
   width: 16px;
   border: 1px solid #B9B9B9;
 }
-.carousel916__widget .checkbox .checkbox_container:hover input ~ .checkmark {
+.subsnewsletter__widget .checkbox .checkbox_container:hover input ~ .checkmark {
   border: 1px solid #B9B9B9;
 }
-.carousel916__widget .checkbox .checkbox_container input:checked ~ .checkmark {
+.subsnewsletter__widget .checkbox .checkbox_container input:checked ~ .checkmark {
   background-color: #069146;
 }
-.carousel916__widget .checkbox .checkmark:after {
+.subsnewsletter__widget .checkbox .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.carousel916__widget .checkbox .checkbox_container input:checked ~ .checkmark:after {
+.subsnewsletter__widget .checkbox .checkbox_container input:checked ~ .checkmark:after {
   display: block;
 }
-.carousel916__widget .checkbox .checkbox_container .checkmark:after {
+.subsnewsletter__widget .checkbox .checkbox_container .checkmark:after {
   left: 5px;
   top: 1px;
   width: 5px;
@@ -2285,16 +2353,20 @@ a, a:active, a:visited {
   -ms-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
 }
-.carousel916__widget .checkbox p {
+.subsnewsletter__widget .checkbox p {
   font-size: 12px;
   line-height: 17px;
   color: #666666;
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 767px) {
-  .carousel916__widget form.subscribe_newsletter input[type=text] {
-    width: calc(75% - 10px);
+@media (min-width: 1024px) {
+  .subsnewsletter__widget {
+    box-shadow: 1px 1px 3px #00000026;
+    border-left: 1px solid var(--widgetbordercolor);
+    border-right: 1px solid var(--widgetbordercolor);
+    border-radius: 5px;
+    padding: 15px 20px 15px 20px;
   }
 }
 /*sass media query varibale */
@@ -2325,6 +2397,10 @@ a, a:active, a:visited {
   white-space: nowrap;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  transition: all 0.275s linear;
+}
+.brk_trand .tranding__capsule a:hover {
+  box-shadow: inset 0px 0px 4px #d1d1d1;
 }
 .brk_trand .tranding__capsule::-webkit-scrollbar {
   display: none;

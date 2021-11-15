@@ -2,7 +2,7 @@
   margin-bottom: var(--widgetgap);
 }
 .Tab__4items .content-wrap {
-  background-color: var(--vidtheme);
+  background-color: var(--theme2bg);
   padding: 20px;
   box-shadow: 1px 1px 3px #00000026;
   border: 1px solid var(--widgetbordercolor);
@@ -12,6 +12,10 @@
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .Tab__4items .content-wrap .tab_wrap .tab {
   text-transform: uppercase;
@@ -22,11 +26,26 @@
   color: #666666;
   font-size: 12px;
   font-weight: 500;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  flex: 0 0 82px;
+  transition: all 0.275s linear;
 }
-.Tab__4items .content-wrap .tab_wrap .tab:first-child {
+.Tab__4items .content-wrap .tab_wrap .tab.active {
   background-color: var(--brandbgcolor);
   color: var(--whitetextcolor);
-  border: none;
+  border-color: var(--brandbgcolor);
+}
+.Tab__4items .content-wrap .tab_wrap .tab.active:hover {
+  box-shadow: 0;
+  border-color: transparent;
+}
+.Tab__4items .content-wrap .tab_wrap .tab:hover {
+  box-shadow: inset 0px 0px 4px #56818d;
+  border-color: #006a87;
+}
+.Tab__4items .content-wrap .tab_wrap::-webkit-scrollbar {
+  display: none;
 }
 .Tab__4items .content-wrap h2 {
   font-size: 15px;
@@ -101,18 +120,39 @@
   border: 1px solid #E2E2E2;
   color: var(--whitetextcolor);
   font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
   border-radius: 5px;
+  background: linear-gradient(to right, #fff 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.275s ease-out;
+  cursor: pointer;
+}
+.Tab__4items .content-wrap .btn_wrap button:hover {
+  background-position: left bottom;
+  color: #000;
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .Tab__4items .content-wrap .inner_wrap .video_card {
     width: 100%;
   }
 
-  .Tab__4items .content-wrap .tab_wrap {
-    display: block;
-    line-height: 40px;
+  .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (orientation: landscape) {
+  .Tab__4items .content-wrap .inner_wrap .video_card {
+    width: 48.3%;
+  }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+    height: auto;
+    width: 100%;
   }
 }
 
