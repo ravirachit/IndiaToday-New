@@ -13,7 +13,7 @@
 }
 .carousel__widget .heading__nav h2 {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   color: var(--primarytextcolor);
   text-transform: uppercase;
@@ -28,10 +28,15 @@
 }
 .carousel__widget .carousel__container {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  position: relative;
+  overflow-x: auto;
+  /*overscroll-behavior-x: contain;*/
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  margin: 0;
+  padding: 0;
 }
 .carousel__widget .carousel__container .carousel__card {
   scroll-snap-align: start;
@@ -50,9 +55,9 @@
 }
 .carousel__widget .carousel__container .carousel__card .card__desc .card__slug {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
-  color: var(--brandtextcolor);
+  color: var(--catbrandcolor, #CC0000);
   text-transform: uppercase;
   margin-bottom: 4px;
   display: block;
@@ -76,7 +81,7 @@
   display: none;
 }
 .carousel__widget.carouseltheme2 {
-  background-color: var(--theme2bg);
+  background-color: var(--catbrandcolor, #1D2936);
 }
 .carousel__widget.carouseltheme2 h2 {
   color: var(--theme2primarytextcolor);
@@ -134,6 +139,7 @@
     background-color: #000;
     position: relative;
     cursor: pointer;
+    border: 0px;
   }
   .carousel__widget .heading__nav .carousel__nav .navbutn.carousel_prev:after {
     transform: rotate(-45deg);

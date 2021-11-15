@@ -1,14 +1,31 @@
-.carousel916__widget{
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+
+.subsnewsletter__widget{
+       @include blockwidgetstyle;
+	    padding:15px 10px 15px 10px;
+      .heading__nav{
+        margin-bottom:12px;
+        h2{
+          @include titlewidgetBlack;
+          color:var(--primarytextcolor);
+        }
+      }
     form.subscribe_newsletter input[type=text]{
         padding: 15px;
         font-size: 15px;
-        border: 1px solid #B9B9B9;
+        border: 1px solid #e2e2e2;
         float: left;
-        width: 87%;
+        width:calc(100% - 74px);
         background: #FFFFFF;
         height: 40px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        outline: none;
+        &:focus{
+          box-shadow:0 0 3px #d1d1d1;
+          border: 1px solid #d1d1d1;
+           }
     }
     .subscribe_newsletter{
         input::placeholder {
@@ -92,9 +109,9 @@
         }
 }
 
-// Mobile View
-@media only screen and (max-width: 767px) {
-    .carousel916__widget form.subscribe_newsletter input[type=text] {
-        width: calc(75% - 10px);
+ @media (min-width:$desktopver){
+    .subsnewsletter__widget{
+      @include desktopblockwidgetstyle;
+		  padding:15px 20px 15px 20px;
     }
   }

@@ -1,0 +1,174 @@
+/*sass media query varibale */
+.carouselalsoread__widget {
+  box-shadow: 1px 1px 3px #00000026;
+  border-left: 1px solid var(--widgetbordercolor);
+  border-right: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+  padding: 15px 0px 15px 10px;
+  overflow: hidden;
+  margin-bottom: var(--storyparagap);
+}
+.carouselalsoread__widget .heading__nav {
+  margin-bottom: 12px;
+}
+.carouselalsoread__widget .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+  padding-left: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23e3001b' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.carouselalsoread__widget .heading__nav .carousel__nav {
+  display: none;
+}
+.carouselalsoread__widget .carouselread__container {
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  overflow-x: auto;
+  /*overscroll-behavior-x: contain;*/
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  margin: 0;
+  padding: 0;
+}
+.carouselalsoread__widget .carouselread__container .carousel__card {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 225px;
+  flex: 0 0 225px;
+  margin-right: 15px;
+  display: flex;
+}
+.carouselalsoread__widget .carouselread__container .carousel__card .card__figure {
+  position: relative;
+  flex-basis: 90px;
+  flex-shrink: 0;
+  margin-right: var(--magrin15);
+}
+.carouselalsoread__widget .carouselread__container .carousel__card .card__figure a {
+  display: flex;
+  position: relative;
+}
+.carouselalsoread__widget .carouselread__container .carousel__card .card__figure a img {
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+}
+.carouselalsoread__widget .carouselread__container .carousel__card .card__desc .card__slug {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--catbrandcolor, #CC0000);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: block;
+}
+.carouselalsoread__widget .carouselread__container .carousel__card .card__desc h3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.carouselalsoread__widget .carouselread__container .carousel__card .card__desc h3 a {
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.carouselalsoread__widget .carouselread__container .carousel__card:nth-last-child(1) {
+  margin-right: 0px;
+}
+.carouselalsoread__widget .carouselread__container::-webkit-scrollbar {
+  display: none;
+}
+.carouselalsoread__widget.carouseltheme2 {
+  background-color: var(--theme2bg);
+}
+.carouselalsoread__widget.carouseltheme2 h2 {
+  color: var(--theme2primarytextcolor);
+}
+.carouselalsoread__widget.carouseltheme2 .carousel__nav .navbutn {
+  background-color: #fff;
+}
+.carouselalsoread__widget.carouseltheme2 .carousel__nav .navbutn:after {
+  border-color: #000;
+}
+.carouselalsoread__widget.carouseltheme2 .carousel__nav .navbutn.is-disabled {
+  background-color: #9d9d9d;
+}
+.carouselalsoread__widget.carouseltheme2 .carouselread__container .carousel__card .card__desc .card__slug {
+  color: var(--theme2secondarytextcolor);
+}
+.carouselalsoread__widget.carouseltheme2 .carouselread__container .carousel__card .card__desc h3 a {
+  color: var(--theme2primarytextcolor);
+}
+.carouselalsoread__widget.carouseltheme2 .carouselread__container .carousel__card .card__figure img {
+  border: 1px solid var(--theme2bordercolor);
+}
+
+/* if carousel in RHS */
+.rhs-section .carouselalsoread__widget .carouselread__container .carousel__card {
+  width: 200px;
+  flex: 0 0 200px;
+}
+
+@media (min-width: 1024px) {
+  .carouselalsoread__widget {
+    padding: 15px 0px 15px 20px;
+  }
+  .carouselalsoread__widget .heading__nav {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .carouselalsoread__widget .heading__nav .carousel__nav {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #000;
+    position: relative;
+    cursor: pointer;
+    border: 0px;
+  }
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.carousel_prev:after {
+    transform: rotate(-45deg);
+    left: 10px;
+  }
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.carousel_next:after {
+    transform: rotate(135deg);
+  }
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.is-disabled {
+    background-color: #d5d5d5;
+  }
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.is-disabled:after {
+    border-color: #000;
+  }
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    top: 9px;
+    left: 8px;
+  }
+}
+
+/*# sourceMappingURL=carouselAlsoread.css.map */

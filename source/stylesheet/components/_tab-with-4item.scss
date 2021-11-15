@@ -27,11 +27,20 @@
                 scroll-snap-align: start;
                 scroll-snap-stop: always;
                 flex: 0 0 82px;
-            }
-            .tab:first-child{
-                background-color: var(--brandbgcolor);
-                color: var(--whitetextcolor);
-                border: none;
+                transition:all 0.275s linear;
+                &.active{
+                    background-color: var(--brandbgcolor);
+                    color: var(--whitetextcolor);
+                    border-color: var(--brandbgcolor);
+                    &:hover{
+                        box-shadow:0;
+                        border-color:transparent;
+                    }
+                }
+                &:hover{
+                    box-shadow: inset 0px 0px 4px #56818d;
+                    border-color: #006a87;
+                }
             }
             &::-webkit-scrollbar{
                 display: none;

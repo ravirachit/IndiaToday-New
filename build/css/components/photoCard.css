@@ -1,0 +1,66 @@
+.photoCard .card-pic {
+  margin-bottom: var(--magrin15);
+}
+.photoCard .card-pic a {
+  display: flex;
+  position: relative;
+}
+.photoCard .card-pic a img {
+  border-radius: 5px;
+  border: 1px solid var(--widgetbordercolor);
+}
+.photoCard .card-details {
+  padding-bottom: 20px;
+}
+.photoCard .card-details .card__slug {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--catbrandcolor, --brandtextcolor);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: block;
+}
+.photoCard .card-details .card__titile {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primarytextcolor);
+  font-weight: 600;
+}
+.photoCard .card-details p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primarytextcolor);
+}
+.photoCard .card-details .sharing {
+  margin-top: var(--magrin15);
+}
+.photoCard .card-details .sharing ul {
+  list-style: none;
+  display: flex;
+  max-width: 340px;
+  justify-content: space-between;
+}
+.photoCard .card-details .sharing ul .emoj {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 28px;
+  color: #656565;
+}
+.photoCard .card-details .sharing ul .emoj .rel-data {
+  margin-left: 5px;
+}
+.photoCard.phototype .article-type {
+  width: 70px;
+  height: 36px;
+  left: 10px;
+  bottom: 10px;
+  font-size: 20px;
+}
+.photoCard.phototype .article-type .typeicon {
+  width: 20px;
+  height: 18px;
+}
+
+/*# sourceMappingURL=photoCard.css.map */
