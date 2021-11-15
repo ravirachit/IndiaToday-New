@@ -22,7 +22,12 @@
                 font-size: 15px;
                 font-weight: 500;
                 line-height: 18px;     
-                cursor: pointer; 
+                cursor: pointer;
+                transition: all 0.275s linear;
+                &:hover{
+                    box-shadow: inset 0px 0px 4px #b5b5b5;
+                    border-color: #cdcdcd;
+                }
             }
             .active{
                 background-color: var(--brandbgcolor);
@@ -49,9 +54,21 @@
             }
             .anchor_card__figure{
                 position: relative;
-                a img{
-                    border-radius: 50%;
-                }
+                a{
+                    img{
+                        border-radius: 50%;
+                        border: 1px solid #e2e2e2;
+                        transition: all 0.275s linear;
+                        transform: scale(0.97);
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(1);
+                            border-color:var(--brandbgcolor);
+                        }
+                    }
+
+                } 
             }
         }
         .shows_carousel__card{
