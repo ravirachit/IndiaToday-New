@@ -754,6 +754,9 @@ a, a:active, a:visited {
   width: 200px;
   flex: 0 0 200px;
 }
+.rhs-section .carousel__widget.carouseltheme2 {
+  background-color: #1D2936;
+}
 
 @media (min-width: 1024px) {
   .carousel__widget {
@@ -2247,6 +2250,7 @@ a, a:active, a:visited {
     width: 100%;
   }
 }
+/*sass media query varibale */
 .subsnewsletter__widget {
   background-color: var(--whitebg);
   box-shadow: 1px 1px 3px #00000026;
