@@ -16,7 +16,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
-  color: var(--catbrandcolor, --brandtextcolor);
+  color: var(--brandtextcolor);
   text-transform: uppercase;
   margin-bottom: 4px;
   display: block;
