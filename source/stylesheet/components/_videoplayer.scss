@@ -1,0 +1,195 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+
+.videoplayer__widget{
+    @include blockwidgetstyle;
+    background-color:var(--theme2bg);
+   .videodetails{
+    padding:20px 10px;
+    border-top:1px solid #fff;
+      .title{
+          font-size:24px;
+          line-height:30px;
+          color:var(--whitetextcolor);
+          margin-bottom:var(--magrin15);
+      }
+
+
+
+    .story-byline{
+		display:flex;
+		align-items: center;
+		margin-bottom:var(--magrin15);
+		.profile-pic{
+			margin-right:10px;
+			img{
+				width:40px;
+				height:40px;
+				border:1px solid #d1d1d1;
+				border-radius:100%;
+			}
+		}
+		.profile-details{
+			.story-author{
+				font-size:14px;
+				line-height:22px;
+				font-weight:600;
+                color:var(--whitetextcolor);
+                a{
+                    color:var(--whitetextcolor);
+                }
+			}
+			.stryupdates{
+				font-size:14px;
+				line-height:22px;
+				color:var(--whitetextcolor);
+				.stryloction{
+					margin-right:5px;
+				}
+			}
+
+		}
+
+	}
+    .description{
+        padding-top:15px;
+        border-top:1px solid var(--theme2bordercolor);
+        margin-bottom: var(--widgetgap);
+        p{
+            color:var(--whitetextcolor);
+            font-size:14px;
+            line-height:20px;
+            margin-bottom: var(--magrin15);
+        }
+        .viewall-bnt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                border:1px solid #fff;
+                padding:5px 20px;
+                color:var(--whitetextcolor);
+                font-size:16px;
+                line-height:22px;
+                border-radius:5px;
+                font-weight:500;
+                background: linear-gradient(to right, #fff 50%, transparent 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all 0.275s ease-out;
+                cursor: pointer;
+                &:hover{
+                    background-position: left bottom;
+                    color: #000;
+                }
+            }
+        }
+    }
+/***** bottom SHARING Section START *****/
+.sharing{
+    margin-bottom: var(--widgetgap);
+    ul{
+        list-style: none;
+        display: flex;
+        max-width:340px;
+        justify-content:space-between;
+        .emoj{
+           display: flex;
+           align-items: center;
+           font-size:15px;
+           line-height:28px;
+           color:var(--whitetextcolor);
+           .rel-data{
+            margin-left: 5px;
+           }
+        }
+    }
+}
+/***** // bottom SHARING Section END // *****/
+    /***** bottom COMMENTS FORM Section START *****/
+    .commentsform{
+       h4{
+		font-size:15px;
+		font-weight:600;
+		line-height:20px;
+		margin-bottom:10px;
+        color: var(--whitetextcolor);
+	   }
+	   .form-container{
+		   display: flex;
+		   input{
+			   flex:1 0 0;
+			   border:1px solid #e2e2e2;
+			   border-radius:5px 0 0 5px;
+			   height:40px;
+			   line-height:40px;
+			   padding:0 10px;
+			   outline: none;
+			   &:focus{
+				box-shadow:0 0 3px #d1d1d1;
+				border: 1px solid #d1d1d1;
+			   }
+		   }
+		   button{
+			   padding:0 20px;
+			   color:#fff;
+			   text-align: center;
+			   background-color:var(--brandtextcolor);
+			   border-radius:0 5px 5px 0;
+			   font-size:16px;
+			   line-height:22px;
+			   text-transform: uppercase;
+			   font-weight:600;
+			   border:0px;
+			   height:40px;
+			   line-height:40px;
+			   cursor: pointer;
+		   }
+	   }
+    }
+	/***** // bottom COMMENTS FORM Section END // *****/
+   }
+}
+
+
+
+@media (min-width:$desktopver){
+    .videoplayer__widget{
+        @include desktopblockwidgetstyle;
+       .videodetails{
+        padding:20px;
+        .title{
+            font-size:30px;
+            line-height:38px;
+        }
+        .story-byline{
+			.profile-pic{
+				margin-right:15px;
+				img{
+					width:50px;
+					height:50px;
+					
+				}
+			}
+	
+		}
+        .description{
+            padding-top:20px;
+            p{
+                font-size:16px;
+                line-height:24px;
+            }
+        }
+        .commentsform{
+			.form-container{
+				button{
+					min-width:138px;
+					padding:0;
+				}
+			}
+		}
+    
+       }
+    }
+
+}

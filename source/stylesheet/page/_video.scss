@@ -1,0 +1,76 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+
+.sectionlink{
+    color:var(--primarytextcolor);
+    font-size:16px;
+    line-height:19px;
+    font-style: italic;
+    margin-bottom: var(--widgetgap);
+    padding:0 10px;
+    a{
+        color:var(--brandtextcolor);
+        white-space: nowrap;
+        text-decoration: underline;
+        &:after{
+            content: "";
+            display:inline-block;
+            width:6px;
+            height:6px;
+            border-top: 1px solid var(--brandbgcolor);
+            border-left: 1px solid var(--brandbgcolor);
+            transform: rotate(135deg);
+            margin-left:3px;
+        }
+    }
+}
+
+.othersection-tags{
+    @include blockwidgetstyle;
+    padding:15px 10px;
+    .title{
+        font-size:15px;
+	   line-height:18px;
+	   color:var(--primarytextcolor);
+	   margin-bottom: var(--magrin15);
+    }
+    .capsule-list{
+        display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+        a{
+        white-space: nowrap;
+        text-transform: uppercase;
+        border: 1px solid var(--widgetbordercolor);
+        border-radius: 30px;
+        padding: 7px 15px;
+        background: #F2FAFC;
+        color: #666666;
+        font-size: 12px;
+        line-height:14px;
+        font-weight: 500;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        flex: 0 0 82px;
+        transition: all 0.275s linear;
+        &:not(:last-child){
+            margin-right:10px;
+        }
+    }
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    }
+}
+
+@media (min-width:$desktopver){
+    .sectionlink{
+        padding:0px;
+    }
+    .othersection-tags{
+        @include desktopblockwidgetstyle;
+        padding:15px 20px;
+    }
+}
