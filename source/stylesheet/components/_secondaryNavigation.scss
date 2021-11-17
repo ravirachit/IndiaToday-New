@@ -2,8 +2,8 @@
 
 .section-secondary-nav{
     background-color:var(--catbrandcolor);
-    border-radius:5px;
-    padding:13px 20px;
+    border-radius:0px;
+    padding:13px 10px 5px;
     box-shadow: 1px 1px 3px #00000029;
     .nav-container{
         h1{
@@ -32,6 +32,7 @@
                        font-size:16px;
                        line-height: 19px;
                        position: relative;
+                       white-space: nowrap;
                        &:before{
                         content: "";
                         position: absolute;
@@ -76,3 +77,10 @@
     }
 }
 
+
+@media (min-width:$desktopver){
+    .section-secondary-nav{
+        border-radius:5px;
+        padding: 13px 20px;
+    }
+}
