@@ -25,21 +25,16 @@
             padding-right: 10px;
         }
     }
-
-    .template-container{
-         display: grid;
-         grid-template-columns:1fr;
-         gap:var(--widgetgap);
-         padding:0 10px;
-    }
-
+}
+.photocard-grid{
+    display: grid;
+    grid-template-columns:1fr;
+    gap:var(--widgetgap);
+    padding:0 10px;
 }
 
 /******* Photo Details page Template Start ************/
 .photodetailspage{
-     .template-container{
-        @include blockwidgetstyle;
-        padding:15px 10px 0px;
         .photoCard{
             margin-bottom:var(--widgetgap);
             border-bottom:1px solid var(--bordercolor);
@@ -48,7 +43,7 @@
                border-bottom:0px;
             }
         }
-     }
+  
      .maintitle{
          font-size: 24px;
         line-height: 30px;
@@ -63,6 +58,14 @@
         margin-bottom: 15px;
         font-weight: 400;
 
+     }
+     .photocard-grid{
+         padding:0 0;
+         .photoCard{
+            margin-bottom:0px;
+            border-bottom:0px;
+         }
+         
      }
 }
 
@@ -79,19 +82,13 @@
             }
 
         }
-
-        .template-container{
-            grid-template-columns:1fr 1fr;
-            padding:0;
-       }
-    
     }
+    .photocard-grid{
+        grid-template-columns:1fr 1fr;
+        padding:0;
+   }
 /******* Photo Details page Template Start ************/
   .photodetailspage{
-    .template-container{
-        @include desktopblockwidgetstyle;
-        padding:15px 20px 0px;
-     }
      .maintitle{
         font-size: 30px;
         line-height: 38px;

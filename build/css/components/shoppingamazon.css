@@ -1,9 +1,9 @@
 /*sass media query varibale */
 .shopping-widget {
+  background-color: var(--whitebg);
   box-shadow: 1px 1px 3px #00000026;
-  border-left: 1px solid var(--widgetbordercolor);
-  border-right: 1px solid var(--widgetbordercolor);
-  border-radius: 5px;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
   padding: 15px 10px 15px 10px;
   margin: 0 15px;
   background-color: #fff;
@@ -79,7 +79,6 @@
 
 @media (min-width: 1024px) {
   .shopping-widget {
-    box-shadow: 1px 1px 3px #00000026;
     border-left: 1px solid var(--widgetbordercolor);
     border-right: 1px solid var(--widgetbordercolor);
     border-radius: 5px;

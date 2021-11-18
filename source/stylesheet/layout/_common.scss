@@ -6,6 +6,66 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 .mrgB20{margin-bottom: 15px;}
 .mhide{ display: none;}
 .widgetgap{margin-bottom:var(--widgetgap)}
+.ad-betweenwidget{position: relative; background-color:#EAEAEA; padding:18px 0;margin-top:-20px;}
+.widgetstyle-wrap{
+	@include blockwidgetstyle;
+    padding:15px 10px 0px;
+}
+.icontitle{
+	@include titleicon;
+	@include titlewidgetBlack;
+	margin-bottom:var(--magrin15);
+}
+
+/************ dot blink animation START ************/
+.statuslive{
+	position: relative;
+	padding-left: 12px;
+	&:before{
+	content: "";
+	position:absolute;
+	top:50%;
+	left:0;
+	display:block;
+	transform: translateY(-50%);
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background:#CC0000;
+	box-shadow: 0 0 0 rgba(204,0,0, 0.7);
+	animation: pulse 2s infinite;
+   }
+}
+@-webkit-keyframes pulse {
+	0% {
+	  -webkit-box-shadow: 0 0 0 0 rgba(204,0,0, 0.7);
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 5px rgba(204,0,0, 0);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(204,0,0, 0);
+	}
+  }
+  @keyframes pulse {
+	0% {
+	  -moz-box-shadow: 0 0 0 0 rgba(204,0,0, 0.7);
+	  box-shadow: 0 0 0 0 rgba(204,0,0, 0.7);
+	}
+	70% {
+		-moz-box-shadow: 0 0 0 5px rgba(204,0,0, 0);
+		box-shadow: 0 0 0 5px rgba(204,0,0, 0);
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(204,0,0, 0);
+		box-shadow: 0 0 0 0 rgba(204,0,0, 0);
+	}
+  }
+
+/************ // dot blink animation END // ************/
+
+
+
 
 @media (min-width:$desktopver){
 .dhide{ display: none; }
@@ -189,6 +249,10 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 }
 
 @media (min-width:$desktopver){
+	.widgetstyle-wrap{
+		@include desktopblockwidgetstyle;
+        padding:15px 20px 0px;
+	}
 	.temp__layout{
 	display: grid;
     grid-template-columns:175px 1fr;
