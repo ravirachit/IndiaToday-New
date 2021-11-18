@@ -32,6 +32,7 @@
   bottom: 0;
   background: #fff;
   box-shadow: 0px -3px 6px #00000029;
+  z-index: var(--footernavindex);
 }
 .footernav .footernav-container {
   display: flex;

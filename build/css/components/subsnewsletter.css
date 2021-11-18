@@ -4,7 +4,6 @@
   box-shadow: 1px 1px 3px #00000026;
   border-top: 1px solid var(--widgetbordercolor);
   border-bottom: 1px solid var(--widgetbordercolor);
-  border-radius: 0px;
   padding: 15px 10px 15px 10px;
 }
 .subsnewsletter__widget .heading__nav {
@@ -114,7 +113,6 @@
 
 @media (min-width: 1024px) {
   .subsnewsletter__widget {
-    box-shadow: 1px 1px 3px #00000026;
     border-left: 1px solid var(--widgetbordercolor);
     border-right: 1px solid var(--widgetbordercolor);
     border-radius: 5px;

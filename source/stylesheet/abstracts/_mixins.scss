@@ -38,7 +38,6 @@
 
 
 @mixin desktopblockwidgetstyle{
-	box-shadow: 1px 1px 3px #00000026;
 	border-left: 1px solid var(--widgetbordercolor);
 	border-right: 1px solid var(--widgetbordercolor);
 	border-radius:5px;
@@ -49,5 +48,4 @@
 	box-shadow: 1px 1px 3px #00000026;
 	border-top: 1px solid var(--widgetbordercolor);
 	border-bottom: 1px solid var(--widgetbordercolor);
-	border-radius:0px;
 }

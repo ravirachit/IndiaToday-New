@@ -1,0 +1,52 @@
+/*sass media query varibale */
+/***** bottom COMMENTS FORM Section START *****/
+.commentsform {
+  margin-bottom: var(--widgetgap);
+}
+.commentsform h4 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.commentsform .form-container {
+  display: flex;
+}
+.commentsform .form-container input {
+  flex: 1 0 0;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px 0 0 5px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  outline: none;
+}
+.commentsform .form-container input:focus {
+  box-shadow: 0 0 3px #d1d1d1;
+  border: 1px solid #d1d1d1;
+}
+.commentsform .form-container button {
+  padding: 0 20px;
+  color: #fff;
+  text-align: center;
+  background-color: var(--brandtextcolor);
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 0px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+/***** // bottom COMMENTS FORM Section END // *****/
+@media (min-width: 1024px) {
+  .commentsform .form-container button {
+    min-width: 138px;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=commentform.css.map */

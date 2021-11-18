@@ -41,7 +41,7 @@
 
 
 
-header{
+.main__header{
 	border-top:1px solid var(--bordercolor);
 	border-bottom:1px solid var(--bordercolor);	
 	background-color: var(--whitebg);
@@ -117,7 +117,7 @@ header{
 	}
 
 
-	header{
+	.main_header{
 		.temp__container{
 			padding: 0 0;
 		.nav__section{
