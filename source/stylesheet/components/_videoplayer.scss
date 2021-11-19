@@ -61,29 +61,6 @@
             line-height:20px;
             margin-bottom: var(--magrin15);
         }
-        .viewall-bnt{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            span{
-                border:1px solid #fff;
-                padding:5px 20px;
-                color:var(--whitetextcolor);
-                font-size:16px;
-                line-height:22px;
-                border-radius:5px;
-                font-weight:500;
-                background: linear-gradient(to right, #fff 50%, transparent 50%);
-                background-size: 200% 100%;
-                background-position: right bottom;
-                transition: all 0.275s ease-out;
-                cursor: pointer;
-                &:hover{
-                    background-position: left bottom;
-                    color: #000;
-                }
-            }
-        }
     }
 /***** bottom SHARING Section START *****/
 .sharing{

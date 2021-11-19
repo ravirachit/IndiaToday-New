@@ -4,7 +4,7 @@
 .nocard__B1__s3__widget{
 	.story-grid{
 		@include blockwidgetstyle;
-	   padding:15px 10px 20px;
+	   padding:15px 10px 0px;
 	   margin-bottom:var(--widgetgap);
 	   .header-nav{
 		margin-bottom:15px;
@@ -121,29 +121,7 @@
 
 
 	}
-	.viewall-bnt{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		span{
-			border: 1px solid var(--brandtextcolor);
-			color: var(--brandtextcolor);
-			border-radius: 5px;
-			padding:5px 30px;
-			font-size:16px;
-			line-height:22px;
-			font-weight:500;
-			cursor: pointer;
-			background: linear-gradient(to right, #cc0000 50%, white 50%);
-			background-size: 200% 100%;
-			background-position: right bottom;
-			transition: all .275s ease-out;
-			&:hover{
-				background-position: left bottom;
-                color: #fff;
-			}
-		}
-	}
+	
   }
 }
 
@@ -151,7 +129,7 @@
 	.nocard__B1__s3__widget{
 		.story-grid{
 			@include desktopblockwidgetstyle;
-		    padding:15px 20px 20px;
+		    padding:15px 20px 0px;
 		
 		.story-card{
 			.articletitle{

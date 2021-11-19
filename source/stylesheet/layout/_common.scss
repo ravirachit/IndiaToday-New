@@ -1,4 +1,5 @@
 @import '../abstracts/mixins';
+@import '../abstracts/functions';
 body{font-family:var(--fontfamily), var(--bckfont); font-size:100%; line-height:1; color:var(--primarytextcolor); background-color:var(--bodybg);text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased; min-height:100vh;}
 a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
@@ -63,10 +64,48 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
   }
 
 /************ // dot blink animation END // ************/
+/********** load and read more button START *********/
+.viewall-bnt{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: var(--widgetgap);
+	span{
+		border: 1px solid var(--brandtextcolor);
+		color: var(--brandtextcolor);
+		border-radius: 5px;
+		padding:5px 20px;
+		font-size:16px;
+		line-height:22px;
+		font-weight:500;
+		cursor: pointer;
+		background: linear-gradient(to right, #cc0000 50%, white 50%);
+		background-size: 200% 100%;
+		background-position: right bottom;
+		transition: all .275s ease-out;
+		&:hover{
+			background-position: left bottom;
+			color: #fff;
+		}
+	}
+    
+	&.theme2{
+		span{
+			border:1px solid #fff;
+			color:var(--whitetextcolor);
+			background: linear-gradient(to right, #fff 50%, transparent 50%);
+			background-size: 200% 100%;
+			background-position: right bottom;
+			transition: all 0.275s ease-out;
+			&:hover{
+				background-position: left bottom;
+				color: #000;
+			}
+		}
+	}
+}
 
-
-
-
+/********** load and read more button END *********/
 @media (min-width:$desktopver){
 .dhide{ display: none; }
 .temp__container{ padding: 0; }
