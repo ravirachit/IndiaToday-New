@@ -17,7 +17,7 @@
   text-transform: uppercase;
   color: var(--primarytextcolor);
 }
-.subsnewsletter__widget form.subscribe_newsletter input[type=text] {
+.subsnewsletter__widget form.subscribe__newsletter input[type=text] {
   padding: 15px;
   font-size: 15px;
   border: 1px solid #e2e2e2;
@@ -29,15 +29,15 @@
   border-bottom-left-radius: 5px;
   outline: none;
 }
-.subsnewsletter__widget form.subscribe_newsletter input[type=text]:focus {
+.subsnewsletter__widget form.subscribe__newsletter input[type=text]:focus {
   box-shadow: 0 0 3px #d1d1d1;
   border: 1px solid #d1d1d1;
 }
-.subsnewsletter__widget .subscribe_newsletter input::placeholder {
+.subsnewsletter__widget .subscribe__newsletter input::placeholder {
   color: #666666;
   font-weight: normal;
 }
-.subsnewsletter__widget .subscribe_newsletter button {
+.subsnewsletter__widget .subscribe__newsletter button {
   float: left;
   background: #CC0000;
   color: white;
@@ -50,7 +50,7 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.subsnewsletter__widget .subscribe_newsletter ::after {
+.subsnewsletter__widget .subscribe__newsletter ::after {
   content: "";
   clear: both;
   display: table;
@@ -60,11 +60,11 @@
   padding-top: 11px;
   width: 100%;
 }
-.subsnewsletter__widget .checkbox .checkbox_container {
+.subsnewsletter__widget .checkbox .checkbox__container {
   position: relative;
   margin-right: 15px;
 }
-.subsnewsletter__widget .checkbox .checkbox_container input {
+.subsnewsletter__widget .checkbox .checkbox__container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -79,10 +79,10 @@
   width: 16px;
   border: 1px solid #B9B9B9;
 }
-.subsnewsletter__widget .checkbox .checkbox_container:hover input ~ .checkmark {
+.subsnewsletter__widget .checkbox .checkbox__container:hover input ~ .checkmark {
   border: 1px solid #B9B9B9;
 }
-.subsnewsletter__widget .checkbox .checkbox_container input:checked ~ .checkmark {
+.subsnewsletter__widget .checkbox .checkbox__container input:checked ~ .checkmark {
   background-color: #069146;
 }
 .subsnewsletter__widget .checkbox .checkmark:after {
@@ -90,10 +90,10 @@
   position: absolute;
   display: none;
 }
-.subsnewsletter__widget .checkbox .checkbox_container input:checked ~ .checkmark:after {
+.subsnewsletter__widget .checkbox .checkbox__container input:checked ~ .checkmark:after {
   display: block;
 }
-.subsnewsletter__widget .checkbox .checkbox_container .checkmark:after {
+.subsnewsletter__widget .checkbox .checkbox__container .checkmark:after {
   left: 5px;
   top: 1px;
   width: 5px;

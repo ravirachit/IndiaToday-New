@@ -7,7 +7,7 @@
     .photoCard{
         @include blockwidgetstyle;
         border-radius:5px;
-        .card-pic{
+        .card__pic{
             a{
                 img{
                     border-radius: 5px 5px 0 0;
@@ -16,7 +16,7 @@
                 }
             }
         }
-        .card-details{
+        .card__details{
             padding-left:10px;
             padding-right: 10px;
         }
@@ -26,7 +26,7 @@
         }
     }
 }
-.photocard-grid{
+.photocard__grid{
     display: grid;
     grid-template-columns:1fr;
     gap:var(--widgetgap);
@@ -59,7 +59,7 @@
         font-weight: 400;
 
      }
-     .photocard-grid{
+     .photocard__grid{
          padding:0 0;
          .photoCard{
             margin-bottom:0px;
@@ -73,7 +73,7 @@
 @media (min-width:$desktopver){
     .photopage{
         .photoCard{
-            .card-pic{
+            .card__pic{
                 a{
                     img{
                          width: auto;
@@ -83,7 +83,7 @@
 
         }
     }
-    .photocard-grid{
+    .photocard__grid{
         grid-template-columns:1fr 1fr;
         padding:0;
    }

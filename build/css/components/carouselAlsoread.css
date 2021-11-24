@@ -1,6 +1,5 @@
 /*sass media query varibale */
 .carouselalsoread__widget {
-  box-shadow: 1px 1px 3px #00000026;
   border-left: 1px solid var(--widgetbordercolor);
   border-right: 1px solid var(--widgetbordercolor);
   border-radius: 5px;
@@ -100,7 +99,7 @@
 .carouselalsoread__widget.carouseltheme2 .carousel__nav .navbutn:after {
   border-color: #000;
 }
-.carouselalsoread__widget.carouseltheme2 .carousel__nav .navbutn.is-disabled {
+.carouselalsoread__widget.carouseltheme2 .carousel__nav .navbutn.is__disabled {
   background-color: #9d9d9d;
 }
 .carouselalsoread__widget.carouseltheme2 .carouselread__container .carousel__card .card__desc .card__slug {
@@ -114,7 +113,7 @@
 }
 
 /* if carousel in RHS */
-.rhs-section .carouselalsoread__widget .carouselread__container .carousel__card {
+.rhs__section .carouselalsoread__widget .carouselread__container .carousel__card {
   width: 200px;
   flex: 0 0 200px;
 }
@@ -145,17 +144,17 @@
     cursor: pointer;
     border: 0px;
   }
-  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.carousel_prev:after {
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.carousel__prev:after {
     transform: rotate(-45deg);
     left: 10px;
   }
-  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.carousel_next:after {
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.carousel__next:after {
     transform: rotate(135deg);
   }
-  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.is-disabled {
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.is__disabled {
     background-color: #d5d5d5;
   }
-  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.is-disabled:after {
+  .carouselalsoread__widget .heading__nav .carousel__nav .navbutn.is__disabled:after {
     border-color: #000;
   }
   .carouselalsoread__widget .heading__nav .carousel__nav .navbutn:after {

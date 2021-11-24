@@ -7,8 +7,8 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 .mrgB20{margin-bottom: 15px;}
 .mhide{ display: none;}
 .widgetgap{margin-bottom:var(--widgetgap)}
-.ad-betweenwidget{position: relative; background-color:#EAEAEA; padding:18px 0;margin-top:-20px;}
-.widgetstyle-wrap{
+.ad__betweenwidget{position: relative; background-color:#EAEAEA; padding:18px 0;margin-top:-20px;}
+.widgetstyle__wrap{
 	@include blockwidgetstyle;
     padding:15px 10px 0px;
 }
@@ -65,7 +65,7 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 
 /************ // dot blink animation END // ************/
 /********** load and read more button START *********/
-.viewall-bnt{
+.viewall__bnt{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -115,14 +115,14 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 
 
 .temp__layout{ 
- 	.content-section{
+ 	.content__section{
  		padding:15px 0px 15px 0px;
  		
  	}
 }
 
 .phototype{
-	.article-type{
+	.article__type{
 		position: absolute;
     	bottom: 5px;
     	left: 5px;
@@ -142,7 +142,7 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 	}
 
 	&.Bcard{
-		.article-type{
+		.article__type{
 			width:70px;
 			height:36px;
 			left:10px;
@@ -160,7 +160,7 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 }
 
 .videotype{
-	.article-type{
+	.article__type{
 		position: absolute;
     	bottom: 5px;
     	left:0px;
@@ -185,7 +185,7 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 	}
 
 	&.Bcard{
-		.article-type{
+		.article__type{
 			.typeicon{
 				 width:57px;
 				 height:57px;
@@ -204,7 +204,7 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 
 .carousel__container{
 	.phototype{
-		.article-type{
+		.article__type{
 			width:60px;
 			height:27px;
 			left:10px;
@@ -217,7 +217,7 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 		}
 	}
     .videotype{
-		.article-type{
+		.article__type{
 			bottom: 10px;
 			.typeicon{
 				width:40px; height:40px;
@@ -227,7 +227,7 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 
 }
 
-.it-bgicon{
+.it__bgicon{
 	height:18px;
 	background-size:100%;
 	display:inline-block;
@@ -279,7 +279,7 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
   margin-left: -1px;
 }
 
-.latestsection-heading{
+.latestsection__heading{
 	@include titleicon;
 	font-size:15px;
 	line-height:18px;
@@ -288,16 +288,16 @@ a, a:active, a:visited{color:var(--primarytextcolor); text-decoration: none;}
 }
 
 @media (min-width:$desktopver){
-	.widgetstyle-wrap{
+	.widgetstyle__wrap{
 		@include desktopblockwidgetstyle;
         padding:15px 20px 0px;
 	}
 	.temp__layout{
 	display: grid;
     grid-template-columns:175px 1fr;
- 	.content-section{
+ 	.content__section{
  		padding:20px 0px 20px 25px;
- 		.brk_trand{
+ 		.brk__trand{
  			.tranding__capsule{ margin-right:0; }
  		}
  	    .main__content{

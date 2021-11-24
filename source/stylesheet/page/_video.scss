@@ -25,7 +25,7 @@
     }
 }
 
-.othersection-tags{
+.othersection__tags{
     @include blockwidgetstyle;
     padding:15px 10px;
     .title{
@@ -34,7 +34,7 @@
 	   color:var(--primarytextcolor);
 	   margin-bottom: var(--magrin15);
     }
-    .capsule-list{
+    .capsule__list{
         display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -69,7 +69,7 @@
     .sectionlink{
         padding:0px;
     }
-    .othersection-tags{
+    .othersection__tags{
         @include desktopblockwidgetstyle;
         padding:15px 20px;
     }

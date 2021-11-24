@@ -1,0 +1,46 @@
+/*sass media query varibale */
+.category__byline {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--magrin15);
+}
+.category__byline .profile__pic {
+  margin-right: 10px;
+}
+.category__byline .profile__pic img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d1d1d1;
+  border-radius: 100%;
+}
+.category__byline .profile__details .category__author {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.category__byline .profile__details .catupdates {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--textcolor666);
+}
+.category__byline .profile__details .catupdates .catloction {
+  margin-right: 5px;
+}
+.category__byline.theme2 .profile__details .category__author a {
+  color: var(--whitetextcolor);
+}
+.category__byline.theme2 .profile__details .catupdates {
+  color: var(--whitetextcolor);
+}
+
+@media (min-width: 1024px) {
+  .category__byline .profile__pic {
+    margin-right: 15px;
+  }
+  .category__byline .profile__pic img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/*# sourceMappingURL=byline.css.map */

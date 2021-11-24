@@ -11,7 +11,7 @@
           color:var(--primarytextcolor);
         }
       }
-    form.subscribe_newsletter input[type=text]{
+    form.subscribe__newsletter input[type=text]{
         padding: 15px;
         font-size: 15px;
         border: 1px solid #e2e2e2;
@@ -27,7 +27,7 @@
           border: 1px solid #d1d1d1;
            }
     }
-    .subscribe_newsletter{
+    .subscribe__newsletter{
         input::placeholder {
             color: #666666;
             font-weight: normal;
@@ -55,7 +55,7 @@
         display: flex;
         padding-top: 11px;
         width: 100%;
-        .checkbox_container {
+        .checkbox__container {
             position: relative;
             margin-right: 15px;
             input{
@@ -74,10 +74,10 @@
             width: 16px;
             border: 1px solid #B9B9B9;
           }
-          .checkbox_container:hover input ~ .checkmark {
+          .checkbox__container:hover input ~ .checkmark {
             border: 1px solid #B9B9B9;
           }
-          .checkbox_container input:checked ~ .checkmark {
+          .checkbox__container input:checked ~ .checkmark {
             background-color: #069146;
           }
           .checkmark:after {
@@ -85,10 +85,10 @@
             position: absolute;
             display: none;
           }
-          .checkbox_container input:checked ~ .checkmark:after {
+          .checkbox__container input:checked ~ .checkmark:after {
             display: block;
           }
-          .checkbox_container .checkmark:after {
+          .checkbox__container .checkmark:after {
               left: 5px;
               top: 1px;
               width: 5px;

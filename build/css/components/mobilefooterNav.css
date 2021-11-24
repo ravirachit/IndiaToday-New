@@ -34,21 +34,21 @@
   box-shadow: 0px -3px 6px #00000029;
   z-index: var(--footernavindex);
 }
-.footernav .footernav-container {
+.footernav .footernav__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.footernav .footernav-container .navitem {
+.footernav .footernav__container .navitem {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.footernav .footernav-container .navitem i {
+.footernav .footernav__container .navitem i {
   background-size: 100% 18px;
 }
-.footernav .footernav-container .navitem .linkname {
+.footernav .footernav__container .navitem .linkname {
   font-size: 12px;
   line-height: 21px;
   color: var(--textcolor666);

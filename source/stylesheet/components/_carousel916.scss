@@ -66,7 +66,7 @@
 	}
 
 	&.carouseltheme2{
-			background-color:var(--theme2bg);
+		background-color:var(--catbrandcolor, #1D2936);
 			h2{
 				color:var(--theme2primarytextcolor);
 			}
@@ -76,7 +76,7 @@
 					&:after{
 						border-color:#000;
 					}
-					&.is-disabled{
+					&.is__disabled{
 						background-color:#9d9d9d;
 					}
 				}
@@ -84,22 +84,41 @@
 			.carousel__container{
 				.carousel__card {
 					.card__desc{
-							.card__slug{
-								color:var(--theme2secondarytextcolor);
-							}
-							
-							h3{
-								a{
-									color:var(--theme2primarytextcolor);
-								}
-							}
+						background-color:#fff;
 						}
 
 				}
 			}
+	}
+    &.cardnobgcolr{
+		.carousel__container{
 
-			
+			.carousel__card {
+				border:0px;
+				.card__figure{
+					img{
+						border-radius:5px;
+						border:1px solid var(--widgetbordercolor);
+					}
+				}
+				.card__desc{
+                    background-color:transparent;
+					padding-left:0px;
+					padding-right: 0px;
+					padding-bottom: 0px;
+						.card__slug{
+							color:var(--theme2secondarytextcolor);
+						}
+						
+						h3{
+							a{
+								color:var(--theme2primarytextcolor);
+							}
+						}
+					}
 
+			}
+		}
 	}
 }
 
@@ -126,18 +145,18 @@
 				   position: relative;
 				   cursor: pointer;
 				   border:0px;
-				   &.carousel_prev{
+				   &.carousel__prev{
 					   &:after{
 						  transform: rotate(-45deg);
 						  left:10px;
 					   }
 				   }
-				   &.carousel_next{
+				   &.carousel__next{
 					   &:after{
 					   transform: rotate(135deg);
 					   }
 				   }
-				   &.is-disabled{
+				   &.is__disabled{
 					   background-color:#d5d5d5;
 					   &:after{
 						   border-color:#000;
@@ -157,6 +176,16 @@
 				   }
 			   }
 		   }
+		}
+		.carousel__container{
+			.carousel__card{
+				.card__desc{
+					h3{
+						font-size:16px;
+						line-height:24px;
+					}
+				}
+			}
 		}
 	}
 }

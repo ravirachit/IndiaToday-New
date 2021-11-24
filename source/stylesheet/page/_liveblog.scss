@@ -46,7 +46,7 @@
     .topsection{
         background-color:var(--theme2bg);
     }
-    .Livetv-iframe{
+    .Livetv__iframe{
         position: relative;
         padding-top:calc(57.6% + 55px);
         margin-bottom:var(--magrin15);
@@ -80,7 +80,7 @@
            font-size:15px;
            line-height:28px;
            color:var(--whitetextcolor);
-           .rel-data{
+           .rel__data{
             margin-left: 5px;
            }
         }
@@ -139,7 +139,7 @@
         }
         
     }
-    .blog-highlights{
+    .blog__highlights{
         padding-bottom:var(--magrin15);
 		.title{
 			font-size:16px;
@@ -147,7 +147,7 @@
 			margin-bottom:15px;
 			font-weight:500;
 		}
-		.highlights-list{
+		.highlights__list{
 			list-style-position: inside;
 			text-indent: -1.5em;
             padding-left: 1.5em;
@@ -175,14 +175,14 @@
         color: #e2e2e2;
     }
 }
-.blog-timedate{
+.blog__timedate{
     font-size:12px;
     line-height:18px;
     color:var(--textcolor666);
     font-style:italic;
     margin-bottom:5px;
 }
-.blog-sectitle{
+.blog__sectitle{
     font-size:18px;
     line-height: 26px;
     font-weight:500;
@@ -193,7 +193,7 @@
     line-height:20px;
     margin-bottom:var(--magrin15);
 }
-.blogupdate-status{
+.blogupdate__status{
     height: 0;
     position: sticky;
     top: 50px;
@@ -221,7 +221,7 @@
 }
 
 @media (min-width:$desktopver){
-    .liveblog-body{
+    .liveblog__body{
         .blogtitile{
             font-size:30px;
             line-height:38px;
@@ -241,7 +241,7 @@
             left: -20px;
         }
     }
-    .blog-sectitle{
+    .blog__sectitle{
         font-size:24px;
         line-height: 32px;
     }

@@ -1,11 +1,11 @@
 @import '../abstracts/functions';
 
-.section-secondary-nav{
+.section__secondary__nav{
     background-color:var(--catbrandcolor);
     border-radius:0px;
     padding:13px 10px 5px;
     box-shadow: 1px 1px 3px #00000029;
-    .nav-container{
+    .nav__container{
         h1{
              text-indent:-99999px;
              font-size:10px;
@@ -22,7 +22,7 @@
                 margin-bottom:10px;
              }
         }
-        .secondary-navigation{
+        .secondary__navigation{
             ul{
                 list-style:none;
                 display: flex;
@@ -86,7 +86,7 @@
 
 
 @media (min-width:$desktopver){
-    .section-secondary-nav{
+    .section__secondary__nav{
         border-radius:5px;
         padding: 13px 20px;
     }

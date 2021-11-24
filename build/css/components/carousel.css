@@ -4,7 +4,6 @@
   box-shadow: 1px 1px 3px #00000026;
   border-top: 1px solid var(--widgetbordercolor);
   border-bottom: 1px solid var(--widgetbordercolor);
-  border-radius: 0px;
   padding: 15px 0px 15px 10px;
   overflow: hidden;
 }
@@ -92,7 +91,7 @@
 .carousel__widget.carouseltheme2 .carousel__nav .navbutn:after {
   border-color: #000;
 }
-.carousel__widget.carouseltheme2 .carousel__nav .navbutn.is-disabled {
+.carousel__widget.carouseltheme2 .carousel__nav .navbutn.is__disabled {
   background-color: #9d9d9d;
 }
 .carousel__widget.carouseltheme2 .carousel__container .carousel__card .card__desc .card__slug {
@@ -106,17 +105,16 @@
 }
 
 /* if carousel in RHS */
-.rhs-section .carousel__widget .carousel__container .carousel__card {
+.rhs__section .carousel__widget .carousel__container .carousel__card {
   width: 200px;
   flex: 0 0 200px;
 }
-.rhs-section .carousel__widget.carouseltheme2 {
+.rhs__section .carousel__widget.carouseltheme2 {
   background-color: #1D2936;
 }
 
 @media (min-width: 1024px) {
   .carousel__widget {
-    box-shadow: 1px 1px 3px #00000026;
     border-left: 1px solid var(--widgetbordercolor);
     border-right: 1px solid var(--widgetbordercolor);
     border-radius: 5px;
@@ -144,17 +142,17 @@
     cursor: pointer;
     border: 0px;
   }
-  .carousel__widget .heading__nav .carousel__nav .navbutn.carousel_prev:after {
+  .carousel__widget .heading__nav .carousel__nav .navbutn.carousel__prev:after {
     transform: rotate(-45deg);
     left: 10px;
   }
-  .carousel__widget .heading__nav .carousel__nav .navbutn.carousel_next:after {
+  .carousel__widget .heading__nav .carousel__nav .navbutn.carousel__next:after {
     transform: rotate(135deg);
   }
-  .carousel__widget .heading__nav .carousel__nav .navbutn.is-disabled {
+  .carousel__widget .heading__nav .carousel__nav .navbutn.is__disabled {
     background-color: #d5d5d5;
   }
-  .carousel__widget .heading__nav .carousel__nav .navbutn.is-disabled:after {
+  .carousel__widget .heading__nav .carousel__nav .navbutn.is__disabled:after {
     border-color: #000;
   }
   .carousel__widget .heading__nav .carousel__nav .navbutn:after {

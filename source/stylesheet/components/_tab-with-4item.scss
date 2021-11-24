@@ -1,13 +1,13 @@
 
 .Tab__4items{
     margin-bottom: var(--widgetgap);
-    .content-wrap{
+    .content__wrap{
         background-color:var(--theme2bg);
         padding: 15px 20px 0;
         box-shadow: 1px 1px 3px #00000026;
         border: 1px solid var(--widgetbordercolor);
         border-radius: 5px;
-        .tab_wrap{
+        .tab__wrap{
             display: flex;
 			gap: 10px;
 			margin-bottom: 15px;
@@ -59,15 +59,15 @@
             background-position: 0 center;
             margin-bottom:var(--magrin15);
         }
-        .inner_wrap{
+        .inner__wrap{
             display: flex;
             flex-wrap: wrap;
             column-gap: 20px;
-            .video_card{
+            .video__card{
                 position: relative;
                 margin-bottom: 25px;
                 width: 48.5%;
-                .img_section a img{
+                .img__section a img{
                     border-radius: 5px;
                 }
                 p{
@@ -83,7 +83,7 @@
                     font-weight: 500;
                     text-transform: uppercase;
                 }
-                .article-type{
+                .article__type{
                     display: flex;
                     justify-content: space-between;
                     position: absolute;
@@ -116,24 +116,24 @@
 
 // Mobile View
 @media (max-width: 767px) {
-    .Tab__4items .content-wrap .inner_wrap .video_card{
+    .Tab__4items .content__wrap .inner__wrap .video__card{
         width: 100%;
     }
-    .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+    .Tab__4items .content__wrap .inner__wrap .video__card .img__section a img {
         height: auto;
         width: 100%;
     }
   }
 
   @media screen and (orientation:landscape) {
-    .Tab__4items .content-wrap .inner_wrap .video_card {
+    .Tab__4items .content__wrap .inner__wrap .video__card {
         width: 48.3%;
     }
 }
 
 // iPad View
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-    .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+    .Tab__4items .content__wrap .inner__wrap .video__card .img__section a img {
         height: auto;
         width: 100%;
     }

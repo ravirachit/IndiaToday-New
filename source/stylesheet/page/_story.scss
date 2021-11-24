@@ -1,7 +1,7 @@
 @import '../abstracts/functions';
 @import '../abstracts/mixins';
 
-.story-content-body{
+.story__content__body{
 	@include blockwidgetstyle;
 	padding:15px 10px 10px;
 	position: relative;
@@ -19,11 +19,11 @@
 		margin-bottom:15px;
 		font-weight:400;
 	}
-	.story-byline{
+	.story__byline{
 		display:flex;
 		align-items: center;
 		margin-bottom:var(--magrin15);
-		.profile-pic{
+		.profile__pic{
 			margin-right:10px;
 			img{
 				width:40px;
@@ -32,8 +32,8 @@
 				border-radius:100%;
 			}
 		}
-		.profile-details{
-			.story-author{
+		.profile__details{
+			.story__author{
 				font-size:14px;
 				line-height:22px;
 				font-weight:600;
@@ -58,14 +58,14 @@
 			margin-bottom:10px;
 			height: auto;
 		}
-		.mos-alt{
+		.mos__alt{
 			color:#707070;
 			font-size:14px;
 			line-height:20px;
 			font-style:italic;
 		}
 	}
-	.stry-highlights{
+	.stry__highlights{
 		margin-bottom:var(--storyparagap);
 		.title{
 			font-size:16px;
@@ -73,7 +73,7 @@
 			margin-bottom:15px;
 			font-weight:500;
 		}
-		.highlights-list{
+		.highlights__list{
 			list-style-position: inside;
 			text-indent: -1.5em;
             padding-left: 1.5em;
@@ -133,13 +133,13 @@
 		.quotes{
 			width:100%;
 			margin-bottom:var(--storyparagap);
-			.quotes-container{
+			.quotes__container{
 				border:1px solid var(--widgetbordercolor);
 				background-color:#FFFAEA;
 				padding:50px 10px 15px;
 				display: flex;
 				border-radius:10px;
-				.quotes-photo{
+				.quotes__photo{
 					margin-right: var(--magrin15);
 				    flex-basis: 80px;
                     flex-shrink: 0;
@@ -148,15 +148,15 @@
 						border:1px solid var(--widgetbordercolor);
 					}
 				}
-				.quotes-content{
+				.quotes__content{
 					position: relative;
-					.quotes-text{
+					.quotes__text{
 						font-size:18px;
 						line-height:24px;
 						color:#1A1D24;
 						font-weight:500;
 					}
-					.quoter-info{
+					.quoter__info{
 						text-align: right;
 						padding-top: 15px;
 						.quotername{
@@ -229,7 +229,7 @@
 			   font-size:15px;
 			   line-height:28px;
 			   color: #656565;
-			   .rel-data{
+			   .rel__data{
 				margin-left: 5px;
 			   }
 			}
@@ -241,7 +241,7 @@
 	.storyfooter{
 		border-top:1px solid #e4e4e4;
 		padding:20px 0 0;
-		.footer-container{
+		.footer__container{
 			display: flex;
 			justify-content: space-between;
              div{
@@ -283,24 +283,21 @@
 }
 
 @media (min-width:$desktopver){
-	.story-content-body{
+	.story__content__body{
 		@include desktopblockwidgetstyle;
 		padding:15px 20px 20px;
 		.strytitle{
 			font-size:30px;
 		    line-height:38px;
 		}
-		.story-byline{
-			.profile-pic{
+		.story__byline{
+			.profile__pic{
 				margin-right:15px;
 				img{
 					width:50px;
 					height:50px;
 					
 				}
-			}
-			.profile-details{
-
 			}
 	
 		}
@@ -310,18 +307,18 @@
 				max-width:500px;
 				margin-left:auto;
 				margin-right:auto;
-				.quotes-container{
+				.quotes__container{
 					padding: 46px 20px 20px;
-					.quotes-photo{
+					.quotes__photo{
 						margin-right:20px;
 					}
-					.quotes-content{
+					.quotes__content{
 						
-						.quotes-text{
+						.quotes__text{
 							font-size:24px;
 							line-height:28px;
 						}
-						.quoter-info{
+						.quoter__info{
 							padding-top:20px;
 						}
 						

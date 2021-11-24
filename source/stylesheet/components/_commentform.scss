@@ -8,7 +8,7 @@
     line-height:20px;
     margin-bottom:10px;
    }
-   .form-container{
+   .form__container{
        display: flex;
        input{
            flex:1 0 0;
@@ -44,7 +44,7 @@
 
 @media (min-width:$desktopver){
     .commentsform{
-        .form-container{
+        .form__container{
             button{
                 min-width:138px;
                 padding:0;

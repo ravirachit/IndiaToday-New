@@ -33,14 +33,14 @@ a, a:active, a:visited {
   margin-bottom: var(--widgetgap);
 }
 
-.ad-betweenwidget {
+.ad__betweenwidget {
   position: relative;
   background-color: #EAEAEA;
   padding: 18px 0;
   margin-top: -20px;
 }
 
-.widgetstyle-wrap {
+.widgetstyle__wrap {
   background-color: var(--whitebg);
   box-shadow: 1px 1px 3px #00000026;
   border-top: 1px solid var(--widgetbordercolor);
@@ -108,13 +108,13 @@ a, a:active, a:visited {
 }
 /************ // dot blink animation END // ************/
 /********** load and read more button START *********/
-.viewall-bnt {
+.viewall__bnt {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: var(--widgetgap);
 }
-.viewall-bnt span {
+.viewall__bnt span {
   border: 1px solid var(--brandtextcolor);
   color: var(--brandtextcolor);
   border-radius: 5px;
@@ -128,11 +128,11 @@ a, a:active, a:visited {
   background-position: right bottom;
   transition: all 0.275s ease-out;
 }
-.viewall-bnt span:hover {
+.viewall__bnt span:hover {
   background-position: left bottom;
   color: #fff;
 }
-.viewall-bnt.theme2 span {
+.viewall__bnt.theme2 span {
   border: 1px solid #fff;
   color: var(--whitetextcolor);
   background: linear-gradient(to right, #fff 50%, transparent 50%);
@@ -140,7 +140,7 @@ a, a:active, a:visited {
   background-position: right bottom;
   transition: all 0.275s ease-out;
 }
-.viewall-bnt.theme2 span:hover {
+.viewall__bnt.theme2 span:hover {
   background-position: left bottom;
   color: #000;
 }
@@ -163,11 +163,11 @@ a, a:active, a:visited {
     display: block;
   }
 }
-.temp__layout .content-section {
+.temp__layout .content__section {
   padding: 15px 0px 15px 0px;
 }
 
-.phototype .article-type {
+.phototype .article__type {
   position: absolute;
   bottom: 5px;
   left: 5px;
@@ -181,32 +181,32 @@ a, a:active, a:visited {
   justify-content: space-evenly;
   border-radius: 3px;
 }
-.phototype .article-type .typeicon {
+.phototype .article__type .typeicon {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDIwIDE4Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjAuNDY3LDE2LjgzM0EzLjYzMywzLjYzMywwLDEsMSwxNi44MzMsMTMuMiwzLjYzMywzLjYzMywwLDAsMSwyMC40NjcsMTYuODMzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYuODMzIC02LjkwOCkiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTAsMyw4LjE3LDVINUEyLjAwNiwyLjAwNiwwLDAsMCwzLDdWMTlhMi4wMDYsMi4wMDYsMCwwLDAsMiwySDIxYTIuMDA2LDIuMDA2LDAsMCwwLDItMlY3YTIuMDA2LDIuMDA2LDAsMCwwLTItMkgxNy44M0wxNiwzWm0zLDE1YTUsNSwwLDEsMSw1LTVBNSw1LDAsMCwxLDEzLDE4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+PC9zdmc+");
   width: 11px;
   height: 10px;
   display: block;
   background-size: 100%;
 }
-.phototype.Bcard .article-type {
+.phototype.Bcard .article__type {
   width: 70px;
   height: 36px;
   left: 10px;
   bottom: 10px;
   font-size: 20px;
 }
-.phototype.Bcard .article-type .typeicon {
+.phototype.Bcard .article__type .typeicon {
   width: 20px;
   height: 18px;
 }
 
-.videotype .article-type {
+.videotype .article__type {
   position: absolute;
   bottom: 5px;
   left: 0px;
   width: 100%;
 }
-.videotype .article-type .typeicon {
+.videotype .article__type .typeicon {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NyIgaGVpZ2h0PSI1NyIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMCAxMCkiPjxjaXJjbGUgZmlsbD0iI2Q3MTkyMCIgY3g9IjIwIiBjeT0iMjAiIHI9IjIwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAgLTEwKSIvPjxnIGZpbGw9Im5vbmUiIHN0eWxlPSJzdHJva2U6I2ZmZjtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2Utd2lkdGg6MnB4OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwIC0xMCkiPjxjaXJjbGUgZmlsbD0ibm9uZSIgc3R5bGU9InN0cm9rZTpub25lOyIgIGN4PSIyMCIgY3k9IjIwIiByPSIyMCIvPjxjaXJjbGUgZmlsbD0ibm9uZSIgY3g9IjIwIiBjeT0iMjAiIHI9IjE5Ii8+PC9nPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yNDYuNDUxLDQ3My4yNTFsLTEwLjkzNy02LjgzNnYxMy42NzFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI4LjkyNiAtNDYyLjUxNykiLz48L2c+PC9zdmc+");
   width: 18px;
   height: 18px;
@@ -216,7 +216,7 @@ a, a:active, a:visited {
   right: 5px;
   bottom: 1px;
 }
-.videotype .article-type .typedata {
+.videotype .article__type .typedata {
   width: 40px;
   height: 20px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -228,35 +228,35 @@ a, a:active, a:visited {
   margin-left: 5px;
   border-radius: 3px;
 }
-.videotype.Bcard .article-type .typeicon {
+.videotype.Bcard .article__type .typeicon {
   width: 57px;
   height: 57px;
   right: 10px;
 }
-.videotype.Bcard .article-type .typedata {
+.videotype.Bcard .article__type .typedata {
   margin-left: 10px;
 }
 
-.carousel__container .phototype .article-type {
+.carousel__container .phototype .article__type {
   width: 60px;
   height: 27px;
   left: 10px;
   bottom: 10px;
   font-size: 18px;
 }
-.carousel__container .phototype .article-type .typeicon {
+.carousel__container .phototype .article__type .typeicon {
   width: 15px;
   height: 14px;
 }
-.carousel__container .videotype .article-type {
+.carousel__container .videotype .article__type {
   bottom: 10px;
 }
-.carousel__container .videotype .article-type .typeicon {
+.carousel__container .videotype .article__type .typeicon {
   width: 40px;
   height: 40px;
 }
 
-.it-bgicon {
+.it__bgicon {
   height: 18px;
   background-size: 100%;
   display: inline-block;
@@ -315,7 +315,7 @@ a, a:active, a:visited {
   margin-left: -1px;
 }
 
-.latestsection-heading {
+.latestsection__heading {
   padding-left: 17px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23e3001b' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -327,7 +327,7 @@ a, a:active, a:visited {
 }
 
 @media (min-width: 1024px) {
-  .widgetstyle-wrap {
+  .widgetstyle__wrap {
     border-left: 1px solid var(--widgetbordercolor);
     border-right: 1px solid var(--widgetbordercolor);
     border-radius: 5px;
@@ -338,13 +338,13 @@ a, a:active, a:visited {
     display: grid;
     grid-template-columns: 175px 1fr;
   }
-  .temp__layout .content-section {
+  .temp__layout .content__section {
     padding: 20px 0px 20px 25px;
   }
-  .temp__layout .content-section .brk_trand .tranding__capsule {
+  .temp__layout .content__section .brk__trand .tranding__capsule {
     margin-right: 0;
   }
-  .temp__layout .content-section .main__content {
+  .temp__layout .content__section .main__content {
     display: grid;
     grid-template-columns: 730px 300px;
     column-gap: 25px;
