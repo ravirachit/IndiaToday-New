@@ -1,0 +1,49 @@
+.visualStoryCard .card__pic {
+  margin-bottom: var(--magrin15);
+}
+.visualStoryCard .card__pic a {
+  display: flex;
+  position: relative;
+}
+.visualStoryCard .card__pic a img {
+  border-radius: 5px;
+  border: 1px solid var(--widgetbordercolor);
+}
+.visualStoryCard .card__details {
+  padding-bottom: 20px;
+}
+.visualStoryCard .card__details .card__slug {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--brandtextcolor);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: block;
+}
+.visualStoryCard .card__details .card__titile {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primarytextcolor);
+  font-weight: 600;
+}
+.visualStoryCard .card__details p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primarytextcolor);
+}
+.visualStoryCard .card__details .bottom__date__batch {
+  font-style: italic;
+  padding: 2px 10px;
+  margin: 12px 0px 0px;
+  background: #F2F2F2;
+  color: #666666;
+  border-radius: 5px;
+  width: 153px;
+  height: 21px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/*# sourceMappingURL=visualStoryCard.css.map */

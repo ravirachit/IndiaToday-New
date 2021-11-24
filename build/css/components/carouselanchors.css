@@ -1,17 +1,17 @@
-.carousel916__widget .anchor_pannel {
+.carousel916__widget .anchor__pannel {
   scroll-behavior: smooth;
   animation-duration: 0.4s;
   animation-name: slidein;
 }
-.carousel916__widget .heading__nav .tab_wrap {
+.carousel916__widget .heading__nav .tab__wrap {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
 }
-.carousel916__widget .heading__nav .tab_wrap .active {
+.carousel916__widget .heading__nav .tab__wrap .active {
   background-color: var(--brandbgcolor);
 }
-.carousel916__widget .heading__nav .tab_wrap .tab {
+.carousel916__widget .heading__nav .tab__wrap .tab {
   text-transform: uppercase;
   border: 1px solid var(--widgetbordercolor);
   border-radius: 30px;
@@ -24,69 +24,69 @@
   cursor: pointer;
   transition: all 0.275s linear;
 }
-.carousel916__widget .heading__nav .tab_wrap .tab:hover {
+.carousel916__widget .heading__nav .tab__wrap .tab:hover {
   box-shadow: inset 0px 0px 4px #b5b5b5;
   border-color: #cdcdcd;
 }
-.carousel916__widget .heading__nav .tab_wrap .active {
+.carousel916__widget .heading__nav .tab__wrap .active {
   background-color: var(--brandbgcolor);
   color: #ffffff;
   border: none;
 }
-.carousel916__widget .carousel__container .anchor_carousel__card {
+.carousel916__widget .carousel__container .anchor__carousel__card {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   flex: 0 0 142px;
   margin-right: 25px;
   border-radius: 5px;
 }
-.carousel916__widget .carousel__container .anchor_carousel__card .card__desc {
+.carousel916__widget .carousel__container .anchor__carousel__card .card__desc {
   margin-top: 10px;
   text-align: center;
 }
-.carousel916__widget .carousel__container .anchor_carousel__card .card__desc h4 {
+.carousel916__widget .carousel__container .anchor__carousel__card .card__desc h4 {
   font-size: 16px;
   font-weight: normal;
   color: #000000;
 }
-.carousel916__widget .carousel__container .anchor_carousel__card .anchor_card__figure {
+.carousel916__widget .carousel__container .anchor__carousel__card .anchor__card__figure {
   position: relative;
 }
-.carousel916__widget .carousel__container .anchor_carousel__card .anchor_card__figure a img {
+.carousel916__widget .carousel__container .anchor__carousel__card .anchor__card__figure a img {
   border-radius: 50%;
   border: 1px solid #e2e2e2;
   transition: all 0.275s linear;
   transform: scale(0.97);
 }
-.carousel916__widget .carousel__container .anchor_carousel__card .anchor_card__figure a:hover img {
+.carousel916__widget .carousel__container .anchor__carousel__card .anchor__card__figure a:hover img {
   transform: scale(1);
   border-color: var(--brandbgcolor);
 }
-.carousel916__widget .carousel__container .shows_carousel__card {
+.carousel916__widget .carousel__container .shows__carousel__card {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   margin-right: 15px;
   width: 240px;
   flex: 0 0 240px;
 }
-.carousel916__widget .carousel__container .shows_carousel__card .card__desc {
+.carousel916__widget .carousel__container .shows__carousel__card .card__desc {
   margin-top: 2px;
   text-align: center;
 }
-.carousel916__widget .carousel__container .shows_carousel__card .card__desc h4 {
+.carousel916__widget .carousel__container .shows__carousel__card .card__desc h4 {
   font-size: 16px;
   font-weight: normal;
   background-color: #E3031B;
   border-radius: 5px;
   padding: 5.19px;
 }
-.carousel916__widget .carousel__container .shows_carousel__card .card__desc h4 a {
+.carousel916__widget .carousel__container .shows__carousel__card .card__desc h4 a {
   color: #ffffff;
 }
-.carousel916__widget .carousel__container .shows_carousel__card .shows_card__figure {
+.carousel916__widget .carousel__container .shows__carousel__card .shows__card__figure {
   position: relative;
 }
-.carousel916__widget .carousel__container .shows_carousel__card .shows_card__figure a img {
+.carousel916__widget .carousel__container .shows__carousel__card .shows__card__figure a img {
   border-radius: 5px;
 }
 

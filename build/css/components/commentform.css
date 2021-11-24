@@ -9,10 +9,10 @@
   line-height: 20px;
   margin-bottom: 10px;
 }
-.commentsform .form-container {
+.commentsform .form__container {
   display: flex;
 }
-.commentsform .form-container input {
+.commentsform .form__container input {
   flex: 1 0 0;
   border: 1px solid #e2e2e2;
   border-radius: 5px 0 0 5px;
@@ -21,11 +21,11 @@
   padding: 0 10px;
   outline: none;
 }
-.commentsform .form-container input:focus {
+.commentsform .form__container input:focus {
   box-shadow: 0 0 3px #d1d1d1;
   border: 1px solid #d1d1d1;
 }
-.commentsform .form-container button {
+.commentsform .form__container button {
   padding: 0 20px;
   color: #fff;
   text-align: center;
@@ -43,7 +43,7 @@
 
 /***** // bottom COMMENTS FORM Section END // *****/
 @media (min-width: 1024px) {
-  .commentsform .form-container button {
+  .commentsform .form__container button {
     min-width: 138px;
     padding: 0;
   }

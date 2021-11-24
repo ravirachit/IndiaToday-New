@@ -1,6 +1,6 @@
 @import '../abstracts/functions';
 @import '../abstracts/mixins';
-.shopping-widget{
+.shopping__widget{
     @include blockwidgetstyle;
 	padding:15px 10px 15px 10px;
     margin:0 15px;
@@ -21,18 +21,18 @@
          }
         }
     }
-    .product-list{
+    .product__list{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        .products-items{
+        .products__items{
             flex-basis:100%;
             max-width: 100%;
             padding:15px 0;
             border-bottom:1px solid #EFF1F1;
             a{
                 display: flex;
-                .product-img{
+                .product__img{
                     flex: 0 0 65px;
                     max-width:65px;
                     height: 65px;
@@ -45,14 +45,14 @@
                         height: -webkit-fill-available;
                     }
                 }
-                .product-details{
-                    .product-title{
+                .product__details{
+                    .product__title{
                         font-size:14px;
                         line-height:20px;
                         @include lineblock2;
                         margin-bottom: 5px;
                     }
-                    .product-price{
+                    .product__price{
                         font-size:16px;
                         line-height:22px;
                         font-weight:600;
@@ -67,10 +67,10 @@
     }
 }
 
-.rhs-section{
-     .shopping-widget{
-        .product-list{
-            .products-items{
+.rhs__section{
+     .shopping__widget{
+        .product__list{
+            .products__items{
                 flex-basis:100%;
                 max-width: 100%;
 
@@ -88,12 +88,12 @@
 
 
 @media (min-width:$desktopver){
-    .shopping-widget{
+    .shopping__widget{
         @include desktopblockwidgetstyle;
         margin:0 0;
         padding:15px 20px;
-        .product-list{
-            .products-items{
+        .product__list{
+            .products__items{
                 flex-basis:calc(50% - 15px);
                 max-width:calc(50% - 15px);
                 &:nth-last-child(1){

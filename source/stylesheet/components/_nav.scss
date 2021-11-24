@@ -13,7 +13,7 @@
 	height:100vh;
 	overflow-y:auto;
 
-    .navmobile-header{
+    .navmobile__header{
 		display: block;
 		background-color:var(--brandbgcolor);
 		padding:15px 20px;
@@ -21,7 +21,7 @@
         position: sticky;
 		top:0;
 		z-index:-1;
-		.navmobile_container{
+		.navmobile__container{
 			display: flex;
             justify-content: space-between;
 			.closehambuger{
@@ -58,21 +58,21 @@
 			border-bottom:1px solid var(--bordercolor);
 			background-color:#E7ECF0;
 
-		.theme-switch-wrapper {
+		.theme__switch__wrapper {
   				display: flex;
   				align-items: center; 
   				justify-content: space-between; 
  					span {
     					font-size:16px;
  					}
-						.theme-switch {
+						.theme__switch {
 							display: inline-block;
 							height: 24px;
 							position: relative;
 							width: 40px;
 						}
 
-						.theme-switch input {
+						.theme__switch input {
 							display:none;
 						}
 
@@ -164,7 +164,7 @@
 }
 
 /* navigation opening Css START */
-.nav-isopen{
+.nav__isopen{
 	 overflow-y: hidden;
 		.navigation{
 			transform: translateX(0);
@@ -195,7 +195,7 @@
 	    top: 0;
 	    z-index: -1;
 	}
-    .navmobile-header{ display: none;}
+    .navmobile__header{ display: none;}
 	.nav__container{
 		background-color: transparent;
 		.ssologin{

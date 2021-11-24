@@ -4,7 +4,6 @@
   box-shadow: 1px 1px 3px #00000026;
   border-top: 1px solid var(--widgetbordercolor);
   border-bottom: 1px solid var(--widgetbordercolor);
-  border-radius: 0px;
   padding: 15px 0px 15px 10px;
   overflow: hidden;
 }
@@ -68,13 +67,12 @@
 .carouselimg__widget.carouseltheme2 .carousel__nav .navbutn:after {
   border-color: #000;
 }
-.carouselimg__widget.carouseltheme2 .carousel__nav .navbutn.is-disabled {
+.carouselimg__widget.carouseltheme2 .carousel__nav .navbutn.is__disabled {
   background-color: #9d9d9d;
 }
 
 @media (min-width: 1024px) {
   .carouselimg__widget {
-    box-shadow: 1px 1px 3px #00000026;
     border-left: 1px solid var(--widgetbordercolor);
     border-right: 1px solid var(--widgetbordercolor);
     border-radius: 5px;
@@ -102,17 +100,17 @@
     cursor: pointer;
     border: 0px;
   }
-  .carouselimg__widget .heading__nav .carousel__nav .navbutn.carousel_prev:after {
+  .carouselimg__widget .heading__nav .carousel__nav .navbutn.carousel__prev:after {
     transform: rotate(-45deg);
     left: 10px;
   }
-  .carouselimg__widget .heading__nav .carousel__nav .navbutn.carousel_next:after {
+  .carouselimg__widget .heading__nav .carousel__nav .navbutn.carousel__next:after {
     transform: rotate(135deg);
   }
-  .carouselimg__widget .heading__nav .carousel__nav .navbutn.is-disabled {
+  .carouselimg__widget .heading__nav .carousel__nav .navbutn.is__disabled {
     background-color: #d5d5d5;
   }
-  .carouselimg__widget .heading__nav .carousel__nav .navbutn.is-disabled:after {
+  .carouselimg__widget .heading__nav .carousel__nav .navbutn.is__disabled:after {
     border-color: #000;
   }
   .carouselimg__widget .heading__nav .carousel__nav .navbutn:after {

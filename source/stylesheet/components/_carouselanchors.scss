@@ -1,11 +1,11 @@
 .carousel916__widget{
-    .anchor_pannel{
+    .anchor__pannel{
         scroll-behavior: smooth;
         animation-duration: .4s;
         animation-name: slidein;
     }
     .heading__nav{
-        .tab_wrap{
+        .tab__wrap{
             display: flex;
 			gap: 10px;
 			margin-bottom: 15px;
@@ -37,7 +37,7 @@
         }
     }
     .carousel__container{
-        .anchor_carousel__card{
+        .anchor__carousel__card{
             scroll-snap-align: start;
             scroll-snap-stop: always;
             flex: 0 0 142px;
@@ -52,7 +52,7 @@
                     color: #000000;
             }
             }
-            .anchor_card__figure{
+            .anchor__card__figure{
                 position: relative;
                 a{
                     img{
@@ -71,7 +71,7 @@
                 } 
             }
         }
-        .shows_carousel__card{
+        .shows__carousel__card{
             scroll-snap-align: start;
             scroll-snap-stop: always;
             margin-right: 15px;
@@ -91,7 +91,7 @@
                     }
                 }
             }
-            .shows_card__figure{
+            .shows__card__figure{
                 position: relative;
                 a img{
                     border-radius: 5px;

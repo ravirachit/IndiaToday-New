@@ -34,9 +34,9 @@
 			flex-direction: column;
 			justify-content: center; 
 			background-color:#1A1D24;
-			.carousel_item_continer{
+			.carousel__item__continer{
 				padding:0 10px;
-				.reporter_img{
+				.reporter__img{
 					margin:20px 0;
 					text-align: center;
 					display: flex;
@@ -47,7 +47,7 @@
 						width:90px;}
 				
 				}
-				.content_title{ 
+				.content__title{ 
 					min-height: 86px;
 					a{
 						text-align: center;
@@ -60,7 +60,7 @@
 						}
 				
 				}
-				.byline_designation {
+				.byline__designation {
 					border-top: 1px solid #676666;
 					padding: 10px 0 10px;
 					height: 71px;
@@ -68,7 +68,7 @@
 					align-items: center; 
 					justify-content: space-evenly;
 					flex-direction: column;
-					.content_byline_title{
+					.content__byline__title{
 						font-size:14px; 
 						line-height:1; 
 						color:var(--whitetextcolor); 
@@ -76,7 +76,7 @@
 						text-align: center;
 					
 					}
-					.content_byline_designation{
+					.content__byline__designation{
 						font-size:12px; 
 						line-height:1; 
 						color:#A5A5A5;
@@ -121,18 +121,18 @@
 				   position: relative;
 				   cursor: pointer;
 				   border:0px;
-				   &.carousel_prev{
+				   &.carousel__prev{
 					   &:after{
 						  transform: rotate(-45deg);
 						  left:10px;
 					   }
 				   }
-				   &.carousel_next{
+				   &.carousel__next{
 					   &:after{
 					   transform: rotate(135deg);
 					   }
 				   }
-				   &.is-disabled{
+				   &.is__disabled{
 					   background-color:#d5d5d5;
 					   &:after{
 						   border-color:#000;

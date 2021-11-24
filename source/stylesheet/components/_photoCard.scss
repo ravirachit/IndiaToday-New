@@ -1,5 +1,5 @@
 .photoCard{
-    .card-pic{
+    .card__pic{
         margin-bottom: var(--magrin15);
         a{
             display: flex;
@@ -13,7 +13,7 @@
         }
 
     }
-    .card-details{
+    .card__details{
         padding-bottom: 20px;
         .card__slug{
             font-size: 14px;
@@ -48,7 +48,7 @@
                    font-size:15px;
                    line-height:28px;
                    color: #656565;
-                   .rel-data{
+                   .rel__data{
                     margin-left: 5px;
                    }
                 }
@@ -57,7 +57,7 @@
     }
     
     &.phototype {
-      .article-type{
+      .article__type{
         width:70px;
         height:36px;
         left:10px;

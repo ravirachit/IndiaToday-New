@@ -1,18 +1,20 @@
-.photoCard .card-pic {
+.photoCard .card__pic {
   margin-bottom: var(--magrin15);
 }
-.photoCard .card-pic a {
+.photoCard .card__pic a {
   display: flex;
   position: relative;
 }
-.photoCard .card-pic a img {
+.photoCard .card__pic a img {
   border-radius: 5px;
   border: 1px solid var(--widgetbordercolor);
+  width: 100%;
+  height: auto;
 }
-.photoCard .card-details {
+.photoCard .card__details {
   padding-bottom: 20px;
 }
-.photoCard .card-details .card__slug {
+.photoCard .card__details .card__slug {
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -21,44 +23,44 @@
   margin-bottom: 4px;
   display: block;
 }
-.photoCard .card-details .card__titile {
+.photoCard .card__details .card__titile {
   font-size: 16px;
   line-height: 24px;
   color: var(--primarytextcolor);
   font-weight: 600;
 }
-.photoCard .card-details p {
+.photoCard .card__details p {
   font-size: 16px;
   line-height: 24px;
   color: var(--primarytextcolor);
 }
-.photoCard .card-details .sharing {
+.photoCard .card__details .sharing {
   margin-top: var(--magrin15);
 }
-.photoCard .card-details .sharing ul {
+.photoCard .card__details .sharing ul {
   list-style: none;
   display: flex;
   max-width: 340px;
   justify-content: space-between;
 }
-.photoCard .card-details .sharing ul .emoj {
+.photoCard .card__details .sharing ul .emoj {
   display: flex;
   align-items: center;
   font-size: 15px;
   line-height: 28px;
   color: #656565;
 }
-.photoCard .card-details .sharing ul .emoj .rel-data {
+.photoCard .card__details .sharing ul .emoj .rel__data {
   margin-left: 5px;
 }
-.photoCard.phototype .article-type {
+.photoCard.phototype .article__type {
   width: 70px;
   height: 36px;
   left: 10px;
   bottom: 10px;
   font-size: 20px;
 }
-.photoCard.phototype .article-type .typeicon {
+.photoCard.phototype .article__type .typeicon {
   width: 20px;
   height: 18px;
 }

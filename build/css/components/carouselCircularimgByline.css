@@ -4,7 +4,6 @@
   box-shadow: 1px 1px 3px #00000026;
   border-top: 1px solid var(--widgetbordercolor);
   border-bottom: 1px solid var(--widgetbordercolor);
-  border-radius: 0px;
   padding: 15px 0px 20px 10px;
   overflow: hidden;
 }
@@ -48,24 +47,24 @@
   justify-content: center;
   background-color: #1A1D24;
 }
-.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer {
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel__item__continer {
   padding: 0 10px;
 }
-.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .reporter_img {
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel__item__continer .reporter__img {
   margin: 20px 0;
   text-align: center;
   display: flex;
   justify-content: center;
 }
-.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .reporter_img img {
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel__item__continer .reporter__img img {
   border: 5px solid var(--bordercolor);
   border-radius: 100%;
   width: 90px;
 }
-.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .content_title {
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel__item__continer .content__title {
   min-height: 86px;
 }
-.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .content_title a {
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel__item__continer .content__title a {
   text-align: center;
   font-size: 16px;
   line-height: 22px;
@@ -77,7 +76,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .byline_designation {
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel__item__continer .byline__designation {
   border-top: 1px solid #676666;
   padding: 10px 0 10px;
   height: 71px;
@@ -86,14 +85,14 @@
   justify-content: space-evenly;
   flex-direction: column;
 }
-.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .byline_designation .content_byline_title {
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel__item__continer .byline__designation .content__byline__title {
   font-size: 14px;
   line-height: 1;
   color: var(--whitetextcolor);
   font-style: italic;
   text-align: center;
 }
-.carouselcirularimg__widget .carousel__container .carousel__card .carousel_item_continer .byline_designation .content_byline_designation {
+.carouselcirularimg__widget .carousel__container .carousel__card .carousel__item__continer .byline__designation .content__byline__designation {
   font-size: 12px;
   line-height: 1;
   color: #A5A5A5;
@@ -108,7 +107,6 @@
 
 @media (min-width: 1024px) {
   .carouselcirularimg__widget {
-    box-shadow: 1px 1px 3px #00000026;
     border-left: 1px solid var(--widgetbordercolor);
     border-right: 1px solid var(--widgetbordercolor);
     border-radius: 5px;
@@ -136,17 +134,17 @@
     cursor: pointer;
     border: 0px;
   }
-  .carouselcirularimg__widget .heading__nav .carousel__nav .navbutn.carousel_prev:after {
+  .carouselcirularimg__widget .heading__nav .carousel__nav .navbutn.carousel__prev:after {
     transform: rotate(-45deg);
     left: 10px;
   }
-  .carouselcirularimg__widget .heading__nav .carousel__nav .navbutn.carousel_next:after {
+  .carouselcirularimg__widget .heading__nav .carousel__nav .navbutn.carousel__next:after {
     transform: rotate(135deg);
   }
-  .carouselcirularimg__widget .heading__nav .carousel__nav .navbutn.is-disabled {
+  .carouselcirularimg__widget .heading__nav .carousel__nav .navbutn.is__disabled {
     background-color: #d5d5d5;
   }
-  .carouselcirularimg__widget .heading__nav .carousel__nav .navbutn.is-disabled:after {
+  .carouselcirularimg__widget .heading__nav .carousel__nav .navbutn.is__disabled:after {
     border-color: #000;
   }
   .carouselcirularimg__widget .heading__nav .carousel__nav .navbutn:after {

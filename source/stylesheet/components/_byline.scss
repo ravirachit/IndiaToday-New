@@ -1,11 +1,11 @@
 @import '../abstracts/functions';
 @import '../abstracts/mixins';
 
-.category-byline{
+.category__byline{
     display:flex;
     align-items: center;
     margin-bottom:var(--magrin15);
-    .profile-pic{
+    .profile__pic{
         margin-right:10px;
         img{
             width:40px;
@@ -14,8 +14,8 @@
             border-radius:100%;
         }
     }
-    .profile-details{
-        .category-author{
+    .profile__details{
+        .category__author{
             font-size:14px;
             line-height:22px;
             font-weight:600;
@@ -33,8 +33,8 @@
 
     &.theme2{
         
-            .profile-details{
-                .category-author{
+            .profile__details{
+                .category__author{
                     a{
                         color:var(--whitetextcolor);
 
@@ -53,8 +53,8 @@
 
 
 @media (min-width:$desktopver){
-    .category-byline{
-        .profile-pic{
+    .category__byline{
+        .profile__pic{
             margin-right:15px;
             img{
                 width:50px;

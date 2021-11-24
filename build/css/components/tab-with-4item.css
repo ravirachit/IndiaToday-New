@@ -1,14 +1,14 @@
 .Tab__4items {
   margin-bottom: var(--widgetgap);
 }
-.Tab__4items .content-wrap {
+.Tab__4items .content__wrap {
   background-color: var(--theme2bg);
   padding: 15px 20px 0;
   box-shadow: 1px 1px 3px #00000026;
   border: 1px solid var(--widgetbordercolor);
   border-radius: 5px;
 }
-.Tab__4items .content-wrap .tab_wrap {
+.Tab__4items .content__wrap .tab__wrap {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
@@ -17,7 +17,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.Tab__4items .content-wrap .tab_wrap .tab {
+.Tab__4items .content__wrap .tab__wrap .tab {
   text-transform: uppercase;
   border: 1px solid var(--widgetbordercolor);
   border-radius: 30px;
@@ -31,23 +31,23 @@
   flex: 0 0 82px;
   transition: all 0.275s linear;
 }
-.Tab__4items .content-wrap .tab_wrap .tab.active {
+.Tab__4items .content__wrap .tab__wrap .tab.active {
   background-color: var(--brandbgcolor);
   color: var(--whitetextcolor);
   border-color: var(--brandbgcolor);
 }
-.Tab__4items .content-wrap .tab_wrap .tab.active:hover {
+.Tab__4items .content__wrap .tab__wrap .tab.active:hover {
   box-shadow: 0;
   border-color: transparent;
 }
-.Tab__4items .content-wrap .tab_wrap .tab:hover {
+.Tab__4items .content__wrap .tab__wrap .tab:hover {
   box-shadow: inset 0px 0px 4px #56818d;
   border-color: #006a87;
 }
-.Tab__4items .content-wrap .tab_wrap::-webkit-scrollbar {
+.Tab__4items .content__wrap .tab__wrap::-webkit-scrollbar {
   display: none;
 }
-.Tab__4items .content-wrap h2 {
+.Tab__4items .content__wrap h2 {
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
@@ -59,39 +59,39 @@
   background-position: 0 center;
   margin-bottom: var(--magrin15);
 }
-.Tab__4items .content-wrap .inner_wrap {
+.Tab__4items .content__wrap .inner__wrap {
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
 }
-.Tab__4items .content-wrap .inner_wrap .video_card {
+.Tab__4items .content__wrap .inner__wrap .video__card {
   position: relative;
   margin-bottom: 25px;
   width: 48.5%;
 }
-.Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+.Tab__4items .content__wrap .inner__wrap .video__card .img__section a img {
   border-radius: 5px;
 }
-.Tab__4items .content-wrap .inner_wrap .video_card p {
+.Tab__4items .content__wrap .inner__wrap .video__card p {
   text-align: left;
   color: var(--whitetextcolor);
   font-size: 16px;
   line-height: 24px;
 }
-.Tab__4items .content-wrap .inner_wrap .video_card .label {
+.Tab__4items .content__wrap .inner__wrap .video__card .label {
   font-size: 14px;
   color: var(--theme2secondarytextcolor);
   margin: 18px 0px 10px;
   font-weight: 500;
   text-transform: uppercase;
 }
-.Tab__4items .content-wrap .inner_wrap .video_card .article-type {
+.Tab__4items .content__wrap .inner__wrap .video__card .article__type {
   display: flex;
   justify-content: space-between;
   position: absolute;
   width: 100%;
 }
-.Tab__4items .content-wrap .inner_wrap .video_card .article-type .typedata {
+.Tab__4items .content__wrap .inner__wrap .video__card .article__type .typedata {
   width: 40px;
   height: 20px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -103,31 +103,31 @@
   margin: -30px 10px;
   border-radius: 3px;
 }
-.Tab__4items .content-wrap .inner_wrap .video_card .article-type .typeicon img {
+.Tab__4items .content__wrap .inner__wrap .video__card .article__type .typeicon img {
   margin: -50px 10px;
 }
-.Tab__4items .content-wrap .divider {
+.Tab__4items .content__wrap .divider {
   border: 1px solid #676666;
   margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
-  .Tab__4items .content-wrap .inner_wrap .video_card {
+  .Tab__4items .content__wrap .inner__wrap .video__card {
     width: 100%;
   }
 
-  .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+  .Tab__4items .content__wrap .inner__wrap .video__card .img__section a img {
     height: auto;
     width: 100%;
   }
 }
 @media screen and (orientation: landscape) {
-  .Tab__4items .content-wrap .inner_wrap .video_card {
+  .Tab__4items .content__wrap .inner__wrap .video__card {
     width: 48.3%;
   }
 }
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  .Tab__4items .content-wrap .inner_wrap .video_card .img_section a img {
+  .Tab__4items .content__wrap .inner__wrap .video__card .img__section a img {
     height: auto;
     width: 100%;
   }
