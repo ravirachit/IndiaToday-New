@@ -12,30 +12,30 @@
 			@include titleicon;
 		}
 	}
-    .widget-body{
+    .widget__body{
         display: flex;
         justify-content: space-between;
-        .magazine-cover{
+        .magazine__cover{
             flex-basis: 115px;
             max-width: 115px;
             flex-shrink: 0;
             img{
                 height:auto;
               }
-            .issue-mdate{
+            .issue__mdate{
                 font-size:14px;
                 line-height:18px;
                 font-weight:500;
                 padding-top:10px;
             }
         }
-        .magazine-sub-content{
+        .magazine__sub__content{
             flex: 1 0 0;
             margin-left: 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .content-details{
+            .content__details{
                 text-align: center;
                 h4{
                     font-size:18px;
@@ -55,7 +55,7 @@
                     color:#666;
                     margin-bottom: var(--widgetgap);
                 }
-                .fullbg-button{
+                .fullbg__button{
                     a{
                     font-size:14px;
                     line-height:18px;
@@ -110,20 +110,20 @@
     .magazine__sub__widget{
         @include desktopblockwidgetstyle;
         padding:15px 20px 20px 20px;
-        .widget-body{
-            .magazine-cover{
+        .widget__body{
+            .magazine__cover{
                 flex-basis: 145px;
                 max-width: 145px;
-                .magazine-coverimg{
-                 .issue-mdate{
+                .magazine__coverimg{
+                 .issue__mdate{
                      font-size:16px;
                      line-height:18px;
                  }
                   }
             }
-            .magazine-sub-content{
+            .magazine__sub__content{
                 margin-left: 45px;
-                .content-details{
+                .content__details{
                     h4{
                         font-size:32px;
                         line-height: 38px;

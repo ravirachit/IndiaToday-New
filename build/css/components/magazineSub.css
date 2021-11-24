@@ -4,7 +4,6 @@
   box-shadow: 1px 1px 3px #00000026;
   border-top: 1px solid var(--widgetbordercolor);
   border-bottom: 1px solid var(--widgetbordercolor);
-  border-radius: 0px;
   padding: 15px 10px 20px 10px;
 }
 .magazine__sub__widget .heading__nav {
@@ -22,53 +21,53 @@
   background-repeat: no-repeat;
   background-position: 0 center;
 }
-.magazine__sub__widget .widget-body {
+.magazine__sub__widget .widget__body {
   display: flex;
   justify-content: space-between;
 }
-.magazine__sub__widget .widget-body .magazine-cover {
+.magazine__sub__widget .widget__body .magazine__cover {
   flex-basis: 115px;
   max-width: 115px;
   flex-shrink: 0;
 }
-.magazine__sub__widget .widget-body .magazine-cover img {
+.magazine__sub__widget .widget__body .magazine__cover img {
   height: auto;
 }
-.magazine__sub__widget .widget-body .magazine-cover .issue-mdate {
+.magazine__sub__widget .widget__body .magazine__cover .issue__mdate {
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
   padding-top: 10px;
 }
-.magazine__sub__widget .widget-body .magazine-sub-content {
+.magazine__sub__widget .widget__body .magazine__sub__content {
   flex: 1 0 0;
   margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .content-details {
+.magazine__sub__widget .widget__body .magazine__sub__content .content__details {
   text-align: center;
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 {
+.magazine__sub__widget .widget__body .magazine__sub__content .content__details h4 {
   font-size: 18px;
   line-height: 24px;
   color: var(--primarytextcolor);
   margin-bottom: 10px;
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 br {
+.magazine__sub__widget .widget__body .magazine__sub__content .content__details h4 br {
   display: none;
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 span {
+.magazine__sub__widget .widget__body .magazine__sub__content .content__details h4 span {
   color: var(--brandtextcolor);
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .content-details .subtext {
+.magazine__sub__widget .widget__body .magazine__sub__content .content__details .subtext {
   font-size: 14px;
   line-height: 20px;
   color: #666;
   margin-bottom: var(--widgetgap);
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .content-details .fullbg-button a {
+.magazine__sub__widget .widget__body .magazine__sub__content .content__details .fullbg__button a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
@@ -80,20 +79,20 @@
   border: 1px solid var(--brandbgcolor);
   transition: all 0.275s linear;
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .content-details .fullbg-button a:hover {
+.magazine__sub__widget .widget__body .magazine__sub__content .content__details .fullbg__button a:hover {
   background-color: transparent;
   color: var(--brandtextcolor);
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo {
+.magazine__sub__widget .widget__body .magazine__sub__content .smtextinfo {
   font-size: 13px;
   line-height: 20px;
   color: #666;
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo a {
+.magazine__sub__widget .widget__body .magazine__sub__content .smtextinfo a {
   color: var(--brandtextcolor);
   position: relative;
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo a:before {
+.magazine__sub__widget .widget__body .magazine__sub__content .smtextinfo a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -105,42 +104,41 @@
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
 }
-.magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo a:hover:before {
+.magazine__sub__widget .widget__body .magazine__sub__content .smtextinfo a:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
 
 @media (min-width: 1024px) {
   .magazine__sub__widget {
-    box-shadow: 1px 1px 3px #00000026;
     border-left: 1px solid var(--widgetbordercolor);
     border-right: 1px solid var(--widgetbordercolor);
     border-radius: 5px;
     padding: 15px 20px 20px 20px;
   }
-  .magazine__sub__widget .widget-body .magazine-cover {
+  .magazine__sub__widget .widget__body .magazine__cover {
     flex-basis: 145px;
     max-width: 145px;
   }
-  .magazine__sub__widget .widget-body .magazine-cover .magazine-coverimg .issue-mdate {
+  .magazine__sub__widget .widget__body .magazine__cover .magazine__coverimg .issue__mdate {
     font-size: 16px;
     line-height: 18px;
   }
-  .magazine__sub__widget .widget-body .magazine-sub-content {
+  .magazine__sub__widget .widget__body .magazine__sub__content {
     margin-left: 45px;
   }
-  .magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 {
+  .magazine__sub__widget .widget__body .magazine__sub__content .content__details h4 {
     font-size: 32px;
     line-height: 38px;
   }
-  .magazine__sub__widget .widget-body .magazine-sub-content .content-details h4 br {
+  .magazine__sub__widget .widget__body .magazine__sub__content .content__details h4 br {
     display: block;
   }
-  .magazine__sub__widget .widget-body .magazine-sub-content .content-details .subtext {
+  .magazine__sub__widget .widget__body .magazine__sub__content .content__details .subtext {
     font-size: 20px;
     line-height: 26px;
   }
-  .magazine__sub__widget .widget-body .magazine-sub-content .smtextinfo {
+  .magazine__sub__widget .widget__body .magazine__sub__content .smtextinfo {
     font-size: 16px;
     line-height: 24px;
   }

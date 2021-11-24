@@ -6,7 +6,7 @@
 	display: flex;
 	align-items: center;
 	padding:0 10px;
-	.secion-name{
+	.secion__name{
 		font-size:12px;
 		line-height:14px;
 		color:var(--textcolor666);
@@ -14,7 +14,7 @@
 		overflow:hidden;
 	}
 	a{
-		.secion-name{
+		.secion__name{
 			color:var(--brandtextcolor);
             &:before{
                 content: "";
@@ -31,7 +31,7 @@
 		}
 		&:hover{
 			text-decoration:none;
-			.secion-name{
+			.secion__name{
 				text-decoration:none;
                 position: relative;
                 &:before{

@@ -76,7 +76,7 @@
 					&:after{
 						border-color:#000;
 					}
-					&.is-disabled{
+					&.is__disabled{
 						background-color:#9d9d9d;
 					}
 				}
@@ -106,7 +106,7 @@
 
 
 /* if carousel in RHS */
-.rhs-section{
+.rhs__section{
 	.carousel__widget {
 		.carousel__container{
 			.carousel__card{
@@ -145,18 +145,18 @@
 					position: relative;
 					cursor: pointer;
 					border:0px;
-					&.carousel_prev{
+					&.carousel__prev{
 						&:after{
 						   transform: rotate(-45deg);
 						   left:10px;
 						}
 					}
-					&.carousel_next{
+					&.carousel__next{
 						&:after{
 						transform: rotate(135deg);
 						}
 					}
-					&.is-disabled{
+					&.is__disabled{
 						background-color:#d5d5d5;
 						&:after{
 							border-color:#000;

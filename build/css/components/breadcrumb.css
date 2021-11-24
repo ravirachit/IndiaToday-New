@@ -1,0 +1,58 @@
+/*sass media query varibale */
+/****** breadcrumb section css START ******/
+.breadcrumb {
+  margin-bottom: var(--widgetgap);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.breadcrumb .secion__name {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--textcolor666);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.breadcrumb a .secion__name {
+  color: var(--brandtextcolor);
+}
+.breadcrumb a .secion__name:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--brandtextcolor);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.breadcrumb a:hover {
+  text-decoration: none;
+}
+.breadcrumb a:hover .secion__name {
+  text-decoration: none;
+  position: relative;
+}
+.breadcrumb a:hover .secion__name:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.breadcrumb a:after {
+  content: "/";
+  padding: 0 5px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--textcolor666);
+}
+
+/****** // breadcrumb section css END // ******/
+@media (min-width: 1024px) {
+  .breadcrumb {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=breadcrumb.css.map */

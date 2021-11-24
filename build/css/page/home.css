@@ -1,5 +1,5 @@
 /*sass media query varibale */
-.brk_trand .tranding__capsule {
+.brk__trand .tranding__capsule {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -7,7 +7,7 @@
   scrollbar-width: none;
   margin: 0 0 0 10px;
 }
-.brk_trand .tranding__capsule a {
+.brk__trand .tranding__capsule a {
   text-decoration: none;
   font-size: 16px;
   color: var(--primarytextcolor);
@@ -21,15 +21,15 @@
   scroll-snap-stop: always;
   transition: all 0.275s linear;
 }
-.brk_trand .tranding__capsule a:hover {
+.brk__trand .tranding__capsule a:hover {
   box-shadow: inset 0px 0px 4px #d1d1d1;
 }
-.brk_trand .tranding__capsule::-webkit-scrollbar {
+.brk__trand .tranding__capsule::-webkit-scrollbar {
   display: none;
 }
 
 @media (min-width: 1024px) {
-  .brk_trand .tranding__capsule {
+  .brk__trand .tranding__capsule {
     margin: 0;
   }
 }

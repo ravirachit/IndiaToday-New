@@ -4,13 +4,7 @@
   width: 21px;
 }
 
-.section_list .section-secondary-nav .nav-container h1 {
-  text-indent: 0;
-  font-size: 30px;
-  line-height: 36px;
-  color: var(--whitetextcolor);
-}
-.section_list .section-secondary-nav .nav-container .secondary-navigation ul li {
+.section__list .section__secondary__nav .nav__container .secondary__navigation ul li {
   white-space: nowrap;
 }
 

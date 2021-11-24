@@ -16,11 +16,11 @@
 
 
 
-    .story-byline{
+    .story__byline{
 		display:flex;
 		align-items: center;
 		margin-bottom:var(--magrin15);
-		.profile-pic{
+		.profile__pic{
 			margin-right:10px;
 			img{
 				width:40px;
@@ -29,8 +29,8 @@
 				border-radius:100%;
 			}
 		}
-		.profile-details{
-			.story-author{
+		.profile__details{
+			.story__author{
 				font-size:14px;
 				line-height:22px;
 				font-weight:600;
@@ -61,29 +61,6 @@
             line-height:20px;
             margin-bottom: var(--magrin15);
         }
-        .viewall-bnt{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            span{
-                border:1px solid #fff;
-                padding:5px 20px;
-                color:var(--whitetextcolor);
-                font-size:16px;
-                line-height:22px;
-                border-radius:5px;
-                font-weight:500;
-                background: linear-gradient(to right, #fff 50%, transparent 50%);
-                background-size: 200% 100%;
-                background-position: right bottom;
-                transition: all 0.275s ease-out;
-                cursor: pointer;
-                &:hover{
-                    background-position: left bottom;
-                    color: #000;
-                }
-            }
-        }
     }
 /***** bottom SHARING Section START *****/
 .sharing{
@@ -99,7 +76,7 @@
            font-size:15px;
            line-height:28px;
            color:var(--whitetextcolor);
-           .rel-data{
+           .rel__data{
             margin-left: 5px;
            }
         }
@@ -127,8 +104,8 @@
             font-size:30px;
             line-height:38px;
         }
-        .story-byline{
-			.profile-pic{
+        .story__byline{
+			.profile__pic{
 				margin-right:15px;
 				img{
 					width:50px;
