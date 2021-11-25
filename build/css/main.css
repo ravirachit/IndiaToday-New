@@ -68,6 +68,8 @@ ul, li {
   --widgetgap:15px;
   --storyparagap:20px;
   --magrin15:15px;
+  --star-background: #FCAF2D;
+  --star-color: #CECECE;
   /*--catbrandcolor:#CC0000;*/
 }
 
@@ -4118,6 +4120,347 @@ a, a:active, a:visited {
   line-height: 18px;
 }
 
+/*sass media query varibale */
+.carouselNewReleases__widget {
+  background-color: var(--whitebg);
+  box-shadow: 1px 1px 3px #00000026;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  padding: 15px 0px 0px 0px;
+  overflow: hidden;
+}
+.carouselNewReleases__widget .heading__nav {
+  margin-bottom: 12px;
+  margin-left: 20px;
+}
+.carouselNewReleases__widget .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+  padding-left: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23e3001b' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.carouselNewReleases__widget .heading__nav .carousel__nav {
+  display: none;
+}
+.carouselNewReleases__widget .carousel__container {
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  flex: 0 0 249px;
+  position: relative;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card::before {
+  box-shadow: inset 0px -250px 100px -81px rgba(0, 0, 0, 0.6);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content {
+  position: absolute;
+  bottom: 0;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .card__figure {
+  position: relative;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__desc {
+  padding: 0px 9px;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__desc .card__slug {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--catbrandcolor, #CC0000);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: block;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__desc h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__desc h3 a {
+  text-decoration: none;
+  color: var(--whitetextcolor);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__desc h3 a span {
+  font-size: 15px;
+  color: #C7C7C7;
+  font-weight: normal;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__footer {
+  display: flex;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__footer .video__rating {
+  margin: 5px 20px 15px 9px;
+  width: 109px;
+  height: 24px;
+  background: #808080;
+  border-radius: 15px;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__footer .video__rating .Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 19px;
+  margin: 1.5px 9.5px;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__footer .video__rating .Stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__footer .watch__trailer {
+  display: flex;
+  margin-top: 8px;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__footer .watch__trailer span {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--whitetextcolor);
+  text-transform: uppercase;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+.carouselNewReleases__widget .carousel__container .carousel__image__card:nth-last-child(1) {
+  margin-right: 0px;
+}
+.carouselNewReleases__widget .carousel__container::-webkit-scrollbar {
+  display: none;
+}
+.carouselNewReleases__widget.carouseltheme2 {
+  background-color: var(--theme2bg);
+}
+.carouselNewReleases__widget.carouseltheme2 h2 {
+  color: var(--theme2primarytextcolor);
+}
+.carouselNewReleases__widget.carouseltheme2 .carousel__nav .navbutn {
+  background-color: #fff;
+}
+.carouselNewReleases__widget.carouseltheme2 .carousel__nav .navbutn:after {
+  border-color: #000;
+}
+.carouselNewReleases__widget.carouseltheme2 .carousel__nav .navbutn.is-disabled {
+  background-color: #9d9d9d;
+}
+.carouselNewReleases__widget.carouseltheme2 .carousel__container .carousel__image__card .image__desc .card__slug {
+  color: var(--theme2secondarytextcolor);
+}
+.carouselNewReleases__widget.carouseltheme2 .carousel__container .carousel__image__card .image__desc h3 a {
+  color: var(--theme2primarytextcolor);
+}
+
+@media (min-width: 1024px) {
+  .carouselNewReleases__widget {
+    border-left: 1px solid var(--widgetbordercolor);
+    border-right: 1px solid var(--widgetbordercolor);
+    border-radius: 5px;
+    padding: 15px 0px 0px 0px;
+  }
+  .carouselNewReleases__widget .heading__nav {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .carouselNewReleases__widget .heading__nav .carousel__nav {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .carouselNewReleases__widget .heading__nav .carousel__nav .navbutn {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #000;
+    position: relative;
+    cursor: pointer;
+    border: 0px;
+  }
+  .carouselNewReleases__widget .heading__nav .carousel__nav .navbutn.carousel_prev:after {
+    transform: rotate(-45deg);
+    left: 10px;
+  }
+  .carouselNewReleases__widget .heading__nav .carousel__nav .navbutn.carousel_next:after {
+    transform: rotate(135deg);
+  }
+  .carouselNewReleases__widget .heading__nav .carousel__nav .navbutn.is-disabled {
+    background-color: #d5d5d5;
+  }
+  .carouselNewReleases__widget .heading__nav .carousel__nav .navbutn.is-disabled:after {
+    border-color: #000;
+  }
+  .carouselNewReleases__widget .heading__nav .carousel__nav .navbutn:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    top: 9px;
+    left: 8px;
+  }
+}
+/*sass media query varibale */
+.bingeWatch__widget {
+  padding: 15px 0px 15px 20px;
+}
+.bingeWatch__widget .binge__calendar__footer {
+  background-color: var(--theme2secondarytextcolor);
+  height: 40px;
+  border-radius: 0px 0px 5px 5px;
+  margin-left: -10px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bingeWatch__widget .binge__calendar__footer span {
+  margin: 11px 31px 11px 15px;
+}
+.bingeWatch__widget .binge__calendar__footer .calendar__icon {
+  margin: 8.23px 0px;
+}
+.bingeWatch__widget .binge__calendar__footer .play__icon {
+  margin: 12px 0px 14px 0px;
+}
+.bingeWatch__widget .divider {
+  border: 1px solid #676666;
+  width: 100%;
+  margin: 20px -10px;
+}
+.bingeWatch__widget .viewall__bnt {
+  margin-bottom: 5px;
+}
+.bingeWatch__widget .binge__calendar__container {
+  height: auto;
+  background: #1a1d24;
+  width: 100%;
+  margin: 0px -10px;
+  padding: 17px 15px;
+}
+.bingeWatch__widget .binge__calendar__container .bingeCardGrid__title {
+  display: flex;
+  margin-bottom: 16px;
+}
+.bingeWatch__widget .binge__calendar__container .bingeCardGrid__title span {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--whitetextcolor);
+  margin-right: 15px;
+}
+.bingeWatch__widget .binge__calendar__container .bingeCardGrid__title .title_batch {
+  background-color: var(--theme2secondarytextcolor);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  height: 20px;
+  padding: 2px 31px 1px 31px;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--widgetgap);
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card {
+  display: flex;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs {
+  margin-left: 10px;
+  margin-top: -7px;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs .img__card__rhs__title {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--whitetextcolor);
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #c7c7c7;
+  margin-bottom: -3px;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs .watch__trailer {
+  display: flex;
+  margin-top: 8px;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs .watch__trailer span {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--whitetextcolor);
+  text-transform: uppercase;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+.bingeWatch__widget .carousel__container {
+  margin: 0px -10px;
+}
+.bingeWatch__widget .carousel__container .carousel__image {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  flex: 0 0 260px;
+  margin-right: 15px;
+}
+.bingeWatch__widget .carousel__container .carousel__image img {
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+}
+.bingeWatch__widget .carousel__container .carousel__image .img__desc .img__title {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--theme2secondarytextcolor);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 15px 0px 10px;
+}
+.bingeWatch__widget .carousel__container .carousel__image .img__desc h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.bingeWatch__widget .carousel__container .carousel__image .img__desc h3 a {
+  color: var(--whitetextcolor);
+}
+
+@media (min-width: 1024px) {
+  .bingeWatch__widget .binge__calendar__container {
+    height: 156px;
+  }
+  .bingeWatch__widget .binge__calendar__container .binge__calendar_grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+}
 /*sass media query varibale */
 .liveblog-body {
   /***** bottom SHARING Section START *****/
