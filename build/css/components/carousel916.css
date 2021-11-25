@@ -99,6 +99,12 @@
 .carousel916__widget.carouseltheme2 .carousel__container .carousel__card .card__desc {
   background-color: #fff;
 }
+.carousel916__widget.carouseltheme2.cardnobgcolr .carousel__container .carousel__card .card__desc .card__slug {
+  color: var(--theme2secondarytextcolor);
+}
+.carousel916__widget.carouseltheme2.cardnobgcolr .carousel__container .carousel__card .card__desc h3 a {
+  color: var(--theme2primarytextcolor);
+}
 .carousel916__widget.cardnobgcolr .carousel__container .carousel__card {
   border: 0px;
 }
@@ -113,10 +119,10 @@
   padding-bottom: 0px;
 }
 .carousel916__widget.cardnobgcolr .carousel__container .carousel__card .card__desc .card__slug {
-  color: var(--theme2secondarytextcolor);
+  color: var(--catbrandcolor, #CC0000);
 }
 .carousel916__widget.cardnobgcolr .carousel__container .carousel__card .card__desc h3 a {
-  color: var(--theme2primarytextcolor);
+  color: var(--primarytextcolor);
 }
 
 @media (min-width: 1024px) {
