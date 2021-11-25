@@ -4322,6 +4322,140 @@ a, a:active, a:visited {
   }
 }
 /*sass media query varibale */
+.bingeWatch__widget {
+  padding: 15px 0px 15px 20px;
+}
+.bingeWatch__widget .binge__calendar__footer {
+  background-color: var(--theme2secondarytextcolor);
+  height: 40px;
+  border-radius: 0px 0px 5px 5px;
+  margin-left: -10px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bingeWatch__widget .binge__calendar__footer span {
+  margin: 11px 31px 11px 15px;
+}
+.bingeWatch__widget .binge__calendar__footer .calendar__icon {
+  margin: 8.23px 0px;
+}
+.bingeWatch__widget .binge__calendar__footer .play__icon {
+  margin: 12px 0px 14px 0px;
+}
+.bingeWatch__widget .divider {
+  border: 1px solid #676666;
+  width: 100%;
+  margin: 20px -10px;
+}
+.bingeWatch__widget .viewall__bnt {
+  margin-bottom: 5px;
+}
+.bingeWatch__widget .binge__calendar__container {
+  height: auto;
+  background: #1a1d24;
+  width: 100%;
+  margin: 0px -10px;
+  padding: 17px 15px;
+}
+.bingeWatch__widget .binge__calendar__container .bingeCardGrid__title {
+  display: flex;
+  margin-bottom: 16px;
+}
+.bingeWatch__widget .binge__calendar__container .bingeCardGrid__title span {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--whitetextcolor);
+  margin-right: 15px;
+}
+.bingeWatch__widget .binge__calendar__container .bingeCardGrid__title .title_batch {
+  background-color: var(--theme2secondarytextcolor);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  height: 20px;
+  padding: 2px 31px 1px 31px;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--widgetgap);
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card {
+  display: flex;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs {
+  margin-left: 10px;
+  margin-top: -7px;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs .img__card__rhs__title {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--whitetextcolor);
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #c7c7c7;
+  margin-bottom: -3px;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs .watch__trailer {
+  display: flex;
+  margin-top: 8px;
+}
+.bingeWatch__widget .binge__calendar__container .binge__calendar_grid .img__card .img__card__rhs .watch__trailer span {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--whitetextcolor);
+  text-transform: uppercase;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+.bingeWatch__widget .carousel__container {
+  margin: 0px -10px;
+}
+.bingeWatch__widget .carousel__container .carousel__image {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  flex: 0 0 260px;
+  margin-right: 15px;
+}
+.bingeWatch__widget .carousel__container .carousel__image img {
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+}
+.bingeWatch__widget .carousel__container .carousel__image .img__desc .img__title {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--theme2secondarytextcolor);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 15px 0px 10px;
+}
+.bingeWatch__widget .carousel__container .carousel__image .img__desc h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.bingeWatch__widget .carousel__container .carousel__image .img__desc h3 a {
+  color: var(--whitetextcolor);
+}
+
+@media (min-width: 1024px) {
+  .bingeWatch__widget .binge__calendar__container {
+    height: 156px;
+  }
+  .bingeWatch__widget .binge__calendar__container .binge__calendar_grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+}
+/*sass media query varibale */
 .liveblog-body {
   /***** bottom SHARING Section START *****/
   /***** // bottom SHARING Section END // *****/
