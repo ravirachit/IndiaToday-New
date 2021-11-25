@@ -2,7 +2,7 @@
 .Tab__4items{
     margin-bottom: var(--widgetgap);
     .content__wrap{
-        background-color:var(--theme2bg);
+        background-color:var(--catbrandcolor, #1D2936);
         padding: 15px 20px 0;
         box-shadow: 1px 1px 3px #00000026;
         border: 1px solid var(--widgetbordercolor);
@@ -108,7 +108,7 @@
        
     }
     .divider{
-        border: 1px solid #676666;
+        border-top: 1px solid #666;
         margin-bottom: 20px;
     }
 }

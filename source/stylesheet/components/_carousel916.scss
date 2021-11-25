@@ -89,6 +89,26 @@
 
 				}
 			}
+			&.cardnobgcolr{
+				.carousel__container{
+					.carousel__card {
+
+						.card__desc{
+							.card__slug{
+								color:var(--theme2secondarytextcolor);
+							}
+							
+							h3{
+								a{
+									color:var(--theme2primarytextcolor);
+								}
+							}
+
+						}
+					}
+				}
+
+			}
 	}
     &.cardnobgcolr{
 		.carousel__container{
@@ -107,12 +127,12 @@
 					padding-right: 0px;
 					padding-bottom: 0px;
 						.card__slug{
-							color:var(--theme2secondarytextcolor);
+							color:var(--catbrandcolor, #CC0000);
 						}
 						
 						h3{
 							a{
-								color:var(--theme2primarytextcolor);
+								color:var(--primarytextcolor);
 							}
 						}
 					}
