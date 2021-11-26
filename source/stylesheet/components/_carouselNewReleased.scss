@@ -80,20 +80,6 @@
 						padding: 3px 10px;
 						text-align: center;
 						white-space: nowrap;
-						// .Stars {
-						//     --percent: calc(var(--rating) / 5 * 100%);
-						//     display: inline-block;
-						//     font-size: 19px;
-						//     margin: 1.5px 9.5px;
-						//     &::before {
-						//       content: '★★★★★';
-						//       letter-spacing: 3px;
-						//       background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-						//       -webkit-background-clip: text;
-						//       -webkit-text-fill-color: transparent;
-						//     }
-						//   }
-
 						[data-star] {
 							text-align: left;
 							font-style: normal;
