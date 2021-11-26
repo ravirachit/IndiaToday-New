@@ -29,7 +29,7 @@
 		.carousel__image__card {
 			scroll-snap-align: start;
 			scroll-snap-stop: always;
-			flex: 0 0 249px;
+			flex: 0 0 248px;
 			position: relative;
 			margin-right: 1px;
 			&::before {
@@ -74,11 +74,12 @@
 					display: flex;
 					.video__rating {
 						margin: 5px 20px 15px 9px;
-						width: 109px;
 						height: 24px;
 						background: #808080;
 						border-radius: 15px;
 						padding: 3px 10px;
+						text-align: center;
+						white-space: nowrap;
 						// .Stars {
 						//     --percent: calc(var(--rating) / 5 * 100%);
 						//     display: inline-block;
@@ -104,7 +105,7 @@
 							display: block;
 							content: "★ ★ ★ ★ ★";
 							color: var(--star-color);
-							font-size: 17px;
+							font-size: 16px;
 						}
 						[data-star]::after {
 							white-space: nowrap;
@@ -116,7 +117,7 @@
 							color: var(--star-background);
 							overflow: hidden;
 							height: 100%;
-							font-size: 17px;
+							font-size: 16px;
 						}
 
 						[data-star^="0.1"]::after,
