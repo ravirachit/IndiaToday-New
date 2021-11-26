@@ -4234,7 +4234,7 @@ a, a:active, a:visited {
   display: block;
   content: "★ ★ ★ ★ ★";
   color: var(--star-color);
-  font-size: 16px;
+  font-size: 14px;
 }
 .carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__footer .video__rating [data-star]::after {
   white-space: nowrap;
@@ -4246,7 +4246,7 @@ a, a:active, a:visited {
   color: var(--star-background);
   overflow: hidden;
   height: 100%;
-  font-size: 16px;
+  font-size: 14px;
 }
 .carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__footer .video__rating [data-star^="0.1"]::after,
 .carouselNewReleases__widget .carousel__container .carousel__image__card .image__content .image__footer .video__rating [data-star^=".1"]::after {
