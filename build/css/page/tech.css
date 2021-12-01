@@ -1,0 +1,7 @@
+.B1__s3__widget .story__card .cat__title {
+  background: var(--catbrandcolor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*# sourceMappingURL=tech.css.map */
