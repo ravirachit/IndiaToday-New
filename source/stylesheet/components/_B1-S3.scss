@@ -105,6 +105,23 @@
 
 
 	}
+
+	// ******************** SUB TITLE LABEL WITH RATING START ********************
+	.sub__title__with__rating{
+		display: flex;
+		.title__label{
+			font-size: 14px;
+			line-height: 20px;
+			color: #540D6E;
+			font-style: italic;
+			font-weight: 500;
+		}
+		.star__rating{
+			background-color: #F1F1F1;
+			margin: -2px 20px 15px 10px;
+		}
+	}
+	// ******************** SUB TITLE LABEL WITH RATING END ********************
 }
 
 @media (min-width:$desktopver){
