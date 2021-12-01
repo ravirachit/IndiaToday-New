@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>SHOWBUZZ HOME</title>
+    <title>SHOWBUZZ NEW RELEASES</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0, maximum-scale=5.0" />
     <link rel="stylesheet" type="text/css" href="build/css/main.css">
 </head>
@@ -236,7 +236,7 @@
                     <div class="breadcrumb">
                         <a href="#"><span class="secion__name">Home</span></a>
                         <a href="#"><span class="secion__name">Showbuzz</span></a>
-                        <span class="secion__name">All</span>
+                        <span class="secion__name">Reviews</span>
                     </div>
                     <!-- // breadcrumb END // -->
                     <!-- Section Secondary Navigation start -->
@@ -246,11 +246,14 @@
                             <nav class="secondary__navigation">
                                 <ul>
                                     <li><a href="#">All</a></li>
-                                    <li class="active"><a href="#">Photos</a></li>
-                                    <li><a href="#">Videos</a></li>
                                     <li><a href="#">Movies</a></li>
+                                    <li><a href="#">Binge Watch</a></li>
                                     <li><a href="#">TV</a></li>
-                                    <li><a href="#">Visula Stories</a></li>
+                                    <li><a href="#">Visual Stories</a></li>
+                                    <li class="active"><a href="#">Reviews</a></li>
+                                    <li><a href="#">Videos</a></li>
+                                    <li><a href="#">Photos</a></li>
+                                    <li><a href="#">Fashion</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -262,17 +265,125 @@
                         <!-- LHS Section Start-->
                         <div class="lhs__section">
                             <!--- Section List section template Start -->
+        <!-- **************************** Rating widget COMPONENT START (Components/carouselNewReleased.scss) *********************-->
+        <div class="carouselNewReleases__widget widgetgap">
+            <div class="heading__nav">
+                <h2>New Releases</h2>
+                <div class="carousel__nav" data-snap-slider-nav="visual-stories"> <button
+                        type="button" class="navbutn carousel_prev is-disabled"></button><button
+                        type="button" class="navbutn carousel_next"></button></div>
+            </div>
+            <div class="carousel__container" data-snap-slider="visual-stories"
+                data-snap-slider-visible>
+                <div class="carousel__image__card">
+                    <a href="#" title=""><img
+                            src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_11/story_4297/assets/20.jpeg?time=1637578574&size=248:332"
+                            alt="" width="248" height="332"></a>
+                    <div class="image__content">
+                        <div class="image__desc">
+                            <h3><a href="#">Silence… Can You Hear it? justice will
+                                    thrive<br><span>by Mohit Kaushik</span></a></h3>
+                        </div>
+                        <div class="image__footer">
+                            <!-- ************************************** Component/_starRating.scss Start ************************************** -->
+                            <div class="star__rating">
+                                <i data-star="3.6"></i>
+                            </div>
+                            <!-- ************************************** Component/_starRating.scss End ************************************** -->
+                            <div class="watch__trailer">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
+                                    width="18" height="18">
+                                <span>WATCH TRAILER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__image__card">
+                    <a href="#" title=""><img
+                            src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_11/story_4338/assets/17.jpeg?time=1637738407&size=248:332"
+                            alt="" width="248" height="332"></a>
+                    <div class="image__content">
+                        <div class="image__desc">
+                            <h3><a href="#">Radhe Review<br><span>by Rupesh Sinha</span></a></h3>
+                        </div>
+                        <div class="image__footer">
+                            <!-- ************************************** Component/_starRating.scss Start ************************************** -->
+                            <div class="star__rating">
+                                <i data-star="2.4"></i>
+                            </div>
+                            <!-- ************************************** Component/_starRating.scss End ************************************** -->
+                            <div class="watch__trailer">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
+                                    width="18" height="18">
+                                <span>WATCH TRAILER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__image__card">
+                    <a href="#" title=""><img
+                            src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_11/story_4352/assets/19.jpeg?time=1637761471&size=248:332"
+                            alt="" width="248" height="332"></a>
+                    <div class="image__content">
+                        <div class="image__desc">
+                            <h3><a href="#">The Big Bull: Don’t let expectations<br><span>by Asad
+                                        Rabbani</span></a></h3>
+                        </div>
+                        <div class="image__footer">
+                            <!-- ************************************** Component/_starRating.scss Start ************************************** -->
+                            <div class="star__rating">
+                                <i data-star="4.5"></i>
+                            </div>
+                            <!-- ************************************** Component/_starRating.scss End ************************************** -->
+                            <div class="watch__trailer">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
+                                    width="18" height="18">
+                                <span>WATCH TRAILER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__image__card">
+                    <a href="#" title=""><img
+                            src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_11/story_4297/assets/20.jpeg?time=1637578574&size=248:332"
+                            alt="" width="248" height="332"></a>
+                    <div class="image__content">
+                        <div class="image__desc">
+                            <h3><a href="#">Radhe Review<br><span>by Rupesh Sinha</span></a></h3>
+                        </div>
+                        <div class="image__footer">
+                            <!-- ************************************** Component/_starRating.scss Start ************************************** -->
+                            <div class="star__rating">
+                                <i data-star="1.7"></i>
+                            </div>
+                            <!-- ************************************** Component/_starRating.scss End ************************************** -->
+                            <div class="watch__trailer">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
+                                    width="18" height="18">
+                                <span>WATCH TRAILER</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- **************************** Rating widget COMPONENT end *********************-->
+
+
                             <!-- ****************************************** Big 1 and Small 3 COMPONENT Start *************************** -->
                             <div class="B1__s3__widget widgetgap">
                                 <div class="story__grid">
                                     <article class="story__card Bcard videotype">
-                                        <div class="story__cat">
-                                            <div class="cat__title">News</div>
-                                        </div>
                                         <div class="content__thumbnail__wrap">
                                             <div class="content__wrap">
                                                 <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
                                                         Named as Chairman, Succeeds John Thompson</a></h2>
+                                                <div class="sub__title__with__rating">
+                                                    <p class="title__label">Released- Fri, April 2, 2021</p>
+                                                    <div class="star__rating">
+                                                        <i data-star="3.6"></i>
+                                                    </div>
+                                                </div>
                                                 <div class="story__shortcont">
                                                     <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
                                                         been instrumental in scaling up its business including
@@ -301,14 +412,24 @@
                                             </ul>
                                         </div>
                                     </article>
-                                    <article class="story__card phototype">
-                                        <div class="story__cat">
-                                            <div class="cat__title">WORLD</div>
+                                    <!-- ********   Ad code between widget HP START **********-->
+                                        <div class="ad__betweenwidget">
+                                            <div class="ad__code">
+                                                <img src="images/between-ad.png" alt="">
+                                            </div>
                                         </div>
+                                        <!-- ******** // Ad code between widget HP END // ******** -->
+                                    <article class="story__card phototype">
                                         <div class="content__thumbnail__wrap">
                                             <div class="content__wrap">
                                                 <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
                                                         Named as Chairman, Succeeds John Thompson</a></h2>
+                                                        <div class="sub__title__with__rating">
+                                                            <p class="title__label">Released- Fri, April 2, 2021</p>
+                                                            <div class="star__rating">
+                                                                <i data-star="3.6"></i>
+                                                            </div>
+                                                        </div>
                                                 <div class="story__shortcont">
                                                     <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
                                                         been instrumental in scaling up its business including
@@ -338,13 +459,16 @@
                                         </div>
                                     </article>
                                     <article class="story__card videotype">
-                                        <div class="story__cat">
-                                            <div class="cat__title">INDIA</div>
-                                        </div>
                                         <div class="content__thumbnail__wrap">
                                             <div class="content__wrap">
                                                 <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
                                                         Named as Chairman, Succeeds John Thompson</a></h2>
+                                                        <div class="sub__title__with__rating">
+                                                            <p class="title__label">Released- Fri, April 2, 2021</p>
+                                                            <div class="star__rating">
+                                                                <i data-star="3.6"></i>
+                                                            </div>
+                                                        </div>
                                                 <div class="story__shortcont">
                                                     <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
                                                         been instrumental in scaling up its business including
@@ -374,13 +498,16 @@
                                         </div>
                                     </article>
                                     <article class="story__card videotype">
-                                        <div class="story__cat">
-                                            <div class="cat__title">CORONAVIRUS</div>
-                                        </div>
                                         <div class="content__thumbnail__wrap">
                                             <div class="content__wrap">
                                                 <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
                                                         Named as Chairman, Succeeds John Thompson</a></h2>
+                                                        <div class="sub__title__with__rating">
+                                                            <p class="title__label">Released- Fri, April 2, 2021</p>
+                                                            <div class="star__rating">
+                                                                <i data-star="3.6"></i>
+                                                            </div>
+                                                        </div>
                                                 <div class="story__shortcont">
                                                     <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
                                                         been instrumental in scaling up its business including
@@ -411,492 +538,6 @@
                                     </article>
                                 </div>
                             </div>
-
-                            <!-- ******************************************// Big 1 and Small 3 COMPONENT END // ************************** -->
-                            <!-- ********************************************** CAROUSEL9:16 without Slug title COMPONENT START (components/carousel916.css) ********************************** -->
-                            <div class="carousel916__widget widgetgap carouseltheme2">
-                                <div class="heading__nav">
-                                    <h2>Visual Stories</h2>
-                                    <div class="carousel__nav" data-snap-slider-nav="visual-stories"> <button
-                                            type="button" class="navbutn carousel__prev is__disabled"></button><button
-                                            type="button" class="navbutn carousel__next"></button></div>
-                                </div>
-                                <div class="carousel__container" data-snap-slider="visual-stories"
-                                    data-snap-slider-visible>
-                                    <div class="carousel__card">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3634/assets/19.jpeg?time=1635255858?size=200:267"
-                                                    alt="" width="200" height="267"></a>
-                                        </div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">Indian residents in Tokyo divided over strict Covid-19
-                                                    regulations imposed on Indian Olympic contingent.</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__card">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3628/assets/14.jpeg?time=1635251053?size=200:267"
-                                                    alt="" width="200" height="267"></a></div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                                                    International Cricket.</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__card">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3588/assets/16.jpeg?time=1635158407?size=200:267"
-                                                    alt="" width="200" height="267"></a>
-                                        </div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                                                    International Cricke.</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__card">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3628/assets/14.jpeg?time=1635251053?size=200:267"
-                                                    alt="" width="200" height="267"></a></div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                                                    International Cricket.</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__card">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3634/assets/19.jpeg?time=1635255858?size=200:267"
-                                                    alt="" width="200" height="267"></a></div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                                                    International Cricket.</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- **********************************************// CAROUSEL 9:16 without Slug title COMPONENT END //****************************** -->
-
-
-                            <!-- ****************************************** Big 1 and Small 3 COMPONENT Start *************************** -->
-                            <div class="B1__s3__widget widgetgap">
-                                <div class="story__grid">
-                                    <article class="story__card Bcard videotype">
-                                        <div class="story__cat">
-                                            <div class="cat__title">News</div>
-                                        </div>
-                                        <div class="content__thumbnail__wrap">
-                                            <div class="content__wrap">
-                                                <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
-                                                        Named as Chairman, Succeeds John Thompson</a></h2>
-                                                <div class="story__shortcont">
-                                                    <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
-                                                        been instrumental in scaling up its business including
-                                                        billion-dollar acquisitions like LinkedIn, Nuance Communications
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="story__thumbnail">
-                                                <a href="#" title=""><img
-                                                        src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/ishankishanengvindt20worldup_1200x768.jpeg?size=690:388"
-                                                        alt="" height="388" width="690">
-                                                    <!-- <div class="article-type"><span class="typeicon"></span><span
-                                                            class="typedata">1:10:10</span></div> -->
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="story__interaction">
-                                            <ul>
-                                                <li class="emoj"><i class="it__bgicon defaultemoj"></i><span
-                                                        class="rel__data">100</span>
-                                                </li>
-                                                <li class="comment"><i class="it__bgicon commenticon"></i><span
-                                                        class="rel__data">08</span></li>
-                                                <li class="bookmark"><i class="it__bgicon bookmarkicon"></i></li>
-                                                <li class="nativshare"><i class="it__bgicon shareicon"></i></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                    <article class="story__card phototype">
-                                        <div class="story__cat">
-                                            <div class="cat__title">WORLD</div>
-                                        </div>
-                                        <div class="content__thumbnail__wrap">
-                                            <div class="content__wrap">
-                                                <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
-                                                        Named as Chairman, Succeeds John Thompson</a></h2>
-                                                <div class="story__shortcont">
-                                                    <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
-                                                        been instrumental in scaling up its business including
-                                                        billion-dollar acquisitions like LinkedIn, Nuance Communications
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="story__thumbnail">
-                                                <a href="#" title=""><img
-                                                        src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/ishankishanengvindt20worldup_1200x768.jpeg?size=115:115"
-                                                        alt="" height="115" width="115">
-                                                    <div class="article__type"><span class="typeicon"></span><span
-                                                            class="typedata">10</span></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="story__interaction">
-                                            <ul>
-                                                <li class="emoj"><i class="it__bgicon defaultemoj"></i><span
-                                                        class="rel__data">100</span>
-                                                </li>
-                                                <li class="comment"><i class="it__bgicon commenticon"></i><span
-                                                        class="rel__data">08</span></li>
-                                                <li class="bookmark"><i class="it__bgicon bookmarkicon"></i></li>
-                                                <li class="nativshare"><i class="it__bgicon shareicon"></i></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                    <article class="story__card videotype">
-                                        <div class="story__cat">
-                                            <div class="cat__title">INDIA</div>
-                                        </div>
-                                        <div class="content__thumbnail__wrap">
-                                            <div class="content__wrap">
-                                                <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
-                                                        Named as Chairman, Succeeds John Thompson</a></h2>
-                                                <div class="story__shortcont">
-                                                    <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
-                                                        been instrumental in scaling up its business including
-                                                        billion-dollar acquisitions like LinkedIn, Nuance Communications
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="story__thumbnail">
-                                                <a href="#" title=""><img
-                                                        src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/ishankishanengvindt20worldup_1200x768.jpeg?size=115:115"
-                                                        alt="" height="115" width="115">
-                                                    <div class="article__type"><span class="typeicon"></span><span
-                                                            class="typedata">10:10</span></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="story__interaction">
-                                            <ul>
-                                                <li class="emoj"><i class="it__bgicon defaultemoj"></i><span
-                                                        class="rel__data">100</span>
-                                                </li>
-                                                <li class="comment"><i class="it__bgicon commenticon"></i><span
-                                                        class="rel__data">08</span></li>
-                                                <li class="bookmark"><i class="it__bgicon bookmarkicon"></i></li>
-                                                <li class="nativshare"><i class="it__bgicon shareicon"></i></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                    <article class="story__card videotype">
-                                        <div class="story__cat">
-                                            <div class="cat__title">CORONAVIRUS</div>
-                                        </div>
-                                        <div class="content__thumbnail__wrap">
-                                            <div class="content__wrap">
-                                                <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
-                                                        Named as Chairman, Succeeds John Thompson</a></h2>
-                                                <div class="story__shortcont">
-                                                    <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
-                                                        been instrumental in scaling up its business including
-                                                        billion-dollar acquisitions like LinkedIn, Nuance Communications
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="story__thumbnail">
-                                                <a href="#" title=""><img
-                                                        src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/ishankishanengvindt20worldup_1200x768.jpeg?size=115:115"
-                                                        alt="" height="115" width="115">
-                                                    <div class="article__type"><span class="typeicon"></span><span
-                                                            class="typedata">10:30</span></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="story__interaction">
-                                            <ul>
-                                                <li class="emoj"><i class="it__bgicon defaultemoj"></i><span
-                                                        class="rel__data">100</span>
-                                                </li>
-                                                <li class="comment"><i class="it__bgicon commenticon"></i><span
-                                                        class="rel__data">08</span></li>
-                                                <li class="bookmark"><i class="it__bgicon bookmarkicon"></i></li>
-                                                <li class="nativshare"><i class="it__bgicon shareicon"></i></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-
-                            <!-- ******************************************// Big 1 and Small 3 COMPONENT END // ************************** -->
-                            <!-- ********************************************** CAROUSEL9:16 without Slug title COMPONENT START (components/carousel916.css) ********************************** -->
-                            <div class="carousel916__widget widgetgap carouseltheme2 cardnobgcolr">
-                                <div class="heading__nav">
-                                    <h2>Photo</h2>
-                                    <div class="carousel__nav" data-snap-slider-nav="visual-stories"> <button
-                                            type="button" class="navbutn carousel__prev is__disabled"></button><button
-                                            type="button" class="navbutn carousel__next"></button></div>
-                                </div>
-                                <div class="carousel__container" data-snap-slider="visual-stories"
-                                    data-snap-slider-visible>
-                                    <div class="carousel__card phototype">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3634/assets/19.jpeg?time=1635255858?size=200:267"
-                                                    alt="" width="200" height="267">
-                                                <div class="article__type"><span class="typeicon"></span><span
-                                                        class="typedata">10</span></div>
-                                            </a>
-                                        </div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">Indian residents in Tokyo divided over strict Covid-19
-                                                    regulations imposed on Indian Olympic contingent.</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__card phototype">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3628/assets/14.jpeg?time=1635251053?size=200:267"
-                                                    alt="" width="200" height="267">
-                                                <div class="article__type"><span class="typeicon"></span><span
-                                                        class="typedata">8</span></div>
-                                            </a></div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                                                    International Cricket.</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__card phototype">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3588/assets/16.jpeg?time=1635158407?size=200:267"
-                                                    alt="" width="200" height="267">
-                                                <div class="article__type"><span class="typeicon"></span><span
-                                                        class="typedata">12</span></div>
-                                            </a>
-                                        </div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                                                    International Cricke.</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__card phototype">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3628/assets/14.jpeg?time=1635251053?size=200:267"
-                                                    alt="" width="200" height="267"></a>
-                                            <div class="article__type"><span class="typeicon"></span><span
-                                                    class="typedata">5</span></div>
-                                        </div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                                                    International Cricket.</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__card phototype">
-                                        <div class="card__figure"><a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3634/assets/19.jpeg?time=1635255858?size=200:267"
-                                                    alt="" width="200" height="267"></a>
-                                            <div class="article__type"><span class="typeicon"></span><span
-                                                    class="typedata">11</span></div>
-                                        </div>
-                                        <div class="card__desc">
-                                            <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                                                    International Cricket.</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- **********************************************// CAROUSEL 9:16 without Slug title COMPONENT END //****************************** -->
-
-                            <!-- **************************** Rating widget COMPONENT START *********************-->
-                            <div class="carouselNewReleases__widget widgetgap">
-                                <div class="heading__nav">
-                                    <h2>New Releases</h2>
-                                    <div class="carousel__nav" data-snap-slider-nav="visual-stories"> <button
-                                            type="button" class="navbutn carousel_prev is-disabled"></button><button
-                                            type="button" class="navbutn carousel_next"></button></div>
-                                </div>
-                                <div class="carousel__container" data-snap-slider="visual-stories"
-                                    data-snap-slider-visible>
-                                    <div class="carousel__image__card">
-                                        <a href="#" title=""><img
-                                                src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_11/story_4297/assets/20.jpeg?time=1637578574&size=248:332"
-                                                alt="" width="248" height="332"></a>
-                                        <div class="image__content">
-                                            <div class="image__desc">
-                                                <h3><a href="#">Silence… Can You Hear it? justice will
-                                                        thrive<br><span>by Mohit Kaushik</span></a></h3>
-                                            </div>
-                                            <div class="image__footer">
-                                                <!-- ************************************** Component/_starRating.scss Start ************************************** -->
-                                                <div class="star__rating">
-                                                    <i data-star="3.6"></i>
-                                                </div>
-                                                <!-- ************************************** Component/_starRating.scss End ************************************** -->
-                                                <div class="watch__trailer">
-                                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
-                                                        width="18" height="18">
-                                                    <span>WATCH TRAILER</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__image__card">
-                                        <a href="#" title=""><img
-                                                src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_11/story_4338/assets/17.jpeg?time=1637738407&size=248:332"
-                                                alt="" width="248" height="332"></a>
-                                        <div class="image__content">
-                                            <div class="image__desc">
-                                                <h3><a href="#">Radhe Review<br><span>by Rupesh Sinha</span></a></h3>
-                                            </div>
-                                            <div class="image__footer">
-                                                <!-- ************************************** Component/_starRating.scss Start ************************************** -->
-                                                <div class="star__rating">
-                                                    <i data-star="2.4"></i>
-                                                </div>
-                                                <!-- ************************************** Component/_starRating.scss End ************************************** -->
-                                                <div class="watch__trailer">
-                                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
-                                                        width="18" height="18">
-                                                    <span>WATCH TRAILER</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__image__card">
-                                        <a href="#" title=""><img
-                                                src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_11/story_4352/assets/19.jpeg?time=1637761471&size=248:332"
-                                                alt="" width="248" height="332"></a>
-                                        <div class="image__content">
-                                            <div class="image__desc">
-                                                <h3><a href="#">The Big Bull: Don’t let expectations<br><span>by Asad
-                                                            Rabbani</span></a></h3>
-                                            </div>
-                                            <div class="image__footer">
-                                                <!-- ************************************** Component/_starRating.scss Start ************************************** -->
-                                                <div class="star__rating">
-                                                    <i data-star="4.5"></i>
-                                                </div>
-                                                <!-- ************************************** Component/_starRating.scss End ************************************** -->
-                                                <div class="watch__trailer">
-                                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
-                                                        width="18" height="18">
-                                                    <span>WATCH TRAILER</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__image__card">
-                                        <a href="#" title=""><img
-                                                src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_11/story_4297/assets/20.jpeg?time=1637578574&size=248:332"
-                                                alt="" width="248" height="332"></a>
-                                        <div class="image__content">
-                                            <div class="image__desc">
-                                                <h3><a href="#">Radhe Review<br><span>by Rupesh Sinha</span></a></h3>
-                                            </div>
-                                            <div class="image__footer">
-                                                <!-- ************************************** Component/_starRating.scss Start ************************************** -->
-                                                <div class="star__rating">
-                                                    <i data-star="1.7"></i>
-                                                </div>
-                                                <!-- ************************************** Component/_starRating.scss End ************************************** -->
-                                                <div class="watch__trailer">
-                                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
-                                                        width="18" height="18">
-                                                    <span>WATCH TRAILER</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- **************************** Rating widget COMPONENT end *********************-->
-
-
-                            <!-- **************************** BINGE WATCH widget COMPONENT START *********************-->
-                            <div class="carousel916__widget widgetgap carouseltheme2 bingeWatch__widget">
-                                <div class="heading__nav">
-                                    <h2>BINGE WATCH</h2>
-                                </div>
-                                
-                                <div class="binge__calendar__container">
-                                    <div class="bingeCardGrid__title">
-                                        <span>RELEASING THIS WEEK</span><div class="title_batch">1-8 Jun 2021</div>
-                                    </div>
-                                    <div class="binge__calendar_grid">
-                                        <div class="img__card">
-                                            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202111/red_notice_2_1200x768.png?size=149.67:84" width="149.67" height="84">
-                                            <div class="img__card__rhs">
-                                                <span class="img__card__rhs__title">Bell Bottom</span>
-                                                <p>Release Date - Friday, April 2, 2021</p>
-                                                <div class="watch__trailer">
-                                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
-                                                        width="18" height="18">
-                                                    <span>WATCH TRAILER</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <div class="img__card">
-                                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202111/Bunty_aur_babli_2.jpg?size=149.67:84" width="149.67" height="84">
-                                        <div class="img__card__rhs">
-                                            <span class="img__card__rhs__title">Satyameva Jayate 2</span>
-                                            <p>Release Date - Wednesday, May 12, 2021</p>
-                                            <div class="watch__trailer">
-                                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICA8ZyBpZD0iR3JvdXBfMTU2MyIgZGF0YS1uYW1lPSJHcm91cCAxNTYzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA3IC0xMzkzKSI+CiAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzE3MjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDE3MjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgcng9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNyAxMzkzKSIgZmlsbD0iI2Q3MTkyMCIvPgogICAgPHBhdGggaWQ9IlBhdGhfMTY5IiBkYXRhLW5hbWU9IlBhdGggMTY5IiBkPSJNMy41LDAsNyw2LjM2NEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjE5LjUgMTM5OC41KSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+CiAgPC9nPgo8L3N2Zz4K"
-                                                    width="18" height="18">
-                                                <span>WATCH TRAILER</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="binge__calendar__footer">
-                                   <img class="calendar__icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyMy41NDYiIHZpZXdCb3g9IjAgMCAyNCAyMy41NDYiPgogIDxnIGlkPSJDYWxlbmRhcl9JY29uIiBkYXRhLW5hbWU9IkNhbGVuZGFyIEljb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zOCAtMzguMjI3KSI+CiAgICA8ZyBpZD0iR3JvdXBfMTA0MSIgZGF0YS1uYW1lPSJHcm91cCAxMDQxIj4KICAgICAgPHBhdGggaWQ9IlBhdGhfMTYwIiBkYXRhLW5hbWU9IlBhdGggMTYwIiBkPSJNNTAuMDI1LDUyLjZoLTIuMWEuNzYuNzYsMCwwLDAtLjc1Ny43NTh2MS4yODhhLjc1OS43NTksMCwwLDAsLjc1Ny43NThoMi4xYS43Ni43NiwwLDAsMCwuNzU4LS43NThWNTMuMzZBLjc3OC43NzgsMCwwLDAsNTAuMDI1LDUyLjZaIiBmaWxsPSIjMWExZDI0Ii8+CiAgICAgIDxwYXRoIGlkPSJQYXRoXzE2MSIgZGF0YS1uYW1lPSJQYXRoIDE2MSIgZD0iTTQ0LjYxOSw1Mi42aC0yLjFhLjc2MS43NjEsMCwwLDAtLjc1OC43NTh2MS4yODhhLjc2Ljc2LDAsMCwwLC43NTguNzU4aDIuMWEuNzYuNzYsMCwwLDAsLjc1OC0uNzU4VjUzLjM2QS43NzguNzc4LDAsMCwwLDQ0LjYxOSw1Mi42WiIgZmlsbD0iIzFhMWQyNCIvPgogICAgICA8cGF0aCBpZD0iUGF0aF8xNjIiIGRhdGEtbmFtZT0iUGF0aCAxNjIiIGQ9Ik01MC4wMjUsNDcuODc4aC0yLjFhLjc1OS43NTksMCwwLDAtLjc1Ny43NTh2MS4yODhhLjc2Ljc2LDAsMCwwLC43NTcuNzU4aDIuMWEuNzYuNzYsMCwwLDAsLjc1OC0uNzU4VjQ4LjYzNkEuNzc4Ljc3OCwwLDAsMCw1MC4wMjUsNDcuODc4WiIgZmlsbD0iIzFhMWQyNCIvPgogICAgICA8cGF0aCBpZD0iUGF0aF8xNjMiIGRhdGEtbmFtZT0iUGF0aCAxNjMiIGQ9Ik00NC42MTksNDcuODc4aC0yLjFhLjc2Ljc2LDAsMCwwLS43NTguNzU4djEuMjg4YS43NjEuNzYxLDAsMCwwLC43NTguNzU4aDIuMWEuNzYuNzYsMCwwLDAsLjc1OC0uNzU4VjQ4LjYzNkEuNzc4Ljc3OCwwLDAsMCw0NC42MTksNDcuODc4WiIgZmlsbD0iIzFhMWQyNCIvPgogICAgICA8cGF0aCBpZD0iUGF0aF8xNjQiIGRhdGEtbmFtZT0iUGF0aCAxNjQiIGQ9Ik01NS40MzIsNDcuODc4aC0yLjFhLjc2Ljc2LDAsMCwwLS43NTguNzU4djEuMjg4YS43Ni43NiwwLDAsMCwuNzU4Ljc1OGgyLjFhLjc1OS43NTksMCwwLDAsLjc1Ny0uNzU4VjQ4LjYzNkEuNzc3Ljc3NywwLDAsMCw1NS40MzIsNDcuODc4WiIgZmlsbD0iIzFhMWQyNCIvPgogICAgICA8cGF0aCBpZD0iUGF0aF8xNjUiIGRhdGEtbmFtZT0iUGF0aCAxNjUiIGQ9Ik01OS45NTQsNTIuODI5VjQyLjhhMi41MjgsMi41MjgsMCwwLDAtLjY1Ny0xLjY5M3YtLjAyNWgtLjAyNWEyLjU4MiwyLjU4MiwwLDAsMC0xLjkyLS44NTloLTEuOVYzOS4wODZhLjg1Mi44NTIsMCwwLDAtLjg1OS0uODU5SDUzLjMwOWEuODUxLjg1MSwwLDAsMC0uODU4Ljg1OXYxLjEzN0g0NS40NzhWMzkuMDg2YS44NTIuODUyLDAsMCwwLS44NTktLjg1OUg0My4zMzFhLjg1Mi44NTIsMCwwLDAtLjg1OS44NTl2MS4xMzdoLTEuOWEyLjU4MSwyLjU4MSwwLDAsMC0xLjkyLjg1OWgwdi4wMjVBMi41MjgsMi41MjgsMCwwLDAsMzgsNDIuOFY1Ni41NjhhMi41ODgsMi41ODgsMCwwLDAsMi41NzcsMi41NzdoMTIuMWE0Ljk0Nyw0Ljk0NywwLDEsMCw3LjI3Ni02LjMxNlpNNTIuMSw1Ni44MjFhNC45NTIsNC45NTIsMCwwLDAsLjA1LjYwNkg0MC41NzdhLjg1Mi44NTIsMCwwLDEtLjg1OS0uODU5VjQ2LjA1OUg1OC4yMTF2NS45NjJhNC40NDksNC40NDksMCwwLDAtMS4xNjMtLjE1MkE0Ljk2LDQuOTYsMCwwLDAsNTIuMSw1Ni44MjFabTctLjUtMi4wNDcsMi4yYS42NzEuNjcxLDAsMCwxLS45NiwwTDU0Ljg3Niw1Ny4yYS42NDMuNjQzLDAsMCwxLC45MzUtLjg4NGwuNzU3LjgwOCwxLjU2Ny0xLjY5MmEuNjQxLjY0MSwwLDAsMSwuOTA5LS4wMjZBLjYyMi42MjIsMCwwLDEsNTkuMSw1Ni4zMTZaIiBmaWxsPSIjMWExZDI0Ii8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" width="24" height="23.55">
-                                   <span>Watch complete Binge Calendar</span>
-                                   <img class="play__icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDEyIDE0Ij4KICA8cGF0aCBpZD0iUG9seWdvbl85IiBkYXRhLW5hbWU9IlBvbHlnb24gOSIgZD0iTTcsMGw3LDEySDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMikgcm90YXRlKDkwKSIgZmlsbD0iIzFhMWQyNCIvPgo8L3N2Zz4K" width="12" height="14"> 
-                                </div>
-
-                                <div class="carousel__container" data-snap-slider="visual-stories"
-                                    data-snap-slider-visible>
-                                    <div class="carousel__image">
-                                        <a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202111/akshayB.png?size=260:146"
-                                                    alt="" width="260" height="146">
-                                        </a>
-                                        <div class="img__desc">
-                                            <div class="img__title">Bollywood</div>
-                                            <h3><a href="#">Shikara: The Untold Story of Kashmir Pandits</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__image">
-                                        <a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202111/Akshay_Kumar__Prithviraj_1200x768.jpeg?size=260:146"
-                                                    alt="" width="260" height="146">
-                                        </a>
-                                        <div class="img__desc">
-                                            <div class="img__title">ott</div>
-                                            <h3><a href="#">Bhoot – Part One: The Haunted Ship</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="carousel__image">
-                                        <a href="#" title=""><img
-                                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202111/akshayB.png?size=260:146"
-                                                    alt="" width="260" height="146">
-                                        </a>
-                                        <div class="img__desc">
-                                            <div class="img__title">ott</div>
-                                            <h3><a href="#">‘Radhe: Your Most Wanted Bhai’</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="divider"></div>
-                                <div class="viewall__bnt theme2"><span>View All</span></div>
-                            </div>
-                            <!-- **************************** BINGE WATCH widget COMPONENT END *********************-->
-
-                            <!-- **************************** WEEKEND PLANNER WIDGET START *********************-->
-                            <h3 class="latestsection__heading">WEEKEND PLANNER</h3>
-                            <div class="carousel916__widget widgetgap carouseltheme2 weekend__planner">
-                                <div class="planner__grid">
-                                    <p>Modern Love season 2: Two exciting new faces join the cast of the hit romantic web series – release date and other deets inside</p>
-                                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/reporter/202103/sneha_mordani-1200x768.jpg?WZqEyf4p9yyb8rdP8YgbqZtmMgdf5peu&size=115:115" width="115" height="115" alt="">
-                                </div>
-                            </div>
-                            <!-- **************************** WEEKEND PLANNER WIDGET END *********************-->
 
                             <!--- // Section List template END // -->
                         </div>
