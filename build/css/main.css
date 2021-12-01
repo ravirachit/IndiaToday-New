@@ -1390,7 +1390,7 @@ a, a:active, a:visited {
 .B1__s3__widget .sub__title__with__rating .title__label {
   font-size: 14px;
   line-height: 20px;
-  color: #540D6E;
+  color: var(--catbrandcolor);
   font-style: italic;
   font-weight: 500;
 }
