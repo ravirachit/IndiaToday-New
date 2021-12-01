@@ -16,7 +16,7 @@
 }
 .section__secondary__nav .nav__container h1:not([style^="background-image:"]) {
   text-indent: 0px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 500;
   min-height: auto;
   margin-bottom: 10px;
@@ -69,6 +69,9 @@
   .section__secondary__nav {
     border-radius: 5px;
     padding: 13px 20px;
+  }
+  .section__secondary__nav .nav__container h1:not([style^="background-image:"]) {
+    font-size: 50px;
   }
 }
 

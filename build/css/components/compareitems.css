@@ -1,0 +1,141 @@
+/*sass media query varibale */
+.compare__widget {
+  background-color: var(--whitebg);
+  box-shadow: 1px 1px 3px #00000026;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  padding: 15px 10px 0px;
+}
+.compare__widget .heading__nav {
+  margin-bottom: 12px;
+}
+.compare__widget .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+  padding-left: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23e3001b' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.compare__widget .compare__items_container .items__container {
+  display: flex;
+  margin-bottom: var(--widgetgap);
+}
+.compare__widget .compare__items_container .items__container > .default {
+  flex-basis: calc(33.3333333333% - 10px);
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+}
+.compare__widget .compare__items_container .items__container > .default:not(:last-child) {
+  margin-right: 20px;
+}
+.compare__widget .compare__items_container .items__container > .default .item__body {
+  background-color: #F5F5F5;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--widgetbordercolor);
+  position: relative;
+  padding-top: 100%;
+}
+.compare__widget .compare__items_container .items__container > .default .item__body span {
+  width: 60px;
+  height: 60px;
+  border: 1px dashed #b3b3b3;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.compare__widget .compare__items_container .items__container > .default .item__body span:after {
+  content: "";
+  position: absolute;
+  background-color: #b3b3b3;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 1px;
+  transform: translate(-50%, -50%);
+}
+.compare__widget .compare__items_container .items__container > .default .item__body span:before {
+  content: "";
+  position: absolute;
+  background-color: #b3b3b3;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+}
+.compare__widget .compare__items_container .items__container > .default .finding__body {
+  position: relative;
+}
+.compare__widget .compare__items_container .items__container > .default .finding__body input[type=search] {
+  border: 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 10px;
+  padding-right: 20px;
+  color: var(--primarytextcolor);
+}
+.compare__widget .compare__items_container .items__container > .default .finding__body input[type=search]::placeholder {
+  color: #999;
+}
+.compare__widget .compare__items_container .items__container > .default .finding__body .searchicon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 13px;
+  height: 14px;
+  transform: translateY(-50%);
+}
+.compare__widget .compare__other_container {
+  background-color: #f5f5f5;
+  border: 1px solid var(--widgetbordercolor);
+  padding: 15px 15px 0;
+  border-radius: 5px;
+}
+.compare__widget .compare__other_container h3 {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--primarytextcolor);
+  margin-bottom: 7px;
+  letter-spacing: 0.5px;
+}
+.compare__widget .compare__other_container .capsule-dlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.compare__widget .compare__other_container .capsule-dlist a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--primarytextcolor);
+  padding: 8px 20px;
+  border: 1px solid var(--bordercolor);
+  background-color: var(--whitebg);
+  border-radius: 30px;
+  margin-right: 15px;
+  margin-bottom: var(--magrin15);
+}
+
+@media (min-width: 1024px) {
+  .compare__widget {
+    border-left: 1px solid var(--widgetbordercolor);
+    border-right: 1px solid var(--widgetbordercolor);
+    border-radius: 5px;
+    padding: 15px 20px 0px;
+  }
+}
+
+/*# sourceMappingURL=compareitems.css.map */

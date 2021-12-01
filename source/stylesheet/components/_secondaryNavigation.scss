@@ -1,7 +1,7 @@
 @import '../abstracts/functions';
 
 .section__secondary__nav{
-    background-color:var(--catbrandcolor);
+    background:var(--catbrandcolor);
     border-radius:0px;
     padding:13px 10px 5px;
     box-shadow: 1px 1px 3px #00000029;
@@ -16,7 +16,7 @@
              margin-bottom:15px;
              &:not([style^="background-image:"]){
                 text-indent:0px;
-                font-size:50px;
+                font-size:30px;
                 font-weight:500;
                 min-height: auto;
                 margin-bottom:10px;
@@ -84,10 +84,16 @@
     }
 }
 
-
 @media (min-width:$desktopver){
     .section__secondary__nav{
         border-radius:5px;
         padding: 13px 20px;
+        .nav__container{
+            h1{
+                &:not([style^="background-image:"]){
+                    font-size:50px;
+                }
+            }
+        }
     }
 }

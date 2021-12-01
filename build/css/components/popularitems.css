@@ -1,0 +1,74 @@
+/*sass media query varibale */
+.popular__widget {
+  background-color: var(--whitebg);
+  box-shadow: 1px 1px 3px #00000026;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  padding: 15px 10px 0px;
+}
+.popular__widget .heading__nav {
+  margin-bottom: 12px;
+}
+.popular__widget .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+  padding-left: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23e3001b' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.popular__widget .popular__itemslist {
+  display: flex;
+}
+.popular__widget .popular__itemslist .popularCard {
+  flex-basis: calc(33.3333333333% - 10px);
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+.popular__widget .popular__itemslist .popularCard img {
+  border-radius: 5px 5px 0 0;
+}
+.popular__widget .popular__itemslist .popularCard:not(:last-child) {
+  margin-right: 20px;
+}
+.popular__widget .popular__itemslist .popularCard .item__details {
+  border-top: 1px solid var(--widgetbordercolor);
+}
+.popular__widget .popular__itemslist .popularCard .item__details h3 {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 12px 10px;
+}
+.popular__widget .popular__itemslist .popularCard .item__details ul {
+  list-style: none;
+  padding: 15px 10px 5px;
+}
+.popular__widget .popular__itemslist .popularCard .item__details ul li {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: var(--magrin15);
+}
+.popular__widget .popular__itemslist .popularCard .item__details ul li span {
+  font-size: 12px;
+  color: var(--textcolor666);
+  font-weight: 300;
+  padding-right: 5px;
+}
+
+@media (min-width: 1024px) {
+  .popular__widget {
+    border-left: 1px solid var(--widgetbordercolor);
+    border-right: 1px solid var(--widgetbordercolor);
+    border-radius: 5px;
+    padding: 15px 20px 0px;
+  }
+}
+
+/*# sourceMappingURL=popularitems.css.map */
