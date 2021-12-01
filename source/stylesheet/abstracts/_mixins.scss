@@ -21,7 +21,13 @@
 	text-transform: uppercase;
 }
 
-
+@mixin lineblock1{
+    width:100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+	overflow: hidden;
+}
 @mixin lineblock3{
 	display: -webkit-box;
     -webkit-line-clamp: 3;

@@ -4,39 +4,32 @@
   width: 21px;
 }
 
-.visual__story__listing .section__secondary__nav .nav__container h1 {
-  text-indent: 0;
-  font-size: 30px;
-  line-height: 36px;
-  color: var(--whitetextcolor);
-}
-.visual__story__listing .section__secondary__nav .nav__container .secondary__navigation ul li {
-  white-space: nowrap;
-}
-.visual__story__listing .visualStoryCard .card-details .card__slug {
+.visualStoryCard .card-details .card__slug {
   margin: 15px 0px 10px;
 }
-.visual__story__listing .visualStoryCard {
+
+.visualStoryCard {
   background-color: var(--whitebg);
   box-shadow: 1px 1px 3px #00000026;
   border-top: 1px solid var(--widgetbordercolor);
   border-bottom: 1px solid var(--widgetbordercolor);
   border-radius: 5px;
 }
-.visual__story__listing .visualStoryCard .card__pic a img {
+.visualStoryCard .card__pic a img {
   border-radius: 5px 5px 0 0;
   width: 100%;
   height: auto;
 }
-.visual__story__listing .visualStoryCard .card__details {
+.visualStoryCard .card__details {
   padding-left: 10px;
   padding-right: 10px;
 }
-.visual__story__listing .visualStoryCard .sharing {
+.visualStoryCard .sharing {
   padding-left: 10px;
   padding-right: 10px;
 }
-.visual__story__listing .visual__story__listing_grid {
+
+.visual__story__listing__grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--widgetgap);
@@ -44,10 +37,11 @@
 }
 
 @media (min-width: 1024px) {
-  .visual__story__listing .visualStoryCard .card__pic a img {
+  .visualStoryCard .card__pic a img {
     width: auto;
   }
-  .visual__story__listing .visual__story__listing__grid {
+
+  .visual__story__listing__grid {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
   }
