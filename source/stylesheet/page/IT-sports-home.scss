@@ -1,0 +1,231 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+
+// ********************** IPL 2020 SECTION START **********************
+.IPT__2020__widget{
+       @include blockwidgetstyle;
+	    padding:15px 0px 0px 0px;
+      .heading__nav{
+        margin-bottom:12px;
+        padding:0px 20px;
+        h2{
+          @include titlewidgetBlack;
+          color:var(--primarytextcolor);
+        }
+      }
+      .tab__wrap{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+        padding:0px 20px;
+        .active{
+            background-color: var(--brandbgcolor);
+        }
+        .tab{
+            border: 1px solid var(--widgetbordercolor);
+            border-radius: 30px;
+            padding: 7px 15px 6px 15px;
+            background: #F2FAFC;
+            color: #666666;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
+            cursor: pointer;
+            transition: all 0.275s linear;
+            &:hover{
+                box-shadow: inset 0px 0px 4px #b5b5b5;
+                border-color: #cdcdcd;
+            }
+        }
+        .active{
+            background-color: var(--catbrandcolor);
+            color: #ffffff;
+            border: none;
+        }
+    }
+    table {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        thead{
+            tr{
+                background-color: var(--primarytextcolor);
+                th{
+                    padding: 4px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: var(--whitetextcolor);
+                    opacity:0.5;
+                    text-transform: uppercase;
+                }
+            }
+        }
+		tbody {
+            position: relative;
+			tr {
+                border-radius: 5px;
+                padding-left: 20px;
+                td{
+                    padding: 22px 20px;
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 500;
+                }
+				&::after {
+					content: "";
+					height: 1px;
+					background: var(--tableBorderColor);
+					width: calc(100% - 40px);
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					box-shadow: 0px 0px 22px #00000029;
+				}
+				&:first-child {
+					&::after {
+						display: none;
+					}
+					background-color: var(--catbrandcolor);
+					color: var(--whitetextcolor);
+					font-weight: 600;
+					box-shadow: 1px 1px 3px #00000029;
+					border-bottom: 0px;
+					td {
+						&:first-child {
+							border-radius: 0px 0px 0px 5px;
+						}
+						&:last-child {
+							border-radius: 0px 0px 5px 0px;
+						}
+					}
+				}
+				&:last-child {
+					border-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+
+// ********************** IPL 2020 SECTION END **********************
+
+
+// ********************** PLAY IN PROGRESS SECTION START **********************
+.playInProgress__widget{
+    @include blockwidgetstyle;
+    border-radius: 5px;
+    .widget__headerImg{
+        position: relative;
+        .title__content{
+            padding: 6px 0px;
+            background-color: var(--primarytextcolor);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: var(--whitetextcolor);
+            text-align: right;
+            padding-right: 20px;
+            font-size: 12px;
+            line-height: 14px;
+            span{
+                opacity: .7;
+            }
+        }
+        .left__logo__section{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #004B72;
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 10px;
+            height: 96px;
+            width: 96px;
+        }
+    }
+    table {
+		width: 100%;
+		border-collapse: separate;
+		border-spacing: 12px 4px;
+		background-color: #333333;
+		border-radius: 0px 0px 5px 5px;
+		tr {
+			th {
+				font-size: 11px;
+				line-height: 16px;
+				color: #CCCCCC;
+				text-align: left;
+				font-weight: normal;
+				padding: 14px 0px;
+				&:nth-child(2) {
+					text-align: center;
+					width: 200px;
+				}
+			}
+			td {
+				text-align: left;
+				color: var(--whitetextcolor);
+				.sets__container {
+					display: flex;
+					div {
+						position: relative;
+						margin-right: 12px;
+						height: 30px;
+						width: 26px;
+						span {
+							position: absolute;
+							left: 9px;
+							top: 7px;
+						}
+					}
+				}
+				&:first-child {
+					font-size: 14px;
+					line-height: 17px;
+				}
+				&:nth-child(2) {
+					font-size: 20px;
+					line-height: 18px;
+					text-align: center;
+				}
+			}
+			&:last-child {
+				td {
+					padding-bottom: 13px;
+				}
+			}
+		}
+	}
+}
+
+// ********************** PLAY IN PROGRESS SECTION END **********************
+
+
+ @media (min-width:$desktopver){
+     // ********************** IPL 2020 SECTION START **********************
+    .IPT__2020__widget{
+      @include desktopblockwidgetstyle;
+		  padding:15px 0px 0px 0px;
+    }
+    // ********************** IPL 2020 SECTION END **********************
+
+    // ********************** PLAY IN PROGRESS SECTION START **********************
+    .playInProgress__widget {
+        table {
+            tr {
+                td {
+                    .sets__container {
+                        div {
+                            position: relative;
+                            margin-right: 42px;
+                            height: 30px;
+                            width: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+// ********************** PLAY IN PROGRESS SECTION END **********************
+
+  }
