@@ -1,0 +1,44 @@
+.otherSportsCoverage__widget{
+    .otherSportsCoverage__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.68px;
+        .sportsCoverage__image__card{
+            position: relative;
+            a{
+                &:before{
+                    box-shadow: inset 0px -120px 91px -75px rgb(0 0 0 / 90%);
+                    content: "";
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+            }
+            .image__title{
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: 13.8px;
+                h3{
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    color: var(--whitetextcolor);
+                    text-transform: uppercase;
+                    }
+                }
+            }
+        }
+}
+
+@media (min-width:$desktopver){
+    .otherSportsCoverage__widget{
+        .otherSportsCoverage__grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.68px;
+        }
+    }
+ }
