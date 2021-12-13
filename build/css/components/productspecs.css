@@ -1,0 +1,133 @@
+/*sass media query varibale */
+.productspecs__container {
+  display: flex;
+  background: #F7F9FA;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.productspecs__container .productspecs__figure {
+  flex-basis: 220px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.productspecs__container .productspecs__figure .product__name {
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.productspecs__container .productspecs__figure .product__image {
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 220px;
+}
+.productspecs__container .productspecs__list {
+  padding: 0 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productspecs__container .productspecs__list .list__default {
+  flex-basis: calc(50% - 20px);
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  padding-left: 25px;
+}
+.productspecs__container .productspecs__list .list__default:not(:last-child) {
+  margin-bottom: 5px;
+}
+.productspecs__container .productspecs__list .list__default span {
+  display: block;
+}
+.productspecs__container .productspecs__list .list__default .title {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.productspecs__container .productspecs__list .list__default .specsdata {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--brandtextcolor);
+}
+.productspecs__container .productspecs__list .list__default .datadetail {
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--textcolor666);
+}
+.productspecs__container .productspecs__points {
+  flex-basis: 100%;
+  padding: 20px 20px 0;
+  background: var(--catbrandcolor);
+  color: var(--theme2primarytextcolor);
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.productspecs__container .productspecs__points ul {
+  list-style: none;
+}
+.productspecs__container .productspecs__points ul li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+.productspecs__container .productspecs__points ul li:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #FFF108;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+@media (min-width: 1024px) {
+  .productspecs__container {
+    padding-left: 20px;
+    flex-direction: row;
+  }
+  .productspecs__container .productspecs__list {
+    flex: 1 0 0;
+    padding: 20px;
+    flex-direction: column;
+    display: block;
+  }
+  .productspecs__container .productspecs__list .list__default {
+    flex-basis: 100%;
+  }
+  .productspecs__container .productspecs__points {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    border-radius: 0 5px 5px 0;
+  }
+}
+.screen {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDE0IDI0Ij4KICA8cGF0aCBpZD0iUGF0aF8zMTczIiBkYXRhLW5hbWU9IlBhdGggMzE3MyIgZD0iTTIuNDUsMFYuODgyQTEuOTM0LDEuOTM0LDAsMCwwLDQuMzc3LDIuODI0SDkuNjIzQTEuOTM1LDEuOTM1LDAsMCwwLDExLjU1Ljg4MlYwSDExLjlBMi4xMDksMi4xMDksMCwwLDEsMTQsMi4xMTlWMjEuODgxQTIuMTA4LDIuMTA4LDAsMCwxLDExLjksMjRIMi4xQTIuMTA5LDIuMTA5LDAsMCwxLDAsMjEuODgxVjIuMTE5QTIuMTA4LDIuMTA4LDAsMCwxLDIuMSwwWm05LjA2LDIxLjAxM2EuMzU1LjM1NSwwLDAsMCwuMTQ4LS40NzZMMy41ODMsNC45MjdhLjM0OS4zNDksMCwwLDAtLjQ3Mi0uMTVMMi40OSw1LjFhLjM1NS4zNTUsMCwwLDAtLjE0OC40NzZsOC4wNzYsMTUuNjFhLjM0OS4zNDksMCwwLDAsLjQ3Mi4xNVpNMy44NSwwaDYuM1YuODgyYS41MjkuNTI5LDAsMCwxLS41MjcuNTI5SDQuMzc3QS41MjguNTI4LDAsMCwxLDMuODUuODgyWiIgZmlsbD0iIzY2NiIvPgo8L3N2Zz4K);
+}
+
+.camera {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNi40MjkiIGhlaWdodD0iMTMuMzQ5IiB2aWV3Qm94PSIwIDAgMTYuNDI5IDEzLjM0OSI+CiAgPHBhdGggaWQ9Ikljb25fbWV0cm8tY2FtZXJhIiBkYXRhLW5hbWU9Ikljb24gbWV0cm8tY2FtZXJhIiBkPSJNNy40NDgsMTMuNDg1YTMuMzM3LDMuMzM3LDAsMSwwLDMuMzM3LTMuMzM3LDMuMzM3LDMuMzM3LDAsMCwwLTMuMzM3LDMuMzM3Wk0xNy45NzMsNy44MzhIMTQuMzc5Yy0uMjU3LTEuMDI3LS41MTMtMi4wNTQtMS41NC0yLjA1NEg4LjczMmMtMS4wMjcsMC0xLjI4NCwxLjAyNy0xLjU0LDIuMDU0SDMuNkExLjAzLDEuMDMsMCwwLDAsMi41NzEsOC44NjV2OS4yNDFBMS4wMywxLjAzLDAsMCwwLDMuNiwxOS4xMzNIMTcuOTczQTEuMDMsMS4wMywwLDAsMCwxOSwxOC4xMDZWOC44NjVhMS4wMywxLjAzLDAsMCwwLTEuMDI3LTEuMDI3Wm0tNy4xODgsMTAuMmE0LjU1Nyw0LjU1NywwLDEsMSw0LjU1Ny00LjU1N0E0LjU1Nyw0LjU1NywwLDAsMSwxMC43ODUsMTguMDQyWm03LjE4OC03LjEyNEgxNS45MlY5Ljg5MWgyLjA1NFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjU3MSAtNS43ODQpIiBmaWxsPSIjNjY2Ii8+Cjwvc3ZnPgo=);
+}
+
+.ram {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS4xODYiIGhlaWdodD0iMTkuMTg2IiB2aWV3Qm94PSIwIDAgMTkuMTg2IDE5LjE4NiI+CiAgPHBhdGggaWQ9IlBhdGhfMzE3NCIgZGF0YS1uYW1lPSJQYXRoIDMxNzQiIGQ9Ik0xOS4xODYsNi43MTVWNC44SDE2LjMwOFYyLjg3OEgxNC4zODlWMEgxMi40NzFWMi44NzhIMTAuNTUyVjBIOC42MzNWMi44NzhINi43MTVWMEg0LjhWMi44NzhIMi44NzhWNC44SDBWNi43MTVIMi44NzhWOC42MzNIMHYxLjkxOUgyLjg3OHYxLjkxOUgwdjEuOTE5SDIuODc4djEuOTE5SDQuOHYyLjg3OEg2LjcxNVYxNi4zMDhIOC42MzN2Mi44NzhoMS45MTlWMTYuMzA4aDEuOTE5djIuODc4aDEuOTE5VjE2LjMwOGgxLjkxOVYxNC4zODloMi44NzhWMTIuNDcxSDE2LjMwOFYxMC41NTJoMi44NzhWOC42MzNIMTYuMzA4VjYuNzE1Wm0tNC44LDcuNjc0SDQuOFY0LjhoOS41OTNaIiBmaWxsPSIjNjY2Ii8+Cjwvc3ZnPgo=);
+}
+
+.battery {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIxMC43MzMiIHZpZXdCb3g9IjAgMCAyMSAxMC43MzMiPgogIDxwYXRoIGlkPSJQYXRoXzMxNzYiIGRhdGEtbmFtZT0iUGF0aCAzMTc2IiBkPSJNMjUuMTgzLDI5LjhoLS4xNFYyNy45MzNhLjkzMi45MzIsMCwwLDAtLjkxLS45MzNINS45MzNBLjkzNi45MzYsMCwwLDAsNSwyNy45MzNWMzYuOGEuOTM2LjkzNiwwLDAsMCwuOTMzLjkzM2gxOC4yYS45MTYuOTE2LDAsMCwwLC45MS0uOTMzVjM0LjkzM2guMTRBLjg0NC44NDQsMCwwLDAsMjYsMzQuMDQ3di0zLjM2QS44NTkuODU5LDAsMCwwLDI1LjE4MywyOS44Wk0yNS4wNjcsMzRIMjQuMTFsLjAyMywyLjhINS45MzNWMjcuOTMzaDE4LjJ2Mi44aC45MzNabS0xOC4yLTUuMjVoMy42ODd2Ny4yMzNINi44NjdabTQuMjIzLDBoMy42ODd2Ny4yMzNIMTEuMDlabTQuMiwwaDMuNjg3djcuMjMzSDE1LjI5Wm00LjIyMywwSDIzLjJ2Ny4yMzNIMTkuNTEzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUgLTI3KSIgZmlsbD0iIzY2NiIvPgo8L3N2Zz4K);
+}
+
+/*# sourceMappingURL=productspecs.css.map */

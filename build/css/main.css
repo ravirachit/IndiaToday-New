@@ -2740,12 +2740,15 @@ a, a:active, a:visited {
   border-bottom: 1px solid var(--widgetbordercolor);
   padding: 15px 10px 10px;
   position: relative;
+  counter-reset: my-sec-counter;
   /***** bottom TAGS Section START *****/
   /***** // bottom TAGS Section END // *****/
   /***** bottom SHARING Section START *****/
   /***** // bottom SHARING Section END // *****/
   /***** bottom Footer AUDIO and LIVETV Section START *****/
   /***** // bottom Footer AUDIO and LIVETV Section END // *****/
+  /***** Five Pointer Story START *********/
+  /***** Five Pointer Story END *********/
 }
 .story__content__body .strytitle {
   font-size: 24px;
@@ -3055,6 +3058,38 @@ a, a:active, a:visited {
   right: 0px;
   background-size: 100%;
 }
+.story__content__body .pointer-section {
+  position: relative;
+  padding-left: 48px;
+  padding-bottom: 40px;
+}
+.story__content__body .pointer-section::before {
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter);
+  font-size: 85px;
+  line-height: 1;
+  color: var(--catbrandcolor, #000);
+  font-weight: 700;
+  position: absolute;
+  top: -12px;
+  left: 0;
+}
+.story__content__body .pointer-section::after {
+  content: "";
+  width: 38px;
+  height: 70px;
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  box-shadow: -3px -3px 3px #a8a8a838;
+  z-index: 1;
+  background: #fff;
+}
+.story__content__body .pointer-section > p {
+  z-index: 2;
+  position: relative;
+  top: 20px;
+}
 
 @media (min-width: 1024px) {
   .story__content__body {
@@ -3204,7 +3239,7 @@ a, a:active, a:visited {
   display: none;
 }
 .carouselalsoread__widget.carouseltheme2 {
-  background-color: var(--theme2bg);
+  background: var(--catbrandcolor, #1D2936);
 }
 .carouselalsoread__widget.carouseltheme2 h2 {
   color: var(--theme2primarytextcolor);
@@ -5176,8 +5211,32 @@ a, a:active, a:visited {
   }
 }
 /*sass media query varibale */
-.carouselalsoread__widget.carouseltheme2 {
-  background-color: var(--catbrandcolor, #1d2936);
+/*sass media query varibale */
+body {
+  --techBordercolor:#FF006A;
+  --techbrandtextcolor:#FF006A;
+}
+
+/* viewall__bnt button css update */
+.viewall__bnt span {
+  border-color: var(--techBordercolor);
+  color: var(--techbrandtextcolor);
+  background-position: 0 0;
+  background: transparent;
+}
+.viewall__bnt span:hover {
+  background: var(--catbrandcolor);
+  background-position: 0 0;
+}
+.viewall__bnt.theme2 span {
+  background-position: 0 0;
+  background: transparent;
+}
+.viewall__bnt.theme2 span:hover {
+  background: #fff;
+  background-position: 0 0;
+  color: var(--techbrandtextcolor);
+  border-color: var(--techBordercolor);
 }
 
 .B1__s3__widget .story__card .cat__title {
@@ -5186,6 +5245,253 @@ a, a:active, a:visited {
   -webkit-text-fill-color: transparent;
 }
 
+.story__content__body .description {
+  /*h3{
+      background:var(--catbrandcolor);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }*/
+}
+.story__content__body .description .readalso {
+  background: var(--catbrandcolor);
+}
+.story__content__body .description .readalso a {
+  color: var(--theme2primarytextcolor);
+}
+.story__content__body .description .readalso a:before {
+  color: var(--theme2secondarytextcolor);
+}
+.story__content__body .description .quotes .quotes__container {
+  background: var(--catbrandcolor);
+}
+.story__content__body .description .quotes .quotes__container .quotes__content .quotes__text {
+  color: var(--theme2primarytextcolor);
+}
+.story__content__body .description .quotes .quotes__container .quotes__content .quoter__info .quotername {
+  color: var(--theme2primarytextcolor);
+}
+.story__content__body .description .quotes .quotes__container .quotes__content .quoter__info .quoterdesignation {
+  color: var(--theme2primarytextcolor);
+}
+
+.carouselalsoread__widget .heading__nav h2 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23ffffff' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
+}
+
+/** product **/
+.poductphotoby__widget {
+  background: var(--catbrandcolor);
+  padding: 15px 10px 10px 0;
+  border-radius: 5px;
+}
+.poductphotoby__widget .photoby__title {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.poductphotoby__widget .photo__list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.poductphotoby__widget .photo__list ul li {
+  margin: 10px 0 0 10px;
+  flex-basis: calc(50% - 10px);
+  flex-shrink: 0;
+}
+.poductphotoby__widget .photo__list ul li img {
+  min-width: auto;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .poductphotoby__widget {
+    padding: 15px 10px;
+  }
+  .poductphotoby__widget .photo__list ul li {
+    flex-basis: auto;
+  }
+  .poductphotoby__widget .photo__list ul li img {
+    min-width: 210px;
+  }
+}
+/* Tech Brand Page Start */
+.big__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.allbrand__list {
+  display: grid;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  gap: 20px 15px;
+  grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
+}
+.allbrand__list .brandcard .brandlogo {
+  margin-bottom: var(--magrin15);
+}
+.allbrand__list .brandcard .brandlogo img {
+  width: 100%;
+}
+.allbrand__list .brandcard .brand__name {
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .big__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .allbrand__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/* //Tech Brand Page END// */
+/* Tech Brand Details Page START */
+.brand__details .brand__header {
+  display: flex;
+  border-bottom: 1px solid var(--widgetbordercolor);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.brand__details .brand__header .brand__slogo {
+  flex-basis: 90px;
+  max-width: 90px;
+  margin-right: 20px;
+}
+.brand__details .brand__header .brand__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.brand__details .brand__header .brand__info h1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.brand__details .brand__header .brand__info .updated__dt {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--textcolor666);
+}
+.brand__details .context__body p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.brand__details .brand__productbody {
+  border-top: 1px solid var(--widgetbordercolor);
+  padding-top: 15px;
+}
+.brand__details .brand__productbody .brand__search {
+  background-color: #EFF3F6;
+  padding: 10px;
+  margin-bottom: var(--magrin15);
+}
+.brand__details .brand__productbody .brand__search input {
+  width: 100%;
+  border: 1px solid var(--widgetbordercolor);
+  padding: 10px 40px 10px 20px;
+  font-size: 14px;
+  color: var(--primarytextcolor);
+  outline: 0;
+  border-radius: 5px;
+}
+.brand__details .brand__productbody .filter__section .subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.brand__details .brand__productbody .filter__section .capsule-dlist {
+  font-size: 0;
+}
+.brand__details .brand__productbody .filter__section .capsule-dlist a {
+  border: 1px solid #FF006A;
+  padding: 0px 15px;
+  border-radius: 30px;
+  color: #FF006A;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+  margin: 0 15px 15px 0;
+  background: #fff;
+  transition: all 0.2s ease-in;
+}
+.brand__details .brand__productbody .filter__section .capsule-dlist a.active, .brand__details .brand__productbody .filter__section .capsule-dlist a:hover {
+  background-image: var(--catbrandcolor);
+  color: #fff;
+}
+.brand__details .brand__productbody .brand__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(103px, 1fr));
+  grid-gap: 20px 15px;
+  margin-bottom: var(--magrin15);
+}
+.brand__details .brand__productbody .brand__products .product__card .product__image {
+  margin-bottom: 10px;
+}
+.brand__details .brand__productbody .brand__products .product__card .product__name {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .brand__details .brand__header .brand__info h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .brand__details .brand__productbody .brand__products {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px 20px;
+  }
+  .brand__details .brand__productbody .brand__products .product__image {
+    margin-bottom: 15px;
+  }
+  .brand__details .brand__productbody .brand__products .product__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/* //Tech Brand Details Page END// */
+/* Specs table START */
+.specs__table .specs__row {
+  border-bottom: 4px solid var(--widgetbordercolor);
+  padding-bottom: 20px;
+  margin-bottom: var(--magrin15);
+}
+.specs__table .specs__row .title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primarytextcolor);
+  font-weight: 500;
+}
+.specs__table .specs__row .row {
+  display: flex;
+}
+.specs__table .specs__row .row .col {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--textcolor666);
+  padding-top: 15px;
+}
+.specs__table .specs__row .row .col:nth-child(1) {
+  flex-basis: 150px;
+  flex-shrink: 0;
+  color: var(--primarytextcolor);
+}
+.specs__table .specs__row:nth-last-child(1) {
+  border-bottom: 0px;
+}
+
+/* Specs table END */
 /*sass media query varibale */
 .static__page__navigation {
   border-radius: 0px;
@@ -6123,11 +6429,8 @@ a, a:active, a:visited {
 }
 /*sass media query varibale */
 .compare__widget {
-  background-color: var(--whitebg);
-  box-shadow: 1px 1px 3px #00000026;
-  border-top: 1px solid var(--widgetbordercolor);
-  border-bottom: 1px solid var(--widgetbordercolor);
-  padding: 15px 10px 0px;
+  /*@include blockwidgetstyle;
+  padding:15px 10px 0px;*/
 }
 .compare__widget .heading__nav {
   margin-bottom: 12px;
@@ -6254,19 +6557,14 @@ a, a:active, a:visited {
 
 @media (min-width: 1024px) {
   .compare__widget {
-    border-left: 1px solid var(--widgetbordercolor);
-    border-right: 1px solid var(--widgetbordercolor);
-    border-radius: 5px;
-    padding: 15px 20px 0px;
+    /*@include desktopblockwidgetstyle;
+    padding:15px 20px 0px;*/
   }
 }
 /*sass media query varibale */
 .popular__widget {
-  background-color: var(--whitebg);
-  box-shadow: 1px 1px 3px #00000026;
-  border-top: 1px solid var(--widgetbordercolor);
-  border-bottom: 1px solid var(--widgetbordercolor);
-  padding: 15px 10px 0px;
+  /*@include blockwidgetstyle;
+  padding:15px 10px 0px;*/
 }
 .popular__widget .heading__nav {
   margin-bottom: 12px;
@@ -6326,10 +6624,8 @@ a, a:active, a:visited {
 
 @media (min-width: 1024px) {
   .popular__widget {
-    border-left: 1px solid var(--widgetbordercolor);
-    border-right: 1px solid var(--widgetbordercolor);
-    border-radius: 5px;
-    padding: 15px 20px 0px;
+    /*@include desktopblockwidgetstyle;
+    padding:15px 20px 0px;*/
   }
 }
 /*sass media query varibale */
@@ -6444,6 +6740,1187 @@ a, a:active, a:visited {
     flex-basis: calc(50% - 20px);
     flex-shrink: 0;
     margin-bottom: 0px;
+  }
+}
+/*sass media query varibale */
+.productreview__widget {
+  background: var(--catbrandcolor);
+  color: var(--theme2primarytextcolor);
+  border-radius: 5px;
+}
+.productreview__widget .review__head {
+  background-color: #000;
+  border-radius: 5px 5px 0 0;
+  padding: 12px 10px;
+  position: relative;
+}
+.productreview__widget .review__head h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.productreview__widget .review__head .prod__rating {
+  position: absolute;
+  width: 106px;
+  height: 62px;
+  background: #FFF108;
+  color: #000;
+  top: 0;
+  right: 0;
+  border-radius: 0 4px 0 15px;
+  box-shadow: 0px 3px 6px #00000029;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.productreview__widget .review__content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.productreview__widget .review__content h4 {
+  color: #FFF108;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.productreview__widget .review__content .review__points {
+  flex-basis: 100%;
+  padding: 20px;
+  position: relative;
+}
+.productreview__widget .review__content .review__points:nth-child(1)::after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: #ffffff50;
+  position: absolute;
+  bottom: 0px;
+  display: block;
+}
+.productreview__widget .review__content ul {
+  list-style: none;
+}
+.productreview__widget .review__content ul li {
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 15px;
+  position: relative;
+}
+.productreview__widget .review__content ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.productreview__widget .review__content ul li:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #FFF108;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+@media (min-width: 1024px) {
+  .productreview__widget .review__head {
+    padding: 12px 20px;
+  }
+  .productreview__widget .review__head h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .productreview__widget .review__head .prod__rating {
+    font-size: 30px;
+    width: 136px;
+  }
+  .productreview__widget .review__content {
+    flex-direction: row;
+    padding: 20px 0;
+  }
+  .productreview__widget .review__content .review__points {
+    flex-basis: 50%;
+    padding: 0 20px;
+  }
+  .productreview__widget .review__content .review__points:nth-child(1) {
+    border-right: 1px solid #ffffff50;
+    padding-right: 40px;
+  }
+  .productreview__widget .review__content .review__points:nth-child(1)::after {
+    display: none;
+  }
+  .productreview__widget .review__content .review__points:nth-child(2) {
+    padding-left: 40px;
+  }
+}
+/*sass media query varibale */
+.productspecs__container {
+  display: flex;
+  background: #F7F9FA;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.productspecs__container .productspecs__figure {
+  flex-basis: 220px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.productspecs__container .productspecs__figure .product__name {
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.productspecs__container .productspecs__figure .product__image {
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 220px;
+}
+.productspecs__container .productspecs__list {
+  padding: 0 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productspecs__container .productspecs__list .list__default {
+  flex-basis: calc(50% - 20px);
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  padding-left: 25px;
+}
+.productspecs__container .productspecs__list .list__default:not(:last-child) {
+  margin-bottom: 5px;
+}
+.productspecs__container .productspecs__list .list__default span {
+  display: block;
+}
+.productspecs__container .productspecs__list .list__default .title {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.productspecs__container .productspecs__list .list__default .specsdata {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--brandtextcolor);
+}
+.productspecs__container .productspecs__list .list__default .datadetail {
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--textcolor666);
+}
+.productspecs__container .productspecs__points {
+  flex-basis: 100%;
+  padding: 20px 20px 0;
+  background: var(--catbrandcolor);
+  color: var(--theme2primarytextcolor);
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.productspecs__container .productspecs__points ul {
+  list-style: none;
+}
+.productspecs__container .productspecs__points ul li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+.productspecs__container .productspecs__points ul li:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #FFF108;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+@media (min-width: 1024px) {
+  .productspecs__container {
+    padding-left: 20px;
+    flex-direction: row;
+  }
+  .productspecs__container .productspecs__list {
+    flex: 1 0 0;
+    padding: 20px;
+    flex-direction: column;
+    display: block;
+  }
+  .productspecs__container .productspecs__list .list__default {
+    flex-basis: 100%;
+  }
+  .productspecs__container .productspecs__points {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    border-radius: 0 5px 5px 0;
+  }
+}
+.screen {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDE0IDI0Ij4KICA8cGF0aCBpZD0iUGF0aF8zMTczIiBkYXRhLW5hbWU9IlBhdGggMzE3MyIgZD0iTTIuNDUsMFYuODgyQTEuOTM0LDEuOTM0LDAsMCwwLDQuMzc3LDIuODI0SDkuNjIzQTEuOTM1LDEuOTM1LDAsMCwwLDExLjU1Ljg4MlYwSDExLjlBMi4xMDksMi4xMDksMCwwLDEsMTQsMi4xMTlWMjEuODgxQTIuMTA4LDIuMTA4LDAsMCwxLDExLjksMjRIMi4xQTIuMTA5LDIuMTA5LDAsMCwxLDAsMjEuODgxVjIuMTE5QTIuMTA4LDIuMTA4LDAsMCwxLDIuMSwwWm05LjA2LDIxLjAxM2EuMzU1LjM1NSwwLDAsMCwuMTQ4LS40NzZMMy41ODMsNC45MjdhLjM0OS4zNDksMCwwLDAtLjQ3Mi0uMTVMMi40OSw1LjFhLjM1NS4zNTUsMCwwLDAtLjE0OC40NzZsOC4wNzYsMTUuNjFhLjM0OS4zNDksMCwwLDAsLjQ3Mi4xNVpNMy44NSwwaDYuM1YuODgyYS41MjkuNTI5LDAsMCwxLS41MjcuNTI5SDQuMzc3QS41MjguNTI4LDAsMCwxLDMuODUuODgyWiIgZmlsbD0iIzY2NiIvPgo8L3N2Zz4K);
+}
+
+.camera {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNi40MjkiIGhlaWdodD0iMTMuMzQ5IiB2aWV3Qm94PSIwIDAgMTYuNDI5IDEzLjM0OSI+CiAgPHBhdGggaWQ9Ikljb25fbWV0cm8tY2FtZXJhIiBkYXRhLW5hbWU9Ikljb24gbWV0cm8tY2FtZXJhIiBkPSJNNy40NDgsMTMuNDg1YTMuMzM3LDMuMzM3LDAsMSwwLDMuMzM3LTMuMzM3LDMuMzM3LDMuMzM3LDAsMCwwLTMuMzM3LDMuMzM3Wk0xNy45NzMsNy44MzhIMTQuMzc5Yy0uMjU3LTEuMDI3LS41MTMtMi4wNTQtMS41NC0yLjA1NEg4LjczMmMtMS4wMjcsMC0xLjI4NCwxLjAyNy0xLjU0LDIuMDU0SDMuNkExLjAzLDEuMDMsMCwwLDAsMi41NzEsOC44NjV2OS4yNDFBMS4wMywxLjAzLDAsMCwwLDMuNiwxOS4xMzNIMTcuOTczQTEuMDMsMS4wMywwLDAsMCwxOSwxOC4xMDZWOC44NjVhMS4wMywxLjAzLDAsMCwwLTEuMDI3LTEuMDI3Wm0tNy4xODgsMTAuMmE0LjU1Nyw0LjU1NywwLDEsMSw0LjU1Ny00LjU1N0E0LjU1Nyw0LjU1NywwLDAsMSwxMC43ODUsMTguMDQyWm03LjE4OC03LjEyNEgxNS45MlY5Ljg5MWgyLjA1NFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjU3MSAtNS43ODQpIiBmaWxsPSIjNjY2Ii8+Cjwvc3ZnPgo=);
+}
+
+.ram {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS4xODYiIGhlaWdodD0iMTkuMTg2IiB2aWV3Qm94PSIwIDAgMTkuMTg2IDE5LjE4NiI+CiAgPHBhdGggaWQ9IlBhdGhfMzE3NCIgZGF0YS1uYW1lPSJQYXRoIDMxNzQiIGQ9Ik0xOS4xODYsNi43MTVWNC44SDE2LjMwOFYyLjg3OEgxNC4zODlWMEgxMi40NzFWMi44NzhIMTAuNTUyVjBIOC42MzNWMi44NzhINi43MTVWMEg0LjhWMi44NzhIMi44NzhWNC44SDBWNi43MTVIMi44NzhWOC42MzNIMHYxLjkxOUgyLjg3OHYxLjkxOUgwdjEuOTE5SDIuODc4djEuOTE5SDQuOHYyLjg3OEg2LjcxNVYxNi4zMDhIOC42MzN2Mi44NzhoMS45MTlWMTYuMzA4aDEuOTE5djIuODc4aDEuOTE5VjE2LjMwOGgxLjkxOVYxNC4zODloMi44NzhWMTIuNDcxSDE2LjMwOFYxMC41NTJoMi44NzhWOC42MzNIMTYuMzA4VjYuNzE1Wm0tNC44LDcuNjc0SDQuOFY0LjhoOS41OTNaIiBmaWxsPSIjNjY2Ii8+Cjwvc3ZnPgo=);
+}
+
+.battery {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIxMC43MzMiIHZpZXdCb3g9IjAgMCAyMSAxMC43MzMiPgogIDxwYXRoIGlkPSJQYXRoXzMxNzYiIGRhdGEtbmFtZT0iUGF0aCAzMTc2IiBkPSJNMjUuMTgzLDI5LjhoLS4xNFYyNy45MzNhLjkzMi45MzIsMCwwLDAtLjkxLS45MzNINS45MzNBLjkzNi45MzYsMCwwLDAsNSwyNy45MzNWMzYuOGEuOTM2LjkzNiwwLDAsMCwuOTMzLjkzM2gxOC4yYS45MTYuOTE2LDAsMCwwLC45MS0uOTMzVjM0LjkzM2guMTRBLjg0NC44NDQsMCwwLDAsMjYsMzQuMDQ3di0zLjM2QS44NTkuODU5LDAsMCwwLDI1LjE4MywyOS44Wk0yNS4wNjcsMzRIMjQuMTFsLjAyMywyLjhINS45MzNWMjcuOTMzaDE4LjJ2Mi44aC45MzNabS0xOC4yLTUuMjVoMy42ODd2Ny4yMzNINi44NjdabTQuMjIzLDBoMy42ODd2Ny4yMzNIMTEuMDlabTQuMiwwaDMuNjg3djcuMjMzSDE1LjI5Wm00LjIyMywwSDIzLjJ2Ny4yMzNIMTkuNTEzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUgLTI3KSIgZmlsbD0iIzY2NiIvPgo8L3N2Zz4K);
+}
+
+/*sass media query varibale */
+.static__page__navigation {
+  border-radius: 0px;
+}
+.static__page__navigation .nav__container h1 {
+  text-indent: -99999px;
+  font-size: 10px;
+  color: var(--whitetextcolor);
+  background-repeat: no-repeat;
+  background-position-y: -10px;
+  min-height: 40px;
+  margin-bottom: 15px;
+}
+.static__page__navigation .nav__container h1:not([style^="background-image:"]) {
+  text-indent: 0px;
+  font-size: 30px;
+  font-weight: 500;
+  min-height: auto;
+  margin-bottom: 10px;
+}
+.static__page__navigation .nav__container .secondary__navigation ul {
+  list-style: none;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 0px 10px 10px;
+  border-bottom: 1px solid var(--widgetbordercolor);
+}
+.static__page__navigation .nav__container .secondary__navigation ul li a {
+  color: var(--primarytextcolor);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  position: relative;
+  white-space: nowrap;
+}
+.static__page__navigation .nav__container .secondary__navigation ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background-color: #004B72;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.static__page__navigation .nav__container .secondary__navigation ul li.active a:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.static__page__navigation .nav__container .secondary__navigation ul li:not(:nth-last-child(1)) {
+  margin-right: 35px;
+}
+.static__page__navigation .nav__container .secondary__navigation ul li:hover a:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.static__page__navigation .nav__container .secondary__navigation ul::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .static__page__navigation .nav__container .secondary__navigation ul {
+    padding: 0px 0px 10px;
+  }
+}
+.cricket__teams__widget .widget__container {
+  background-color: var(--whitebg);
+  box-shadow: 1px 1px 3px #00000026;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+}
+.cricket__teams__widget .widget__container .heading__nav {
+  padding: 15px 20px 0px;
+}
+.cricket__teams__widget .widget__container .heading__nav h2 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 500;
+}
+.cricket__teams__widget .widget__container .teams__card__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 15px 20px;
+}
+.cricket__teams__widget .widget__container .teams__card__container .teams__card {
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 3px #00000026;
+  border-radius: 25px 0px 25px 0px;
+  padding: 18px 20px;
+  gap: 15px;
+  margin-bottom: 0px;
+  position: relative;
+  border-bottom: 6px solid #0000ff73;
+}
+.cricket__teams__widget .widget__container .card__container__footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cricket__teams__widget .widget__container .card__container__footer .sharing {
+  margin-bottom: var(--widgetgap);
+}
+.cricket__teams__widget .widget__container .card__container__footer .sharing ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+.cricket__teams__widget .widget__container .card__container__footer .sharing ul .emoj {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 28px;
+  color: #656565;
+}
+.cricket__teams__widget .widget__container .card__container__footer .sharing ul .emoj .rel__data {
+  margin-left: 5px;
+}
+.cricket__teams__widget .tab__wrap {
+  display: flex;
+  gap: 10px;
+  margin: 15px 10px 10px;
+}
+.cricket__teams__widget .tab__wrap .active {
+  background-color: var(--brandbgcolor);
+}
+.cricket__teams__widget .tab__wrap .tab {
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 30px;
+  padding: 7px 15px 6px 15px;
+  background: #F2FAFC;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  cursor: pointer;
+  transition: all 0.275s linear;
+}
+.cricket__teams__widget .tab__wrap .tab:hover {
+  box-shadow: inset 0px 0px 4px #b5b5b5;
+  border-color: #cdcdcd;
+}
+.cricket__teams__widget .tab__wrap .active {
+  background-color: var(--catbrandcolor);
+  color: #ffffff;
+  border: none;
+}
+
+@media (min-width: 1024px) {
+  .cricket__teams__widget .widget__container .teams__card__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cricket__teams__widget .widget__container .card__container__footer {
+    display: flex;
+  }
+  .cricket__teams__widget .widget__container .card__container__footer .sharing {
+    margin-bottom: var(--widgetgap);
+    position: absolute;
+    right: 20px;
+  }
+  .cricket__teams__widget .widget__container .card__container__footer .sharing ul {
+    max-width: 340px;
+    gap: 20px;
+    padding: 0px;
+  }
+  .cricket__teams__widget .tab__wrap {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0px 10px;
+  }
+}
+.IPT__2020__widget {
+  background-color: var(--whitebg);
+  box-shadow: 1px 1px 3px #00000026;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  padding: 15px 0px 0px 0px;
+}
+.IPT__2020__widget .heading__nav {
+  margin-bottom: 12px;
+  padding: 0px 20px;
+}
+.IPT__2020__widget .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+}
+.IPT__2020__widget .tab__wrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 0px 20px;
+}
+.IPT__2020__widget .tab__wrap .active {
+  background-color: var(--brandbgcolor);
+}
+.IPT__2020__widget .tab__wrap .tab {
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 30px;
+  padding: 7px 15px 6px 15px;
+  background: #F2FAFC;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  cursor: pointer;
+  transition: all 0.275s linear;
+}
+.IPT__2020__widget .tab__wrap .tab:hover {
+  box-shadow: inset 0px 0px 4px #b5b5b5;
+  border-color: #cdcdcd;
+}
+.IPT__2020__widget .tab__wrap .active {
+  background-color: var(--catbrandcolor);
+  color: #ffffff;
+  border: none;
+}
+.IPT__2020__widget table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.IPT__2020__widget table thead tr {
+  background-color: var(--primarytextcolor);
+}
+.IPT__2020__widget table thead tr th {
+  padding: 4px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--whitetextcolor);
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.IPT__2020__widget table tbody {
+  position: relative;
+}
+.IPT__2020__widget table tbody tr {
+  border-radius: 5px;
+  padding-left: 20px;
+}
+.IPT__2020__widget table tbody tr td {
+  padding: 22px 20px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.IPT__2020__widget table tbody tr::after {
+  content: "";
+  height: 1px;
+  background: var(--tableBorderColor);
+  width: calc(100% - 40px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 22px #00000029;
+}
+.IPT__2020__widget table tbody tr:first-child {
+  background-color: var(--catbrandcolor);
+  color: var(--whitetextcolor);
+  font-weight: 600;
+  box-shadow: 1px 1px 3px #00000029;
+  border-bottom: 0px;
+}
+.IPT__2020__widget table tbody tr:first-child::after {
+  display: none;
+}
+.IPT__2020__widget table tbody tr:first-child td:first-child {
+  border-radius: 0px 0px 0px 5px;
+}
+.IPT__2020__widget table tbody tr:first-child td:last-child {
+  border-radius: 0px 0px 5px 0px;
+}
+.IPT__2020__widget table tbody tr:last-child {
+  border-bottom: 0px;
+}
+
+@media (min-width: 1024px) {
+  .IPT__2020__widget {
+    border-left: 1px solid var(--widgetbordercolor);
+    border-right: 1px solid var(--widgetbordercolor);
+    border-radius: 5px;
+    padding: 15px 0px 0px 0px;
+  }
+}
+.playInProgress__widget {
+  background-color: var(--whitebg);
+  box-shadow: 1px 1px 3px #00000026;
+  border-top: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+}
+.playInProgress__widget .widget__headerImg {
+  position: relative;
+}
+.playInProgress__widget .widget__headerImg .title__content {
+  padding: 6px 0px;
+  background-color: var(--primarytextcolor);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: var(--whitetextcolor);
+  text-align: right;
+  padding-right: 20px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.playInProgress__widget .widget__headerImg .title__content span {
+  opacity: 0.7;
+}
+.playInProgress__widget .widget__headerImg .left__logo__section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #004B72;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 10px;
+  height: 96px;
+  width: 96px;
+}
+.playInProgress__widget table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 12px 4px;
+  background-color: #333333;
+  border-radius: 0px 0px 5px 5px;
+}
+.playInProgress__widget table tr th {
+  font-size: 11px;
+  line-height: 16px;
+  color: #CCCCCC;
+  text-align: left;
+  font-weight: normal;
+  padding: 14px 0px;
+}
+.playInProgress__widget table tr th:nth-child(2) {
+  text-align: center;
+  width: 200px;
+}
+.playInProgress__widget table tr td {
+  text-align: left;
+  color: var(--whitetextcolor);
+}
+.playInProgress__widget table tr td .sets__container {
+  display: flex;
+}
+.playInProgress__widget table tr td .sets__container div {
+  position: relative;
+  margin-right: 12px;
+  height: 30px;
+  width: 26px;
+}
+.playInProgress__widget table tr td .sets__container div span {
+  position: absolute;
+  left: 9px;
+  top: 7px;
+}
+.playInProgress__widget table tr td:first-child {
+  font-size: 14px;
+  line-height: 17px;
+}
+.playInProgress__widget table tr td:nth-child(2) {
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+}
+.playInProgress__widget table tr:last-child td {
+  padding-bottom: 13px;
+}
+
+@media (min-width: 1024px) {
+  .playInProgress__widget table tr td .sets__container div {
+    position: relative;
+    margin-right: 42px;
+    height: 30px;
+    width: 26px;
+  }
+}
+.fixtures__widget {
+  margin-top: 15px;
+}
+.fixtures__widget .fixtures__container {
+  scroll-behavior: smooth;
+  animation-duration: 0.4s;
+  animation-name: slidein;
+}
+.fixtures__widget .heading__nav {
+  margin-bottom: 10px;
+}
+.fixtures__widget .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+  padding-left: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23e3001b' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.fixtures__widget .heading__nav .carousel__nav {
+  display: none;
+}
+.fixtures__widget .tab__wrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.fixtures__widget .tab__wrap .active {
+  background-color: var(--brandbgcolor);
+}
+.fixtures__widget .tab__wrap .tab {
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 30px;
+  padding: 7px 15px 6px 15px;
+  background: #F2FAFC;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  cursor: pointer;
+  transition: all 0.275s linear;
+}
+.fixtures__widget .tab__wrap .tab:hover {
+  box-shadow: inset 0px 0px 4px #b5b5b5;
+  border-color: #cdcdcd;
+}
+.fixtures__widget .tab__wrap .active {
+  background-color: var(--catbrandcolor);
+  color: #ffffff;
+  border: none;
+}
+.fixtures__widget .status__title {
+  background: transparent linear-gradient(273deg, #397384E2 0%, #005088 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  padding: 11px 10px 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.fixtures__widget .carousel__container .date__container {
+  text-align: center;
+  margin: 10px;
+}
+.fixtures__widget .carousel__container .date__container span {
+  background: #1A1D24;
+  border-radius: 20px;
+  color: var(--whitetextcolor);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 3px 15px;
+  font-weight: 500;
+}
+.fixtures__widget .carousel__container .carousel__card {
+  border-radius: 5px;
+  justify-content: center;
+  background-color: var(--whitebg);
+  box-shadow: 4px 4px 6px #0000000D;
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 0px;
+  position: relative;
+}
+.fixtures__widget .carousel__container .carousel__card .notification__icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.fixtures__widget .carousel__container .carousel__card .live__sticker {
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #E3001B;
+  padding: 3px 12px;
+  border-radius: 0px 5px 5px 0px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content {
+  position: relative;
+  padding: 0px 5px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .card__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  margin: 10px 76px;
+  min-height: 35px;
+  max-height: 35px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  min-height: 62px;
+  max-height: 62px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 {
+  text-align: right;
+  width: 50%;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .team__name {
+  padding-right: 3px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .scoreStatus__withIcon {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .scoreStatus__withIcon p {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .scoreStatus__withIcon .completed__score {
+  color: #656565;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .scoreStatus__withIcon .live__score {
+  color: var(--primarytextcolor);
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .scoreStatus__withIcon .overs {
+  font-size: 11px;
+  line-height: 13px;
+  color: #656565;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__vs {
+  margin: 0px 20px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__vs div {
+  height: 18px;
+  width: 18px;
+  background: var(--adbodybg);
+  border-radius: 50%;
+  font-size: 9px;
+  padding: 5px 3px;
+  line-height: 9px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 {
+  text-align: left;
+  width: 50%;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .team__name {
+  padding-left: 2px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .scoreStatus__withIcon {
+  display: flex;
+  align-items: center;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .scoreStatus__withIcon p {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .scoreStatus__withIcon .completed__score {
+  color: #656565;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .scoreStatus__withIcon .live__score {
+  color: var(--primarytextcolor);
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .scoreStatus__withIcon .overs {
+  font-size: 11px;
+  line-height: 13px;
+  color: #656565;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .match__status {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px 0px;
+  min-height: 36px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .match__status .crr {
+  font-weight: 600;
+  color: #666666;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .match__location {
+  color: #666666;
+  font-size: 12px;
+  text-align: center;
+  margin: 15px 0px;
+}
+.fixtures__widget .carousel__container .carousel__card .card__content .full__scoreboard {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #E3031B;
+  margin: 15px 0px;
+}
+.fixtures__widget .carousel__container .carousel__card:nth-last-child(1) {
+  margin-right: 0px;
+}
+.fixtures__widget .carousel__container::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .fixtures__widget .carousel__container .carousel__card {
+    border-radius: 15px;
+  }
+}
+.rankings__widget {
+  padding: 15px 0px 0px 0px;
+}
+.rankings__widget .ranking__container {
+  background-color: var(--whitebg);
+  border: 1px solid var(--widgetbordercolor);
+}
+.rankings__widget .ranking__container .ranking__container__footer {
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rankings__widget .ranking__container .ranking__container__footer .sharing {
+  margin-bottom: var(--widgetgap);
+}
+.rankings__widget .ranking__container .ranking__container__footer .sharing ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+.rankings__widget .ranking__container .ranking__container__footer .sharing ul .emoj {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 28px;
+  color: #656565;
+}
+.rankings__widget .ranking__container .ranking__container__footer .sharing ul .emoj .rel__data {
+  margin-left: 5px;
+}
+.rankings__widget .ranking__container .player__first__ranking {
+  background: transparent linear-gradient(273deg, #397384E2 0%, #005088 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  align-items: center;
+  color: var(--whitetextcolor);
+}
+.rankings__widget .ranking__container .player__first__ranking .profile__right__content {
+  display: flex;
+  flex-direction: column;
+}
+.rankings__widget .ranking__container .player__first__ranking .sr__number {
+  font-size: 24px;
+  line-height: 24px;
+  margin-left: 15px;
+  font-weight: 500;
+}
+.rankings__widget .ranking__container .player__first__ranking .player__profile {
+  position: relative;
+  margin: 15px;
+}
+.rankings__widget .ranking__container .player__first__ranking .player__profile img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+}
+.rankings__widget .ranking__container .player__first__ranking .player__name h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.rankings__widget .ranking__container .player__first__ranking .player__name span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+.rankings__widget .ranking__container .player__first__ranking .player__points {
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 30px;
+  margin-right: 47px;
+  font-weight: 500;
+  display: flex;
+  gap: 15px;
+  align-items: baseline;
+}
+.rankings__widget .ranking__container .player__first__ranking .player__points span:last-child {
+  font-size: 16px;
+  line-height: 24px;
+  color: #F2F2F2;
+  font-weight: normal;
+}
+.rankings__widget .tab__wrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.rankings__widget .tab__wrap .active {
+  background-color: var(--brandbgcolor);
+}
+.rankings__widget .tab__wrap .tab {
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 30px;
+  padding: 7px 15px 6px 15px;
+  background: #F2FAFC;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  cursor: pointer;
+  transition: all 0.275s linear;
+}
+.rankings__widget .tab__wrap .tab:hover {
+  box-shadow: inset 0px 0px 4px #b5b5b5;
+  border-color: #cdcdcd;
+}
+.rankings__widget .tab__wrap .active {
+  background-color: var(--catbrandcolor);
+  color: #ffffff;
+  border: none;
+}
+.rankings__widget .tab__content__title {
+  background: transparent linear-gradient(273deg, #397384E2 0%, #005088 100%) 0% 0% no-repeat padding-box;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+  padding: 11px 10px 9px;
+  margin-bottom: 1px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.rankings__widget .tab__content__title div {
+  font-size: 12px;
+  color: #DCE3E5;
+  padding-right: 5px;
+  font-weight: 400;
+}
+.rankings__widget table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.rankings__widget table thead tr {
+  background-color: var(--primarytextcolor);
+}
+.rankings__widget table thead tr th {
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--whitetextcolor);
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 500;
+}
+.rankings__widget table tbody {
+  position: relative;
+}
+.rankings__widget table tbody tr {
+  border-radius: 5px;
+  padding-left: 20px;
+  border-bottom: 1px solid #D1D1D1;
+}
+.rankings__widget table tbody tr td {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--theme2textcolor);
+}
+.rankings__widget table tbody tr td:nth-child(2) {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primarytextcolor);
+}
+.rankings__widget table tbody tr:first-child {
+  background-color: #CCDBE3;
+  color: var(--whitetextcolor);
+  font-weight: 600;
+  border-bottom: 0px;
+}
+.rankings__widget table tbody tr:first-child::after {
+  display: none;
+}
+.rankings__widget table tbody tr:first-child td {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primarytextcolor);
+}
+.rankings__widget table tbody:first-child {
+  border-bottom: none;
+}
+.rankings__widget #players table tbody {
+  position: relative;
+}
+.rankings__widget #players table tbody tr td {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--theme2textcolor);
+}
+.rankings__widget #players table tbody tr td:nth-child(1) td, .rankings__widget #players table tbody tr td:nth-child(2) td {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primarytextcolor);
+}
+.rankings__widget #players table tbody tr td:nth-child(1) {
+  text-align: center;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primarytextcolor);
+}
+.rankings__widget #players table tbody tr td:nth-child(2) {
+  text-align: left;
+  gap: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primarytextcolor);
+}
+.rankings__widget #players table tbody tr:first-child {
+  background-color: var(--whitebg);
+  color: var(--whitetextcolor);
+  font-weight: 600;
+  border-bottom: 0px;
+}
+.rankings__widget #players table tbody tr:first-child::after {
+  display: none;
+}
+.rankings__widget #players table tbody:first-child {
+  border-bottom: none;
+}
+
+@media (min-width: 1024px) {
+  .rankings__widget .tab__wrap {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+  .rankings__widget .tab__content__title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .rankings__widget .ranking__container .ranking__container__footer {
+    flex-direction: column;
+  }
+  .rankings__widget .ranking__container .ranking__container__footer .sharing {
+    margin-bottom: var(--widgetgap);
+    position: absolute;
+    right: 15px;
+  }
+  .rankings__widget .ranking__container .ranking__container__footer .sharing ul {
+    list-style: none;
+    display: flex;
+    max-width: 340px;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px;
+  }
+  .rankings__widget .ranking__container .player__first__ranking {
+    position: relative;
+  }
+  .rankings__widget .ranking__container .player__first__ranking .profile__right__content {
+    flex-direction: inherit;
+  }
+  .rankings__widget .ranking__container .player__first__ranking .player__points {
+    flex-direction: column;
+    gap: 0px;
+    position: absolute;
+    right: 10px;
+    margin-top: 0px;
+  }
+  .rankings__widget table thead tr th:first-child {
+    width: 55px;
+  }
+  .rankings__widget table tbody {
+    position: relative;
+  }
+  .rankings__widget table tbody tr {
+    border-radius: 5px;
+    padding-left: 20px;
+    border-bottom: 1px solid #D1D1D1;
+  }
+  .rankings__widget table tbody tr td {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .rankings__widget table tbody tr td:nth-child(2) {
+    gap: 15px;
+    font-size: 16px;
+    padding-left: 70px;
+  }
+  .rankings__widget table tbody tr td:nth-child(2) img {
+    height: 48px;
+    width: 48px;
+  }
+  .rankings__widget table tbody tr:first-child td {
+    font-size: 20px;
   }
 }
 .otherSportsCoverage__widget .otherSportsCoverage__grid {
