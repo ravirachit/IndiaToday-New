@@ -5911,6 +5911,7 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 .fixtures__widget .tab__wrap .active {
   background-color: var(--brandbgcolor);
@@ -6125,6 +6126,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .fixtures__widget .tab__wrap {
+    margin-left: 0px;
+  }
   .fixtures__widget .carousel__container .carousel__card {
     border-radius: 15px;
   }
@@ -7407,6 +7411,7 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 .fixtures__widget .tab__wrap .active {
   background-color: var(--brandbgcolor);
@@ -7621,6 +7626,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .fixtures__widget .tab__wrap {
+    margin-left: 0px;
+  }
   .fixtures__widget .carousel__container .carousel__card {
     border-radius: 15px;
   }
@@ -8047,6 +8055,11 @@ body {
   border-radius: 15px;
   position: relative;
 }
+.carouselFixtures__widget .carousel__container .carousel__card .notification__icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
 .carouselFixtures__widget .carousel__container .carousel__card .live__sticker {
   font-size: 7px;
   font-weight: 600;
@@ -8070,7 +8083,7 @@ body {
   font-size: 12px;
   line-height: 18px;
   text-align: center;
-  margin: 10px;
+  margin: 10px 35px;
   min-height: 35px;
   max-height: 35px;
 }
@@ -8088,15 +8101,15 @@ body {
 .carouselFixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .team__name {
   padding-right: 3px;
   font-size: 14px;
-  line-height: 24px;
   font-weight: 500;
 }
 .carouselFixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .scoreStatus__withIcon {
   display: flex;
   align-items: center;
   float: right;
+  min-height: 38px;
 }
-.carouselFixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .scoreStatus__withIcon span {
+.carouselFixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__1 .scoreStatus__withIcon p {
   margin-right: 10px;
   font-size: 16px;
   font-weight: 500;
@@ -8134,7 +8147,6 @@ body {
 .carouselFixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .team__name {
   padding-left: 2px;
   font-size: 14px;
-  line-height: 24px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -8143,8 +8155,9 @@ body {
 .carouselFixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .scoreStatus__withIcon {
   display: flex;
   align-items: center;
+  min-height: 38px;
 }
-.carouselFixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .scoreStatus__withIcon span {
+.carouselFixtures__widget .carousel__container .carousel__card .card__content .team__vs__team .team__2 .scoreStatus__withIcon p {
   margin-left: 10px;
   font-size: 16px;
   font-weight: 500;
