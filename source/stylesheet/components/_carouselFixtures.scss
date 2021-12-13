@@ -71,6 +71,11 @@
             border: 1px solid var(--widgetbordercolor);
             border-radius: 15px;
             position: relative;
+            .notification__icon{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+            }
             .live__sticker{
                 font-size: 7px;
                 font-weight: 600;
@@ -90,7 +95,7 @@
                     font-size: 12px;
                     line-height: 18px;
                     text-align: center;
-                    margin: 10px;
+                    margin: 10px 35px;
                     min-height: 35px;
                     max-height: 35px;
                 }
@@ -106,14 +111,14 @@
                         .team__name{
                             padding-right: 3px;
                             font-size: 14px;
-                            line-height: 24px;
                             font-weight: 500;
                         }
                         .scoreStatus__withIcon{
                             display: flex;
                             align-items: center;
                             float: right;
-                            span{
+                            min-height: 38px;
+                            p{
                                 margin-right: 10px;
                                 font-size: 16px;
                                 font-weight: 500;
@@ -152,7 +157,6 @@
                         .team__name{
                             padding-left: 2px;
                             font-size: 14px;
-                            line-height: 24px;
                             font-weight: 500;
                             display: flex;
                             align-items: center;
@@ -161,7 +165,8 @@
                         .scoreStatus__withIcon{
                             display: flex;
                             align-items: center;
-                             span{
+                            min-height: 38px;
+                             p{
                                 margin-left: 10px;
                                 font-size: 16px;
                                 font-weight: 500;
