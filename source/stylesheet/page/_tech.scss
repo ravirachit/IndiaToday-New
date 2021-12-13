@@ -249,6 +249,9 @@ body{
             .product__card{
                .product__image{
                    margin-bottom:10px;
+                   img{
+                       width:100%;
+                   }
                }
                .product__name{
                    font-size:14px;
@@ -256,6 +259,9 @@ body{
                    text-align: center;
                }
             }
+        }
+        &.noborder{
+            border:0px;
         }
       }
   }

@@ -5437,10 +5437,16 @@ body {
 .brand__details .brand__productbody .brand__products .product__card .product__image {
   margin-bottom: 10px;
 }
+.brand__details .brand__productbody .brand__products .product__card .product__image img {
+  width: 100%;
+}
 .brand__details .brand__productbody .brand__products .product__card .product__name {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+}
+.brand__details .brand__productbody.noborder {
+  border: 0px;
 }
 
 @media (min-width: 1024px) {
