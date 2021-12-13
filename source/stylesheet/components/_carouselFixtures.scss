@@ -1,0 +1,290 @@
+@import '../abstracts/mixins';
+@import '../abstracts/functions';
+
+.carouselFixtures__widget{
+	@include blockwidgetstyle;
+	padding:15px 0px 20px 10px;
+	overflow: hidden;
+    .fixtures__container{
+        scroll-behavior: smooth;
+        animation-duration: .4s;
+        animation-name: slidein;
+    }
+	.heading__nav{
+		margin-bottom:10px;
+		h2{
+			@include titlewidgetBlack;
+			color:var(--primarytextcolor);
+			@include titleicon;
+		}
+		.carousel__nav{ display: none;}
+	}
+    .tab__wrap{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+        .active{
+            background-color: var(--brandbgcolor);
+        }
+        .tab{
+            border: 1px solid var(--widgetbordercolor);
+            border-radius: 30px;
+            padding: 7px 15px 6px 15px;
+            background: #F2FAFC;
+            color: #666666;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
+            cursor: pointer;
+            transition: all 0.275s linear;
+            &:hover{
+                box-shadow: inset 0px 0px 4px #b5b5b5;
+                border-color: #cdcdcd;
+            }
+        }
+        .active{
+            background-color: var(--catbrandcolor);
+            color: #ffffff;
+            border: none;
+        }
+    }
+	.carousel__container{
+		display: flex;
+    	-ms-overflow-style: none;
+    	scrollbar-width: none;
+		position: relative;
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		-ms-scroll-snap-type: x mandatory;
+		scroll-snap-type: x mandatory;
+		.carousel__card{
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+			width: 300px;
+			border-radius:5px;
+			margin-right:20px;
+			display: flex; 
+			flex: 0 0 300px;
+			justify-content: center; 
+			background-color: var(--whitebg);
+            box-shadow: 4px 4px 6px #0000000D;
+            border: 1px solid var(--widgetbordercolor);
+            border-radius: 15px;
+            position: relative;
+            .live__sticker{
+                font-size: 7px;
+                font-weight: 600;
+                color: #FFFFFF;
+                background-color: #E3001B;
+                padding: 3px 4px;
+                border-radius: 0px 3px 3px 0px;
+                position: absolute;
+                left: 0;
+                top: 10px;
+            }
+			.card__content{
+                position: relative;
+                padding: 0px 5px;
+                .card__title{
+                    @include lineblock2;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                    margin: 10px;
+                    min-height: 35px;
+                    max-height: 35px;
+                }
+                .team__vs__team{
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 10px;
+                    min-height: 62px;
+                    max-height: 62px;
+                    .team__1{
+                        text-align: right;
+                        width: 50%;
+                        .team__name{
+                            padding-right: 3px;
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 500;
+                        }
+                        .scoreStatus__withIcon{
+                            display: flex;
+                            align-items: center;
+                            float: right;
+                            span{
+                                margin-right: 10px;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 19px;
+                            }
+                            .completed__score{
+                                color: #656565;
+                            }
+                            .live__score{
+                                color: var(--primarytextcolor);
+                            }
+                            .overs{
+                                font-size: 11px;
+                                line-height: 13px;
+                                color: #656565;
+                            }
+                        }
+                    }
+                    .team__vs{
+                        margin:0px 20px;
+                        div{
+                            height: 18px;
+                            width: 18px;
+                            background: var(--adbodybg);
+                            border-radius: 50%;
+                            font-size: 9px;
+                            padding: 5px 3px;
+                            line-height: 9px;
+                            font-weight: 600;
+                            margin-top: 25px;
+                        }
+                    }
+                    .team__2{
+                        text-align: left;
+                        width: 50%;
+                        .team__name{
+                            padding-left: 2px;
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 500;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                        }
+                        .scoreStatus__withIcon{
+                            display: flex;
+                            align-items: center;
+                             span{
+                                margin-left: 10px;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 19px;
+                            }
+                            .completed__score{
+                                color: #656565;
+                            }
+                            .live__score{
+                                color: var(--primarytextcolor);
+                            }
+                            .overs{
+                                font-size: 11px;
+                                line-height: 13px;
+                                color: #656565;
+                            }
+                        }
+                    }
+                }
+                .match__status{
+                    @include lineblock2;
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin: 15px 0px;
+                    min-height: 36px;
+                    .crr{
+                        font-weight: 600;
+                        color: #666666;
+                    }
+                }
+                .match__location{
+                    color: #666666;
+                    font-size: 12px;
+                    text-align: center;
+                    margin: 15px 0px;
+                }
+                .full__scoreboard{
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-align: center;
+                    color: #E3031B;
+                    margin: 15px 0px;
+                }
+            }
+			&:nth-last-child(1){
+				margin-right:0px;
+			}
+		}
+		&::-webkit-scrollbar{
+				display: none;
+				}
+	}
+
+	
+}
+
+@media (min-width:$desktopver){
+	.carouselFixtures__widget{
+		@include desktopblockwidgetstyle;
+		padding:15px 0px 15px 20px;
+		.heading__nav{
+			margin-bottom:10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.carousel__nav{
+				width:65px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-right:20px;
+			   .navbutn{
+				   width:25px;
+				   height:25px;
+				   border-radius:100%;
+				   background-color:#000;
+				   position: relative;
+				   cursor: pointer;
+				   border:0px;
+				   &.carousel__prev{
+					   &:after{
+						  transform: rotate(-45deg);
+						  left:10px;
+					   }
+				   }
+				   &.carousel__next{
+					   &:after{
+					   transform: rotate(135deg);
+					   }
+				   }
+				   &.is__disabled{
+					   background-color:#d5d5d5;
+					   &:after{
+						   border-color:#000;
+					   }
+				   }
+				   &:after{
+				   content: "";
+				   position: absolute;
+				   display:block;
+				   width:7px;
+				   height:7px;
+				   border-top: 2px solid #fff;
+				   border-left: 2px solid #fff;
+				   top:9px;
+				   left:8px;
+	
+				   }
+			   }
+		   }
+		}
+	}
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 20%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+

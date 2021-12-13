@@ -60,7 +60,7 @@
 }
 @media (min-width: 481px)and(max-width: 1020px){
     .visual__story__listing__grid{
-            grid-template-columns: 1fr 1fr !important;
+            grid-template-columns: 1fr 1fr;
             padding:0;
       }
     }
