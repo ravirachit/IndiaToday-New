@@ -1,0 +1,122 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+
+.productreview__widget{
+    background:var(--catbrandcolor);
+    color:var(--theme2primarytextcolor);
+    border-radius:5px;
+    .review__head{
+        background-color:#000;
+        border-radius:5px 5px 0 0;
+        padding:12px 10px;
+        position: relative;
+        h2{
+            font-size:20px;
+            line-height: 24px;
+        }
+        .prod__rating{
+            position:absolute;
+            width:106px;
+            height:62px;
+            background:#FFF108;
+            color:#000;
+            top:0;
+            right: 0;
+            border-radius:0 4px 0 15px;
+            box-shadow: 0px 3px 6px #00000029;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:24px;
+            font-weight:500;
+        }
+
+    }
+    .review__content{
+        padding:0;
+        display: flex;
+        flex-direction:column;
+        h4{
+            color: #FFF108;
+            font-size:24px;
+            line-height: 24px;
+            font-style: italic;
+            font-weight:500;
+            margin-bottom:10px;
+        }
+       .review__points{
+           flex-basis:100%;
+           padding:20px;
+           position: relative;
+           &:nth-child(1)::after{
+             content: "";
+             width:90%;
+             height:1px;
+             background:#ffffff50;
+             position: absolute;
+             bottom:0px;
+             display: block;
+           }
+       }
+
+        ul{
+            list-style: none;
+            li{
+                font-size:16px;
+                line-height:24px;
+                padding-left: 15px;
+                position: relative;
+                &:not(:last-child){
+                    margin-bottom:5px;
+                }
+                &:before{
+                    content:"";
+                    width:5px;
+                    height:5px;
+                    background:#FFF108;
+                    border-radius:100%;
+                    display: block;
+                    position: absolute;
+                    top:10px;
+                    left:0;
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:$desktopver){
+    .productreview__widget{
+        .review__head{
+            padding:12px 20px;
+            h2{
+              font-size:24px;
+              line-height: 24px;
+            }
+            .prod__rating{
+                font-size:30px;
+                width:136px;
+            }
+            
+        }
+        .review__content{
+            flex-direction:row;
+            padding:20px 0;
+            .review__points{
+                flex-basis:50%;
+                padding:0 20px;
+                &:nth-child(1){
+                    border-right:1px solid #ffffff50;
+                    padding-right: 40px;
+                    &::after{
+                        display: none;
+                    }
+                }
+                &:nth-child(2){
+                 padding-left: 40px;
+                }
+            }
+        }
+    }
+}

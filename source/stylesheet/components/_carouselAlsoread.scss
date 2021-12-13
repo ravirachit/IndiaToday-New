@@ -78,7 +78,7 @@
 	}
 
 	&.carouseltheme2{
-			background-color:var(--theme2bg);
+			background:var(--catbrandcolor, #1D2936);
 			h2{
 				color:var(--theme2primarytextcolor);
 			}
