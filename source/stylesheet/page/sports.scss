@@ -693,7 +693,7 @@
 // End
 // ********************** FIXTURES SECTION END **********************
 
-// ************************************************* RANKING PAGE START (page/sports.scss) *************************************************
+// ************************************************* RANKING PAGE START *************************************************
 .rankings__widget{
      padding:15px 0px 0px 0px;
   .ranking__container{
@@ -1024,4 +1024,256 @@
 }
 }
 // Desktop View End
+// END
+
+
+// ************************************************* PLAYER DETAILS PAGE START *************************************************
+.playerProfileInfo__widget{
+    .tab__wrap{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+        margin: 22px 10px;
+        .anch__tab{
+            border: 1px solid var(--widgetbordercolor);
+            border-radius: 30px;
+            padding: 7px 15px 6px 15px;
+            background: var(--brandbgcolor);
+            color: var(--whitetextcolor);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
+            cursor: pointer;
+            transition: all 0.275s linear;
+        }
+        .active{
+            background-color: var(--brandbgcolor);
+        }
+        .tab{
+            border: 1px solid var(--widgetbordercolor);
+            border-radius: 30px;
+            padding: 7px 15px 6px 15px;
+            background: #F2FAFC;
+            color: #666666;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
+            cursor: pointer;
+            transition: all 0.275s linear;
+            &:hover{
+                box-shadow: inset 0px 0px 4px #b5b5b5;
+                border-color: #cdcdcd;
+            }
+        }
+        .active{
+            background-color: var(--catbrandcolor);
+            color: #ffffff;
+            border: none;
+        }
+    }
+    .playerInfo__container{
+        background-color: var(--catbrandcolor);
+        color: var(--whitetextcolor);
+        border: 1px solid var(--widgetbordercolor);
+        border-radius: 5px 5px 0px 0px;
+        padding: 10px;
+        .header__info{
+           display: flex;
+           justify-content: space-between;
+            .player__name{
+                font-size: 24px;
+                line-height: 28px;
+            }
+            .countryName__with__flag{
+                display: flex;
+                margin: 10px 0px 20px;
+                img{
+                    border: 1px solid #D1D1D1;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                }
+                .country__name{
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    line-height: 20px;
+                    margin-top: 3px;
+                }
+                .vertical__line{
+                    height: 24px;
+                    width: 1px;
+                    background-color:var(--whitetextcolor);
+                    margin: 0px 10px;
+                }
+                .player__type{
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 20px;
+                    margin-top: 3px;
+                }
+            }
+            .rhs__playerImg{
+                    background-color: var(--whitebg);
+                    border-radius: 50%;
+                    height: 100px;
+                    width: 100px;
+                    margin-left: -13px;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        max-width: 100px;
+                    }
+            }
+            .playerInfo__grid{
+                display: grid;
+                gap: 15px;
+                grid-template-columns: 1fr;
+                margin-right: 15px;
+                .grid__content{
+                    padding: 0px 0px 15px;
+                    border-bottom: 1px solid #3C7398;
+                    label{
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: #B2C5D1;
+                    }
+                    p{
+                        font-size: 15px;
+                        line-height: 20px;
+                        font-weight: 500;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }   
+    }
+    .title__container{
+        h2{
+        background: transparent linear-gradient(
+            273deg, #397384E2 0%, #005088 100%) 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 0px 0px;
+        color: white;
+        padding: 11px 10px 9px;
+        margin-bottom: 1px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 500;
+        }
+     }
+     .image__title__container{
+        background: transparent linear-gradient(
+            273deg, #397384E2 0%, #005088 100%) 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 0px 0px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-left: 18px;
+            margin-right: 15px;
+        }
+        h2{
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+        }
+     }
+     .tab__content{
+        .info__inner__section{
+        .inner__card{
+            background-color: var(--whitebg);
+            border: 1px solid var(--widgetbordercolor);
+            padding: 15px;
+            margin-top: -1px;
+            h3{
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 500;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            position: relative;
+            background-color: var(--whitebg);
+            border: 1px solid var(--widgetbordercolor);
+            thead{
+                tr{
+                    position: absolute;
+                    width: 87%;
+                    display: table;
+                    background: var(--theme2bg);
+                    color: var(--whitetextcolor);
+                    right: 24px;
+                    border-radius: 15px;
+                    padding: 10px;
+                    top: -23px;
+                    box-shadow: 1px 1px 3px #00000026;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        border: 1px solid #4986A0;
+                    }
+                    th{
+                        padding: 10px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        font-size: 12px;
+                        line-height: 40px;
+                        color: var(--theme2textcolor);
+                        &:first-child{
+                            padding-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        }
+     }
+}
+
+// ******************* Desktop View Start *******************
+@media (min-width:$desktopver){
+    .playerProfileInfo__widget{
+        .tab__wrap{
+            margin: 15px 0px 10px;
+        }
+        .playerInfo__container{
+            padding: 20px;
+            .header__info{
+                .player__name{
+                    font-size: 36px;
+                    line-height: 43px;
+                }
+                .rhs__playerImg{
+                        background-color: var(--whitebg);
+                        border-radius: 50%;
+                        height: 160px;
+                        width: 160px;
+                        margin-left: 0px;
+                        img{
+                            width: 160px;
+                            height: 160px;
+                            max-width: 100%;
+                        }
+                }
+                .playerInfo__grid{
+                    grid-template-columns: 1fr 1fr;
+                    margin-right: 15px;
+                }
+        }
+    }
+}
+}
+    // Desktop View End
 // END
