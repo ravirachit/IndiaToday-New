@@ -185,25 +185,25 @@ ul, li {
     margin-right: 40px;
   }
 
-  .main_header .temp__container {
+  .main__header .temp__container {
     padding: 0 0;
   }
-  .main_header .temp__container .nav__section {
+  .main__header .temp__container .nav__section {
     margin: 0;
   }
-  .main_header .temp__container .nav__section > div {
+  .main__header .temp__container .nav__section > div {
     padding: 15px 0;
   }
-  .main_header .temp__container .nav__section .it__logo svg {
+  .main__header .temp__container .nav__section .it__logo svg {
     height: 30px;
   }
-  .main_header .temp__container .nav__section .rhs__menu {
+  .main__header .temp__container .nav__section .rhs__menu {
     border-right: 1px solid var(--bordercolor);
   }
-  .main_header .temp__container .nav__section .rhs__menu > div {
+  .main__header .temp__container .nav__section .rhs__menu > div {
     padding: 15px;
   }
-  .main_header .temp__container .nav__section .m__hambuger {
+  .main__header .temp__container .nav__section .m__hambuger {
     height: 60px;
   }
 }
@@ -3832,7 +3832,7 @@ a, a:active, a:visited {
   box-shadow: 1px 1px 3px #00000026;
   border-top: 1px solid var(--widgetbordercolor);
   border-bottom: 1px solid var(--widgetbordercolor);
-  background-color: var(--theme2bg);
+  background: var(--catbrandcolor, #1d2936);
 }
 .videoplayer__widget .videodetails {
   padding: 20px 10px;
@@ -5239,12 +5239,44 @@ body {
   border-color: var(--techBordercolor);
 }
 
+/* B1 S3 components START */
 .B1__s3__widget .story__card .cat__title {
   background: var(--catbrandcolor);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* //B1 S3 components END// */
+/* video detail page (videoplayer) START */
+.videoCard__widget .video__card .cat__title {
+  background: var(--catbrandcolor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.videoCard__widget .videodetails .description {
+  border-color: #d1d1d180;
+}
+
+.sectionlink a {
+  color: var(--techbrandtextcolor);
+}
+.sectionlink a:after {
+  border-color: var(--techBordercolor);
+}
+
+.othersection__tags .capsule__list a {
+  border-color: var(--techBordercolor);
+  background: var(--whitebg);
+  color: var(--techbrandtextcolor);
+}
+
+/* //video detail page (videoplayer) END// */
+/* technology photo detail page START */
+.phototype .article__type {
+  background-color: var(--techbrandtextcolor);
+}
+
+/* //technology photo detail page END// */
 .story__content__body .description {
   /*h3{
       background:var(--catbrandcolor);

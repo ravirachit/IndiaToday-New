@@ -3,7 +3,7 @@
 
 .videoplayer__widget{
     @include blockwidgetstyle;
-    background-color:var(--theme2bg);
+    background:var(--catbrandcolor, #1d2936);
    .videodetails{
     padding:20px 10px;
     border-top:1px solid #fff;
