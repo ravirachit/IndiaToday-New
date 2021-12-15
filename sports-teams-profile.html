@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>PLAYER PROFILE INFO</title>
+    <title>TEAMS PROFILE</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0, maximum-scale=5.0" />
     <link rel="stylesheet" type="text/css" href="build/css/main.css">
 </head>
@@ -237,8 +237,7 @@
                         <a href="#"><span class="secion__name">Home</span></a>
                         <a href="#"><span class="secion__name">Sports</span></a>
                         <a href="#"><span class="secion__name">Cricket</span></a>
-                        <a href="#"><span class="secion__name">Ranking</span></a>
-                        <span class="secion__name">Virat Kohli</span>
+                        <span class="secion__name">Teams</span>
                     </div>
                     <!-- // breadcrumb END // -->
                     <!-- Section Secondary Navigation start -->
@@ -274,8 +273,8 @@
                                         <ul>
                                             <li><a href="#">Home</a></li>
                                             <li><a href="#">Fixtures</a></li>
-                                            <li class="active"><a href="#">Rankings</a></li>
-                                            <li><a href="#">Teams</a></li>
+                                            <li><a href="#">Rankings</a></li>
+                                            <li class="active"><a href="#">Teams</a></li>
                                             <li><a href="#">Head to Head</a></li>
                                             <li><a href="#">News</a></li>
                                             <li><a href="#">Photos</a></li>
@@ -286,12 +285,12 @@
                             </div>
                             <!-- ****************************** Static Page Navigation Section END ****************************** -->
 
-                           <!-- ************************************************* PLAYER DETAILS START (page/sports.scss) ************************************************* -->
-<div class="playerProfileInfo__widget widgetgap">
+                           <!-- ************************************************* TEAMS PROFILE DETAILS START (page/sports.scss) ************************************************* -->
+<div class="teamsProfile__widget widgetgap">
     <div class="tab__wrap">
-        <a class="anch__tab" href="file:///C:/reactJS/git/IndiaToday-New/sports-rankings.html" title="">BACK TO RANKINGS</a>
+        <a class="anch__tab" href="file:///C:/reactJS/git/IndiaToday-New/sports-rankings.html" title="">BACK TO TEAMS</a>
     </div>
-    <div class="playerInfo__container">
+    <div class="teamsDetail__container">
         <div class="header__info">
             <div>
             <div class="player__name">Virat Kohli</div>
@@ -325,343 +324,199 @@
             </div>
             </div>
     </div>
+</div>
+<!-- ************************************************* TEAMS PROFILE DETAILS END (page/sports.scss) ************************************************* -->
 
+<!-- ************************************************* FIXTURES COMPONENT START (components/_carouselFixtures.scss) ************************************************* -->
+<div class="carouselFixtures__widget widgetgap">
+	<div class="heading__nav"><h2>INDIA FIXTURES</h2> <div class="carousel__nav" data-snap-slider-nav="fixtures"> <button type="button" class="navbutn carousel__prev is__disabled"></button><button type="button" class="navbutn carousel__next"></button></div></div>
     <div class="tab__wrap">
-        <a class="tab active" onclick="onTabChange(event, 'info')">INFO</a>
-        <a class="tab" onclick="onTabChange(event, 'news')">NEWS</a>
+        <a class="tab active" onclick="onTabChange(event, 'completed__fixtures')">COMPLETED</a>
+        <a class="tab" onclick="onTabChange(event, 'upcoming__fixtures')">UPCOMING</a>
     </div>
-    <!-- ******************************* INFO TAB CONTENT START ******************************* -->
-    <div id="info" class="tab__content">
-        <div class="info__inner__section widgetgap">
-            <div class="title__container"><h2>CAREER RECORD</h2></div>
-            <div class="inner__card">
-                <h3>Teams Played</h3>
-                <p>India, Asia XI, India A, India Blue, Indian Board Presidents XI, India Red, North Zone, Rest of India, Royal Challengers Bangalore, India Under-19, Delhi, Indians</p>
-            </div>
+
+    <!-- ********** Completed Tab Content ********** -->
+    <div id="completed__fixtures" class="fixtures__container">
+		<div class="carousel__container" data-snap-slider="fixtures" data-snap-slider-visible>
+			<div class="carousel__card">
+                <div class="card__content">
+                    <div class="card__title">
+                        2st Test, England vs India, 2021, Sabina Park, Kingston, 12-16 August
+                    </div>
+                    <div class="team__vs__team">
+                        <div class="team__1">
+                            <div class="team__name">IND</div>
+                            <div class="scoreStatus__withIcon">
+                                <p>364 & 298/8 d</p>
+                                <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="32" height="32" alt="">
+                            </div>
+                        </div>
+                        <div class="team__vs"><div>VS</div></div>
+                        <div class="team__2">
+                            <div class="team__name">ENG</div>
+                            <div class="scoreStatus__withIcon">
+                                <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="32" height="32" alt="">
+                                <p class="completed__score">391 & 120</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match__status">India won by 151 runs, India won by 151 runs, India won by 151 runs</div>
+                    <div class="full__scoreboard">FULL SCORECARD</div>
+                </div>
+			</div>
+            <div class="carousel__card">
+                <div class="card__content">
+                    <div class="card__title">
+                        2st Test, England vs India, 2021, Sabina Park
+                    </div>
+                    <div class="team__vs__team">
+                        <div class="team__1">
+                            <div class="team__name">IND</div>
+                            <div class="scoreStatus__withIcon">
+                                <p>--</p>
+                                <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="32" height="32" alt="">
+                            </div>
+                        </div>
+                        <div class="team__vs"><div>VS</div></div>
+                        <div class="team__2">
+                            <div class="team__name">ENG</div>
+                            <div class="scoreStatus__withIcon">
+                                <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="32" height="32" alt="">
+                                <p class="completed__score">--</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match__status">India won by 151 runs</div>
+                    <div class="full__scoreboard">FULL SCORECARD</div>
+                </div>
+			</div>
+            <div class="carousel__card">
+                <div class="card__content">
+                    <div class="card__title">
+                        2st Test, England vs India, 2021, Sabina Park, Kingston, 12-16 August
+                    </div>
+                    <div class="team__vs__team">
+                        <div class="team__1">
+                            <div class="team__name">IND</div>
+                            <div class="scoreStatus__withIcon">
+                                <p>364 & 298/8 d</p>
+                                <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="32" height="32" alt="">
+                            </div>
+                        </div>
+                        <div class="team__vs"><div>VS</div></div>
+                        <div class="team__2">
+                            <div class="team__name">ENG</div>
+                            <div class="scoreStatus__withIcon">
+                                <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="32" height="32" alt="">
+                                <p class="completed__score">391 & 120</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match__status">India won by 151 runs</div>
+                    <div class="full__scoreboard">FULL SCORECARD</div>
+                </div>
+			</div>
+		</div> 
         </div>
-        <div class="info__inner__section widgetgap">
-          <div class="image__title__container"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI2MiIgdmlld0JveD0iMCAwIDQwIDYyIj4KICA8cGF0aCBpZD0iUGF0aF8zMjYzIiBkYXRhLW5hbWU9IlBhdGggMzI2MyIgZD0iTS0yNTMuNiw3Mi42MDZhNS42ODIsNS42ODIsMCwwLDEtMi42MDctLjk2NnMuNTU2LS4wMzMuNTU2LS40MjhjMC0uMjc0LS4yMDUtMi4zODctLjM2LTQuMjY5LjQxNS0uMDM0Ljc5Mi0uMDI4Ljc5Mi0uMDI4YTIuMjYzLDIuMjYzLDAsMCwwLDAtMS4zNTksMi45MDgsMi45MDgsMCwwLDAtLjkuMDIyYy0uMDIxLS4zLS4wMzctLjU3MS0uMDQ4LS44MDYtLjAyLS40MTgtLjA2Ny0xLjA0NS0uMTI3LTEuNzY0YTguNjEzLDguNjEzLDAsMCwxLDEuMDcxLS4wNTgsMi4yNjMsMi4yNjMsMCwwLDAsMC0xLjM1OSwzLjgsMy44LDAsMCwwLTEuMTkuMDY3Yy0uMDctLjc3My0uMTQ2LTEuNTY3LS4yMTYtMi4yNzZhOC44ODEsOC44ODEsMCwwLDEsLjk3Ni0uMDQ2LDIuMjYyLDIuMjYyLDAsMCwwLDAtMS4zNTksMy41NDksMy41NDksMCwwLDAtMS4xMS4wNTNjLS4wNjItLjYxMi0uMS0xLS4xLTFzLjEwOS0yLjEyOS4xMDktMy4zNzkuMzgzLTMuMTg1LS41MS0zLjgyMmE0LjIyMiw0LjIyMiwwLDAsMC0yLjItLjYxNCw1LjM0Miw1LjM0MiwwLDAsMC0xLjkuNTA4LDI5LjYzNCwyOS42MzQsMCwwLDAtMy4yMjctMi4yNzljLTEuMjI5LS43LTIuNDMyLS45NTEtMi44NS0xLjM1NywxLjIxMy0uNDM0LS4wMTctMS41MTYuMjEyLTMuNTk0YTIyLjA0LDIyLjA0LDAsMCwxLDEuMTg2LTQuMDU0Yy4xOTUtLjU1Ni0uOTQ2LTIuNDMzLTEuMTM4LTMuMzE3LS4xOC0uODI5LS4wMTctMi4zLTEuMDcxLTIuODE2LS4zNDUtLjE2Ny0xLjQwOC0uNjc0LTItLjg3NS0uODktLjMtLjk4OC0xLjUwNS0xLjYwOS0xLjY0MWE3LjU5Miw3LjU5MiwwLDAsMCwuMzc5LTEuNjM1LDIuNjUsMi42NSwwLDAsMCwxLjcxOC0xLjA3MmMuNjY3LS4zNy44NTktLjE1My44NDItLjM0My0uMDA3LS4wODEtMi40NjItMS4xNS0yLjQ2Mi0xLjE1cy0uOTExLTIuODU0LTMuNjYxLTIuNzMxYS40NzIuNDcyLDAsMCwwLS4wNTQtLjA2N2MtLjExMS0uMTEyLS41MDUtLjA3NS0uNzQxLDBhLjM2NC4zNjQsMCwwLDAtLjIzNy4yNDJjLTIuNjk0LjgtMi4wMTMsNC0xLjc1OSw0Ljc5YS40MDguNDA4LDAsMCwwLC4yMDUuMiw3LjA0Myw3LjA0MywwLDAsMCwuMTk0LDEsNS4zNTYsNS4zNTYsMCwwLDEtMS42MDctLjIzMWMtLjcxLS4xMjUtMS4wMjYtLjExMS0xLjguNjYzcy0yLjAxNywyLTIuNjI2LDIuMDljLS41MzIuMDgtMS41NTIsMi40MDctMi4xMTksMi45NzktLjA5LS44MjktMS4wOS05LjQ0NC0xLjY4NC0xMy44ODItLjc4LTUuODI4LTEuMTgzLTguNzY4LTMuNDg4LTguMjktMi40MDguNS0uMTI1LDcsLjM2Miw5LjUyOXMyLjY2NiwxMy41MTcsMi42NjYsMTMuNTE3YTEuMzI4LDEuMzI4LDAsMCwwLS44NDYtLjAxOUEuNzcxLjc3MSwwLDAsMC0yODguOCwzNi42YS42NDYuNjQ2LDAsMCwwLS4xMjguNzc0Yy4yMTguNDkuNDc0LjQ5LjQ3NC40OWEuNTk0LjU5NCwwLDAsMC0uMDM4LjYxOWMuMTc5LjMzNi4zODQuMzQ5LjM4NC4zNDlzLS4xNTQuMzc0LjMzMy41NjhjMCwwLS41ODkuMjU4LS41MTIuNzM2YS45MDcuOTA3LDAsMCwwLC41LjY1OC41MzcuNTM3LDAsMCwwLS4yNTYuNTgxLDIsMiwwLDAsMCwuMzcyLjY4NC42OC42OCwwLDAsMC0uMi42NDUsMS42MDcsMS42MDcsMCwwLDAsLjYyMy42MTlzLjE0MS41NjguNDM2LjY1OGEyLjAyMSwyLjAyMSwwLDAsMCwuNzY5LDAsNS41NzEsNS41NzEsMCwwLDAsLjQxMywxLjA4MmMuMTMuMTE5LDEuMTgxLjIwOSwxLjItLjEwN2ExMi43MTksMTIuNzE5LDAsMCwwLS4xMzQtMS4zODcsMS4xMTUsMS4xMTUsMCwwLDAsLjk5My0uMTk0cy4xNjYuMzg3LDEuMzE4LjM4N2MuNDQ5LDAsLjU2Mi42NDkuODY5Ljc5MWE1Ljc2Miw1Ljc2MiwwLDAsMCwzLjE0LS4xYy0uMTA5LDIuMzE5Ljc1NSwyLjQ1Ni43NTUsMi40NTZhMy42MjUsMy42MjUsMCwwLDAtMS42MiwxLjY3NGMtLjMzNy43MjctMS43LDIuNjM2LTIuMzM5LDMuNjYzLTEuMjI5LDEuOTgxLTEuNDcyLDMuODgtMi4wNjgsNC43MjUtLjI4LjQtMi4yMDcsMi4yNzktMi40NjcsMi41NDJhMi43MzYsMi43MzYsMCwwLDAtLjM3My42NjUuOC44LDAsMCwwLS43OTEtLjAzMSwzLjU0MSwzLjU0MSwwLDAsMC0uNSwxLjE4NSw3LjYxMSw3LjYxMSwwLDAsMC0yLjQxOS0uMzQ5cy0uMzIxLjE4Ni0uMTI1LjhhOS43ODQsOS43ODQsMCwwLDEsMi4yNzMuMzIyYy0uMDQ5LjEyNy0uMS4yNTctLjE1Ny4zODgtLjA0My4xLS4xMDkuMjYyLS4xOTEuNDY0YTcuNjQ2LDcuNjQ2LDAsMCwwLTIuMi0uMjg1cy0uMzIxLjE4Ny0uMTI1LjhhMTAuMTgyLDEwLjE4MiwwLDAsMSwyLjAyMy4yNTVjLS4xMDUuMjY3LS4yMTkuNTU3LS4zMzYuODU3YTcuNjY1LDcuNjY1LDAsMCwwLTEuOTY2LS4yMjJzLS4zMjEuMTg3LS4xMjUuOGExMC40NDksMTAuNDQ5LDAsMCwxLDEuNzg5LjJjLS4zODcsMS0uNzUyLDEuOTc3LS44OTEsMi4zOTQtLjMwNS45MjIuOTU5LDEuNjQ2Ljk1OSwxLjY0NmE2LjA3OCw2LjA3OCwwLDAsMS0xLjUyNSwxLjUzNmMtMS4xNDYuNjg2LTIuMDA2LjY4LTIuMDM5LDEuOGEuMzkxLjM5MSwwLDAsMCwuMzY0LjQsMzIuODQ5LDMyLjg0OSwwLDAsMCw0LS4wNDQsMS4wMiwxLjAyLDAsMCwwLC44ODEtLjYwN2MuMDIxLS4wNDkuMDQyLS4xLjA2Mi0uMTU5LjI0NS0uNjkxLDEuMjQyLS40NDQsMS45NDUtLjkwNS41NDktLjM2LjQwOS0xLjIxOC40MDktMS4yMThhMS44MywxLjgzLDAsMCwwLC45LS44MDYsMTcuNTg1LDE3LjU4NSwwLDAsMSwxLjQwNi0zLjM5Yy40NDktLjQ1MywxLjUxMi0uNjUsMS45LTEuNjEzYTkuNzI4LDkuNzI4LDAsMCwwLC43NTktMi4xMjEuODY0Ljg2NCwwLDAsMC0uNTQtLjY4MSwzNy44MSwzNy44MSwwLDAsMCw0LjAxNC0zLjcxMWMxLjQ4Mi0xLjM2MSw0LjQ4OS00LjM4OSw0LjY2My00LjM4OS45NzUsMCw0Ljg0OCwxLjc1MSw1LjkxNSwyLjA3M2EyMy41NzMsMjMuNTczLDAsMCwwLDMuMDQ3LjY1MmMtLjI1NiwxLjEtLjQyLDIuMTI0LjA2LDUuMTA5czEuNjUsNy45NzYsMS42MzQsOS4wNDFjLS4wMjIsMS40Ny42MzIsMS4zNjEuNjMyLDEuMzYxYTQuOTUyLDQuOTUyLDAsMCwwLS4zMjcsMi4xOTRjLjEuNDczLDEuNjc4LjM1MSwyLjk2NC4zNTFzNS4zMTcuMDg4LDUuMzE3LS4xMVMtMjUyLjc2OCw3Mi43NDMtMjUzLjYsNzIuNjA2Wm0tMjUuNjczLTMyLjEzM2MtLjY2NiwwLTEuNjctLjYxNS0yLjA1NC0uMjI5cy0uNTU3LjU3Mi0uNTU3LjU3Mi0xLjIzLS4xNTUtMS40NjEtLjE1NWMtLjE2LDAtLjU1OC0uNzc4LTEuMDc3LTEuMTczLjkzOC0uMzY2LDIuOTExLTIuNzc0LDMuMjkyLTMuMTU4LjU2MywxLjUsMi4wMjgsMi45MDgsMi4zNTMsNC4wODZBMy4zLDMuMywwLDAsMS0yNzkuMjc3LDQwLjQ3M1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5Mi43MDMgLTEyLjI5MykiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMjQ2Ii8+Cjwvc3ZnPgo=" width="40" height="62" alt=""><h2>BATTING CAREER SUMMARY</h2></div>
-           <div class="playerData__body__container">
-                <div class="body__container__lhs">
-                    <div class="row">
-                    <div class="col">M</div>
-                    <div class="col">INN</div>
-                    <div class="col">NO</div>
-                    <div class="col">RUNS</div>
-                    <div class="col">HS</div>
-                    <div class="col">AVG</div>
-                    <div class="col">SR</div>
-                    <div class="col">100s</div>
-                    <div class="col">50s</div>
-                    <div class="col">6s</div>
-                    <div class="col">4s</div>
+    <!-- end 
+    
+    <!-- ********** Upcoming Tab Content ********** -->
+    <div id="upcoming__fixtures" class="fixtures__container">
+    <div class="carousel__container" data-snap-slider="fixtures" data-snap-slider-visible>
+        <div class="carousel__card">
+            <div class="notification__icon">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS41IiBoZWlnaHQ9IjE5LjUiIHZpZXdCb3g9IjAgMCAxOS41IDE5LjUiPgogIDxnIGlkPSJHcm91cF8xNTI5IiBkYXRhLW5hbWU9Ikdyb3VwIDE1MjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzUgMC43NSkiPgogICAgPHBhdGggaWQ9IlBhdGhfMjU2IiBkYXRhLW5hbWU9IlBhdGggMjU2IiBkPSJNNzEwLjU3OSw4MjAuMTA5YS4zNDYuMzQ2LDAsMCwxLS4zNTktLjMzNHYtNGE2Ljg2LDYuODYsMCwwLDAtMTMuNjgsMHY0YS4zNDguMzQ4LDAsMCwxLS4zNTkuMzM0LDEuNjcyLDEuNjcyLDAsMSwwLDAsMy4zMzNoMTQuMzkzYTEuNjcyLDEuNjcyLDAsMSwwLDAtMy4zMzNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjk0LjM4IC04MDkuNDQyKSIgZmlsbD0iI2MwMCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogICAgPHBhdGggaWQ9IlBhdGhfMjU3IiBkYXRhLW5hbWU9IlBhdGggMjU3IiBkPSJNNzAyLjg4LDgzMC40NDJhNCw0LDAsMCwwLDgsMGgtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY5Ny44OCAtODE2LjQ0MikiIGZpbGw9IiNjMDAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8L2c+Cjwvc3ZnPgo=" width="18" height="18" alt="">
+            </div>
+            <div class="card__content">
+                <div class="card__title">
+                    2nd T20I, Pakistan in West Indies, 4 T20I Series, 2021, 8:30 PM (IST)
+                </div>
+                <div class="team__vs__team">
+                    <div class="team__1">
+                        <div class="team__name">IND</div>
+                        <div class="scoreStatus__withIcon">
+                            <p></p>
+                            <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="32" height="32" alt="">
+                        </div>
+                    </div>
+                    <div class="team__vs"><div>VS</div></div>
+                    <div class="team__2">
+                        <div class="team__name">ENG</div>
+                        <div class="scoreStatus__withIcon">
+                            <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="32" height="32" alt="">
+                            <p></p>
+                        </div>
                     </div>
                 </div>
-               <div class="body__container__rhs">
-                   <div class="inner__container">
-                   <div class="row">
-                        <div class="col">Test</div>
-                        <div class="col">ODI</div>
-                        <div class="col">T20I</div>
-                        <div class="col">World Cup</div>
-                        <div class="col">Domestic</div>
-                        <div class="col">IPL</div>
-                   </div>
-                   <div class="row">
-                    <div class="col">92</div>
-                    <div class="col">254</div>
-                    <div class="col">90</div>
-                    <div class="col">26</div>
-                    <div class="col">32</div>
-                    <div class="col">199</div>
-               </div>
-               <div class="row">
-                <div class="col">145</div>
-                <div class="col">245</div>
-                <div class="col">84</div>
-                <div class="col">26</div>
-                <div class="col">48</div>
-                <div class="col">191</div>
-           </div>
-           <div class="row">
-            <div class="col">10</div>
-            <div class="col">39</div>
-            <div class="col">24</div>
-            <div class="col">4</div>
-            <div class="col">7</div>
-            <div class="col">31</div>
-       </div>
-       <div class="row">
-        <div class="col">10</div>
-        <div class="col">39</div>
-        <div class="col">24</div>
-        <div class="col">4</div>
-        <div class="col">7</div>
-        <div class="col">31</div>
-   </div>
-   <div class="row">
-    <div class="col">7547</div>
-    <div class="col">12169</div>
-    <div class="col">3159</div>
-    <div class="col">1030</div>
-    <div class="col">2249</div>
-    <div class="col">6076</div>
-</div>
-<div class="row">
-    <div class="col">254* v END</div>
-    <div class="col">183 v PAK</div>
-    <div class="col">94* v ENG</div>
-    <div class="col">107 v PAK</div>
-    <div class="col">197* v SNGP</div>
-    <div class="col">113* v PBKS</div>
-</div>
-<div class="row">
-    <div class="col">52.04</div>
-    <div class="col">59.07</div>
-    <div class="col">52.65</div>
-    <div class="col">46.81</div>
-    <div class="col">54.00</div>
-    <div class="col">37.97</div>
-</div>
-<div class="row">
-    <div class="col">52.04</div>
-    <div class="col">59.07</div>
-    <div class="col">52.65</div>
-    <div class="col">46.81</div>
-    <div class="col">54.00</div>
-    <div class="col">37.97</div>
-</div>
-<div class="row">
-    <div class="col">10</div>
-    <div class="col">39</div>
-    <div class="col">24</div>
-    <div class="col">4</div>
-    <div class="col">7</div>
-    <div class="col">31</div>
-</div>
-<div class="row">
-    <div class="col">10</div>
-    <div class="col">39</div>
-    <div class="col">24</div>
-    <div class="col">4</div>
-    <div class="col">7</div>
-    <div class="col">31</div>
-</div>
-<div class="row">
-    <div class="col">840</div>
-    <div class="col">1140</div>
-    <div class="col">285</div>
-    <div class="col">91</div>
-    <div class="col">313</div>
-    <div class="col">524</div>
-</div>
-</div>
-                </div>
-           </div>
+                <div class="match__location">Providence Stadium, Guyana</div>
+            </div>
         </div>
-        <div class="info__inner__section widgetgap">
-            <div class="image__title__container"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAA+CAYAAAChkaIcAAAABHNCSVQICAgIfAhkiAAAA7dJREFUaEPFmS1zHDEMQLszBQUFBQUFBQcKCgoKCgIK8tMLAgICAg4EBBwIKAg4cCAgM1e9q7zjdeWV7N27asaTj9PabyVZlnXDm6Acj8e3orqR8UkGv7/KeBqGYRecwlUbXA1VEJjv8uuHQv9VYG6ic3h6IRgBeS8T/ahMditAL95Ckc+jMLiHYcmzwGwji3k6UZgvMtHnymQvAnPrLRT53IURF72TiYgXflpyURh2z0cd/w/GCdwcbC9/MNjuBz4Q1/F3k8y6SWCIE+KlV37Lg48CBqQrVRgB2cjTDIS3ZeIesIPA3LkkWLNU0oD9Kv9PCQ6InYxvMsg3PXITsc4ERkAIVEBI92sJbnqKTDbCCMhcLonMVeo841oB4WdIBj0AySO9LrAWAuIhRJApAbO2RZj+vmtrC8zPlWNkEYxVGrRauNS/E8uckl+LpJgh5XP2pAzKeXNoyMCTNeXZXy0QSTdyUG5EmRGVvcDcR5VzPRcG5UqVV13vbJZRGJLgVTTQzwqjQGRnjoSIdJWiITel1cVd1xES0enLM8HJT2oCQ1EeydS7nitMq2WiOekiMNGj4yIw1DhYx5OLwETL0K67VGvMbMQkjIhsW2oZJmyFiVomwXJDoGzFUm5R3gpDJqbkaJVTx4IxB9UEo7mGY6F2u/QgZ9soPTCtrrIAzQBvhlHrtASyBWOWGV0wCsSVhqKsR1aHAQSgmqSy0zrL1nOTWsbLxqm9BjDlRy4PsqvY8hPpdpMCXdfMkgqsSvPAvO6eC2ZsIAkMBVlumWqN3A2jDQJyzuxuMern6m1zCUz5xjnUeGobMNUTvQum6N1YlhkPSaM6rJ7ozTDaKKD8nDsSxoLcqJvXiRm9YeKeOZA8eK2DlcPy0TJn2DIKQpXnNZLGxeQZKxctixmdFIt4ILzweOmv5Jh+mECwmrtIk6K149phjEZj/RT6270gxU9aZhrsuIpbxRhnteuvGTONjUYAADHLykpyNBNf2e0kJqyDzbIKi9PJ/OfAy5X1xaw7OvUxLhs76Xm3E5Boo5HyAGu43alAzPEyWGqfw+BTkpm3Y3gTMqxb7WsQe3VPMuS2dNNGPmF0u8V6UHMUgcyLppZdUj19FUDj+gQz49f8Aayxytd/mreYm+8VRgsnmDmLQE6/JeSWilVD/04wtS9EAeDQOzsItHkAl5czXIJFVnFNxDQ5TNkIar64Rxac06nBdPdylwDlMHk+6Gr2LAGZxIxu8eSq8BdWSwHy58ukl7IwNcnFAjcB/QGV0Kpf71zrywAAAABJRU5ErkJggg==" width="40" height="62" alt="">
-                <h2>BOWLING CAREER SUMMARY</h2>
+        <div class="carousel__card">
+            <div class="notification__icon">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS41IiBoZWlnaHQ9IjE5LjUiIHZpZXdCb3g9IjAgMCAxOS41IDE5LjUiPgogIDxnIGlkPSJHcm91cF8xNTMwIiBkYXRhLW5hbWU9Ikdyb3VwIDE1MzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzUgMC43NSkiPgogICAgPHBhdGggaWQ9IlBhdGhfMjU2IiBkYXRhLW5hbWU9IlBhdGggMjU2IiBkPSJNNzEwLjU3OSw4MjAuMTA5YS4zNDYuMzQ2LDAsMCwxLS4zNTktLjMzNHYtNGE2Ljg2LDYuODYsMCwwLDAtMTMuNjgsMHY0YS4zNDguMzQ4LDAsMCwxLS4zNTkuMzM0LDEuNjcyLDEuNjcyLDAsMSwwLDAsMy4zMzNoMTQuMzkzYTEuNjcyLDEuNjcyLDAsMSwwLDAtMy4zMzNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjk0LjM4IC04MDkuNDQyKSIgZmlsbD0iI2UyZTJlMiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogICAgPHBhdGggaWQ9IlBhdGhfMjU3IiBkYXRhLW5hbWU9IlBhdGggMjU3IiBkPSJNNzAyLjg4LDgzMC40NDJhNCw0LDAsMCwwLDgsMGgtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY5Ny44OCAtODE2LjQ0MikiIGZpbGw9IiNlMmUyZTIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8L2c+Cjwvc3ZnPgo=" width="18" height="18" alt="">
             </div>
-             <div class="playerData__body__container">
-                  <div class="body__container__lhs">
-                      <div class="row">
-                      <div class="col">M</div>
-                      <div class="col">INN</div>
-                      <div class="col">OV</div>
-                      <div class="col">M</div>
-                      <div class="col">RUNS</div>
-                      <div class="col">W</div>
-                      <div class="col">AVG</div>
-                      <div class="col">SR</div>
-                      <div class="col">ECON</div>
-                      <div class="col">4WH</div>
-                      <div class="col">5WH</div>
-                      <div class="col">BEST</div>
-                      </div>
-                  </div>
-                 <div class="body__container__rhs">
-                     <div class="inner__container">
-                     <div class="row">
-                          <div class="col">Test</div>
-                          <div class="col">ODI</div>
-                          <div class="col">T20I</div>
-                          <div class="col">World Cup</div>
-                          <div class="col">Domestic</div>
-                          <div class="col">IPL</div>
-                     </div>
-                     <div class="row">
-                      <div class="col">92</div>
-                      <div class="col">254</div>
-                      <div class="col">90</div>
-                      <div class="col">26</div>
-                      <div class="col">32</div>
-                      <div class="col">199</div>
-                 </div>
-                 <div class="row">
-                  <div class="col">145</div>
-                  <div class="col">245</div>
-                  <div class="col">84</div>
-                  <div class="col">26</div>
-                  <div class="col">48</div>
-                  <div class="col">191</div>
-             </div>
-             <div class="row">
-              <div class="col">10</div>
-              <div class="col">39</div>
-              <div class="col">24</div>
-              <div class="col">4</div>
-              <div class="col">7</div>
-              <div class="col">31</div>
-         </div>
-         <div class="row">
-          <div class="col">10</div>
-          <div class="col">39</div>
-          <div class="col">24</div>
-          <div class="col">4</div>
-          <div class="col">7</div>
-          <div class="col">31</div>
-     </div>
-     <div class="row">
-      <div class="col">7547</div>
-      <div class="col">12169</div>
-      <div class="col">3159</div>
-      <div class="col">1030</div>
-      <div class="col">2249</div>
-      <div class="col">6076</div>
-  </div>
-  <div class="row">
-      <div class="col">--</div>
-      <div class="col">--</div>
-      <div class="col">40</div>
-      <div class="col">--</div>
-      <div class="col">120</div>
-      <div class="col">83</div>
-  </div>
-  <div class="row">
-      <div class="col">52.04</div>
-      <div class="col">59.07</div>
-      <div class="col">52.65</div>
-      <div class="col">46.81</div>
-      <div class="col">54.00</div>
-      <div class="col">37.97</div>
-  </div>
-  <div class="row">
-      <div class="col">52.04</div>
-      <div class="col">59.07</div>
-      <div class="col">52.65</div>
-      <div class="col">46.81</div>
-      <div class="col">54.00</div>
-      <div class="col">37.97</div>
-  </div>
-  <div class="row">
-      <div class="col">10</div>
-      <div class="col">39</div>
-      <div class="col">24</div>
-      <div class="col">4</div>
-      <div class="col">7</div>
-      <div class="col">31</div>
-  </div>
-  <div class="row">
-      <div class="col">10</div>
-      <div class="col">39</div>
-      <div class="col">24</div>
-      <div class="col">4</div>
-      <div class="col">7</div>
-      <div class="col">31</div>
-  </div>
-  <div class="row">
-      <div class="col">840</div>
-      <div class="col">1140</div>
-      <div class="col">285</div>
-      <div class="col">91</div>
-      <div class="col">313</div>
-      <div class="col">524</div>
-  </div>
-  <div class="row">
-    <div class="col">0/0 v END</div>
-    <div class="col">1/10 v PAK</div>
-    <div class="col">3/12 v ENG</div>
-    <div class="col">9/6 v PAK</div>
-    <div class="col">--</div>
-    <div class="col">12/89 v PBKS</div>
+            <div class="card__content">
+                <div class="card__title">
+                    2nd T20I, Pakistan in West Indies, 4 T20I Series, 2021, 8:30 PM (IST)
+                </div>
+                <div class="team__vs__team">
+                    <div class="team__1">
+                        <div class="team__name">IND</div>
+                        <div class="scoreStatus__withIcon">
+                            <p></p>
+                            <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="32" height="32" alt="">
+                        </div>
+                    </div>
+                    <div class="team__vs"><div>VS</div></div>
+                    <div class="team__2">
+                        <div class="team__name">ENG</div>
+                        <div class="scoreStatus__withIcon">
+                            <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="32" height="32" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="match__location">Providence Stadium, Guyana</div>
+            </div>
+        </div>
+        <div class="carousel__card">
+            <div class="notification__icon">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS41IiBoZWlnaHQ9IjE5LjUiIHZpZXdCb3g9IjAgMCAxOS41IDE5LjUiPgogIDxnIGlkPSJHcm91cF8xNTMwIiBkYXRhLW5hbWU9Ikdyb3VwIDE1MzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNzUgMC43NSkiPgogICAgPHBhdGggaWQ9IlBhdGhfMjU2IiBkYXRhLW5hbWU9IlBhdGggMjU2IiBkPSJNNzEwLjU3OSw4MjAuMTA5YS4zNDYuMzQ2LDAsMCwxLS4zNTktLjMzNHYtNGE2Ljg2LDYuODYsMCwwLDAtMTMuNjgsMHY0YS4zNDguMzQ4LDAsMCwxLS4zNTkuMzM0LDEuNjcyLDEuNjcyLDAsMSwwLDAsMy4zMzNoMTQuMzkzYTEuNjcyLDEuNjcyLDAsMSwwLDAtMy4zMzNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjk0LjM4IC04MDkuNDQyKSIgZmlsbD0iI2UyZTJlMiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogICAgPHBhdGggaWQ9IlBhdGhfMjU3IiBkYXRhLW5hbWU9IlBhdGggMjU3IiBkPSJNNzAyLjg4LDgzMC40NDJhNCw0LDAsMCwwLDgsMGgtMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTY5Ny44OCAtODE2LjQ0MikiIGZpbGw9IiNlMmUyZTIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8L2c+Cjwvc3ZnPgo=" width="18" height="18" alt="">
+            </div>
+            <div class="card__content">
+                <div class="card__title">
+                    2nd T20I, Pakistan in West Indies, 4 T20I Series, 2021, 8:30 PM (IST)
+                </div>
+                <div class="team__vs__team">
+                    <div class="team__1">
+                        <div class="team__name">IND</div>
+                        <div class="scoreStatus__withIcon">
+                            <p></p>
+                            <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="32" height="32" alt="">
+                        </div>
+                    </div>
+                    <div class="team__vs"><div>VS</div></div>
+                    <div class="team__2">
+                        <div class="team__name">ENG</div>
+                        <div class="scoreStatus__withIcon">
+                            <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="32" height="32" alt="">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="match__location">Providence Stadium, Guyana</div>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <!-- End -->
 </div>
-  </div>
-                  </div>
-             </div>
-          </div>
-          <div class="info__inner__section widgetgap">
-            <div class="image__title__container"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA+CAYAAABk4ziNAAAABHNCSVQICAgIfAhkiAAABFFJREFUaEPdmitzGzEUheOZgoCAgoKCAoOCgoKCgoIC//SCgICAAIOAAIOAgICAAAPPuPfTSB6tVo+rfWjtaGYndlaSz9F96kqrqzNox+Pxi8C4Wa1WOw0c6f9Z+v2U510eN+Zdxh9Wmgnm6COgbmRegEGGvwC61/yWjP3NAgR9DzL+tjkhAfNJgPywRHxMTwLoWUloE+sn4/81JWTJ/IqsLvi2Aui1RMhKFgmF7U3GP7Qm9F1QfEuAfrOkDjlS1n5YlLA9CqGX1oSiquIhM6tcIMSCsDB+28u4O/5xboSusIMCoZhDMNJZglAMTIj/XsDhjnsto263uOwlCOVsyBFIOgchhO3g4jvNl2prlSMYEndy7UEA4iA6TcjEbMf0WZJQdIU95Cfj9tlkXPXihDQSIrju5SEAu4Z0/O8+306G0VrlAAWpnh0U1DD3uuPqmxIClajPZgT42NAXsaFH96IpoYzbHcOxkwN+BEKduHXphJ5F3Z588Z4zIWLRtQXLZ5Pa2IZ7xxP22jkTOqUzNQZ2roSKWXeKZGtCyfQlALjT1hdCYq0JrQUAT6l9OELRBLW0CrxvLSFNLgeuQQ5hCUJ/5UdTSaYTgLqctajbtsVEJFRq6nLW0oQ02+9R6tZM5UQ6mq03eEapW0tCm5Ke2feDA6qbv4mXEwlR+v2qIHUxhEq1BMf1VTKErYJ4ssvsEspVayKoBgfUJipni/N/FLHH4ClVTTWSm1VCQgi7wX60bXCG0EpCWnft8AxOSlsR0gZTh4f6NDWC6G5UI+bZVE7Uje0z9lPbRgXXOQnVqptPvFNrq1mRWQjVercE4F5FR0NsLkK13i2F9XSQpSFjXL+2Y00/kRC240pQNUNjfauC7eSEKvY9WqJ4vjt3QlcaNAchTd4GSI7wOfwq7WDhoLanSQkpi/FUQbGNfaU0Vao3NaGcdJAKmUDntkhFekSwJehm7zGMJmSPC1Ebioip81NOtZFK6nRb6xWLqjeYkM0ESDxLp3EU2Sl8RFfWxiwWY10yePseB5FMjQYRqlCTnSXMTamtBc824WAlCxHNTtbnmrzHMCgOKbfTxl7sqjsvhroRmzReLSWsYkqkllDmWlj445Dhvg65XEkdlVpmuhXtRy0hay8UCcNLdyEgpAAZd+OwBnCsr4tXkIk6lHBQUUI2VmD8JVUx18OsWuG+S/1jBDB2gPNQAerdKCmtUJKQVbG1TJC63+bPbXTbjmFTp83jIEDGAHD2QYM3dg7MiZBVK1YWMEysBXXKiGWO2OkCq+1ctvsMgeQ5aUkKufc+IW0x0M0HaW5OGd0O0h4IkBGg+9nIPgZ8bKwhVLocFBnYu07pSQeCEB2tPkPIrip3l+aetIDtXXa1zuM6zNWGgBozBkIpVSNlQV3Iz5CI2nWOATR2LIRip2rVW9+xQKYaD6FNMJnq/vRUAKaeB0K+q71YybiFgRDxhmCIjeymXrHW8/0HqYrNTqJHFBsAAAAASUVORK5CYII=" width="40" height="62" alt="">
-                <h2>FIELDING CAREER SUMMARY</h2>
-            </div>
-             <div class="playerData__body__container">
-                  <div class="body__container__lhs">
-                      <div class="row">
-                      <div class="col">CT</div>
-                      <div class="col">ST</div>
-                      <div class="col">RC</div>
-                      <div class="col">RS</div>
-                      <div class="col">RO</div>
-                      </div>
-                  </div>
-                 <div class="body__container__rhs">
-                     <div class="inner__container">
-                     <div class="row">
-                          <div class="col">Test</div>
-                          <div class="col">ODI</div>
-                          <div class="col">T20I</div>
-                          <div class="col">World Cup</div>
-                          <div class="col">Domestic</div>
-                          <div class="col">IPL</div>
-                     </div>
-                     <div class="row">
-                      <div class="col">92</div>
-                      <div class="col">254</div>
-                      <div class="col">90</div>
-                      <div class="col">26</div>
-                      <div class="col">32</div>
-                      <div class="col">199</div>
-                 </div>
-                 <div class="row">
-                  <div class="col">0</div>
-                  <div class="col">0</div>
-                  <div class="col">0</div>
-                  <div class="col">0</div>
-                  <div class="col">0</div>
-                  <div class="col">0</div>
-             </div>
-             <div class="row">
-              <div class="col">72</div>
-              <div class="col">106</div>
-              <div class="col">33</div>
-              <div class="col">12</div>
-              <div class="col">98</div>
-              <div class="col">82</div>
-         </div>
-         <div class="row">
-          <div class="col">0</div>
-          <div class="col">0</div>
-          <div class="col">0</div>
-          <div class="col">0</div>
-          <div class="col">0</div>
-          <div class="col">0</div>
-     </div>
-     <div class="row">
-        <div class="col">3</div>
-        <div class="col">18</div>
-        <div class="col">5</div>
-        <div class="col">6</div>
-        <div class="col">22</div>
-        <div class="col">19</div>
-   </div>
-  </div>
-                  </div>
-             </div>
-          </div>
-        
+<!-- ************************************************* FIXTURES COMPONENT END (components/_carouselFixtures.scss) ************************************************* -->
+
+
         	<!-- ********************************************** CAROUSEL COMPONENT START (components/carousel.css) ********************************** -->
             <div class="carousel__widget widgetgap">
-                <div class="heading__nav"><h2>VIRAT KOHLI NEWS</h2> <div class="carousel__nav" data-snap-slider-nav="top-stories"> <button type="button" class="navbutn carousel__prev is__disabled"></button><button type="button" class="navbutn carousel__next"></button></div></div>
+                <div class="heading__nav"><h2>INDIA NEWS</h2> <div class="carousel__nav" data-snap-slider-nav="top-stories"> <button type="button" class="navbutn carousel__prev is__disabled"></button><button type="button" class="navbutn carousel__next"></button></div></div>
                     <div class="carousel__container scrollfix" data-snap-slider="top-stories" data-snap-slider-visible="2">
                         <div class="carousel__card phototype">
                             <div class="card__figure"><a href="#" title=""><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/From_the_States-Tamil_Nadu_Tem_1200x768.jpeg?size=260:146" alt="" width="260" height="146">
@@ -705,82 +560,6 @@
                     </div>  						
             </div>
 <!-- **********************************************// CAROUSEL COMPONENT END //****************************** -->
-        	
- <!-- ********************************************** CAROUSEL9:16 without Slug title COMPONENT START (components/carousel916.css) ********************************** -->
- <div class="carousel916__widget widgetgap carouseltheme2 cardnobgcolr">
-    <div class="heading__nav">
-        <h2>VIRAT KOHLI PHOTOS</h2>
-        <div class="carousel__nav" data-snap-slider-nav="visual-stories"> <button
-                type="button" class="navbutn carousel__prev is__disabled"></button><button
-                type="button" class="navbutn carousel__next"></button></div>
-    </div>
-    <div class="carousel__container" data-snap-slider="visual-stories"
-        data-snap-slider-visible>
-        <div class="carousel__card phototype">
-            <div class="card__figure"><a href="#" title=""><img
-                        src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3634/assets/19.jpeg?time=1635255858?size=200:267"
-                        alt="" width="200" height="267">
-                    <div class="article__type"><span class="typeicon"></span><span
-                            class="typedata">10</span></div>
-                </a>
-            </div>
-            <div class="card__desc">
-                <h3><a href="#">Indian residents in Tokyo divided over strict Covid-19
-                        regulations imposed on Indian Olympic contingent.</a></h3>
-            </div>
-        </div>
-        <div class="carousel__card phototype">
-            <div class="card__figure"><a href="#" title=""><img
-                        src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3628/assets/14.jpeg?time=1635251053?size=200:267"
-                        alt="" width="200" height="267">
-                    <div class="article__type"><span class="typeicon"></span><span
-                            class="typedata">8</span></div>
-                </a></div>
-            <div class="card__desc">
-                <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                        International Cricket.</a></h3>
-            </div>
-        </div>
-        <div class="carousel__card phototype">
-            <div class="card__figure"><a href="#" title=""><img
-                        src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3588/assets/16.jpeg?time=1635158407?size=200:267"
-                        alt="" width="200" height="267">
-                    <div class="article__type"><span class="typeicon"></span><span
-                            class="typedata">12</span></div>
-                </a>
-            </div>
-            <div class="card__desc">
-                <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                        International Cricke.</a></h3>
-            </div>
-        </div>
-        <div class="carousel__card phototype">
-            <div class="card__figure"><a href="#" title=""><img
-                        src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3628/assets/14.jpeg?time=1635251053?size=200:267"
-                        alt="" width="200" height="267"></a>
-                <div class="article__type"><span class="typeicon"></span><span
-                        class="typedata">5</span></div>
-            </div>
-            <div class="card__desc">
-                <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                        International Cricket.</a></h3>
-            </div>
-        </div>
-        <div class="carousel__card phototype">
-            <div class="card__figure"><a href="#" title=""><img
-                        src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2021_10/story_3634/assets/19.jpeg?time=1635255858?size=200:267"
-                        alt="" width="200" height="267"></a>
-                <div class="article__type"><span class="typeicon"></span><span
-                        class="typedata">11</span></div>
-            </div>
-            <div class="card__desc">
-                <h3><a href="#">ECB Suspend England and Sussex bowler Ollie Robinson From
-                        International Cricket.</a></h3>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- **********************************************// CAROUSEL 9:16 without Slug title COMPONENT END //****************************** -->
 
 <!-- ***************************************** Tabing with 4 item and viewall button COMPONENT START (components/tab-with-4item.css) ************************-->
 <div class="Tab__4items">
@@ -843,208 +622,7 @@
 </div>
 
 <!-- *****************************************// Tabing with 4 item and viewall button END //************************-->
-    </div>
- <!-- ******************************* INFO TAB CONTENT END ******************************* -->
-
-  <!-- ******************************* NEWS TAB CONTENT START ******************************* -->
-    <div id="news" class="tab__content">
-        <div class="title__container widgetgap"><h2>VIRAT KOHLI NEWS</h2></div>
-          <!-- ****************************************** Big 1 and Small 3 COMPONENT Start *************************** -->
-          <div class="B1__s3__widget widgetgap">
-            <div class="story__grid">
-                <article class="story__card Bcard videotype">
-                    <div class="content__thumbnail__wrap">
-                        <div class="content__wrap">
-                            <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
-                                    Named as Chairman, Succeeds John Thompson</a></h2>
-                            <div class="story__shortcont">
-                                <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
-                                    been instrumental in scaling up its business including
-                                    billion-dollar acquisitions like LinkedIn, Nuance Communications
-                                </p>
-                            </div>
-                        </div>
-                        <div class="story__thumbnail">
-                            <a href="#" title=""><img
-                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/ishankishanengvindt20worldup_1200x768.jpeg?size=690:388"
-                                    alt="" height="388" width="690">
-                                <!-- <div class="article-type"><span class="typeicon"></span><span
-                                        class="typedata">1:10:10</span></div> -->
-                            </a>
-                        </div>
-                    </div>
-                    <div class="story__interaction">
-                        <ul>
-                            <li class="emoj"><i class="it__bgicon defaultemoj"></i><span
-                                    class="rel__data">100</span>
-                            </li>
-                            <li class="comment"><i class="it__bgicon commenticon"></i><span
-                                    class="rel__data">08</span></li>
-                            <li class="bookmark"><i class="it__bgicon bookmarkicon"></i></li>
-                            <li class="nativshare"><i class="it__bgicon shareicon"></i></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="story__card Bcard videotype">
-                    <div class="content__thumbnail__wrap">
-                        <div class="content__wrap">
-                            <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
-                                    Named as Chairman, Succeeds John Thompson</a></h2>
-                            <div class="story__shortcont">
-                                <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
-                                    been instrumental in scaling up its business including
-                                    billion-dollar acquisitions like LinkedIn, Nuance Communications
-                                </p>
-                            </div>
-                        </div>
-                        <div class="story__thumbnail">
-                            <a href="#" title=""><img
-                                    src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/ishankishanengvindt20worldup_1200x768.jpeg?size=690:388"
-                                    alt="" height="388" width="690">
-                                <!-- <div class="article-type"><span class="typeicon"></span><span
-                                        class="typedata">1:10:10</span></div> -->
-                            </a>
-                        </div>
-                    </div>
-                    <div class="story__interaction">
-                        <ul>
-                            <li class="emoj"><i class="it__bgicon defaultemoj"></i><span
-                                    class="rel__data">100</span>
-                            </li>
-                            <li class="comment"><i class="it__bgicon commenticon"></i><span
-                                    class="rel__data">08</span></li>
-                            <li class="bookmark"><i class="it__bgicon bookmarkicon"></i></li>
-                            <li class="nativshare"><i class="it__bgicon shareicon"></i></li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </div>
-
-        <!-- ******************************************// Big 1 and Small 3 COMPONENT END // ************************** -->
-       
-        <!-- ********   Ad code between widget HP START **********-->
-<div class="ad__betweenwidget">
-	<div class="ad__code">
-		<img src="images/between-ad.png" alt="">
-	</div>
-</div>
-<!-- ******** // Ad code between widget HP END // ******** -->
-
-
-    <!-- ****************************************** Big 1 and Small 3 COMPONENT Start *************************** -->
-    <div class="B1__s3__widget widgetgap">
-        <div class="story__grid">
-            <article class="story__card Bcard videotype">
-                <div class="content__thumbnail__wrap">
-                    <div class="content__wrap">
-                        <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
-                                Named as Chairman, Succeeds John Thompson</a></h2>
-                        <div class="story__shortcont">
-                            <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
-                                been instrumental in scaling up its business including
-                                billion-dollar acquisitions like LinkedIn, Nuance Communications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="story__thumbnail">
-                        <a href="#" title=""><img
-                                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/ishankishanengvindt20worldup_1200x768.jpeg?size=690:388"
-                                alt="" height="388" width="690">
-                            <!-- <div class="article-type"><span class="typeicon"></span><span
-                                    class="typedata">1:10:10</span></div> -->
-                        </a>
-                    </div>
-                </div>
-                <div class="story__interaction">
-                    <ul>
-                        <li class="emoj"><i class="it__bgicon defaultemoj"></i><span
-                                class="rel__data">100</span>
-                        </li>
-                        <li class="comment"><i class="it__bgicon commenticon"></i><span
-                                class="rel__data">08</span></li>
-                        <li class="bookmark"><i class="it__bgicon bookmarkicon"></i></li>
-                        <li class="nativshare"><i class="it__bgicon shareicon"></i></li>
-                    </ul>
-                </div>
-            </article>
-            <article class="story__card Bcard videotype">
-                <div class="content__thumbnail__wrap">
-                    <div class="content__wrap">
-                        <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
-                                Named as Chairman, Succeeds John Thompson</a></h2>
-                        <div class="story__shortcont">
-                            <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
-                                been instrumental in scaling up its business including
-                                billion-dollar acquisitions like LinkedIn, Nuance Communications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="story__thumbnail">
-                        <a href="#" title=""><img
-                                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/ishankishanengvindt20worldup_1200x768.jpeg?size=690:388"
-                                alt="" height="388" width="690">
-                            <!-- <div class="article-type"><span class="typeicon"></span><span
-                                    class="typedata">1:10:10</span></div> -->
-                        </a>
-                    </div>
-                </div>
-                <div class="story__interaction">
-                    <ul>
-                        <li class="emoj"><i class="it__bgicon defaultemoj"></i><span
-                                class="rel__data">100</span>
-                        </li>
-                        <li class="comment"><i class="it__bgicon commenticon"></i><span
-                                class="rel__data">08</span></li>
-                        <li class="bookmark"><i class="it__bgicon bookmarkicon"></i></li>
-                        <li class="nativshare"><i class="it__bgicon shareicon"></i></li>
-                    </ul>
-                </div>
-            </article>
-            <article class="story__card videotype">
-                <div class="content__thumbnail__wrap">
-                    <div class="content__wrap">
-                        <h2><a href="#" title="">Microsoft Chief Executive Officer Satya Nadella
-                                Named as Chairman, Succeeds John Thompson</a></h2>
-                        <div class="story__shortcont">
-                            <p>Nadella, who took over as CEO in 2014 from Steve Ballmer, has
-                                been instrumental in scaling up its business including
-                                billion-dollar acquisitions like LinkedIn, Nuance Communications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="story__thumbnail">
-                        <a href="#" title=""><img
-                                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/ishankishanengvindt20worldup_1200x768.jpeg?size=115:115"
-                                alt="" height="115" width="115">
-                            <div class="article__type"><span class="typeicon"></span><span
-                                    class="typedata">10:10</span></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="story__interaction">
-                    <ul>
-                        <li class="emoj"><i class="it__bgicon defaultemoj"></i><span
-                                class="rel__data">100</span>
-                        </li>
-                        <li class="comment"><i class="it__bgicon commenticon"></i><span
-                                class="rel__data">08</span></li>
-                        <li class="bookmark"><i class="it__bgicon bookmarkicon"></i></li>
-                        <li class="nativshare"><i class="it__bgicon shareicon"></i></li>
-                    </ul>
-                </div>
-            </article>
-            <div class="viewall__bnt"><span>View All</span></div>
-        </div>
-    </div>
-
-    <!-- ******************************************// Big 1 and Small 3 COMPONENT END // ************************** -->
-   
-    </div>
-     <!-- ******************************* NEWS TAB CONTENT END ******************************* -->
-
-</div>
-<!-- ************************************************* PLAYER DETAILS END (page/sports.scss) ************************************************* -->
+  
 
                             <!--- // Section List template END // -->
                         </div>
@@ -1259,12 +837,12 @@
     </div>
     <!-- // Footer Nav Mobile Only END // -->
 
-    <!-- ******************************* FIXTURES TAB EVENT SCRIPT START ******************************* -->
-    <script>
-        document.getElementById("news").style.display = "none";
+      <!-- ******************************* FIXTURES TAB EVENT SCRIPT START ******************************* -->
+      <script>
+        document.getElementById("upcoming__fixtures").style.display = "none";
         function onTabChange(evt,tabName) {
           var i;
-          var x = document.getElementsByClassName("tab__content");
+          var x = document.getElementsByClassName("fixtures__container");
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
           }
