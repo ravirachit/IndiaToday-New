@@ -1,0 +1,129 @@
+@import '../abstracts/mixins';
+@import '../abstracts/functions';
+
+.carouselTeams__widget{
+    margin-bottom: 15px;
+	.heading__nav{
+		margin-bottom:10px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--widgetbordercolor);
+		h2{
+			@include titlewidgetBlack;
+			color:var(--primarytextcolor);
+			@include titleicon;
+		}
+        button{
+            display: none;
+        }
+	}
+	.carousel__container{
+		display: flex;
+    	-ms-overflow-style: none;
+    	scrollbar-width: none;
+		position: relative;
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		-ms-scroll-snap-type: x mandatory;
+		scroll-snap-type: x mandatory;
+        margin-left: 10.75px;
+        margin-right: 10.75px;
+		.carousel__card{
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+			border-radius:5px;
+			margin-right:20px;
+			display: flex; 
+			flex: 0 0 48px;
+			justify-content: center;
+            &:first-child{
+                background-color: var(--catbrandcolor);
+                color: var(--whitetextcolor);
+                margin-right: 15px;
+            }
+            .carousel__item__container{
+                text-align: center;
+                margin: 11px 11px;
+				.player__img{
+					text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    width:48px;
+					img{
+						border: 1px solid #D1D1D1;
+						border-radius: 100%;
+                    }
+				}
+                .team__name{
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 500;
+                    margin-top: 5px;
+                }
+            }
+			&:nth-last-child(1){
+				margin-right:0px;
+			}
+		}
+		&::-webkit-scrollbar{
+				display: none;
+				}
+	}
+
+	
+}
+
+@media (min-width:$desktopver){
+	.carouselTeams__widget{
+		.heading__nav{
+			margin-bottom:10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--widgetbordercolor);
+            button{
+                display: block;
+            }
+			.carousel__nav{
+				width:100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-right:20px;
+			   .navbutn{
+				   width:39px;
+				   height:29px;
+				   border-radius:100%;
+				   background-color:#49A8EE;;
+				   position: relative;
+				   cursor: pointer;
+				   border:0px;
+                   color: var(--whitetextcolor);
+				   &.carousel__prev{
+					   &:after{
+                        transform: rotate(135deg);
+                        left: 11px;
+					   }
+				   }
+				   &.carousel__next{
+					   &:after{
+					   transform: rotate(-45deg);
+					   }
+				   }
+				   &.is__disabled{
+					   background-color:#D1D1D1;
+				   }
+				   &:after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    border-top: 9px solid transparent;
+                    border-right: 9px solid var(--whitetextcolor);
+                    top: 9.5px;
+                    left: 8px;
+				   }
+			   }
+		   }
+		}
+	}
+}

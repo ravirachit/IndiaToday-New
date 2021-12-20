@@ -286,46 +286,230 @@
                             <!-- ****************************** Static Page Navigation Section END ****************************** -->
 
                            <!-- ************************************************* TEAMS PROFILE DETAILS START (page/sports.scss) ************************************************* -->
-<div class="teamsProfile__widget widgetgap">
+<div class="teamsProfile__widget">
     <div class="tab__wrap">
-        <a class="anch__tab" href="file:///C:/reactJS/git/IndiaToday-New/sports-rankings.html" title="">BACK TO TEAMS</a>
+        <a class="anch__tab" href="file:///C:/reactJS/git/IndiaToday-New/sports-teams-landing.html" title="">BACK TO TEAMS</a>
     </div>
-    <div class="teamsDetail__container">
+
+    <!-- ************************************************* TEAMS CAROUSEL COMPONENT START (components/_carouselTeams.scss) ************************************************* -->
+    <div class="carouselTeams__widget widgetgap">
+        <div class="heading__nav"><div class="carousel__nav" data-snap-slider-nav="players">
+        <button type="button" class="navbutn carousel__prev is__disabled"></button> <div class="carousel__container" data-snap-slider="players" data-snap-slider-visible>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">IND</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/3.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">ENG</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">NZ</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">IND</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/3.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">ENG</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">NZ</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">IND</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/3.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">ENG</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">NZ</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">IND</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/3.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">ENG</div>
+                    </div>
+                </div>
+                <div class="carousel__card">
+                    <div class="carousel__item__container">
+                        <div class="player__img">
+                            <img alt="" src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/5.png" width="48" height="48">
+                        </div>
+                        <div class="team__name">NZ</div>
+                    </div>
+                </div>
+            </div>  
+            <button type="button" class="navbutn carousel__next"></button>
+        </div>	
+    </div>					
+    </div>
+    <!-- ************************************************* TEAMS CAROUSEL COMPONENT END (components/_carouselTeams.scss) ************************************************* -->
+
+    <div class="teamsDetail__container widgetgap">
         <div class="header__info">
-            <div>
-            <div class="player__name">Virat Kohli</div>
-            <div class="countryName__with__flag">
-                <img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="24" height="24" alt="">
-                <div class="country__name">INDIA</div>
-                <div class="vertical__line"></div>
-                <div class="player__type">Batsman</div>
-            </div>
-            <div class="playerInfo__grid">
-                <div class="grid__content">
-                    <label>Date of Birth</label>
-                    <p>Nov 05, 1988 ( 32 years )</p>
+            <div class="team__name">India</div>
+            <a href="" title=""><img src="https://akm-img-a-in.tosshub.com/sites/live-score/resources-live/images/flag_img_c/4.png" width="48" height="48" alt=""></a>
+        </div>
+            <div class="team__Info__label">
+                <div class="label__content">
+                    <label>Captain</label>
+                    <p>Virat Kohli</p>
                 </div>
-                <div class="grid__content">
-                    <label>Role</label>
-                    <p>Batsman, Captain (ODI, Test & T20)</p>
-                </div>
-                <div class="grid__content">
-                    <label>Batting Style</label>
-                    <p>Right Handed</p>
-                </div>
-                <div class="grid__content">
-                    <label>Bowling Style</label>
-                    <p>Right-arm medium</p>
+                <div class="label__content">
+                    <label>World Cup Winner</label>
+                    <p>1983, 2011</p>
                 </div>
             </div>
+            <p class="info__content">The India men’s national cricket team, also known as Team India[10] and Men in Blue, is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the International Cricket Council (ICC) with Test, One Day International (ODI) and Twenty20 International (T20I) status.</p>
+            <div class="ICC__ranking__container">
+                <div class="ranking__header">ICC Ranking</div>
+                <div class="ranking__card__container">
+                    <div class="ranking__card">
+                        <div class="ranking__tag"><span>Test</span></div>
+                        <div class="ranking__position">2</div>
+                        <div class="ranking__footer">
+                            <div class="rating">Rating<span>119</span></div>
+                            <div class="rating">Points<span>2,987</span></div>
+                        </div>
+                    </div>
+                    <div class="ranking__card">
+                        <div class="ranking__tag"><span>ODI</span></div>
+                        <div class="ranking__position">4</div>
+                        <div class="ranking__footer">
+                            <div class="rating">Rating<span>113</span></div>
+                            <div class="rating">Points<span>3,623</span></div>
+                        </div>
+                    </div>
+                    <div class="ranking__card">
+                        <div class="ranking__tag"><span>T20I</span></div>
+                        <div class="ranking__position">2</div>
+                        <div class="ranking__footer">
+                            <div class="rating">Rating<span>273</span></div>
+                            <div class="rating">Points<span>7,093</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="rhs__playerImg">
-                <img src="images/virat.png" width="160" height="160" alt=""> 
-            </div>
-            </div>
-    </div>
+</div>
 </div>
 <!-- ************************************************* TEAMS PROFILE DETAILS END (page/sports.scss) ************************************************* -->
+
+
+<!-- ************************************************* TEAMS PROFILE PLAYER COMPONENT START (components/_carouselPlayers.scss) ************************************************* -->
+<div class="carouselPlayers__widget widgetgap">
+	<div class="heading__nav"><h2>PLAYERS</h2> <div class="carousel__nav" data-snap-slider-nav="players"> <button type="button" class="navbutn carousel__prev is__disabled"></button><button type="button" class="navbutn carousel__next"></button></div></div>
+		<div class="carousel__container" data-snap-slider="players" data-snap-slider-visible>
+			<div class="carousel__card">
+				<div class="carousel__item__container">
+					<div class="player__img">
+						<img alt="" src="images/virat_kohli.png" width="90" height="90">
+					</div>
+                    <div class="player__name">Virat Kohli</div>
+                    <div class="player__type">Batsman (C)</div>
+				</div>
+			</div>
+            <div class="carousel__card">
+				<div class="carousel__item__container">
+					<div class="player__img">
+						<img alt="" src="images/rahane.png" width="90" height="90">
+					</div>
+                    <div class="player__name">Ajinkya Rahane</div>
+                    <div class="player__type">Batsman</div>
+				</div>
+			</div>
+            <div class="carousel__card">
+				<div class="carousel__item__container">
+					<div class="player__img">
+						<img alt="" src="images/virat_kohli.png" width="90" height="90">
+					</div>
+                    <div class="player__name">Virat Kohli</div>
+                    <div class="player__type">Batsman (C)</div>
+				</div>
+			</div>
+            <div class="carousel__card">
+				<div class="carousel__item__container">
+					<div class="player__img">
+						<img alt="" src="images/rahane.png" width="90" height="90">
+					</div>
+                    <div class="player__name">Ajinkya Rahane</div>
+                    <div class="player__type">Batsman</div>
+				</div>
+			</div>
+            <div class="carousel__card">
+				<div class="carousel__item__container">
+					<div class="player__img">
+						<img alt="" src="images/virat_kohli.png" width="90" height="90">
+					</div>
+                    <div class="player__name">Virat Kohli</div>
+                    <div class="player__type">Batsman (C)</div>
+				</div>
+			</div>
+            <div class="carousel__card">
+				<div class="carousel__item__container">
+					<div class="player__img">
+						<img alt="" src="images/rahane.png" width="90" height="90">
+					</div>
+                    <div class="player__name">Ajinkya Rahane</div>
+                    <div class="player__type">Batsman</div>
+				</div>
+			</div>
+		</div>  						
+</div>
+<!-- ************************************************* TEAMS PROFILE PLAYER COMPONENT END (components/_carouselPlayers.scss) ************************************************* -->
+
 
 <!-- ************************************************* FIXTURES COMPONENT START (components/_carouselFixtures.scss) ************************************************* -->
 <div class="carouselFixtures__widget widgetgap">
