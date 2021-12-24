@@ -55,6 +55,7 @@
                     }
                     &.active{
                         a{
+                            font-weight:500;
                             &:before{
                             visibility: visible;
                             transform: scaleX(1);
@@ -87,7 +88,7 @@
 @media (min-width:$desktopver){
     .section__secondary__nav{
         border-radius:5px;
-        padding: 13px 20px;
+        padding: 10px 20px 5px;
         .nav__container{
             h1{
                 &:not([style^="background-image:"]){

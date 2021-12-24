@@ -66,11 +66,11 @@
                 }
                 .finding__body{
                     position: relative;
-                    input[type=search]{
+                    .searchproduct{
                         border:0;
                         width:100%;
                         height:50px;
-                        border-radius: 5px;
+                        border-radius:0 0 5px 5px;
                         outline:none;
                         font-size:14px;
                         line-height:18px;
@@ -80,7 +80,23 @@
                         &::placeholder{
                             color:#999;
                         }
+                        &:focus{
+                            background:#4B5458;
+                            color:#fff;
+                            border-radius:0;
+                            &::placeholder{
+                                color:#b3b3b3;
+                            }  
+                        }
+                        
                     }
+                    .searchproduct:focus ~ .searchicon{
+                        svg{
+                            path{
+                                stroke:#fff;
+                            }
+                        }
+                      }
                     .searchicon{
                         position: absolute;
                         top:50%;
@@ -88,6 +104,91 @@
                         width:13px;
                         height:14px;
                         transform: translateY(-50%);
+                    }
+                    .removeproduct{
+                        display: none;
+                    }
+                    .searchproduct:focus ~ .suggestionslist{ display:block;}
+                   .suggestionslist{
+                        padding-right:5px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        background:#4B5458;
+                        display: none;
+                        border-top:1px solid #fff;
+                        border-radius:0 0 5px 5px;
+                    .suggestions{  
+                        list-style:none;
+                        color:#fff;
+                        font-size:14px;
+                        line-height:20px;
+                        max-height:150px;
+                        overflow-y:auto;
+                        &::-webkit-scrollbar{
+                            width:4px;
+                        }
+                        &::-webkit-scrollbar-thumb{
+                            background-color:#fff;
+                            border-radius:30px;
+                        }
+                        &::-webkit-scrollbar-track{
+                            background-color:#ffffff21;
+                            border-radius:30px;
+                        }
+                        li{
+                            padding:5px 10px 5px;
+                            cursor: pointer;
+                          &:hover{
+                              background-color:#ffffff21;
+                          }
+                          &:last-child{
+                              padding-bottom: 0px;
+                          }
+                
+                        }
+                    }
+                   }
+
+
+
+
+
+
+                }
+                &.selected{
+                    .item__body{
+                        padding-top:0;
+                        img{
+                            border-radius:5px 5px 0 0;
+                        }
+                        span{
+                            display: none;
+                        }
+                    }
+                    .finding__body{
+                        .searchicon{
+                            display: none;
+                        }
+                        .removeproduct{
+                            position: absolute;
+                            top:50%;
+                            right:10px;
+                            width:15px;
+                            height:15px;
+                            transform: translateY(-50%);
+                            font-size:10px;
+                            color:#fff;
+                            background:var(--techbrandbg);
+                            border-radius:100%;
+                            display: flex;
+                            justify-content:center;
+                            align-items: center;
+                            line-height: 15px;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
