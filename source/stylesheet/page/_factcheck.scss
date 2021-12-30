@@ -1,0 +1,67 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+.facetcheck_whats{
+    background:#1D2936;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding:8px;
+    font-size:20px;
+    line-height: 24px;
+    .whatsappinfo{
+        display: block;
+        padding-top: 5px;
+    .whaticon{
+        display: inline-flex;
+        margin:0 5px;
+    }
+    .whatsappno{
+        font-size: 24px;
+        font-weight:600;
+    }
+  }
+}
+
+.factchecknews__widget{
+    .heading__nav{
+		margin-bottom:12px;
+    h2{
+        @include titlewidgetBlack;
+		color:var(--primarytextcolor);
+		@include titleicon;
+    }
+  }
+  .factcheck__list{
+      display: grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      column-gap:var(--widgetgap);
+      img{width:100%; border-radius:5px;}
+  }
+  .factcheck__news{
+    margin-bottom:var(--widgetgap);
+  
+  .newsmos{
+      margin-bottom:15px;
+  }
+  .news__desc{
+      h3{
+          font-size:16px;
+          line-height:24px;
+          font-weight:500;
+      }
+  }
+ }
+}
+
+@media (min-width:$desktopver){
+    .facetcheck_whats{
+        border-radius:5px;
+        display: flex;
+        .whatsappinfo{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
