@@ -1,4 +1,7 @@
-.carousel916__widget{
+.carouselAnchor__widget{
+    @include blockwidgetstyle;
+	padding:15px 0px 15px 10px;
+	overflow: hidden;
     .anchor__pannel{
         scroll-behavior: smooth;
         animation-duration: .4s;
@@ -37,6 +40,14 @@
         }
     }
     .carousel__container{
+        display: flex;
+    	-ms-overflow-style: none;
+    	scrollbar-width: none;
+		position: relative;
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		-ms-scroll-snap-type: x mandatory;
+		scroll-snap-type: x mandatory;
         .anchor__carousel__card{
             scroll-snap-align: start;
             scroll-snap-stop: always;
@@ -70,7 +81,9 @@
 
                 } 
             }
-        }
+        }&::-webkit-scrollbar{
+            display: none;
+            }
         .shows__carousel__card{
             scroll-snap-align: start;
             scroll-snap-stop: always;
@@ -98,6 +111,9 @@
                 }
             }
         }
+        &::-webkit-scrollbar{
+            display: none;
+            }
     }
 }
 
