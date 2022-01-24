@@ -1,0 +1,270 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+
+// Conclave About Section Start
+.about__conclave__container{
+	.conclave__content{
+	   @include blockwidgetstyle;
+	   padding:20px;
+	   margin-bottom:var(--widgetgap);
+       border-radius: 5px;
+	   .header__nav{
+		margin-bottom:15px;
+	      .widgettitle__cion{
+		    @include titlewidgetBlack;
+			color:var(--primarytextcolor);
+			@include titleicon;
+	      }
+       }
+       .p__content{
+           p{
+               font-size: 16px;
+               line-height: 24px;
+               padding: 25px 0px;
+           }
+       }&:last-child p{
+        padding-top: 0px;
+    }
+    .viewall__bnt{
+        margin-bottom: 0px;
+        span{
+        background: var(--brandbgcolor);
+        color: var(--theme2primarytextcolor);
+    }
+  }
+}
+}
+// Conclave About Section End
+
+// Conclave Registration Form Section Start
+.conclave__registration__form__container{
+	.conclave__content{
+	   @include blockwidgetstyle;
+	   padding:20px;
+	   margin-bottom:var(--widgetgap);
+       border-radius: 5px;
+	   .header__nav{
+		margin-bottom:15px;
+	      .widgettitle__cion{
+		    @include titlewidgetBlack;
+			color:var(--primarytextcolor);
+			@include titleicon;
+	      }
+       }
+
+       .stepper__wrapper {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 560px;
+        margin: 30px auto 20px;
+      .stepper__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+      .step__counter {
+        position: relative;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--widgetbordercolor);
+        margin-bottom: 10px;
+      }
+      .step__name {
+        font-size: 12px;
+        line-height: 18px;
+        color: #777777;
+      }
+    &:before {
+        position: absolute;
+        content: "";
+        border-bottom: 2px solid #ccc;
+        width: 100%;
+        top: 20px;
+        left: -50%;
+        z-index: 2;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        border-bottom: 2px solid var(--widgetbordercolor);
+        width: 100%;
+        top: 20px;
+        left: 50%;
+        z-index: 2;
+      }
+      &:first-child::before {
+        content: none;
+      }
+      &:last-child::after {
+        content: none;
+      }  
+    }
+    .completed{
+        .step__counter {
+            background-color: var(--whitebg);
+            border: 1px solid var(--brandbgcolor);
+          }
+          &::after{
+            position: absolute;
+            content: "";
+            border-bottom: 1px solid var(--widgetbordercolor);
+            width: 100%;
+            top: 20px;
+            left: 50%;
+            z-index: 3;
+          } 
+      } 
+}
+
+
+       form{
+        text-align: center;
+        .form__container{
+          .form__title{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+              .title__divider{
+                height: 1px;
+                background: #ADADAD;
+                opacity: 0.5;
+                width: 100%;
+              }
+              .title__content{
+                font-size: 14px;
+                line-height: 32px;
+                font-weight: 500;
+                white-space: nowrap;
+              }
+          }
+          .form__input__group{
+            max-width: 453px;
+            margin: 0 auto;
+              .address__inputs{
+                display: block;
+              }
+          }
+          .checkbox{
+            display: flex;
+            margin: 20px 0px;
+            width: 100%;
+            .checkbox__container {
+                position: relative;
+                margin-right: 15px;
+                input{
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                }
+              }
+              .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 16px;
+                width: 16px;
+                border: 1px solid #B9B9B9;
+                border-radius: 3px;
+              }
+              .checkbox__container:hover input ~ .checkmark {
+                border: 1px solid #B9B9B9;
+                border-radius: 3px;
+              }
+              .checkbox__container input:checked ~ .checkmark {
+                background-color: var(--brandbgcolor);
+              }
+              .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+              }
+              .checkbox__container input:checked ~ .checkmark:after {
+                display: block;
+              }
+              .checkbox__container .checkmark:after {
+                  left: 5px;
+                  top: 1px;
+                  width: 5px;
+                  height: 10px;
+                  border: solid white;
+                  border-width: 0 1px 1px 0;
+                  -webkit-transform: rotate(
+              45deg);
+                  -ms-transform: rotate(45deg);
+                  -ms-transform: rotate(45deg);
+              }
+               p{
+                font-size: 10px;
+                line-height: 16px;
+                margin-left: 10px;
+                text-align: left;
+                }
+            }
+          .viewall__bnt{
+            margin-bottom: 0px;
+            span{
+            background: var(--brandbgcolor);
+            color: var(--theme2primarytextcolor);
+        }
+      }
+            input[type=text], select, textarea {
+                width: 100%;
+                max-width: 100%;
+                padding: 12px 20px 11px;
+                margin: 20px 0px 0px;
+                display: inline-block;
+                border: 1px solid var(--widgetbordercolor);
+                border-radius: 5px;
+                box-sizing: border-box; 
+                font-size: 14px;
+              }
+              select {
+                color: var(--theme2textcolor);
+                -moz-appearance:none;
+                -webkit-appearance:none; 
+                appearance:none;
+                background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjUiIHZpZXdCb3g9IjAgMCA4IDUiPgogIDxwYXRoIGlkPSJJY29uX2lvbmljLW1kLWFycm93LWRyb3Bkb3duIiBkYXRhLW5hbWU9Ikljb24gaW9uaWMtbWQtYXJyb3ctZHJvcGRvd24iIGQ9Ik05LDEzLjVsNCw1LDQtNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05IC0xMy41KSIvPgo8L3N2Zz4K");
+                background-repeat: no-repeat;
+                background-position-x: 97%;
+                background-position-y: 17px;
+              }
+          }
+  }
+}
+}
+
+@media (min-width:$desktopver){	
+    .conclave__registration__form__container{
+        .conclave__content{
+           form{
+            .form__container{
+                input[type=text], select, textarea {
+                    width: 453px;
+                  }
+              .form__input__group{
+                  .address__inputs{
+                    display: flex;
+                    gap: 15px;
+                    max-width: 453px;
+                    margin: 0 auto;
+                  }
+              }
+              }
+      }
+    }
+    }
+}
+
+// Conclave Registration Form Section End
+
+

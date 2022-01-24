@@ -1,12 +1,24 @@
-@import "../abstracts/functions";
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
 
-.bingeWatch__widget {
-    padding: 15px 0px 15px 20px;
-    .binge__calendar__footer {
+.bingeWatch__widget{
+	@include blockwidgetstyle;
+	padding:15px 0px 15px 10px;
+	overflow: hidden;
+	.heading__nav{
+		margin-bottom:12px;
+		h2{
+			@include titlewidgetBlack;
+			color:var(--primarytextcolor);
+			@include titleicon;
+		}
+		.carousel__nav{ display: none;}
+	}
+	.binge__calendar__footer {
         background-color: var(--theme2secondarytextcolor);
         height: 40px;
         border-radius: 0px 0px 5px 5px;
-        margin-left: -10px;
+        margin-left: 0px;
         margin-bottom: 15px;
         width: 100%;
         display: flex;
@@ -33,7 +45,6 @@
         height: auto;
         background: #1a1d24;
         width: 100%;
-        margin: 0px -10px;
         padding: 17px 15px;
         .bingeCardGrid__title {
             display: flex;
@@ -93,9 +104,18 @@
             }
         }
     }
-    .carousel__container {
-        margin: 0px -10px;
-        .carousel__image {
+    .carousel__container{
+		display: flex;
+    	-ms-overflow-style: none;
+    	scrollbar-width: none;
+		position: relative;
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		-ms-scroll-snap-type: x mandatory;
+		scroll-snap-type: x mandatory;
+		.carousel__image{
+    		width: 200px;
+		 	border-radius: 5px;
             scroll-snap-align: start;
             scroll-snap-stop: always;
             flex: 0 0 260px;
@@ -123,17 +143,87 @@
                 }
             }
         }
+        &::-webkit-scrollbar{
+            display: none;
+            }
     }
-}
 
-@media (min-width: $desktopver) {
-    .bingeWatch__widget {
+	&.carouseltheme2{
+		background:var(--catbrandcolor, #1D2936);
+			h2{
+				color:var(--theme2primarytextcolor);
+			}
+			.carousel__nav{
+				.navbutn{
+					background-color:#fff;
+					&:after{
+						border-color:#000;
+					}
+					&.is__disabled{
+						background-color:#9d9d9d;
+					}
+				}
+			}
+			.carousel__container{
+				.carousel__card {
+					.card__desc{
+						background-color:#fff;
+						}
+
+				}
+			}
+	}
+}
+.binge_without_title{
+    padding: 10px 0px 10px 20px !important;
+    .binge__calendar__container{
+      .bingeCardGrid__title{
+          .title_batch{
+            background-color: var(--whitebg);
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 7px 15px;
+            line-height: normal;
+            height: auto;
+            margin-right: 10px;
+          }
+         .active__batch{
+            background-color: var(--theme2secondarytextcolor);
+            font-weight: bold;
+          }
+      }
+    }
+    .binge__calendar__footer{
+       margin-bottom: 0px;
+    }
+    }
+
+@media (min-width:$desktopver){
+	.bingeWatch__widget{
+		@include desktopblockwidgetstyle;
+		padding:15px 0px 15px 20px;
+        .binge__calendar__footer {
+            margin-left: -10px;
+        }
         .binge__calendar__container {
+            margin: 0px -10px;
             height: 156px;
             .binge__calendar_grid {
                 grid-template-columns: 1fr 1fr;
                 padding: 0;
             }
         }
-    }
+		.carousel__container{
+            margin: 0px -10px;
+			.carousel__card{
+				.card__desc{
+					h3{
+						font-size:16px;
+						line-height:24px;
+					}
+				}
+			}
+		}
+	}
 }
