@@ -2746,10 +2746,10 @@ a, a:active, a:visited {
   visibility: visible;
   transform: scaleX(1);
 }
-.section__secondary__nav .nav__container .secondary__navigation ul:last-child a span {
+.section__secondary__nav .nav__container .secondary__navigation ul li.nav__dropdown a span {
   font-size: 10px;
 }
-.section__secondary__nav .nav__container .secondary__navigation ul:last-child > :hover .header__flashback__content {
+.section__secondary__nav .nav__container .secondary__navigation ul:hover .header__flashback__content {
   display: block;
 }
 .section__secondary__nav .nav__container .secondary__navigation ul::-webkit-scrollbar {
