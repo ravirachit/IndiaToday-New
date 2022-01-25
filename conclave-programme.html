@@ -337,11 +337,11 @@
                         <div class="lhs__section">
                             <!--- Conclave Regional template Start -->
                              <div class="conclaveregional">
-                                <div class="day__tabs widgetgap">
-                                    <div class="daytab active"><span>DAY 1-</span>FRIDAY, MARCH 12, 2021</div>
-                                    <div class="daytab"><span>DAY 2-</span>FRIDAY, MARCH 13, 2021</div>
-                                </div>
-                                <div class="tabs__conatiner widgetgap">
+                                <ul class="day__tabs widgetgap">
+                                    <li class="daytab active" data-tab-id='day1'><span>DAY 1-</span>FRIDAY, MARCH 12, 2021</li>
+                                    <li class="daytab" data-tab-id='day2'><span>DAY 2-</span>FRIDAY, MARCH 13, 2021</li>
+                                </ul>
+                                <div class="active tabs__conatiner widgetgap" id='day1'>
                                   <div class="event__programmelist">
                                     <div class="content__list widgetgap">
                                         <div class="session__header">
@@ -517,6 +517,192 @@
                                      </div>
                                     </div>
                                 </div>
+                                <div class="tabs__conatiner widgetgap" id='day2'>
+                                    <div class="event__programmelist">
+                                      <div class="content__list widgetgap">
+                                          <div class="session__header">
+                                             <div class="date__display__single">10:00-10:15</div>
+                                             <div class="session__name">Introductory Remarks</div>
+                                          </div>
+                                          <div class="speker__session__story">
+                                            <div class="program__schedule__content">
+                                               <ul class="profile__detail">
+                                                  <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201909/Shamika-1200x675.png" alt="" title=""></li>
+                                                  <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                               </ul>
+                                            </div>
+                                            <div class="section__part__details">
+                                            </div>
+                                         </div>
+                                       </div>
+                                      <div class="content__list widgetgap">
+                                          <div class="session__header">
+                                             <div class="date__display__single">10:00-10:15</div>
+                                             <div class="session__name">THE STATE OF THE STATE: Chief Ministerial Vision: Tamil Nadu in the Next Five Years</div>
+                                          </div>
+                                          <div class="speker__session__story">
+                                             <div class="program__schedule__content">
+                                                <ul class="profile__detail">
+                                                   <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201508/aroon_purie-647x363.jpg" alt="" title=""></li>
+                                                   <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                                </ul>
+                                             </div>
+                                             <div class="section__part__details">
+                                                <p><a href="/budget-2019/story/arvind-kejriwal-slapped-from-eggs-to-shoes-list-of-attacks-on-aap-chief-1165605-2019-05-07" target="_blank" >Tamil Nadu CM Palaniswami challenges DMK’s MK Stalin to debate at Conclave South</a></p>
+                                                <div class="session__video__photo">
+                                                   <a href="https://staging-it.indiatodayonline.in/movies/photo/arpita-khan-christmas-bash-salman-karan-johar-katrina-kaif-iulia-vantur-karan-johar-soha-1116195-2017-12-26" target="_blank">
+                                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 548.165 548.165" style="enable-background:new 0 0 548.165 548.165;" xml:space="preserve" width="14" height="14" fill="#CC0000">
+                                                            <path d="M526.76,131.045c-14.277-14.274-31.498-21.413-51.675-21.413h-63.953l-14.558-38.826 c-3.618-9.325-10.229-17.368-19.846-24.128c-9.613-6.757-19.462-10.138-29.551-10.138H200.996 c-10.088,0-19.939,3.381-29.552,10.138c-9.613,6.76-16.225,14.803-19.842,24.128l-14.56,38.826H73.089 c-20.179,0-37.401,7.139-51.678,21.413C7.137,145.32,0,162.544,0,182.721v255.813c0,20.178,7.137,37.404,21.411,51.675 c14.277,14.277,31.5,21.416,51.678,21.416h401.989c20.177,0,37.397-7.139,51.675-21.416 c14.273-14.271,21.412-31.497,21.412-51.675V182.721C548.169,162.544,541.03,145.32,526.76,131.045z M364.446,400.993 c-25.029,25.03-55.147,37.548-90.362,37.548s-65.331-12.518-90.362-37.548c-25.031-25.026-37.544-55.151-37.544-90.358 c0-35.218,12.517-65.333,37.544-90.364c25.028-25.031,55.148-37.544,90.362-37.544s65.333,12.516,90.362,37.544 c25.03,25.028,37.545,55.146,37.545,90.364C401.991,345.842,389.477,375.964,364.446,400.993z"></path>
+                                                            <path d="M274.084,228.403c-22.651,0-42.018,8.042-58.102,24.128c-16.084,16.084-24.126,35.448-24.126,58.104 c0,22.647,8.042,42.014,24.126,58.098c16.084,16.081,35.45,24.123,58.102,24.123c22.648,0,42.017-8.042,58.101-24.123 c16.084-16.084,24.127-35.45,24.127-58.098c0-22.655-8.043-42.019-24.127-58.104C316.102,236.446,296.732,228.403,274.084,228.403 z"></path>
+                                                         </svg>Photo (10)
+                                                   </a>
+                                                   <a href="https://staging-it.indiatodayonline.in/newsmo/video/army-soldier-suspected-of-killing-bulandshahr-cop-detained-in-jandk-newsmo-1164853-2018-12-10" target="_blank">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><g transform="translate(-845 -891)"><circle cx="7" cy="7" r="7" transform="translate(845 891)" fill="#d71920"/><path d="M240.516,469.542l-5-3.126v6.252Z" transform="translate(614.486 428.457)" fill="#fff"/></g></svg>Video (01:10)
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="content__list widgetgap">
+                                          <div class="session__header">
+                                             <div class="date__display__single">10:00-10:15</div>
+                                             <div class="session__name">POINT OF VIEW: The Shrinking Hand: Can Congress Regain the Southern Shore?</div>
+                                          </div>
+                                          <div class="speker__session__story">
+                                             <div class="program__schedule__content">
+                                                <ul class="profile__detail">
+                                                   <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201909/Shamika-1200x675.png" alt="" title=""></li>
+                                                   <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                                </ul>
+                                                <ul class="profile__detail">
+                                                  <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201909/Ritu-Dewan-_-high-Resolution-_-1200x675.png" alt="" title=""></li>
+                                                  <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                               </ul>
+                                             </div>
+                                             <div class="section__part__details">
+                                                <p><a href="/budget-2019/story/arvind-kejriwal-slapped-from-eggs-to-shoes-list-of-attacks-on-aap-chief-1165605-2019-05-07" target="_blank" >Tamil Nadu CM Palaniswami challenges DMK’s MK Stalin to debate at Conclave South</a></p>
+                                                <div class="session__video__photo">
+                                                   <a href="https://staging-it.indiatodayonline.in/movies/photo/arpita-khan-christmas-bash-salman-karan-johar-katrina-kaif-iulia-vantur-karan-johar-soha-1116195-2017-12-26" target="_blank">
+                                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 548.165 548.165" style="enable-background:new 0 0 548.165 548.165;" xml:space="preserve" width="14" height="14" fill="#CC0000">
+                                                            <path d="M526.76,131.045c-14.277-14.274-31.498-21.413-51.675-21.413h-63.953l-14.558-38.826 c-3.618-9.325-10.229-17.368-19.846-24.128c-9.613-6.757-19.462-10.138-29.551-10.138H200.996 c-10.088,0-19.939,3.381-29.552,10.138c-9.613,6.76-16.225,14.803-19.842,24.128l-14.56,38.826H73.089 c-20.179,0-37.401,7.139-51.678,21.413C7.137,145.32,0,162.544,0,182.721v255.813c0,20.178,7.137,37.404,21.411,51.675 c14.277,14.277,31.5,21.416,51.678,21.416h401.989c20.177,0,37.397-7.139,51.675-21.416 c14.273-14.271,21.412-31.497,21.412-51.675V182.721C548.169,162.544,541.03,145.32,526.76,131.045z M364.446,400.993 c-25.029,25.03-55.147,37.548-90.362,37.548s-65.331-12.518-90.362-37.548c-25.031-25.026-37.544-55.151-37.544-90.358 c0-35.218,12.517-65.333,37.544-90.364c25.028-25.031,55.148-37.544,90.362-37.544s65.333,12.516,90.362,37.544 c25.03,25.028,37.545,55.146,37.545,90.364C401.991,345.842,389.477,375.964,364.446,400.993z"></path>
+                                                            <path d="M274.084,228.403c-22.651,0-42.018,8.042-58.102,24.128c-16.084,16.084-24.126,35.448-24.126,58.104 c0,22.647,8.042,42.014,24.126,58.098c16.084,16.081,35.45,24.123,58.102,24.123c22.648,0,42.017-8.042,58.101-24.123 c16.084-16.084,24.127-35.45,24.127-58.098c0-22.655-8.043-42.019-24.127-58.104C316.102,236.446,296.732,228.403,274.084,228.403 z"></path>
+                                                         </svg>Photo (10)
+                                                   </a>
+                                                   <a href="https://staging-it.indiatodayonline.in/newsmo/video/army-soldier-suspected-of-killing-bulandshahr-cop-detained-in-jandk-newsmo-1164853-2018-12-10" target="_blank">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><g transform="translate(-845 -891)"><circle cx="7" cy="7" r="7" transform="translate(845 891)" fill="#d71920"/><path d="M240.516,469.542l-5-3.126v6.252Z" transform="translate(614.486 428.457)" fill="#fff"/></g></svg>Video (01:10)
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="content__list widgetgap">
+                                          <div class="session__header">
+                                             <div class="date__display__single">10:00-10:15</div>
+                                             <div class="session__name">POINT OF VIEW: The Shrinking Hand: Can Congress Regain the Southern Shore?</div>
+                                          </div>
+                                          <div class="speker__session__story">
+                                             <div class="program__schedule__content">
+                                                <ul class="profile__detail">
+                                                   <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201909/Shamika-1200x675.png" alt="" title=""></li>
+                                                   <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                                </ul>
+                                                <ul class="profile__detail">
+                                                  <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201909/Ritu-Dewan-_-high-Resolution-_-1200x675.png" alt="" title=""></li>
+                                                  <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                               </ul>
+                                               <ul class="profile__detail">
+                                                  <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201909/Ritu-Dewan-_-high-Resolution-_-1200x675.png" alt="" title=""></li>
+                                                  <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                               </ul>
+                                             </div>
+                                             <div class="section__part__details"></div>
+                                          </div>
+                                       </div>
+                                       <div class="content__list widgetgap">
+                                          <div class="session__header lunch__break">
+                                              <div class="lunch__logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="49" viewBox="0 0 67 49">
+                                                  <defs>
+                                                    <clipPath id="clip-path">
+                                                      <rect width="67" height="49" fill="#c00"/>
+                                                    </clipPath>
+                                                  </defs>
+                                                  <g clip-path="url(#clip-path)">
+                                                    <path id="Path_3430" data-name="Path 3430" d="M33.5,68.726H2.049c-.229,0-.457.011-.683-.007C.6,68.658.054,68.232,0,67.663s.393-1.048,1.16-1.176a6.231,6.231,0,0,1,1.013-.065q31.363,0,62.725,0a5.414,5.414,0,0,1,.928.064c.781.138,1.216.593,1.166,1.175a1.341,1.341,0,0,1-1.371,1.053c-.28.022-.568.008-.851.008H33.5v0" transform="translate(0 -19.73)" fill="#c00"/>
+                                                    <path id="Path_3431" data-name="Path 3431" d="M12.058,39.612c1.3-11.98,7.818-19.4,19.468-22.546a5.892,5.892,0,0,1-1.249-5.349,5.627,5.627,0,0,1,2.2-3.254,6.011,6.011,0,0,1,7.553.363,5.938,5.938,0,0,1,.508,8.255c11.536,3.181,17.94,10.714,19.442,22.568.626,0,1.336-.006,2.047,0A1.178,1.178,0,0,1,63.376,41q.013,2.068,0,4.135c0,.99-.419,1.4-1.433,1.4q-8,.007-16.009.008L10.4,46.532c-1.424,0-1.709-.283-1.709-1.693,0-1.292,0-2.585,0-3.876A1.153,1.153,0,0,1,10,39.65c.651-.01,1.3-.008,1.952-.014a.38.38,0,0,0,.1-.024m2.451-.014H57.433c-.084-8.241-6.9-18.706-18.565-20.3a21.27,21.27,0,0,0-23.592,15.7H26.15q4.557,0,9.113,0c.985,0,1.572.725,1.266,1.551a1.252,1.252,0,0,1-1.361.771q-5.824-.011-11.652,0c-2.733,0-5.467-.006-8.2.017-.211,0-.571.187-.6.339a17.774,17.774,0,0,0-.205,1.916m46.5,2.386H11.063v2.238H61.01ZM36.049,16.749a3.575,3.575,0,0,0,3.589-3.574,3.617,3.617,0,0,0-7.233-.02,3.6,3.6,0,0,0,3.644,3.593" transform="translate(-2.536 -2.169)" fill="#c00"/>
+                                                    <path id="Path_3432" data-name="Path 3432" d="M50.767,28.569a5.825,5.825,0,0,1,.658.175c4.761,2.046,8.745,4.992,11.2,9.662a17.574,17.574,0,0,1,1.006,2.511,1.159,1.159,0,1,1-2.208.7c-1.75-5.335-5.8-8.4-10.669-10.643-.9-.417-1.29-1.083-.833-1.742a3.379,3.379,0,0,1,.848-.659" transform="translate(-14.511 -8.486)" fill="#c00"/>
+                                                    <path id="Path_3433" data-name="Path 3433" d="M30.713,13.481a1.035,1.035,0,0,1-1.137-.4,1.019,1.019,0,0,1,.254-1.425,3.767,3.767,0,0,0,1.211-2.443A2.491,2.491,0,0,0,30.5,7.223c-2.233-2.424.9-6.4,1.261-6.845A1.033,1.033,0,0,1,33.2.228a1.019,1.019,0,0,1,.154,1.438C32.6,2.6,31.2,4.956,32.016,5.842a4.478,4.478,0,0,1,1.073,3.6,5.683,5.683,0,0,1-2.079,3.9,1.017,1.017,0,0,1-.3.143" transform="translate(-8.577 0)" fill="#c00"/>
+                                                    <path id="Path_3434" data-name="Path 3434" d="M62.445,14.965a1.035,1.035,0,0,1-1.137-.4,1.018,1.018,0,0,1,.255-1.425,3.764,3.764,0,0,0,1.21-2.443,2.484,2.484,0,0,0-.545-1.993c-2.234-2.424.9-6.4,1.26-6.845a1.034,1.034,0,0,1,1.448-.15,1.017,1.017,0,0,1,.154,1.438c-.761.938-2.158,3.29-1.341,4.176a4.476,4.476,0,0,1,1.072,3.6,5.686,5.686,0,0,1-2.079,3.9,1.031,1.031,0,0,1-.3.142" transform="translate(-17.837 -0.441)" fill="#c00"/>
+                                                  </g>
+                                                </svg>
+                                                </div>
+                                              <div class="lunch__section__details">
+                                                  <div class="session__name">Lunch Break</div>
+                                                  <div class="date__display__single">14:05 - 15:05</div>
+                                              </div>
+                                          </div> 
+                                       </div>
+                                       <div class="content__list widgetgap">
+                                          <div class="session__header">
+                                             <div class="date__display__single">10:00-10:15</div>
+                                             <div class="session__name">THE STATE OF THE STATE: Chief Ministerial Vision: Tamil Nadu in the Next Five Years</div>
+                                          </div>
+                                          <div class="speker__session__story">
+                                             <div class="program__schedule__content">
+                                                <ul class="profile__detail">
+                                                   <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201508/aroon_purie-647x363.jpg" alt="" title=""></li>
+                                                   <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                                </ul>
+                                             </div>
+                                             <div class="section__part__details">
+                                                <p><a href="/budget-2019/story/arvind-kejriwal-slapped-from-eggs-to-shoes-list-of-attacks-on-aap-chief-1165605-2019-05-07" target="_blank" >Tamil Nadu CM Palaniswami challenges DMK’s MK Stalin to debate at Conclave South</a></p>
+                                                <div class="session__video__photo">
+                                                   <a href="https://staging-it.indiatodayonline.in/movies/photo/arpita-khan-christmas-bash-salman-karan-johar-katrina-kaif-iulia-vantur-karan-johar-soha-1116195-2017-12-26" target="_blank">
+                                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 548.165 548.165" style="enable-background:new 0 0 548.165 548.165;" xml:space="preserve" width="14" height="14" fill="#CC0000">
+                                                            <path d="M526.76,131.045c-14.277-14.274-31.498-21.413-51.675-21.413h-63.953l-14.558-38.826 c-3.618-9.325-10.229-17.368-19.846-24.128c-9.613-6.757-19.462-10.138-29.551-10.138H200.996 c-10.088,0-19.939,3.381-29.552,10.138c-9.613,6.76-16.225,14.803-19.842,24.128l-14.56,38.826H73.089 c-20.179,0-37.401,7.139-51.678,21.413C7.137,145.32,0,162.544,0,182.721v255.813c0,20.178,7.137,37.404,21.411,51.675 c14.277,14.277,31.5,21.416,51.678,21.416h401.989c20.177,0,37.397-7.139,51.675-21.416 c14.273-14.271,21.412-31.497,21.412-51.675V182.721C548.169,162.544,541.03,145.32,526.76,131.045z M364.446,400.993 c-25.029,25.03-55.147,37.548-90.362,37.548s-65.331-12.518-90.362-37.548c-25.031-25.026-37.544-55.151-37.544-90.358 c0-35.218,12.517-65.333,37.544-90.364c25.028-25.031,55.148-37.544,90.362-37.544s65.333,12.516,90.362,37.544 c25.03,25.028,37.545,55.146,37.545,90.364C401.991,345.842,389.477,375.964,364.446,400.993z"></path>
+                                                            <path d="M274.084,228.403c-22.651,0-42.018,8.042-58.102,24.128c-16.084,16.084-24.126,35.448-24.126,58.104 c0,22.647,8.042,42.014,24.126,58.098c16.084,16.081,35.45,24.123,58.102,24.123c22.648,0,42.017-8.042,58.101-24.123 c16.084-16.084,24.127-35.45,24.127-58.098c0-22.655-8.043-42.019-24.127-58.104C316.102,236.446,296.732,228.403,274.084,228.403 z"></path>
+                                                         </svg>Photo (10)
+                                                   </a>
+                                                   <a href="https://staging-it.indiatodayonline.in/newsmo/video/army-soldier-suspected-of-killing-bulandshahr-cop-detained-in-jandk-newsmo-1164853-2018-12-10" target="_blank">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><g transform="translate(-845 -891)"><circle cx="7" cy="7" r="7" transform="translate(845 891)" fill="#d71920"/><path d="M240.516,469.542l-5-3.126v6.252Z" transform="translate(614.486 428.457)" fill="#fff"/></g></svg>Video (01:10)
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="content__list widgetgap">
+                                          <div class="session__header">
+                                             <div class="date__display__single">10:00-10:15</div>
+                                             <div class="session__name">POINT OF VIEW: The Shrinking Hand: Can Congress Regain the Southern Shore?</div>
+                                          </div>
+                                          <div class="speker__session__story">
+                                             <div class="program__schedule__content">
+                                                <ul class="profile__detail">
+                                                   <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201909/Shamika-1200x675.png" alt="" title=""></li>
+                                                   <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                                </ul>
+                                                <ul class="profile__detail">
+                                                  <li class="image"><img src="https://static-dev.indiatodayonline.in/indiatoday/styles/event_speaker_program_72x72/public/images/reporter/201909/Ritu-Dewan-_-high-Resolution-_-1200x675.png" alt="" title=""></li>
+                                                  <li><span class="title" title="">Aroon Purie</span><span class="designation">Chairman And Editor-In-Chief, India Today Group</span></li>
+                                               </ul>
+                                             </div>
+                                             <div class="section__part__details">
+                                                <p><a href="/budget-2019/story/arvind-kejriwal-slapped-from-eggs-to-shoes-list-of-attacks-on-aap-chief-1165605-2019-05-07" target="_blank" >Tamil Nadu CM Palaniswami challenges DMK’s MK Stalin to debate at Conclave South</a></p>
+                                                <div class="session__video__photo">
+                                                   <a href="https://staging-it.indiatodayonline.in/movies/photo/arpita-khan-christmas-bash-salman-karan-johar-katrina-kaif-iulia-vantur-karan-johar-soha-1116195-2017-12-26" target="_blank">
+                                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 548.165 548.165" style="enable-background:new 0 0 548.165 548.165;" xml:space="preserve" width="14" height="14" fill="#CC0000">
+                                                            <path d="M526.76,131.045c-14.277-14.274-31.498-21.413-51.675-21.413h-63.953l-14.558-38.826 c-3.618-9.325-10.229-17.368-19.846-24.128c-9.613-6.757-19.462-10.138-29.551-10.138H200.996 c-10.088,0-19.939,3.381-29.552,10.138c-9.613,6.76-16.225,14.803-19.842,24.128l-14.56,38.826H73.089 c-20.179,0-37.401,7.139-51.678,21.413C7.137,145.32,0,162.544,0,182.721v255.813c0,20.178,7.137,37.404,21.411,51.675 c14.277,14.277,31.5,21.416,51.678,21.416h401.989c20.177,0,37.397-7.139,51.675-21.416 c14.273-14.271,21.412-31.497,21.412-51.675V182.721C548.169,162.544,541.03,145.32,526.76,131.045z M364.446,400.993 c-25.029,25.03-55.147,37.548-90.362,37.548s-65.331-12.518-90.362-37.548c-25.031-25.026-37.544-55.151-37.544-90.358 c0-35.218,12.517-65.333,37.544-90.364c25.028-25.031,55.148-37.544,90.362-37.544s65.333,12.516,90.362,37.544 c25.03,25.028,37.545,55.146,37.545,90.364C401.991,345.842,389.477,375.964,364.446,400.993z"></path>
+                                                            <path d="M274.084,228.403c-22.651,0-42.018,8.042-58.102,24.128c-16.084,16.084-24.126,35.448-24.126,58.104 c0,22.647,8.042,42.014,24.126,58.098c16.084,16.081,35.45,24.123,58.102,24.123c22.648,0,42.017-8.042,58.101-24.123 c16.084-16.084,24.127-35.45,24.127-58.098c0-22.655-8.043-42.019-24.127-58.104C316.102,236.446,296.732,228.403,274.084,228.403 z"></path>
+                                                         </svg>Photo (10)
+                                                   </a>
+                                                   <a href="https://staging-it.indiatodayonline.in/newsmo/video/army-soldier-suspected-of-killing-bulandshahr-cop-detained-in-jandk-newsmo-1164853-2018-12-10" target="_blank">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><g transform="translate(-845 -891)"><circle cx="7" cy="7" r="7" transform="translate(845 891)" fill="#d71920"/><path d="M240.516,469.542l-5-3.126v6.252Z" transform="translate(614.486 428.457)" fill="#fff"/></g></svg>Video (01:10)
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                      </div>
+                                  </div>
                                 </div>
                             <!--- //Conclave Regional template END // -->
                         </div>
@@ -656,6 +842,30 @@
 	</div>
 </div>
 <!-- // Footer Nav Mobile Only END // -->
-</body>
+<script>
+	(function(){
+  var d = document,
+      tabs = d.querySelector('.day__tabs'),
+      tab = d.querySelectorAll('.daytab'),
+      contents = d.querySelectorAll('.tabs__conatiner');
+  tabs.addEventListener('click', function(e) {
+      if (e.target && e.target.nodeName === 'LI') {
+        // change tabs
+        for (var i = 0; i < tab.length; i++) {
+            console.log(tab)
+          tab[i].classList.remove('active');
+        }
+        e.target.classList.toggle('active');
 
+        // change content
+        for (i = 0; i < contents.length; i++) {
+          contents[i].classList.remove('active');
+        }     
+        var tabId = '#' + e.target.dataset.tabId;
+ d.querySelector(tabId).classList.toggle('active'); 
+      }  
+  });
+})();
+	</script>
+</body>
 </html>
