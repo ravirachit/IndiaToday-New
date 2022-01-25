@@ -394,7 +394,7 @@ ul, li {
   .navigation::before {
     position: absolute;
     left: 0;
-    width: calc((100vw - var(--maxcontinerwidth)) / 2);
+    width: calc((100vw - var(--maxcontinerwidth))/2);
     height: 100%;
     content: "";
     background-color: var(--navbg);
@@ -5717,6 +5717,11 @@ body {
 }
 
 /* Specs table END */
+/* 5 pointer story */
+.story__content__body .pointer-section::before {
+  color: #FF006A;
+}
+
 /*sass media query varibale */
 .compare__widget {
   /*@include blockwidgetstyle;
@@ -5742,7 +5747,7 @@ body {
   margin-bottom: var(--widgetgap);
 }
 .compare__widget .compare__items_container .items__container > .default {
-  flex-basis: calc(33.3333333333% - 10px);
+  flex-basis: calc(100%/3 - 10px);
   border: 1px solid var(--widgetbordercolor);
   border-radius: 5px;
 }
@@ -5962,7 +5967,7 @@ body {
   display: flex;
 }
 .popular__widget .popular__itemslist .popularCard {
-  flex-basis: calc(33.3333333333% - 10px);
+  flex-basis: calc(100%/3 - 10px);
   border: 1px solid var(--widgetbordercolor);
   border-radius: 5px;
   background-color: #f5f5f5;
@@ -6114,7 +6119,7 @@ body {
     justify-content: space-between;
   }
   .podcastTech__widget .widget__body .podcast__playlist .list {
-    flex-basis: calc(50% - 20px);
+    flex-basis: calc(100%/2 - 20px);
     flex-shrink: 0;
     margin-bottom: 0px;
   }

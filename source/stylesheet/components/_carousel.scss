@@ -1,6 +1,5 @@
 @import '../abstracts/functions';
 @import '../abstracts/mixins';
-
 .carousel__widget{
 	@include blockwidgetstyle;
 	padding:15px 0px 15px 10px;
