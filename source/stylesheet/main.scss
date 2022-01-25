@@ -32,11 +32,11 @@
 @import 'components/byline';
 @import 'components/visualStoryCard';
 @import 'page/liveblog';
-@import 'components/_carouselNewReleased';
-@import 'components/_bingeWatch';
-@import 'components/_starRating';
-@import 'components/_weekendPlanner';
-@import 'components/_carouselCastAndCrew';
+@import 'components/carouselNewReleased';
+@import 'components/bingeWatch';
+@import 'components/starRating';
+@import 'components/weekendPlanner';
+@import 'components/carouselCastAndCrew';
 @import 'page/_showbuzz-reviews-detail';
 @import 'page/tech';
 @import 'components/compareitems';
@@ -47,12 +47,15 @@
 @import 'components/accordion';
 @import 'page/sports';
 @import 'page/teams-landing';
-@import 'components/_otherSportsCoverage';
-@import 'components/_carouselFixtures';
+@import 'components/otherSportsCoverage';
+@import 'components/carouselFixtures';
 @import 'components/factcheckDetail';
 @import 'page/factcheck';
-@import 'components/_carouselPlayers';
-@import 'components/_carouselTeams';
+@import 'page/anchor';
+@import 'page/conclave-registration';
+@import 'components/carouselPlayers';
+@import 'components/carouselTeams';
+@import 'components/conclaveSecondaryNav';
 
 
 
