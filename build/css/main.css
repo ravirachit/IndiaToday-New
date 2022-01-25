@@ -9364,20 +9364,22 @@ body {
     max-width: 453px;
     margin: 0 auto;
   }
-
-  .earlyBird__offer__container .offer__footer {
+  .conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__footer {
     display: flex;
     gap: 70px;
   }
-  .earlyBird__offer__container .offer__footer ul li {
+  .conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__footer ul li {
     list-style: none;
     font-size: 16px;
     line-height: 24px;
   }
-  .earlyBird__offer__container .offer__footer ul li:nth-child(1) {
+  .conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__footer ul li:nth-child(1) {
     font-weight: 500;
   }
-  .earlyBird__offer__container .offer__footer ul li:last-child {
+  .conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__footer ul li:last-child {
+    margin-top: 0px;
+  }
+  .conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__footer ul:last-child {
     margin-top: 0px;
   }
 }

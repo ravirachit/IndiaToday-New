@@ -552,10 +552,7 @@
               }
               }
       }
-    }
-    }
-
-     // ******************************* Step 2 Start *******************************
+       // ******************************* Step 2 Start *******************************
      .earlyBird__offer__container{
         .offer__footer{
             display: flex;
@@ -571,15 +568,16 @@
                         margin-top: 0px;
                     }
                 }
-            }
-            .footer__lhs{
-                
-            }
-            .footer__rhs{
+                &:last-child{
+                    margin-top: 0px;
+                }
             }
         }
     }
   // ******************************* Step 2 End *******************************
+
+    }
+    }
 }
 
 // Conclave Registration Form Section End
