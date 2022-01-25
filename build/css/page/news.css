@@ -1,0 +1,48 @@
+/*sass media query varibale */
+.newssection .heading__nav h2 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--primarytextcolor);
+  text-transform: uppercase;
+  color: var(--primarytextcolor);
+  padding-left: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' viewBox='0 0 12 11'%3E%3Cpath fill='%23e3001b' d='M344.974,430.608a16.732,16.732,0,0,1,10.71-2.439.261.261,0,0,1,.233.26c.115,4.944-2.28,8.018-5,10.481-.094.075-.262.224-.43.035l-6.516-7.4a.213.213,0,0,1,.047-.318c.113-.093.956-.617.956-.616' transform='translate(-343.921 -428.037)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.newssection .newslist ul {
+  list-style: none;
+}
+.newssection .newslist ul li {
+  padding: var(--widgetgap) 0;
+  border-bottom: 1px solid var(--widgetbordercolor);
+}
+.newssection .newslist ul li a {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: var(--primarytextcolor);
+}
+.newssection .newslist.liststyle ul li {
+  padding: var(--widgetgap);
+  padding-right: 0;
+}
+.newssection .newslist.liststyle ul li a {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+}
+.newssection .newslist.liststyle ul li a:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--brandbgcolor);
+  position: absolute;
+  top: 10px;
+  left: -20px;
+}
+
+/*# sourceMappingURL=news.css.map */

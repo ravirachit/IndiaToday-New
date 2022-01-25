@@ -1,0 +1,741 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+:root{
+	--catbrandcolor:#CC0000
+}
+
+.heading__nav{
+    margin-bottom:15px;
+    h2{
+        @include titlewidgetBlack;
+        color:var(--primarytextcolor);
+        @include titleicon;
+    }
+}
+/* conclave Landing page START */
+.econclave__list{
+    margin-bottom:var(--widgetgap);
+    ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns:repeat(2, minmax(335px, 1fr));
+        gap:20px;
+        li{
+            a{
+                img{
+                    width:100%;
+                    min-height:188px;
+                }
+                h2{
+                    font-size:16px;
+                    line-height: 24px;
+                    font-weight:600;
+                    padding-top:10px;
+                }
+            }
+        }
+    }
+}
+
+.conclavecarousel__widget{
+	@include blockwidgetstyle;
+	padding:15px 0px 15px 10px;
+	overflow: hidden;
+	.heading__nav{
+		margin-bottom:12px;
+		h2{
+			@include titlewidgetBlack;
+			color:var(--primarytextcolor);
+			@include titleicon;
+		}
+		.carousel__nav{ display: none;}
+	}
+	
+	.carousel__container{
+		display: flex;
+    	-ms-overflow-style: none;
+    	scrollbar-width: none;
+		position: relative;
+		overflow-x: auto;
+		/*overscroll-behavior-x: contain;*/
+		-ms-scroll-snap-type: x mandatory;
+		scroll-snap-type: x mandatory;
+		margin:0;
+		padding:0;
+		.carousel__card{
+			scroll-snap-align: start;
+    		scroll-snap-stop: always;
+    		width: 260px;
+    		flex: 0 0 260px;
+    		margin-right:15px;
+			.card__figure{
+				margin-bottom:15px;
+				position: relative;
+				img{
+					border: 1px solid var(--widgetbordercolor);
+		 			border-radius: 5px;}
+			}
+			.card__desc{
+				.card__slug{
+					@include titlewidgetRed;
+					margin-bottom:4px;
+					display: block;
+				}
+				h3{
+					font-size: 20px;
+					line-height: 26px;
+					font-weight:600;
+					a{
+						text-decoration: none;
+						@include lineblock3;
+					}
+				}
+                p{
+                    font-size:16px;
+                    line-height:24px;
+                    padding-top: 10px;
+                    color:var(--secondarytextcolor);
+                    @include lineblock2;
+                }
+			}
+            .card__otherresource{
+                 display: flex;
+                 padding-top: 10px;
+                .resourcelist{
+                    flex-basis:50%;
+                    max-width:50%;
+                    a{
+                        color:var(--catbrandcolor);
+                        font-size: 12px;
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                        svg{
+                            margin-right:5px;
+                        }
+                    }
+                }
+            }
+
+			&:nth-last-child(1){
+				margin-right:0px;
+			}
+		}
+		&::-webkit-scrollbar{
+				display: none;
+				}
+	}
+}
+
+@media (min-width:$desktopver){
+	.conclavecarousel__widget{
+		@include desktopblockwidgetstyle;
+		padding:15px 0px 15px 20px;
+		.heading__nav{
+			margin-bottom:10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.carousel__nav{
+				 width:65px;
+				 display: flex;
+				 justify-content: space-between;
+				 align-items: center;
+				 margin-right:20px;
+				.navbutn{
+					width:25px;
+					height:25px;
+					border-radius:100%;
+					background-color:#000;
+					position: relative;
+					cursor: pointer;
+					border:0px;
+					&.carousel__prev{
+						&:after{
+						   transform: rotate(-45deg);
+						   left:10px;
+						}
+					}
+					&.carousel__next{
+						&:after{
+						transform: rotate(135deg);
+						}
+					}
+					&.is__disabled{
+						background-color:#d5d5d5;
+						&:after{
+							border-color:#000;
+						}
+					}
+					&:after{
+					content: "";
+					position: absolute;
+					display:block;
+					width:7px;
+					height:7px;
+					border-top: 2px solid #fff;
+					border-left: 2px solid #fff;
+					top:9px;
+					left:8px;
+	
+					}
+				}
+			}
+		}
+	}
+}
+/* //conclave Landing page END// */
+
+/* Regional Conclave Landing (After event Completed) START */
+.conclaveregional{
+	.day__tabs{
+		display: flex;
+		-ms-overflow-style: none;
+   		 scrollbar-width: none;
+    	position: relative;
+    	overflow-x: auto;
+    	/* overscroll-behavior-x: contain; */
+    	-ms-scroll-snap-type: x mandatory;
+    	scroll-snap-type: x mandatory;
+		margin-left:10px;
+		.daytab{
+			background-color: #F2FAFC;
+			color:#666;
+			padding:7px 15px;
+			border-radius:30px;
+			font-size:12px;
+			line-height: 14px;
+			font-weight:300;
+			border:1px solid #E2E2E2;
+			white-space: nowrap;
+			cursor: pointer;
+			scroll-snap-align: start;
+			scroll-snap-stop: always;
+			span{
+				font-weight:600;
+				margin-right:5px;
+			 }
+			&.active{
+				background-color: var(--catbrandcolor);
+			    color:#fff;
+				border-color:var(--catbrandcolor);
+			}
+			&:not(:last-child){
+				margin-right:10px;
+			}
+		}
+		&::-webkit-scrollbar{
+			display: none;
+			}
+	}
+	.eventrelated__articles{
+		display: grid;
+		grid-template-columns:repeat(auto-fit, minmax(335px, 1fr));
+		gap:var(--widgetgap);
+	}
+
+	.fnlcard__event{
+		@include blockwidgetstyle;
+		.card__figure{
+			img{ width: 100%; height: auto;}
+		}
+		.card__desc{
+			padding:15px 10px;
+			.session__title{
+				font-size:14px;
+				line-height:20px;
+				color: var(--textcolor666);
+				text-transform: uppercase;
+				margin-bottom:var(--magrin15);
+			}
+			.stytitle{
+				font-size:18px;
+				line-height: 26px;
+				color: var(--primarytextcolor);
+				margin-bottom:10px;
+				@include lineblock3;
+				
+			}
+			.kicker{
+				font-size:14px;
+				line-height: 20px;
+				color: var(--secondarytextcolor);
+				@include lineblock2;
+			}
+
+		}
+		.card__otherresource{
+			display: flex;
+			padding:0 10px 15px;
+		   .resourcelist{
+			   flex-basis:50%;
+			   max-width:50%;
+			   a{
+				   color:var(--catbrandcolor);
+				   font-size: 12px;
+				   display: flex;
+				   align-items: center;
+				   text-transform: uppercase;
+				   svg{
+					   margin-right:5px;
+				   }
+			   }
+		   }
+	   }
+	}
+
+}
+@media (min-width:$desktopver){
+	.conclaveregional{
+		.day__tabs{
+			margin-left:0px
+		}
+		.fnlcard__event{
+		@include desktopblockwidgetstyle;
+			.card__figure{
+				img{
+					border-radius:5px 5px 0 0;
+				}
+			}
+			.card__desc{
+			padding:15px 20px;
+			.stytitle{
+				font-size:20px;
+			}
+			.kicker{
+				font-size:16px;
+				line-height: 24px;
+			}
+			}
+			.card__otherresource{
+				padding:0 20px 20px;
+			}
+		}
+
+	}
+}
+/* //Regional Conclave Landing (After event Completed) END // */
+
+/* Progromme Page START */
+.content__list{
+	@include blockwidgetstyle;
+	@include desktopblockwidgetstyle;
+	margin-left:10px;
+	margin-right:10px;
+	.session__header{ 
+		display: flex;
+		flex-direction: column;
+		background:#ECF0F3;
+		padding:15px 10px;
+		font-weight: 600;
+		font-size: 14px;
+		.date__display__single{
+			flex-basis:100%;
+			max-width: 100%;
+			flex-shrink: 0;
+			font-weight: 400;
+			line-height: 1;
+			padding-bottom: 10px;
+		}
+		.session__name{ 
+			line-height: 20px;
+   			font-size: 14px;
+		 }
+		 &.lunch__break {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			flex-direction: row;
+			.lunch__logo{
+				margin-right:20px;
+			}
+			.session__name{
+				margin-bottom:10px;
+			}
+			.lunch__section__details{
+				font-size:14px;
+				line-height:22px;
+			}
+			.date__display__single{
+				padding-bottom: 0;
+				font-size:14px;
+			}
+		}
+	}
+	.speker__session__story{
+		padding:10px;
+		display: flex;
+		flex-direction: column;
+		border-top:1px solid var(--widgetbordercolor);
+		.profile__detail {
+			list-style:none;
+			display: flex;
+			align-items: center;
+			.image{
+				margin-right:15px;
+				flex-basis:75px;
+				max-width:75px;
+				flex-shrink:0;
+				border: 2px solid var(--brandbgcolor);
+				border-radius:100%;
+				img{
+					width:75px;
+					height:75px;
+					border-radius:100%;
+				}
+			}
+			&:not(:last-child){
+				margin-bottom:30px;
+			}
+			span.title{
+				color: #000;
+				line-height: 24px;
+				font-weight: 600;
+				display: block;
+			}
+			span.designation{
+				color: #777777;
+    			line-height: 20px;
+    			font-size: 15px;
+			}
+		}
+		.section__part__details {
+			padding-left:0;
+			padding-top: 30px;
+			flex-basis:100%;
+			max-width:100%;
+			p {
+				padding-bottom: 15px;
+				a {
+					color: #326891;
+					width: 100%;
+					font-size: 14px;
+					line-height: 20px;
+					font-weight: 600;
+					text-decoration: none;
+					&:hover {
+						color: #326891;
+					}
+				}
+			}
+			.session__video__photo{
+				display: flex;
+				a{
+				  display: flex;
+				  align-items: center;
+				  font-size:12px;
+				  color:var(--brandbgcolor);
+				  flex-basis:50%;
+				  text-transform: uppercase;
+				  svg{
+					  margin-right:5px;
+				  }
+				}
+			}
+			
+		}
+		.program__schedule__content {
+			flex-basis: 100%;
+			padding-right:0;
+			max-width:100%;
+			
+		}
+		
+	}
+}
+
+@media (min-width:$desktopver){
+	.content__list{
+		margin-left:0px;
+		margin-right:0px;
+		.session__header{
+			flex-direction:row;
+			padding:15px 20px;
+			font-size:16px;
+			.date__display__single{
+				flex-basis: 125px;
+				max-width: 125px;
+				flex-shrink: 0;
+				padding-bottom: 0;
+				line-height: 24px;
+			}
+			.session__name{
+				line-height: 24px;
+    			font-size: 16px;
+			}
+			&.lunch__break {
+				.lunch__logo{
+					margin-right:30px;
+				}
+				.session__name{
+					margin-bottom:0;
+				}
+				.date__display__single{
+					font-size:16px;
+				}
+			}
+		}
+		.speker__session__story{
+			flex-direction: row;
+			padding:15px 20px;
+			.profile__detail{
+				.image{
+					margin-right:50px;
+					flex-basis:100px;
+					max-width:100px;
+					img{
+						width: 100px;
+						height: 100px;
+					}
+				}
+			} 
+		
+		.section__part__details {
+			padding-left: 15px;
+			flex-basis: 295px;
+			max-width: 295px;
+			padding-top:0px;
+			&:not(:empty){
+				border-left: 1px solid #d1d1d1;
+			}
+		}
+		.program__schedule__content {
+			flex-basis: 445px;
+			padding-right: 15px;
+			max-width: 445px;
+			
+		}
+	}
+	}
+}
+/* //Progromme Page END// */
+
+
+/* Speaker Page Landing START */
+.event__speakerslist{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	gap:var(--widgetgap);
+	padding:0 10px;
+	.card__speaker{
+		@include blockwidgetstyle;
+		@include desktopblockwidgetstyle;
+		padding:15px 10px;
+		> *{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+		.speaker__pic{
+			width:160px;
+			height:160px;
+			border:2px solid var(--brandbgcolor);
+			border-radius: 100%;;
+		}
+		.speaker__details{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 15px;
+			.name{
+				font-size:16px;
+				line-height:19px;
+				font-weight:600;
+				margin-bottom:10px;
+				color:var(--primarytextcolor);
+				text-align: center;
+			}
+			.designation{
+				font-size: 14px;
+				line-height: 17px;
+				color:#777;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (min-width:$desktopver){
+	.event__speakerslist{
+		padding:0;
+	}
+}
+/* //Speaker Landing Page END// */
+
+/* Speaker Detail Page START */
+
+.speaker__header{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom:var(--widgetgap);
+	.header__lhs{
+		margin-right: 20px;
+		img{
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			box-shadow: 0px 0px 3px #00000029;
+			border: 3px solid var(--catbrandcolor);
+		}
+	}
+	.header__rhs{
+		.speaker__name{
+			font-size: 30px;
+			line-height: 28px;
+			font-weight: 500;
+			margin: 19px 0px 15px;
+		}
+		.speaker__title{
+			font-size: 20px;
+			line-height: 26px;
+			color: #777777; 
+			font-weight: normal; 
+			margin-bottom:var(--widgetgap); 
+		}
+		.seperator{
+			width: 108px;
+			height: 5px;
+			border-radius: 3px;
+			background-color: var(--brandbgcolor);
+		}
+	}
+}
+.speaker__p__content{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	margin-bottom:var(--widgetgap);
+	span{
+		font: 16px;
+		line-height: 24px;
+		cursor: pointer;
+		color: var(--brandbgcolor);        }
+}
+
+@media (min-width:$desktopver){
+	.speaker__header{
+		flex-direction: row;
+		.header__lhs{
+			img{
+				width: 140px;
+				height: 140px;
+			}
+		}
+	}
+}
+/* //Speaker Detail Page END// */
+
+
+/* Sponsor List page START */
+.sponsors__grid{
+	display: grid;
+  	grid-template-columns: 1fr;
+  	gap:var(--widgetgap);
+  	grid-auto-rows: minmax(135px, auto);
+	  .list{
+		  h3{
+			  text-align: center;
+			  font-size:12px;
+			  line-height:18px;
+			  color:var(--textcolor666);
+			  font-weight:400;
+			  margin-bottom:10px;
+		  } 
+			.list__grid{
+				&.multicol{
+					display: grid;
+					grid-template-columns:repeat(auto-fit, minmax(157px, 1fr));
+					gap:15px;
+				}
+				 
+			} 
+			.list__details{
+				border:1px solid var(--widgetbordercolor);
+				.sp__logo{
+					padding:10px;
+					text-align: center;
+					display: flex;
+					justify-content: center;
+				}
+				.sp__name{
+					border-top:1px solid var(--widgetbordercolor);
+					font-weight:600;
+					color: var(--primarytextcolor);
+					font-size:12px;
+					padding:10px;
+					text-align: center;
+					line-height:18px;
+					text-transform: uppercase;
+					height: 50px;
+				}
+			}
+		
+	}
+}
+
+
+@media (min-width:$desktopver){
+	.sponsors__grid{
+		  grid-template-columns: repeat(2, 1fr);
+		  &:nth-child(1){
+			grid-column: 1 / 3;
+		}
+		&:nth-child(4){
+			grid-column: 1 / 3;
+		}
+		}
+}
+/* //Sponsor List page END// */
+
+/* Sponsor Details page START */
+.sponsors__detail{
+	display: flex;
+	flex-direction: column;
+	.sponsors__logo{
+    	flex-basis:100%;
+    	max-width:100%;
+    	flex-shrink: 0;
+		margin-bottom:20px;
+		
+		.logo{
+			border:1px solid var(--widgetbordercolor);
+			text-align: center;
+			padding:20px 0;
+			width:200px;
+			margin:0 auto
+		}
+	}
+	.sponsors__text{
+		p{
+			font-size:16px;
+			line-height: 24px;
+			color:var(--primarytextcolor);
+			span{
+				color: var(--brandtextcolor);
+				cursor: pointer;
+				white-space: nowrap;
+			}
+		}
+	}
+
+}
+@media (min-width:$desktopver){
+	.sponsors__detail{
+		flex-direction: row;
+		.sponsors__logo{
+			flex-basis:160px;
+    		max-width:160px;
+    		flex-shrink: 0;
+			margin-right: 30px;
+			margin-bottom:0;
+			.logo{
+				width:auto;
+			}
+
+		}
+	}
+}
+/* //Sponsor Details page END// */
+
