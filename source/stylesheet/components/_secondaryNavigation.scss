@@ -74,14 +74,14 @@
                             }
                         }
                       }
-
-                }&:last-child{
-                    a{
-                        span{
-                            font-size: 10px;
+                      &.nav__dropdown{
+                        a{
+                            span{
+                                font-size: 10px;
+                            }
                         }
-                    }
-                }&:last-child > :hover .header__flashback__content{
+                }
+                }&:hover .header__flashback__content{
                     display: block;
                 }
 
