@@ -394,7 +394,7 @@ ul, li {
   .navigation::before {
     position: absolute;
     left: 0;
-    width: calc((100vw - var(--maxcontinerwidth))/2);
+    width: calc((100vw - var(--maxcontinerwidth)) / 2);
     height: 100%;
     content: "";
     background-color: var(--navbg);
@@ -2746,8 +2746,61 @@ a, a:active, a:visited {
   visibility: visible;
   transform: scaleX(1);
 }
+.section__secondary__nav .nav__container .secondary__navigation ul:last-child a span {
+  font-size: 10px;
+}
+.section__secondary__nav .nav__container .secondary__navigation ul:last-child > :hover .header__flashback__content {
+  display: block;
+}
 .section__secondary__nav .nav__container .secondary__navigation ul::-webkit-scrollbar {
   display: none;
+}
+.section__secondary__nav .nav__container .secondary__navigation .header__flashback__content {
+  display: none;
+  position: absolute;
+  background-color: #ECEDEE;
+  width: 173px;
+  max-height: 330px;
+  overflow-y: auto;
+  box-shadow: 3px 3px 6px #00000029;
+  border: 1px solid #D1D1D1;
+  border-radius: 0px 0px 5px 0px;
+  z-index: 1;
+}
+.section__secondary__nav .nav__container .secondary__navigation .header__flashback__content ul {
+  display: block;
+}
+.section__secondary__nav .nav__container .secondary__navigation .header__flashback__content ul li {
+  list-style: none;
+}
+.section__secondary__nav .nav__container .secondary__navigation .header__flashback__content ul li a {
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  line-height: 34px;
+  padding: 0px 0px 0px 20px;
+  color: #000000;
+  position: static;
+}
+.section__secondary__nav .nav__container .secondary__navigation .header__flashback__content ul li a::before {
+  background-color: transparent;
+}
+.section__secondary__nav .nav__container .secondary__navigation .header__flashback__content ul li:first-child {
+  margin-top: 10px;
+}
+.section__secondary__nav .nav__container .secondary__navigation .header__flashback__content ul li:last-child {
+  margin-bottom: 10px;
+}
+.section__secondary__nav .nav__container .secondary__navigation ::-webkit-scrollbar {
+  width: 8px;
+  height: 310px;
+  border-radius: 9999px;
+  background-color: #E0DFDF;
+}
+.section__secondary__nav .nav__container .secondary__navigation ::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #CECECE;
 }
 
 @media (min-width: 1024px) {
@@ -5747,7 +5800,7 @@ body {
   margin-bottom: var(--widgetgap);
 }
 .compare__widget .compare__items_container .items__container > .default {
-  flex-basis: calc(100%/3 - 10px);
+  flex-basis: calc(33.3333333333% - 10px);
   border: 1px solid var(--widgetbordercolor);
   border-radius: 5px;
 }
@@ -5967,7 +6020,7 @@ body {
   display: flex;
 }
 .popular__widget .popular__itemslist .popularCard {
-  flex-basis: calc(100%/3 - 10px);
+  flex-basis: calc(33.3333333333% - 10px);
   border: 1px solid var(--widgetbordercolor);
   border-radius: 5px;
   background-color: #f5f5f5;
@@ -6119,7 +6172,7 @@ body {
     justify-content: space-between;
   }
   .podcastTech__widget .widget__body .podcast__playlist .list {
-    flex-basis: calc(100%/2 - 20px);
+    flex-basis: calc(50% - 20px);
     flex-shrink: 0;
     margin-bottom: 0px;
   }
@@ -8921,11 +8974,61 @@ body {
 .conclave__registration__form__container .conclave__content .stepper__wrapper .completed::after {
   position: absolute;
   content: "";
-  border-bottom: 1px solid var(--widgetbordercolor);
+  border-bottom: 1px solid var(--brandbgcolor);
   width: 100%;
   top: 20px;
   left: 50%;
   z-index: 3;
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .completed .step1 {
+  position: relative;
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .completed .step1:before {
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 18px;
+  width: 8px;
+  border-bottom: 1px solid var(--brandbgcolor);
+  border-right: 1.8px solid var(--brandbgcolor);
+  margin-right: 0px;
+  margin-top: -5px;
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .completed .step2 {
+  position: relative;
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .completed .step2:before {
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  height: 18px;
+  width: 8px;
+  border-bottom: 1px solid var(--brandbgcolor);
+  border-right: 1.8px solid var(--brandbgcolor);
+  margin-right: 0px;
+  margin-top: -5px;
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .active .step__counter {
+  background-color: var(--whitebg);
+  border: 1px solid var(--brandbgcolor);
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .step1 {
+  position: relative;
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .step1:before {
+  content: "1";
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .step2 {
+  position: relative;
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .step2:before {
+  content: "2";
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .step3 {
+  position: relative;
+}
+.conclave__registration__form__container .conclave__content .stepper__wrapper .step3:before {
+  content: "3";
 }
 .conclave__registration__form__container .conclave__content form {
   text-align: center;
@@ -9040,6 +9143,216 @@ body {
   background-position-x: 97%;
   background-position-y: 17px;
 }
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container {
+  margin-top: 10px;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__container {
+  text-align: center;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__container h1 {
+  font-size: 26px;
+  line-height: 32px;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__container .viewall__bnt {
+  margin-bottom: 0px;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__container .viewall__bnt span {
+  background: var(--brandbgcolor);
+  color: var(--theme2primarytextcolor);
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .amt__section {
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--brandbgcolor);
+  font-weight: 500;
+  margin: 5px 0px 15px;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .amt__section span {
+  font-size: 16px;
+  line-height: 32px;
+  color: #777777;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .timer__container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  margin-bottom: 20px;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .timer__container ul li {
+  list-style: none;
+  position: relative;
+  font-size: 26px;
+  line-height: 21px;
+  color: #777777;
+  font-weight: 500;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .timer__container ul li span {
+  font-size: 14px;
+  line-height: 11px;
+  color: var(--primarytextcolor);
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .timer__container ul li:nth-child(1):after {
+  content: ":";
+  font-size: 26px;
+  position: absolute;
+  top: -1px;
+  left: 45px;
+  color: #000;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .timer__container ul li:nth-child(2):after {
+  content: ":";
+  font-size: 26px;
+  position: absolute;
+  top: -1px;
+  left: 50px;
+  color: #000;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .divider {
+  height: 1px;
+  background: #ADADAD;
+  opacity: 0.5;
+  width: 100%;
+  margin: 20px 0px;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__footer {
+  display: block;
+  gap: 70px;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__footer ul li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__footer ul li:nth-child(1) {
+  font-weight: 500;
+}
+.conclave__registration__form__container .conclave__content .earlyBird__offer__container .offer__footer ul:last-child {
+  margin-top: 20px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .thankyou__userTitle {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin: 10px 0px 20px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payable__amt {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0px 0px 20px;
+  font-weight: 500;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payable__amt span {
+  color: var(--brandbgcolor);
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container {
+  max-width: 453px;
+  margin: 0 auto;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .payment__gateway__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .payment__gateway__title p {
+  font-size: 12px;
+  line-height: 18px;
+  font-style: italic;
+  color: #777777;
+  margin: 6px 0px 10px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .payments__bank__container {
+  max-width: 453px;
+  margin: 0 auto;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .payments__bank__container .bank__list {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  background-color: #EAEAEA;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .payments__bank__container .bank__list .bankLogo__name {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .payments__bank__container .bank__list .bankLogo__name .logo_img {
+  background: var(--whitebg);
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .payments__bank__container .bank__list .bankLogo__name span {
+  font-size: 14px;
+  line-height: 20px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .payments__bank__container .bank__list .next__caret {
+  color: #777777;
+  margin-top: 12px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .viewDetails__panel .collapsible__pannel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: var(--whitebg);
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .viewDetails__panel .hide__border {
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .viewDetails__panel .collapsible__content {
+  display: block;
+  border: 1px solid var(--widgetbordercolor);
+  border-radius: 5px;
+  border-top: none;
+  margin-top: -25px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .viewDetails__panel .collapsible__content .divider {
+  height: 1px;
+  background: #ADADAD;
+  opacity: 0.5;
+  width: 91%;
+  margin: 24px 0px -5px 20px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .viewDetails__panel .inner__content {
+  padding: 20px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .viewDetails__panel .inner__content ul li {
+  font-size: 14px;
+  line-height: 30px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .viewDetails__panel .inner__content ul li div {
+  display: flex;
+  gap: 15px;
+  margin-left: -40px;
+}
+.conclave__registration__form__container .conclave__content .registration__payment__container .payment__content .payment__gateway__container .viewDetails__panel .inner__content ul li span {
+  font-weight: 500;
+}
 
 @media (min-width: 1024px) {
   .conclave__registration__form__container .conclave__content form .form__container input[type=text], .conclave__registration__form__container .conclave__content form .form__container select, .conclave__registration__form__container .conclave__content form .form__container textarea {
@@ -9050,6 +9363,22 @@ body {
     gap: 15px;
     max-width: 453px;
     margin: 0 auto;
+  }
+
+  .earlyBird__offer__container .offer__footer {
+    display: flex;
+    gap: 70px;
+  }
+  .earlyBird__offer__container .offer__footer ul li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .earlyBird__offer__container .offer__footer ul li:nth-child(1) {
+    font-weight: 500;
+  }
+  .earlyBird__offer__container .offer__footer ul li:last-child {
+    margin-top: 0px;
   }
 }
 /*sass media query varibale */
