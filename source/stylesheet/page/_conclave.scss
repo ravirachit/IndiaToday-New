@@ -198,6 +198,7 @@
     	-ms-scroll-snap-type: x mandatory;
     	scroll-snap-type: x mandatory;
 		margin-left:10px;
+		list-style: none;
 		.daytab{
 			background-color: #F2FAFC;
 			color:#666;
@@ -211,6 +212,7 @@
 			cursor: pointer;
 			scroll-snap-align: start;
 			scroll-snap-stop: always;
+			list-style: none;
 			span{
 				font-weight:600;
 				margin-right:5px;
@@ -317,6 +319,13 @@
 /* //Regional Conclave Landing (After event Completed) END // */
 
 /* Progromme Page START */
+.tabs__conatiner{
+	display: none;
+	&.active{
+		display: block;
+	}
+}
+
 .content__list{
 	@include blockwidgetstyle;
 	@include desktopblockwidgetstyle;

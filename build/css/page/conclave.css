@@ -215,6 +215,7 @@
   -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
   margin-left: 10px;
+  list-style: none;
 }
 .conclaveregional .day__tabs .daytab {
   background-color: #F2FAFC;
@@ -229,6 +230,7 @@
   cursor: pointer;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  list-style: none;
 }
 .conclaveregional .day__tabs .daytab span {
   font-weight: 600;
@@ -336,6 +338,13 @@
 }
 /* //Regional Conclave Landing (After event Completed) END // */
 /* Progromme Page START */
+.tabs__conatiner {
+  display: none;
+}
+.tabs__conatiner.active {
+  display: block;
+}
+
 .content__list {
   background-color: var(--whitebg);
   box-shadow: 1px 1px 3px #00000026;
