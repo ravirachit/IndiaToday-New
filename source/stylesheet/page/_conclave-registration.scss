@@ -52,6 +52,7 @@
 	      }
        }
 
+    //    Step progress bar start
        .stepper__wrapper {
         margin-top: auto;
         display: flex;
@@ -114,16 +115,69 @@
           &::after{
             position: absolute;
             content: "";
-            border-bottom: 1px solid var(--widgetbordercolor);
+            border-bottom: 1px solid var(--brandbgcolor);
             width: 100%;
             top: 20px;
             left: 50%;
             z-index: 3;
           } 
+          .step1{
+            position: relative;
+          &:before{
+            content: "";
+            display: inline-block;
+            transform: rotate(45deg);
+            height: 18px;
+            width: 8px;
+            border-bottom: 1px solid var(--brandbgcolor);
+            border-right: 1.8px solid var(--brandbgcolor);
+            margin-right: 0px;
+            margin-top: -5px;
+          }
+        }
+        .step2{
+            position: relative;
+            &:before{
+                content: "";
+                display: inline-block;
+                transform: rotate(45deg);
+                height: 18px;
+                width: 8px;
+                border-bottom: 1px solid var(--brandbgcolor);
+                border-right: 1.8px solid var(--brandbgcolor);
+                margin-right: 0px;
+                margin-top: -5px;
+          }
+      }
       } 
+      .active{
+        .step__counter {
+            background-color: var(--whitebg);
+            border: 1px solid var(--brandbgcolor);
+          }
+      } 
+      .step1{
+          position: relative;
+        &:before{
+            content: "1";
+        }
+      }
+      .step2{
+          position: relative;
+          &:before{
+            content: "2";
+        }
+    }
+    .step3{
+        position: relative;  
+        &:before{
+            content: "3";
+        }
+    }
 }
+// Step progress bar end
 
-
+// ******************************* Step 1 Start *******************************
        form{
         text-align: center;
         .form__container{
@@ -240,6 +294,243 @@
               }
           }
   }
+  // ******************************* Step 1 End *******************************
+
+  // ******************************* Step 2 Start *******************************
+    .earlyBird__offer__container{
+        margin-top: 10px;
+        .offer__container{
+            text-align: center;
+            h1{
+                font-size: 26px;
+                line-height: 32px;
+            }
+            .viewall__bnt{
+                margin-bottom: 0px;
+                span{
+                background: var(--brandbgcolor);
+                color: var(--theme2primarytextcolor);
+            }
+        }
+        }
+        .amt__section{
+            font-size: 20px;
+            line-height: 32px;
+            color: var(--brandbgcolor);
+            font-weight: 500;
+            margin: 5px 0px 15px;
+            span{
+                font-size: 16px;
+                line-height: 32px;
+                color: #777777;
+                text-decoration: line-through;
+                font-weight: normal;
+            }
+        }
+        .timer__container{
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 27px;
+                margin-bottom: 20px;
+                li{
+                    list-style: none;
+                    position: relative;
+                    font-size: 26px;
+                    line-height: 21px;
+                    color: #777777;
+                    font-weight: 500;
+                    span{
+                        font-size: 14px;
+                        line-height: 11px;
+                        color: var(--primarytextcolor);
+                    }
+                    &:nth-child(1){
+                        &:after{
+                            content: ":";
+                            font-size: 26px;
+                            position: absolute;
+                            top: -1px;
+                            left: 45px;
+                            color: #000;
+                        }
+                        }
+                        &:nth-child(2){
+                            &:after{
+                                content: ":";
+                                font-size: 26px;
+                                position: absolute;
+                                top: -1px;
+                                left: 50px;
+                                color: #000;
+                            }
+                            }
+                }
+            }
+        }
+        .divider{
+            height: 1px;
+            background: #ADADAD;
+            opacity: 0.5;
+            width: 100%;
+            margin: 20px 0px;
+        }
+        .offer__footer{
+            display: block;
+            gap: 70px;
+            ul{
+                li{
+                    list-style: none;
+                    font-size: 16px;
+                    line-height: 24px;
+                    &:nth-child(1){
+                        font-weight: 500;
+                    }
+                }&:last-child{
+                    margin-top: 20px;
+                }
+            }
+            .footer__lhs{
+                
+            }
+            .footer__rhs{
+            }
+        }
+    }
+  // ******************************* Step 2 End *******************************
+
+   // ******************************* Step 3 Start *******************************
+   .registration__payment__container{
+       .payment__content{
+           .thankyou__userTitle{
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            margin: 10px 0px 20px;
+           }
+           .payable__amt{
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            margin: 0px 0px 20px;
+            font-weight: 500;
+            span{
+                color: var(--brandbgcolor);
+            }
+           }
+           .payment__gateway__container{
+               max-width: 453px;
+               margin: 0 auto;
+           .payment__gateway__title{
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+               p{
+                font-size: 12px;
+                line-height: 18px;
+                font-style: italic;
+                color: #777777;
+                margin: 6px 0px 10px;
+               }
+           }
+           .payments__bank__container{
+               max-width: 453px;
+               margin: 0 auto;
+               .bank__list{
+                display: flex;
+                justify-content: space-between;
+                height: 60px;
+                width: 100%;
+                background-color: #EAEAEA;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                padding: 10px;
+                .bankLogo__name{
+                    display: flex;
+                    gap: 30px;
+                    align-items: center;
+                    .logo_img{
+                        background: var(--whitebg);
+                        border-radius: 5px;
+                        height: 40px;
+                        width: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    span{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+                .next__caret{
+                    color: #777777;
+                    margin-top: 12px;
+                }
+               }
+           }
+           .viewDetails__panel{
+            .collapsible__pannel{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 60px;
+                width: 100%;
+                background-color: var(--whitebg);
+                border: 1px solid var(--widgetbordercolor);
+                border-radius: 5px;
+                padding: 20px;
+                margin-top: 20px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .hide__border{
+                border-bottom: none;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .collapsible__content{
+                display: block;
+                border: 1px solid var(--widgetbordercolor);
+                border-radius: 5px;
+                border-top: none;
+                margin-top: -25px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                .divider{
+                    height: 1px;
+                    background: #ADADAD;
+                    opacity: 0.5;
+                    width: 91%;
+                    margin: 24px 0px -5px 20px;
+                }
+            }
+            .inner__content{
+                padding: 20px;
+                ul{
+                    li{
+                        font-size: 14px;
+                        line-height: 30px;
+                        list-style: none;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        div{
+                            display: flex;
+                            gap: 15px;
+                            margin-left: -40px;
+                        }
+                        span{
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+           }
+        }
+       }
+   }
+  // ******************************* Step 3 End *******************************
 }
 }
 
@@ -261,6 +552,30 @@
               }
               }
       }
+       // ******************************* Step 2 Start *******************************
+     .earlyBird__offer__container{
+        .offer__footer{
+            display: flex;
+            gap: 70px;
+            ul{
+                li{
+                    list-style: none;
+                    font-size: 16px;
+                    line-height: 24px;
+                    &:nth-child(1){
+                        font-weight: 500;
+                    }&:last-child{
+                        margin-top: 0px;
+                    }
+                }
+                &:last-child{
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+  // ******************************* Step 2 End *******************************
+
     }
     }
 }

@@ -340,22 +340,25 @@
                                 <div class="conclave__content">
                                     <div class="header__nav"><h2 class="widgettitle__cion">REGISTER WITH US</h2></div>
                                    
+                                    <!-- Step progress bar start -->
                                     <div class="stepper__wrapper">
-                                        <div class="stepper__item completed">
-                                          <div class="step__counter">1</div>
+                                        <div class="stepper__item active">
+                                          <div class="step__counter step1"></div>
                                           <div class="step__name">Your Details</div>
                                         </div>
-                                        <div class="stepper__item active">
-                                          <div class="step__counter">2</div>
+                                        <div class="stepper__item">
+                                          <div class="step__counter step2"></div>
                                           <div class="step__name">Plan Details</div>
                                         </div>
                                         <div class="stepper__item">
-                                          <div class="step__counter">3</div>
+                                          <div class="step__counter step3"></div>
                                           <div class="step__name">Make Payment</div>
                                         </div>
                                       </div>
+                                      <!-- Step progress bar end -->
                                       
-                                      <form>
+                                      <!-- **************************************** Step 1 Start **************************************** -->
+                                      <form id="step-1-content">
                                       <div class="form__container">
                                       <div class="form__title">
                                           <div class="title__divider"></div><div class="title__content">Enter Your Personal Details</div><div class="title__divider"></div>
@@ -413,20 +416,141 @@
                                             <p>I agree to provide my personal data to receive communications from India Today regarding magazine subscription.</p>
                                         </div>
                                     </div>
-                                    <div class="viewall__bnt"><span>Next</span></div>
-
-                                        <!-- <select id="country" name="country">
-                                          <option value="australia">Australia</option>
-                                          <option value="canada">Canada</option>
-                                          <option value="usa">USA</option>
-                                        </select> -->
-                                      </form>
+                                    <div class="viewall__bnt" id="step1_next"><span>Next</span></div>
                                     </div>
-                                </div>
+                                    </form>
+                                       <!-- **************************************** Step 1 End **************************************** -->
+
+                                        <!-- **************************************** Step 2 Start **************************************** -->
+                                        <div class="earlyBird__offer__container" id="step-2-content">
+                                            <div class="offer__container">
+                                            <h1>Early Bird Offer</h1>
+                                            <div class="amt__section">INR 70,000 <span>INR 1,00,000</span></div>
+                                            <div class="timer__container">
+                                                <ul>
+                                                    <li>02<br><span>Days</span></li>
+                                                    <li>23<br><span>Hours</span></li>
+                                                    <li>36<br><span>Mins</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="viewall__bnt" id="step2_next"><span>Next</span></div>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="offer__footer">
+                                            <div class="footer__lhs">
+                                                <ul>
+                                                    <li>For Bulk/Group registration contact</li>
+                                                    <li>Dominic Savio</li>
+                                                    <li>Email: dominic.savio@intoday.com</li>
+                                                    <li>Mobile: +91 8800185658</li>
+                                                </ul>
+                                            </div>
+                                            <div class="footer__rhs">
+                                                <ul>
+                                                    <li>Marketing Partners to contact:</li>
+                                                    <li>Email: dominic.savio@intoday.com</li>
+                                                    <li>Mobile: +91 8800185658</li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!-- **************************************** Step 2 End **************************************** -->
+
+                                        <!-- **************************************** Step 3 Start **************************************** -->
+                                            <div class="registration__payment__container" id="step-3-content">
+                                                <div class="payment__content">
+                                                    <p class="thankyou__userTitle">
+                                                        <strong>Thank You</strong> Shikha Sharma, <br>for choosing to register for the India Today Conclave.
+                                                    </p>
+                                                    <div class="payable__amt">Total Amount Payable: <span>INR 70,000/-</span></div>
+                                                    <div class="payment__gateway__container">
+                                                    <div class="payment__gateway__title">
+                                                        Select Payment Gateway
+                                                        <p>
+                                                            (International credit card holders please select ICICI Payment option.)
+                                                        </p>
+                                                    </div>
+                                                    <div class="payments__bank__container">
+                                                        <div class="bank__list">
+                                                            <div class="bankLogo__name">
+                                                                <div class="logo_img">
+                                                                    <img src="images/icici.png" alt="" width="16" height="17">
+                                                                </div>
+                                                                <span>ICICI</span>
+                                                            </div>
+                                                            <div class="next__caret">></div>
+                                                        </div>
+                                                        <div class="bank__list">
+                                                            <div class="bankLogo__name">
+                                                                <div class="logo_img">
+                                                                    <img src="images/amex.png" alt="" width="40" height="40">
+                                                                </div>
+                                                                <span>Amex</span>
+                                                            </div>
+                                                            <div class="next__caret">></div>
+                                                        </div>
+                                                        <div class="bank__list">
+                                                            <div class="bankLogo__name">
+                                                                <div class="logo_img">
+                                                                    <img src="images/otherBank.png" alt="" width="16" height="16">
+                                                                </div>
+                                                                <span>Other Banks</span>
+                                                            </div>
+                                                            <div class="next__caret">></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="viewDetails__panel">
+                                                        <div class="collapsible__pannel" id="colPannel" onclick="toggleCollapsiblePannel()">View Details <img src="images/icons/down-arrow.png" alt="" width="14" height="8"></div>
+                                                        <div class="collapsible__content" id="collapsible-container">
+                                                            <div class="divider"></div>
+                                                            <div class="inner__content">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Invoice No.</span> <div><span>:</span> CON-WEB-90874</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Amount</span> <div><span>:</span> INR 70,000</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Name</span> <div><span>:</span> Shikha Sharma</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Designation</span> <div><span>:</span> Manager</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Company</span> <div><span>:</span> India Today Group</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Email</span> <div><span>:</span> shikha.sharma@gmail.com</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Mobile</span> <div><span>:</span> 9999112789</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Mailing Address</span> <div><span>:</span> 46 Anupam Apartments, Vasundhara Enclave</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>City</span> <div><span>:</span> Delhi</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>State/Provience</span> <div><span>:</span>Delhi </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Pincode</span> <div><span>:</span> 110096</div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Country</span> <div><span>:</span>India</div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        <!-- **************************************** Step 3 End **************************************** -->
+                                    </div>
                             </div>
-
-
-                           
                             <!--- // Section List template END // -->
                         </div>
                         <!--// END //-->
@@ -639,6 +763,54 @@
         </div>
     </div>
     <!-- // Footer Nav Mobile Only END // -->
+
+    <script>
+
+        // Steps Progress Bar
+        const  step1Next  =  document.getElementById('step1_next');
+        const  step2Next  =  document.getElementById('step2_next');
+        const  bullets  =  [...document.querySelectorAll('.stepper__item')];
+        document.getElementById('step-2-content').style.display = 'none';
+        document.getElementById('step-3-content').style.display = 'none';
+
+const MAX_STEPS = 3;
+let currentStep = 1;
+
+step1Next.addEventListener('click',  ()  =>  {
+    bullets[currentStep  -  1].classList.add('completed');
+    bullets[currentStep  -  1].classList.remove('active');
+    bullets[currentStep, 1].classList.add('active');
+    document.getElementById('step-1-content').style.display = 'none';
+    document.getElementById('step-2-content').style.display = 'block';
+});
+
+step2Next.addEventListener('click',  ()  =>  {
+    bullets[currentStep  -  1].classList.add('completed');
+    bullets[currentStep, 1].classList.add('completed');
+    bullets[currentStep, 1].classList.remove('active');
+    bullets[currentStep  +  1].classList.add('active');
+    document.getElementById('step-1-content').style.display = 'none';
+    document.getElementById('step-2-content').style.display = 'none';
+    document.getElementById('step-3-content').style.display = 'block';
+});
+// End
+
+// Toggle Collapsible Pannel
+document.getElementById("collapsible-container").style.display = 'none';
+function toggleCollapsiblePannel() {
+  var cPannel = document.getElementById("collapsible-container");
+  if (cPannel.style.display === "none") {
+    cPannel.style.display = "block";
+    document.getElementById('colPannel').classList.add('hide__border');
+  } else {
+    cPannel.style.display = "none";
+    document.getElementById('colPannel').classList.remove('hide__border')
+  }
+}
+// End
+
+    </script>
+  
 </body>
 
 </html>

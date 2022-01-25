@@ -75,12 +75,66 @@
                         }
                       }
 
+                }&:last-child{
+                    a{
+                        span{
+                            font-size: 10px;
+                        }
+                    }
+                }&:last-child > :hover .header__flashback__content{
+                    display: block;
                 }
 
                 &::-webkit-scrollbar{
                     display: none;
                 }
             }
+            .header__flashback__content {
+                display: none;
+                position: absolute;
+                background-color: #ECEDEE;
+                width: 173px;
+                max-height: 330px;
+                overflow-y: auto;
+                box-shadow: 3px 3px 6px #00000029;
+                border: 1px solid #D1D1D1;
+                border-radius: 0px 0px 5px 0px;
+                z-index: 1;
+                  ul{
+                      display: block;
+                      li{
+                          list-style: none;
+                          a {
+                            text-decoration: none;
+                            display: block;
+                            font-size: 14px;
+                            line-height: 34px;
+                            padding: 0px 0px 0px 20px;
+                            color: #000000;
+                            position: static;
+                            &::before{
+                                background-color: transparent;
+                            }
+                        }
+                        &:first-child{
+                            margin-top: 10px;
+                        }
+                        &:last-child{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }::-webkit-scrollbar {
+                width: 8px;
+                height: 310px;
+                border-radius: 9999px;
+                background-color: #E0DFDF;
+              }
+              ::-webkit-scrollbar-thumb {
+                background-clip: padding-box;
+                border-radius: 9999px;
+                background-color: #CECECE;
+              }
         }
     }
 }
