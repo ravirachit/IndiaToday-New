@@ -2,6 +2,7 @@
 body {
   --techBordercolor:#FF006A;
   --techbrandtextcolor:#FF006A;
+  --techbrandbg:#FF006A;
 }
 
 /* viewall__bnt button css update */
@@ -26,12 +27,44 @@ body {
   border-color: var(--techBordercolor);
 }
 
+/* B1 S3 components START */
 .B1__s3__widget .story__card .cat__title {
   background: var(--catbrandcolor);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* //B1 S3 components END// */
+/* video detail page (videoplayer) START */
+.videoCard__widget .video__card .cat__title {
+  background: var(--catbrandcolor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.videoCard__widget .videodetails .description {
+  border-color: #d1d1d180;
+}
+
+.sectionlink a {
+  color: var(--techbrandtextcolor);
+}
+.sectionlink a:after {
+  border-color: var(--techBordercolor);
+}
+
+.othersection__tags .capsule__list a {
+  border-color: var(--techBordercolor);
+  background: var(--whitebg);
+  color: var(--techbrandtextcolor);
+}
+
+/* //video detail page (videoplayer) END// */
+/* technology photo detail page START */
+.phototype .article__type {
+  background-color: var(--techbrandtextcolor);
+}
+
+/* //technology photo detail page END// */
 .story__content__body .description {
   /*h3{
       background:var(--catbrandcolor);
@@ -285,5 +318,9 @@ body {
 }
 
 /* Specs table END */
+/* 5 pointer story */
+.story__content__body .pointer-section::before {
+  color: #FF006A;
+}
 
 /*# sourceMappingURL=tech.css.map */

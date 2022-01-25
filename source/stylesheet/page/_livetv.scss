@@ -1,0 +1,122 @@
+@import '../abstracts/mixins';
+@import '../abstracts/functions';
+
+.livetv__section{
+    background-color: #1D2936;
+    padding-bottom: 20px;
+    .heading__nav{
+        margin-bottom: 15px;
+		h2{
+			@include titlewidgetBlack;
+			color:var(--theme2primarytextcolor);
+			@include titleicon;
+		}
+	}
+    .tv__tabbing{
+        .tabs{
+            ul{
+                list-style: none;
+                display:grid;
+                grid-template-columns:repeat(4, 1fr);
+                column-gap: 10px;
+                
+                li{
+                    border: 1px solid #364d66;
+                    background-color: #0f151c;
+                    border-radius: 5px 5px 0 0;
+                    padding: 5px 0;
+                    a{
+                        display:grid;
+                        place-items: center;
+                        img{
+                            height:35px;
+                        }
+                    }
+                 &.activetv-it{
+                     border-bottom:0px;
+                     position: relative;
+                     z-index: 1;
+                     top: 1px;
+                     background-color: #1d2936;
+                 }
+                }
+            }
+        }
+    }
+    .tabcontent__area{
+        border-top: 1px solid #364d66;
+        .tviframe{
+            position: relative;
+            padding-bottom: 56.7%;
+             iframe{
+                 position: absolute;
+                 top:0;
+                 left: 0;
+                 width:100%;
+                 height:100%;
+             }
+        }
+    }
+}
+.article__list{
+    padding-bottom: 20px;
+    .heading__nav{
+        margin-bottom: 15px;
+		h2{
+			@include titlewidgetBlack;
+			color:var(--primarytextcolor);
+			@include titleicon;
+		}
+	}
+    .newscard__list{
+         display: grid;
+         grid-template-columns:repeat(3, 1fr);
+         column-gap: 15px;
+        .carousel__card{
+			.card__figure{
+				margin-bottom:15px;
+				position: relative;
+				img{
+					border: 1px solid var(--widgetbordercolor);
+		 			border-radius: 5px;}
+			}
+			.card__desc{
+				.card__slug{
+					@include titlewidgetRed;
+					margin-bottom:4px;
+					display: block;
+				}
+				h3{
+					font-size: 16px;
+					line-height: 24px;
+					font-weight:500;
+					a{
+						text-decoration: none;
+						@include lineblock3;
+					}
+				}
+			}
+
+			&:nth-last-child(1){
+				margin-right:0px;
+			}
+		}
+    }
+}
+
+@media (max-width:600px){
+    .article__list{
+        .newscard__list{
+            grid-template-columns:1fr;
+            .carousel__card{
+                margin-bottom:20px;
+                .card__figure{
+                    img{
+                        width:100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

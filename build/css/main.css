@@ -5770,6 +5770,11 @@ body {
 }
 
 /* Specs table END */
+/* 5 pointer story */
+.story__content__body .pointer-section::before {
+  color: #FF006A;
+}
+
 /*sass media query varibale */
 .compare__widget {
   /*@include blockwidgetstyle;

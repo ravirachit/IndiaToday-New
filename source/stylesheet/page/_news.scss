@@ -1,0 +1,52 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+.newssection{
+    .heading__nav{
+		h2{
+			@include titlewidgetBlack;
+			color:var(--primarytextcolor);
+			@include titleicon;
+		}
+	}
+    .newslist{
+        ul{
+            list-style:none;
+            li{
+                padding:var(--widgetgap) 0;
+                border-bottom:1px solid var(--widgetbordercolor);
+                a{
+                   font-size:24px;
+                   line-height:32px;
+                   font-weight:600;
+                   color:var(--primarytextcolor);
+                }
+            }
+        }
+     &.liststyle{
+         ul{
+             li{
+                padding:var(--widgetgap);
+                padding-right: 0;
+                 a{
+                    font-size:20px;
+                    line-height:28px;
+                    font-weight:400;
+                    position: relative;
+
+                    &:after{
+                        content:"";
+                        width:5px;
+                        height:5px;
+                        border-radius:10px;
+                        background-color:var(--brandbgcolor);
+                        position: absolute;
+                        top:10px;
+                        left:-20px;
+                    }
+                 }
+             }
+         }
+
+     }
+    }
+}
