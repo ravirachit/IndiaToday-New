@@ -1,0 +1,41 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+
+.programme__widget{
+    .nocard__B1__s3__widget{
+        .header__nav{
+            margin-bottom:15px;
+            padding-left: 10px;
+              .widgettitle__icon{
+                @include titlewidgetBlack;
+                @include titleicon;
+              }
+           }
+           .story__card.Bcard{
+               border-bottom: none;
+            .story__shortcont p {
+                margin-bottom: 20px;
+            }
+           }
+    }
+    .viewall__bnt{
+        span{
+            background-color: var(--whitebg);
+        }
+    }
+}
+
+@media (min-width:$desktopver){
+    .programme__widget{
+    .nocard__B1__s3__widget{
+        .header__nav{
+            margin-bottom:15px;
+            padding-left: 0px;
+              .widgettitle__icon{
+                @include titlewidgetBlack;
+                @include titleicon;
+              }
+           }
+        }
+    }
+}
