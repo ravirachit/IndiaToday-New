@@ -1,0 +1,40 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+
+.siteMap__widget{
+	.siteMap__card{
+	   @include blockwidgetstyle;
+	   padding:10px;
+	   margin-bottom:var(--widgetgap);
+       border-radius: 0px;
+       ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        list-style: none;
+           li{
+            font-size: 16px;
+            line-height: 34px;
+            &::before{
+                content: "\2022";
+                color: var(--brandbgcolor);
+                font-weight: bold;
+                width: 5px;
+                height: 5px;
+                margin-right: 10px;
+            }
+           }
+       }
+	}
+}
+
+@media (min-width:$desktopver){
+    .siteMap__widget{
+        .siteMap__card{
+           border-radius: 5px;
+           padding:20px;
+           ul{
+            grid-template-columns: 1fr 1fr;
+           }
+        }
+    }
+}
