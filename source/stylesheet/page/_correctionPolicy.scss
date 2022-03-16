@@ -1,0 +1,37 @@
+@import '../abstracts/functions';
+@import '../abstracts/mixins';
+// Anchor Listing Page Start
+
+.correctionPolicy__container{
+    .objectiveAndScope__card{
+        width: 100%;
+        background-image: url('../../images/anchor_card_mob.png');
+        background-repeat: no-repeat;
+        background-color: var(--whitebg);
+        background-position: bottom;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px #00000026;
+        background-size: 100% 97%;
+        .card__content{
+            padding-top: 20px;
+    }
+    }
+    .userConsent__card{
+        width: 100%;
+        background-image: url('../../images/anchor_card_mob.png');
+        background-repeat: no-repeat;
+        background-color: var(--whitebg);
+        background-position: bottom;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px #00000026;
+        background-size: 100% 97%;
+        .card__content{
+            padding-top: 20px;
+    }
+    }
+}
+
+@media (min-width:$desktopver){
+}
+
+

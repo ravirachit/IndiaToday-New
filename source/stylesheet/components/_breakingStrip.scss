@@ -1,0 +1,94 @@
+@keyframes remove{
+    0% {opacity: 1;
+        max-height: 100px;}
+    99.9% {opacity: 0;
+           max-height: 0px;
+           padding: 0px 10px;}
+    100% {opacity: 0;
+          max-height: 0;
+          padding: 0px 0px;
+          animation: poof 0.1s linear 0s 1;
+    -webkit-animation: poof 0.1s linear 0s 1;}
+  }
+.breaking__strip {
+	box-shadow: 0px -3px 6px #00000029;
+	border-radius: 20px 20px 0px 0px;
+	background-color: #1d2936;
+	padding: 25px 20px 20px;
+	position: fixed;
+	bottom: -15px;
+	z-index: 99;
+	width: 100%;
+	.inner__container {
+		display: block;
+		.content {
+			display: block;
+			h2 {
+				color: #ffc108;
+				font-size: 18px;
+				line-height: 18px;
+				font-weight: bold;
+				font-style: italic;
+				margin-bottom: 14px;
+			}
+			p {
+				font-size: 18px;
+				line-height: 26px;
+				color: var(--theme2primarytextcolor);
+				font-weight: 500;
+			}
+		}
+		.cross__icon {
+			position: absolute;
+			right: 20px;
+			top: 25px;
+			cursor: pointer;
+		}
+	}
+}
+.hide__breaking__strip {
+	animation: remove 0.6s linear 0s 1 forwards;
+	-webkit-animation: remove 0.6s linear 0s 1 forwards;
+}
+@media only screen and (min-width: 1024px) {
+	.breaking__strip {
+		box-shadow: 1px 1px 3px #00000029;
+		border-radius: 5px;
+		background-color: #1d2936;
+		padding: 10px 15px;
+		position: static;
+		.inner__container {
+			display: flex;
+			align-items: center;
+			position: relative;
+			.content {
+				display: flex;
+				gap: 30px;
+				align-items: center;
+				h2 {
+					color: #ffc108;
+					font-size: 20px;
+					line-height: 24px;
+					font-weight: bold;
+					font-style: italic;
+					margin-bottom: 0px;
+				}
+				p {
+					font-size: 18px;
+					line-height: 22px;
+					color: var(--theme2primarytextcolor);
+					font-weight: 500;
+				}
+			}
+			.cross__icon {
+				position: absolute;
+				right: 0;
+				top: 3px;
+			}
+		}
+	}
+	.hide__breaking__strip {
+		animation: remove 0.6s linear 0s 1 forwards;
+		-webkit-animation: remove 0.6s linear 0s 1 forwards;
+	}
+}

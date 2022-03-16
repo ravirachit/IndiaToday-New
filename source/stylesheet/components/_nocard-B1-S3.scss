@@ -8,6 +8,9 @@
 	   margin-bottom:var(--widgetgap);
 	   .header__nav{
 		margin-bottom:15px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	      .widgettitle__cion{
 		    @include titlewidgetBlack;
 			color:var(--primarytextcolor);
@@ -123,6 +126,26 @@
 	}
 	
   }
+/* City Dropdown Fields Stylesheet*/
+.city__select select {
+	position: relative;
+	background: #EFF3F6;
+	border: 1px solid #AAB9C4;
+	border-radius: 4px;
+	min-width: 250px;
+	min-height: 29px;
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 19px;
+	-moz-appearance:none;
+	  -webkit-appearance:none;
+	  appearance:none;
+	  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjUiIHZpZXdCb3g9IjAgMCA4IDUiPgogIDxwYXRoIGlkPSJJY29uX2lvbmljLW1kLWFycm93LWRyb3Bkb3duIiBkYXRhLW5hbWU9Ikljb24gaW9uaWMtbWQtYXJyb3ctZHJvcGRvd24iIGQ9Ik05LDEzLjVsNCw1LDQtNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05IC0xMy41KSIvPgo8L3N2Zz4K");
+	  background-repeat: no-repeat;
+	  background-position-x: 97%;
+	  background-position-y: 12px;
+  }
+  /* End */
 }
 
 @media (min-width:$desktopver){
@@ -179,3 +202,4 @@
 }
 
 }
+
